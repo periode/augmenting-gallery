@@ -14,15 +14,12 @@ IMNY-UT 9001
 
 **Office Hours** Thu 14.00 - 17.00
 
-***
 
 ## [Course wiki](https://github.com/periode/augmenting-gallery/wiki)
 
-***
 
 ## [Course notes](https://periode.github.io/augmenting-gallery)
 
-***
 
 ## Course Description
 
