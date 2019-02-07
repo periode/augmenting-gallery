@@ -61,6 +61,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\AppManager.cs" />
     <Compile Include="Assets\Scripts\CameraGrabber.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>/Users/Pierre/Documents/Teaching/NYUBerlin/AugmentingGallery/repo/code/01_Augmented_Scaffolding_ObjectStory/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
