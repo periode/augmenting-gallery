@@ -1,0 +1,10 @@
+syntax: glob
+Library
+Temp
+obj
+.DS_Store
+*.csproj
+XCodeProject
+*.sln
+*.userprefs
+Build
