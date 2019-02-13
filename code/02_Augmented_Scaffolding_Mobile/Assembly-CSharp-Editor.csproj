@@ -10,7 +10,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace>
     </RootNamespace>
-    <ProjectGuid>{EBEFC887-620E-A717-3E32-C55EE299B29E}</ProjectGuid>
+    <ProjectGuid>{B83080F9-F4BB-B233-F99D-7378F7DD78A8}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
@@ -64,16 +64,16 @@
     <Compile Include="Assets\UnityARKitPlugin\Examples\UnityParticlePainter\HSVPicker\Editor\BoxSliderEditor.cs" />
     <Compile Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\Editor\UnityARBuildPostprocessor.cs" />
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>/Users/Pierre/Downloads/02_Augmented_Scaffolding/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>/Users/Pierre/Documents/Teaching/NYUBerlin/AugmentingGallery/repo/code/02_Augmented_Scaffolding_Mobile/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>/Users/Pierre/Downloads/02_Augmented_Scaffolding/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>/Users/Pierre/Documents/Teaching/NYUBerlin/AugmentingGallery/repo/code/02_Augmented_Scaffolding_Mobile/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>/Users/Pierre/Downloads/02_Augmented_Scaffolding/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>/Users/Pierre/Documents/Teaching/NYUBerlin/AugmentingGallery/repo/code/02_Augmented_Scaffolding_Mobile/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>/Users/Pierre/Downloads/02_Augmented_Scaffolding/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>/Users/Pierre/Documents/Teaching/NYUBerlin/AugmentingGallery/repo/code/02_Augmented_Scaffolding_Mobile/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -378,7 +378,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{E4C97989-8E72-E3BB-0B00-7B7A8AEC3A4E}</Project>
+      <Project>{28DB5F83-260C-41B9-B019-9DB0ACBA794D}</Project>
       <Name>Assembly-CSharp</Name>
     </ProjectReference>
   </ItemGroup>

@@ -1,6 +1,6 @@
 iOS
 PlayerPath?
-/Users/Pierre/Desktop/BuildARkitScaffolding
+/Users/Pierre/Desktop/BuildARkitScaffoldingClass
 SceneListBegin?
 Assets/UnityARKitScene.unity
 SceneListEnd?
@@ -194,6 +194,7 @@ f8a0fd6e544fff5917ca8c9022eb7140 Assembly-CSharp.dll:UnityEngine.XR.iOS.ARKitRem
 28a95668dd28649297d595834fe8417e UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioSoundfieldExtension
 28a95668dd28649297d595834fe8417e UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioSourceExtension
 af0330195ee2952276420a5a79b1ac01 Assembly-CSharp.dll:.ObjectText
+3fa3f388d9fe668b3de055f60a8caac9 Assembly-CSharp.dll:.ArtefactManager
 1a90b221dc803408fbafa883c12bcab4 UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioListenerExtension
 70f7dc248db3379548a88e8d4fa049f8 UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioRoom
 28a95668dd28649297d595834fe8417e UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioSoundfieldExtension
@@ -231,4 +232,3 @@ bf5cbeb343b015b4fda69d21e2bd78be Assembly-CSharp.dll:.ReflectionProbeGameObject
 be05cccf9a5a5ef0737550885f55e634 Assembly-CSharp.dll:.UnityPointCloudExample
 622aa64877982231650b7d8de8ad5f01 Assembly-CSharp.dll:.TongueDetector
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.UnityARCameraNearFar
-3fa3f388d9fe668b3de055f60a8caac9 Assembly-CSharp.dll:.ArtefactManager
