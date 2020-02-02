@@ -2,6 +2,7 @@
 .~lock*
 notes.md
 archive/
+*.mmd
 
 # UNITY
 
