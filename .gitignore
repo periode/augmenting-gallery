@@ -1,6 +1,7 @@
 .DS_Store
 .~lock*
 notes.md
+notes/
 archive/
 *.mmd
 emails.md
