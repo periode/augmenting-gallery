@@ -1,0 +1,399 @@
+<!DOCTYPE html><html><head><meta charset="utf8"><title>augmenting-the-gallery | museum-spaces</title><style>body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Inter UI', Trebuchet MS;
+	background-color: white;
+}
+
+header {
+	background-color: black;
+	color: white;
+  padding: 10px;
+	overflow: auto;
+}
+
+header h1{
+	display: inline-block;
+	margin-left: 5%;
+	margin-right: 5%;
+	width: 40%;
+	font-size: 2.5em;
+}
+
+@media print{
+	header h1{
+		font-size: 1em;
+	}
+}
+
+.subject-name{
+	float: right;
+	text-align: right;
+}
+
+.topic-name{
+	float: left;
+	text-align: left;
+}
+
+a {
+	text-decoration: none;
+  color: #e77607;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:visited {
+  color: #b25900;
+}
+
+header a{
+	color: white;
+	text-decoration: none;
+	border: 2px solid white;
+	padding: 3px;
+}
+
+main{
+	position: absolute;
+	margin-left: 10%;
+	width: 80%;
+	display: block;
+}
+
+@media print{
+	main{
+		margin-left: 5%;
+		width: 90%;
+	}
+}
+
+hr {
+	border: none;
+	height: 2px;
+	background-color: black;
+	float: left;
+	width: 100%;
+}
+
+img {
+	max-height: 300px;
+	max-width: 90%;
+}
+
+.concept-group{
+	width: 80%;
+	margin-left: 10%;
+	display: block;
+	float: left;
+}
+
+.concept-nav{
+	width: 30%;
+	float: right;
+	margin-right: 10%;
+}
+
+.overview-holder{
+	float: left;
+	width: 38%;
+	margin-left: 10%;
+}
+
+@media print{
+	.concept-group, .concept-nav{
+		width: 90%;
+		margin-left: 5%;
+	}
+}
+
+.concept-name {
+	width: 98%;
+	text-align: right;
+	float: right;
+	color: black;
+	border-bottom: 2px solid black;
+	padding: 1%;
+	font-size: 2em;
+}
+
+.break-before, .break-after{
+	display: block;
+	width: 100%;
+	height: 5px;
+	float: left;
+}
+
+.break-after{
+	page-break-after: always;
+}
+
+.page-group{
+	position: relative;
+	font-size: 1.2em;
+	width: 50%;
+	float: left;
+}
+
+@media print{
+
+	.page-group{
+		width: 70%;
+		page-break-inside: avoid;
+	}
+
+	.prep{
+		font-size: 0.8em;
+	}
+}
+
+.page-name{
+	width: 100%;
+	float: left;
+}
+
+.note-group{
+	position: relative;
+	width: 50%;
+	float: left;
+	overflow: auto;
+	text-align: left;
+}
+
+@media print{
+	.note-group{
+		width: 30%;
+	}
+}
+
+.note {
+	position: relative;
+	margin-bottom: 10px;
+	width: 100%;
+	overflow: auto;
+	white-space: pre;
+}
+
+@media print {
+	.note{
+		white-space: normal;
+	}
+}
+
+.writeup-group{
+	width: 100%;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	float: left;
+}
+
+@media print{
+	.writeup-group{
+		break-inside: avoid;
+		font-size: 0.9em;
+	}
+}
+
+.context{
+	white-space: pre-line;
+	border: 2px solid black;
+	width: 45%;
+	padding: 5px;
+	float: right;
+}
+
+@media print{
+	.context{
+		width: 100%
+	}
+}
+
+.writeup{
+	width: 100%;
+	float: left;
+	margin-bottom: 10px;
+	font-style: italic;
+	white-space: pre-line;
+}
+
+.web-only{
+	display: inherit;
+}
+
+.print-only{
+	display: none;
+}
+
+@media print{
+	* {
+		float: none !important;
+	}
+
+	.break-before{
+		page-break-before: always !important;
+	}
+
+	.break-after{
+		page-break-after: always !important;
+	}
+
+	.web-only{
+		display: none;
+	}
+
+	.print-only{
+		display: inline-block;
+	}
+}
+</style></head><body><header><h1 class="topic-name">museum-spaces</h1><h1 class="subject-name"><a href="index.html">augmenting-the-gallery</a></h1></header><div class="overview-holder"><h1>overview</h1></div><div class="concept-nav"><h1>summary</h1><ul><a class="web-only" href="#intro">intro</a><li class="print-only">intro</li></ul><ul><a class="web-only" href="#the role(s) of the museum">the role(s) of the museum</a><li class="print-only">the role(s) of the museum</li></ul><ul><a class="web-only" href="#museum spaces">museum spaces</a><li class="print-only">museum spaces</li></ul><ul><a class="web-only" href="#exhibition design">exhibition design</a><li class="print-only">exhibition design</li></ul><ul><a class="web-only" href="#populated spaces">populated spaces</a><li class="print-only">populated spaces</li></ul><ul><a class="web-only" href="#soft/hard architectures">soft/hard architectures</a><li class="print-only">soft/hard architectures</li></ul><ul><a class="web-only" href="#unity">unity</a><li class="print-only">unity</li></ul><ul><a class="web-only" href="#outro">outro</a><li class="print-only">outro</li></ul><br></div><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="intro">intro</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">museum spaces</h3><div class="prep" concept="0"><p>welcome!</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="0"></div></div><div class="page-group"><h3 class="page-name">plan for today</h3><div class="prep" concept="0"><p>-&gt; checkin on projects</p>
+<p>-&gt; recap of museum roles</p>
+<p>-&gt; museum spaces</p>
+<p>-&gt; exhibition design</p>
+<p>-&gt; museum architecture and software architecture</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="0"><div></div></div></div><div class="page-group"><h3 class="page-name">project checkin</h3><div class="prep" concept="0"><p>-&gt; sasha &amp; steven (autopilot vs. visitors saving objects and communicating to tour guides)</p>
+<p>-&gt; yitian &amp; vince (ref. from google arts and culture: drafts and layers of paintings / instruct the users to flip the canvas to learn about the journey of the painting / folding of paintings / know about visitors&#39; habit by duration of stay</p>
+<p>-&gt; susanne &amp; anna (hf: scavenger hunt with rewards, interactive navigational symbols, HF face filters, 3D model display as invitation to gallery)</p>
+<p>-&gt; amalia &amp; arina (as much online presence as physical, prompt to open up QR code, find a balance/create a bridge)</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="0"><div></div></div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="the role(s) of the museum">the role(s) of the museum</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">the museum as preservation</h3><div class="prep" concept="1"><p>the first role of museums is to gather artefacts deemed interesting.</p>
+<p>-&gt; why was a particular artefact chosen over another?</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="1"><p>The first role of the museum is to <em>preserve</em>: that is, to archive and keep in ideal condition things that seem interesting to the collector. Reasons why an object might be deemed interesting can include: being part of a foreign culture, being part of a foreign time, being an unusual manifestation of a usually common object (e.g. cabinet of wonders).</p>
+<p>The act of choosing that object already makes it interesting, and changes the semantic (meaningful) load onto that object.</p>
+</div></div><div class="page-group"><h3 class="page-name">the museum as education</h3><div class="prep" concept="1"><p>by providing source material, museums then need to answer the question above: why, indeed, is this artefact relevant?</p>
+<p><strong>what kind of <em>absent facts</em> are being communicated through this object?</strong></p>
+<p>ways of answering include <strong>exposure</strong>, <strong>explanation</strong> and <strong>duplication</strong>. (both for amateurs and professionals)</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="1"><p>Once the artefact is chosen, and once it is shown to the public, the implicit question is &quot;<em>why</em>&quot;. The reason why is that those objects, by virtue of being &quot;originals&quot;, stand as powerful representations of a bigger concept (a culture, a time, a place, a style, etc.). As a curator or designer, what you should keep in mind are those <em>absent facts</em>, those things that the object stands in for.</p>
+<p>Because these absent facts aren&#39;t immediately available, they need to be communicated. This communication can happen either by having the public confronted with the object, and the object only (exposure); it can happen by providing material and individuals who will guide the interpretation of the public (explanation); it can happen by providing the public with copies of the object that they can make their own and appreciate in different environments and under different lights.</p>
+</div></div><div class="page-group"><h3 class="page-name">the museum as community</h3><div class="prep" concept="1"><p>however, museums are acknowledging that stories always have different sides to it, and are moving towards being more inclusive.</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="1"><p>The more recent developments of museum studies is a consequence of the rejection of the &quot;<em>monolithic narrative</em>&quot;. Because history is multi-faceted, and because the nation-states on which museums are related to are changing in terms of their demographics, museums are adapting to new publics. This includes new ways of including publics in its discourse (comments, workshops, conferences), and new ways of exhibiting those histories.</p>
+</div></div><div class="page-group"><h3 class="page-name">question</h3><div class="prep" concept="1"><p>what is the message you want to communicate in your use-case?</p>
+<p>and to whom?</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="1"><p>You <em>must</em> have a clear answer to this question (and to all of the other ones in this lecture) in your design document!</p>
+</div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="museum spaces">museum spaces</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">the role of architecture</h3><div class="prep" concept="2"><p>the history between museums and buildings traces ranges from the political (the Louvre), to the artistic (the Guggenheim) and the functional (the Tate Modern).</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="2"><p>In terms of architecture, museum buildings exist along a gradient between the <strong>political</strong>, the <strong>artistic</strong> and the <strong>functional</strong>.</p>
+<p>The political highlights the socailly representative nature of the building, and therefore of the museum. The Louvre, former royal palace opened up to the public after the revolution, is an example in one direction, while the Uffizi galleries in Florence represent the wealth and taste of the ruling Medici family.</p>
+<p>The artistic focuses on the building as a work of art in itself, usually designed by a leading architecture agency. The relationship is no longer to the objects, but to the new display of financial and cultural influence by states and companies. Examples of these include the Guggenheim in Abu Dhabi, the Louis Vuitton Foundation, or the Prada Foundation.</p>
+<p>Finally, the functional is the latest stage in museum architecture, in which the spatial organization is second not to political statement, not to artistic display, but to the presentation and communication of the museum itself as a pedagogical and research institutions. Such buildings include the Dia Foundation, the Massachussetts Museum of Contemporary Art, or the Centre Pompidou.</p>
+</div></div><div class="page-group"><h3 class="page-name">reflective space</h3><div class="prep" concept="2"><p><em>reflective space</em> is one in which the linear dimension of the museum space reflects the linear dimension of the knowledge delivery.</p>
+</div><div class="prep" concept="2"><img src="augmenting-the-gallery_assets/tatemodern.jpg" alt="tatemodern.jpg"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="2"><p>The first type of space that muesums exhibit are <em>reflective</em> spaces, in which the physical building reinforces the paradigm under which the museum operates. In most cases, such paradigms can be the linear development of time in art history, the grouping of formally similar artists together, and the separation by geographical boundaries.</p>
+<p>The picture here is from the Tate Gallery in London, and the perspective offered to you here hints at a &quot;<em>pearl necklace</em>&quot; layout, in which each small room is connected to the others by a single pathway in, and a single pathway out. The flow of the public is therefore heavily constrained, and implies a strict order in which to approach the collection.</p>
+</div></div><div class="page-group"><h3 class="page-name">descriptive space</h3><div class="prep" concept="2"><p>descriptive space is, on the opposite, multi-dimensional. it leaves agency to the visitor to compose their own path, and assemble their own perspectives.</p>
+</div><div class="prep" concept="2"><img src="augmenting-the-gallery_assets/diabeacon.jpg" alt="diabeacon.jpg"></div><div class="prep" concept="2"><img src="augmenting-the-gallery_assets/nationalgalerie.png" alt="nationalgalerie.png"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="2"><p>As a counterpoint to linear space, <em>descriptive</em> space is a space in which the objects of display are laid out such that they can be approached from different perspectives, and in different orders.</p>
+<p>The itinirerary of the visitor is in this case a little less pre-determined, and the appreciation of the objects can be made on the visitor&#39;s own terms. However, studies have shown that such a descriptive approach has led to visitors spending less time per object, but viewing more objects altogether when compared with visits within <em>reflective</em> spaces.</p>
+<p>The top picture is from Dia:beacon in upstate NY, and the bottom one is the Neue Nationalgalerie in Berlin. Both of these spaces contrast with spaces like the Tate, above, in that they immediately suggest multiple paths to explore the collection.</p>
+</div></div><div class="page-group"><h3 class="page-name">social space</h3><div class="prep" concept="2"><p>along with being <em>informational</em>, spaces are also <em>social</em>. there are points of encounter where the focus isn&#39;t getting to know something else, but getting to know someone else.</p>
+</div><div class="prep" concept="2"><img src="augmenting-the-gallery_assets/hkw_atrium.jpg" alt="hkw_atrium.jpg"></div><div class="prep" concept="2"><img src="augmenting-the-gallery_assets/courmarly.jpg" alt="courmarly.jpg"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="2"><p>Finally, the latest developments in museum studies have shifted the focus on the development of <strong>social spaces</strong>. The museum hall, courtyard or park then becomes a deliberate social hub, in which communities meet each other, rather than exclusively interacting with inanimate objects.</p>
+<p>These two pictures illustrate some of these spaces. The first is the atrium of the Haus der Kulturen der Welt in Berlin, a neutral space which can be re-purposed as a welcoming grounds for different sorts of events and exhibitions. The second is the Cour Marly at the Louvre, taking advantadge of the existing architecture to become a movement hub, with visitors being exposed to each other more with greater intensity than in individual galleries.</p>
+</div></div><div class="page-group"><h3 class="page-name">question</h3><div class="prep" concept="2"><p>where is your object located? is it in a more social space? or in a more informational space?</p>
+<p>should you assume the visitors are alone, or surrounded by crowds?</p>
+<p>has the visitor followed a specific path up until that object, or was it a free-association?</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="2"><div></div></div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="exhibition design">exhibition design</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">the display as additional space</h3><div class="prep" concept="3"><p>by laying out objects in space, we create a different kind of architecture, called <em>scenography</em>.</p>
+<p>it&#39;s the craft of translating the <em>why</em> of museology* into the <em>how</em> of the exhibition.</p>
+<p>it involves spacing, hanging, lighting and delimiting.</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="3"><p>While buildings themselves create a spatial influence, another influence is <strong>the layout of objects within that space</strong>. We&#39;ll see how those are affected by the <em>groupings</em> of objects, their <em>spacing</em> and the relationship of those objects with the building itself.</p>
+</div></div><div class="page-group"><h3 class="page-name">the compound meaning of objects</h3><div class="prep" concept="3"><p>assembling objects together gives them an additional layer of meaning.</p>
+</div><div class="prep" concept="3"><img src="augmenting-the-gallery_assets/kuleshov_graphic.jpg" alt="kuleshov_graphic.jpg"></div><div class="prep" concept="3"><p>we can group objects according to:</p>
+<ul>
+<li>author</li>
+<li>era</li>
+<li>subject</li>
+<li>materials</li>
+<li>influences</li>
+<li>color</li>
+<li>size</li>
+<li>style</li>
+<li>owners/collectors</li>
+<li>geographic location</li>
+<li>commission / self-made</li>
+<li>alone / with help</li>
+<li>whether the artist went to art school</li>
+<li>...</li>
+</ul>
+<p>and each of these will tell a different story.</p>
+</div><div class="prep" concept="3"><img src="augmenting-the-gallery_assets/fabiola.jpg" alt="fabiola.jpg"></div><div class="prep" concept="3"><p>fabiola exhibition at the national portrait gallery</p>
+</div><div class="prep" concept="3"><img src="augmenting-the-gallery_assets/monalisa.jpg" alt="monalisa.jpg"></div><div class="prep" concept="3"><p>the source of 37% of france&#39;s annual GDP</p>
+</div><div class="prep" concept="3"><img src="augmenting-the-gallery_assets/art-of-this-century.jpg" alt="art-of-this-century.jpg"></div><div class="prep" concept="3"><p>frederick kiesler for peggy guggenheim</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="3"><p>Grouping objects together gives them a different dimension, by the sheer effect of <strong>juxtaposition</strong>; not unlike a charade, multiple objects together form a sort of a charade that needs to be solved by the visitor (that charade might be more or less hard to solve).</p>
+<p>In terms of spacing, the breathing room left around these objects, and the way they are hung tell us a lot about their status. The first example is the fabiola exhibition at the national portrait gallery, focusing on the subtle differences as markers of identity and unicity within a greater, homogeneous culture.</p>
+<p>The second example is the Mona Lisa at the Louvre. The altar-like structure and the separation from both the audience and the rest of the collection is a testimony to the god-like status of the piece within the museum and tourism industry.</p>
+<p>The last example is an exhibition designed by a De Stijl member, Frederick Kiesler, who focuses on the removal of the limits between works and public, and lets the canvases hang, within reach of the visitors&#39; hands.</p>
+</div></div><div class="page-group"><h3 class="page-name">design vs. display</h3><div class="prep" concept="3"><p>exhibition <em>design</em> starts from the space, and fills it with objects.</p>
+<p>exhibition <em>display</em> starts with objects, and arranges the space to present them in the best possible light.</p>
+<p>the highlight is either on the building, or on the collection.</p>
+</div><div class="prep" concept="3"><img src="augmenting-the-gallery_assets/moholy-nagy-install-exh_ph025.jpg" alt="moholy-nagy-install-exh_ph025.jpg"></div><div class="prep" concept="3"><p>laszlo moholy-nagy at the guggenheim in nyc</p>
+</div><div class="prep" concept="3"><img src="augmenting-the-gallery_assets/turrell.jpg" alt="turrell.jpg"></div><div class="prep" concept="3"><p>james turrell at the guggenheim nyc</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="3"><p>Finally, it is important to keep in mind the relationship between the building and the object: which one is supposed to highlight the other? Or do they just exist in separate worlds?</p>
+<p>Your margin of action is greater if the building is leaving some room to the object, and to the object display, rather than if you had to respect the strict physical limitations imposed by the building. Furthermore, the &#39;status&#39; of the building, such as made by a <em>starchitect</em>, can strongly influence the reason for the visit in the first place.</p>
+</div></div><div class="page-group"><h3 class="page-name">questions</h3><div class="prep" concept="3"><p>what kind of space is your object placed in?</p>
+<p>is it more <em>informational</em> or more <em>social</em>?</p>
+<p>is the emphasis more on the building around it, on itself, or on the surrounding objects?</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="3"><div></div></div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="populated spaces">populated spaces</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">visitor flows</h3><div class="prep" concept="4"><p>the architecture of the museum provides one of three contexts:</p>
+<ul>
+<li>physical context (embodied location)</li>
+<li>personal context (work that is previously seen)</li>
+<li>social context (social groups)</li>
+</ul>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="4"><p><strong>Physical</strong> context is the precise location of the visitor&#39;s body as they occupy the museum space. Where are they standing? What are they seeing? What are they hearing? Given those inputs, what kind of impressions can they get of the museum (e.g. welcoming, imposing, playful, cold, etc.)</p>
+<p>The <strong>personal</strong> context is both long-term (cultural background, financial background, etc.) and short-term (did they just spend 4 hours in that particular museum, or did they just arrive? how often do they come to museums?)</p>
+<p>The <strong>social</strong> context is the group (or lack of group) that they are visitors are with. Small social circle of friends? Tourist group? Private tour?</p>
+</div></div><div class="page-group"><h3 class="page-name">ways of visiting</h3><div class="prep" concept="4"><ul>
+<li>directed (following written directions)</li>
+<li>ceremonial (following someone)</li>
+<li>collective (following a group)</li>
+<li>constructed (following oneself)</li>
+</ul>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="4"><p>Each of these ways of visiting will affect:</p>
+<ul>
+<li>the <em>focus</em> of the visitor</li>
+<li>the <em>time</em> spent on the app</li>
+<li>the desired <em>information/interaction</em> to get out of the app</li>
+<li>the means of <em>sharing</em> results and take-aways from the app</li>
+</ul>
+</div></div><div class="page-group"><h3 class="page-name">the eye of the visitor</h3><div class="prep" concept="4"><p>architecture and scenography only make sense once they&#39;re <em>occupied</em>. in the museum, this occuption happens through the <em>gaze</em>.</p>
+<p>seeing:</p>
+<ul>
+<li>only one object</li>
+<li>multiple objects</li>
+<li>multiple people</li>
+</ul>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="4"><p>Because AR is essentially an <em>extended eye</em>, designers need to put themselves into the perspective of their users, and need to picture what they see, because the field of vision of the user is already a narrative composition, which the designer could work <em>with</em> (additional paintings related to the one looked at who could be mentioned in the application), or <em>against</em> (being aware that other visitors might cross lines of sight in a crowded social area).</p>
+</div></div><div class="page-group"><h3 class="page-name">questions</h3><div class="prep" concept="4"><p>in which company will your visitor be? alone? with a group? with a tour?</p>
+<p>what can they see, as they look around your object? what <em>could</em> they see?</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="4"><div></div></div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="soft/hard architectures">soft/hard architectures</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">what is architecture?</h3><div class="prep" concept="5"><p>&quot;<em>Architecture is the fundamental organization of a system embodied in its <strong>components</strong>, their <strong>relationships</strong> to each other, and to the environment, and the <strong>principles</strong> guiding its design and evolution.</em>&quot; - <a target='_blank' href="https://web.mit.edu/richh/www/writings/ieee1471-and-SysEng-(draft).pdf">IEEE 1471</a></p>
+<p>there are as many differences between buildings and software as their are similarities.</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="5"><p>This definition could apply both to physical and virtual architectures. We&#39;ll see in this section that architecture is a useful way to think of the environment in which our message is delivered. How do components and relations highlight an overarching principle? The <em>organization of the environment</em>, whether built or informational, is the common point here.</p>
+</div></div><div class="page-group"><h3 class="page-name">buildings as states and flows</h3><div class="prep" concept="5"><p>architecture can be envisioned both as concrete <strong>states</strong> (walls, roofs, bricks, etc.), but also as <strong>flows</strong> and possibilities (walkways, platforms, mezzanines, etc.)</p>
+</div><div class="prep" concept="5"><img src="augmenting-the-gallery_assets/museum_plan.jpg" alt="museum_plan.jpg"></div><div class="prep" concept="5"><p>floorplan for the canada museum of nature</p>
+</div><div class="prep" concept="5"><img src="augmenting-the-gallery_assets/museum_diagram.jpg" alt="museum_diagram.jpg"></div><div class="prep" concept="5"><p>diagram of the same museum</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="5"><p>The first image represents the floorplan of the <em>Canada Museum of Nature</em>, and it is unclear what spaces mean besides their immediate functionality (stairs, bathrooms). From looking at this only, one cannot tell which room is the most attractive, where do visitors spend most of their time, what is the gauge capacity (max. people in a room) and what are the connections between each room.</p>
+<p>The second image represents the same museum, but in terms of user flows. The spaces are represented both by their practical function, but also by their roles. They are connected to one another and help us form a mental map of the possibilities offered to each visitors to craft their relatively personal tour.</p>
+</div></div><div class="page-group"><h3 class="page-name">software as states and flows</h3><div class="prep" concept="5"><p>similarly, software can be approached by from the <em>hard</em> aspect, or the <em>soft</em> aspect.</p>
+</div><div class="prep" concept="5"><img src="augmenting-the-gallery_assets/software_architecture.png" alt="software_architecture.png"></div><div class="prep" concept="5"><p>software architecture focused on the state of the machine</p>
+</div><div class="prep" concept="5"><img src="augmenting-the-gallery_assets/User-Flow-Diagram2.png" alt="User-Flow-Diagram2.png"></div><div class="prep" concept="5"><p>software architecture focused on the flow of the human</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="5"><p>Similarly, software architecture can denote very dry technical diagrams (such as the first image) or rather represent an application in terms of possibilities of navigation offered to the user. During the development of your app, you should focus rather on the second approach: what matters is <em>what can the user see and do</em>.</p>
+</div></div><div class="page-group"><h3 class="page-name">similarities</h3><div class="prep" concept="5"><p>-&gt; components</p>
+<p>in buildings, components can be <em>rooms</em> or <em>plazas</em>. in software, they&#39;re <em>scenes</em>, or <em>views</em>.</p>
+<p>-&gt; relations</p>
+<p>in buildings, relations can be <em>lines of sight</em>, <em>hallways</em>, or <em>doors</em>. in software, they&#39;re <em>hyperlinks</em>, or <em>buttons</em>.</p>
+<p>-&gt; principle</p>
+<p>in buildings, principles can be <em>linear</em>, <em>grid-like</em> or <em>radial</em>. in software, they&#39;re <em>single-page applications</em>, <em>endless scroll</em>, <em>gyroscope-based</em>.</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="5"><p>Unity Scenes are the building blocks of your app, and they should be as necessary and as meaningful as a real, brick and mortar room. Each room should have a clear purpose, while leaving some room (no pun intended) to the user to possibly explore the content wihtin that room at their own pace.</p>
+<p>In terms of <em>relations</em>, links and buttons do not quite match with hallways, doors and thresholds, because one cannot naturally &quot;see&quot; where the button leads to. Digital design principles such as preview, peek, new-tab are ways that digital designers have tried to develop to counter this inherent limitation of visibility.</p>
+</div></div><div class="page-group"><h3 class="page-name">difference</h3><div class="prep" concept="5"><p>in software, there is movement, but there is no space. the visitor is <em>on</em> a page, not <em>in</em> a page.</p>
+<p>as such, there should always be a call to <strong>action</strong> and/or to <strong>reaction</strong>.</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="5"><div></div></div></div><div class="page-group"><h3 class="page-name">questions</h3><div class="prep" concept="5"><p>if your app were a building, what would it look like?</p>
+<p>linear rooms, clear but perhaps boring, or one large open space, social but maybe overwhelming?</p>
+<p>if you were to draw all the possible screens on your app? how do you connect them to one another? how much freedom, and how much constrain do you afford?</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="5"></div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="unity">unity</h3><div class="page-group"><h3 class="page-name">image anchors</h3><div class="prep" concept="6"><p>adding AR Reference libraries to detect images</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="6"></div></div><div class="page-group"><h3 class="page-name">changing scenes</h3><div class="prep" concept="6"><p>-&gt; using scene management</p>
+<p>-&gt; loading scenes by name or number in the build settings</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="6"></div></div><div class="page-group"><h3 class="page-name">wireframing and adobe XD</h3><div class="prep" concept="6"><p><a target='_blank' href="https://www.youtube.com/watch?v=ocPdSaCSrBk&amp;list=PLyQtZRmg0ogeK2CitMK4fiQa8228_rxiV">tutorial</a></p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="6"></div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="outro">outro</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">recap</h3><div class="prep" concept="7"><p>-&gt; museum spaces can influence its content, by being <em>informational</em>, <em>descriptive</em> and/or <em>social</em>.</p>
+<p>-&gt; objects receive additional meaning through their inter-organization, and through their relationship with the space itself.</p>
+<p>-&gt; visitors can apprehend spaces differently, depending on <em>who</em> they are with and <em>what</em> they are seeing.</p>
+<p>-&gt; the lens of architecture is a useful one when thinking about software design.</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="7"><div></div></div></div><div class="page-group"><h3 class="page-name">homework</h3><div class="prep" concept="7"><p>for thursday:</p>
+<p>-&gt; download <a target='_blank' href="https://www.adobe.com/products/xd.html#">adobe xd</a></p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="7"></div></div></div><br><div class="break-after" style="page-break-after:always;"></div></body></html>
