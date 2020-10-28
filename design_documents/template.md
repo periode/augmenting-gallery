@@ -44,7 +44,7 @@ How does the audience start your application? How does it end? What are the diff
 
 - Describe **the interface** of your project.
 
-How does the audience member interact with your project? How does the interface of your project allows her to understand what is going on and how to manipulate the state of the world? You should include sketches/wireframes of what the different interface elements should look like (e.g. potential titles, buttons, sliders, knobs, text inputs, etc). Include some
+How does the audience member interact with your project? How does the interface of your project allows her to understand what is going on and how to manipulate the state of the world? You should include sketches/wireframes of what the different interface elements should look like (e.g. potential titles, buttons, sliders, knobs, text inputs, etc), either hand-drawn and scanned, or using Adobe XD (exporting them as PNG or PDF, which you would submit separately from this document).
 
 - Describe **the media assets** of your project.
 
