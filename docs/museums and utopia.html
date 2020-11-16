@@ -1,0 +1,389 @@
+<!DOCTYPE html><html><head><meta charset="utf8"><title>augmenting-the-gallery | museums and utopia</title><style>body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Inter UI', Trebuchet MS;
+	background-color: white;
+}
+
+header {
+	background-color: black;
+	color: white;
+  padding: 10px;
+	overflow: auto;
+}
+
+header h1{
+	display: inline-block;
+	margin-left: 5%;
+	margin-right: 5%;
+	width: 40%;
+	font-size: 2.5em;
+}
+
+@media print{
+	header h1{
+		font-size: 1em;
+	}
+}
+
+.subject-name{
+	float: right;
+	text-align: right;
+}
+
+.topic-name{
+	float: left;
+	text-align: left;
+}
+
+a {
+	text-decoration: none;
+  color: #e77607;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:visited {
+  color: #b25900;
+}
+
+header a{
+	color: white;
+	text-decoration: none;
+	border: 2px solid white;
+	padding: 3px;
+}
+
+main{
+	position: absolute;
+	margin-left: 10%;
+	width: 80%;
+	display: block;
+}
+
+@media print{
+	main{
+		margin-left: 5%;
+		width: 90%;
+	}
+}
+
+hr {
+	border: none;
+	height: 2px;
+	background-color: black;
+	float: left;
+	width: 100%;
+}
+
+img {
+	max-height: 300px;
+	max-width: 90%;
+}
+
+.concept-group{
+	width: 80%;
+	margin-left: 10%;
+	display: block;
+	float: left;
+}
+
+.concept-nav{
+	width: 30%;
+	float: right;
+	margin-right: 10%;
+}
+
+.overview-holder{
+	float: left;
+	width: 38%;
+	margin-left: 10%;
+}
+
+@media print{
+	.concept-group, .concept-nav{
+		width: 90%;
+		margin-left: 5%;
+	}
+}
+
+.concept-name {
+	width: 98%;
+	text-align: right;
+	float: right;
+	color: black;
+	border-bottom: 2px solid black;
+	padding: 1%;
+	font-size: 2em;
+}
+
+.break-before, .break-after{
+	display: block;
+	width: 100%;
+	height: 5px;
+	float: left;
+}
+
+.break-after{
+	page-break-after: always;
+}
+
+.page-group{
+	position: relative;
+	font-size: 1.2em;
+	width: 50%;
+	float: left;
+}
+
+@media print{
+
+	.page-group{
+		width: 70%;
+		page-break-inside: avoid;
+	}
+
+	.prep{
+		font-size: 0.8em;
+	}
+}
+
+.page-name{
+	width: 100%;
+	float: left;
+}
+
+.note-group{
+	position: relative;
+	width: 50%;
+	float: left;
+	overflow: auto;
+	text-align: left;
+}
+
+@media print{
+	.note-group{
+		width: 30%;
+	}
+}
+
+.note {
+	position: relative;
+	margin-bottom: 10px;
+	width: 100%;
+	overflow: auto;
+	white-space: pre;
+}
+
+@media print {
+	.note{
+		white-space: normal;
+	}
+}
+
+.writeup-group{
+	width: 100%;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	float: left;
+}
+
+@media print{
+	.writeup-group{
+		break-inside: avoid;
+		font-size: 0.9em;
+	}
+}
+
+.context{
+	white-space: pre-line;
+	border: 2px solid black;
+	width: 45%;
+	padding: 5px;
+	float: right;
+}
+
+@media print{
+	.context{
+		width: 100%
+	}
+}
+
+.writeup{
+	width: 100%;
+	float: left;
+	margin-bottom: 10px;
+	font-style: italic;
+	white-space: pre-line;
+}
+
+.web-only{
+	display: inherit;
+}
+
+.print-only{
+	display: none;
+}
+
+@media print{
+	* {
+		float: none !important;
+	}
+
+	.break-before{
+		page-break-before: always !important;
+	}
+
+	.break-after{
+		page-break-after: always !important;
+	}
+
+	.web-only{
+		display: none;
+	}
+
+	.print-only{
+		display: inline-block;
+	}
+}
+</style></head><body><header><h1 class="topic-name">museums and utopia</h1><h1 class="subject-name"><a href="index.html">augmenting-the-gallery</a></h1></header><div class="overview-holder"><h1>overview</h1><p>This week, we will focus on two separate components. First, we will discuss how museums, like art, can suggest new and better worlds to live in, particularly through practices like artistic research or speculative design.
+Second, we will look at some of the best practices in development which you will be able to apply to your projects as you work on them for the rest of the semester.</p>
+</div><div class="concept-nav"><h1>summary</h1><ul><a class="web-only" href="#intro">intro</a><li class="print-only">intro</li></ul><ul><a class="web-only" href="#museums and utopia">museums and utopia</a><li class="print-only">museums and utopia</li></ul><ul><a class="web-only" href="#augmented exercises">augmented exercises</a><li class="print-only">augmented exercises</li></ul><ul><a class="web-only" href="#development processes">development processes</a><li class="print-only">development processes</li></ul><ul><a class="web-only" href="#retroplannings">retroplannings</a><li class="print-only">retroplannings</li></ul><ul><a class="web-only" href="#outro">outro</a><li class="print-only">outro</li></ul><br></div><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="intro">intro</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">museums and utopia</h3><div class="prep" concept="0"><p>welcome!</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="0"></div></div><div class="page-group"><h3 class="page-name">plan for today</h3><div class="prep" concept="0"><p>-&gt; group checkin</p>
+<p>-&gt; museums and utopia</p>
+<p>-&gt; development practices</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="0"><div></div></div></div><div class="page-group"><h3 class="page-name">group checkin</h3><div class="prep" concept="0"><p>-&gt; HF: <del>how do you include reviews?</del> focus on the &quot;at home experience&quot;, UI and UX, working together with Unity Collab</p>
+<p>-&gt; gemäldegalerie 1: technical implementations? -&gt; swiping / ux - ui</p>
+<p>-&gt; gemäldegalerie 2: questionnaires? orientation? -&gt; developing the questionnaire</p>
+<p>-&gt; house of abelam: new project direction? -&gt; sacavenger hunt (search for shaded objects, creates a bigger object at the end)</p>
+</div><div class="prep" concept="0"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="0"></div></div><div class="page-group"><h3 class="page-name">question</h3><div class="prep" concept="0"><p>what is a utopia?</p>
+<p>how are museums utopia?</p>
+<hr>
+<p>only specific museums are utopias</p>
+<p>if they don&#39;t provide too much information, you start thinking more about them</p>
+<p>less information = more utopia? sometimes...</p>
+</div><div class="prep" concept="0"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="0"></div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="museums and utopia">museums and utopia</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">what is a utopia?</h3><div class="prep" concept="1"><p>a place that doesn&#39;t exist (for better or for worse)</p>
+<p>thomas moore, 16th century</p>
+</div><div class="prep" concept="1"><img src="augmenting-the-gallery_assets/utopia.jpg" alt="utopia.jpg"></div><div class="prep" concept="1"><p>modern utopias:</p>
+<ul>
+<li>soviet union (das Kapital)</li>
+<li>festivals (burning man)</li>
+<li>silicon valley (neuromancer)</li>
+</ul>
+</div><div class="prep" concept="1"><p><strong>world versions</strong></p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="1"><p>Utopias have been around ever since humankind existed, manifested in places such as the different versions of Paradise, Eden, El Dorado, Shangri-La, etc. The modern undersanding of Utopia comes from Thomas Moore&#39;s book called, well, <em>Utopia</em>.</p>
+<p>The point of the utopia is that it is not achievable per se, but it is a goal that can be set for humans to pursue. Furthermore, utopias aren&#39;t inherently absolutely good or bad. They are good or bad in relation to a particular ideal or paradigm. You can have hippie utopias, communist utopias, fascist utopias, religious utopias, etc. The point of the utopia is that they can <strong>help us project ourselves into a future we would like to see manifest</strong>.</p>
+</div></div><div class="page-group"><h3 class="page-name">how do museums imagine worlds?</h3><div class="prep" concept="1"><p>museums already create worlds, through different means, and can be evaluated by their <strong>usefulness</strong>, <strong>plausibility</strong> and <strong>coherence</strong>.</p>
+<p><em>ways of worldmaking</em></p>
+<p>plausible: does it make sense given the things i already know?</p>
+<p>useful: how does it help me navigate and understand the world better?</p>
+<p>coherence: between the elements of the presented world.</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="1"><p>different ways of making worlds:</p>
+<ul>
+<li>decomposition/recomposition : we divide worlds into subworlds, analayze their features, and re-connect them.</li>
+<li>weighting: we compare separate worlds, with some aspects of one world being more useful for one version (e.g. who are the people making it) than for another (e.g.. what is the theory behind making it)</li>
+<li>ordering: as seen with miller and bourdieu, the categories are themselves generative: they co-create what they categorize.</li>
+<li>deletion/supplementation: some things we don&#39;t need, some additional things we do need, and we do so in order to strengthen our point</li>
+<li>reformation: we shape the overall appearance and surface of those worlds in one way or another</li>
+</ul>
+</div></div><div class="page-group"><h3 class="page-name">cultural heritage</h3><div class="prep" concept="1"><p>to what extent is cultural heritage turned towards the future?</p>
+</div><div class="prep" concept="1"><img src="augmenting-the-gallery_assets/margaret_hamilton.jpg" alt="margaret_hamilton.jpg"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="1"><p>How does one respect the past while at the same time updating it? Through interpretation of <em>the intent</em> rather than <em>the fact</em>. Cultural heritage isn&#39;t only &quot;nostalgic preservation of the past&quot; or (overly) relying on tradition to think of the future. We can actually think about cultural heritage as <em>the political reactivation of untimely and non-synchronous survivals of past cultures</em>.</p>
+<p>This means that there isn&#39;t actually just one cultural heritage but, as we&#39;ve seen, there are multiple communities of people. Those communities each have their own heritage, which might have been suppressed at some time in history.</p>
+</div></div><div class="page-group"><h3 class="page-name">artistic research</h3><div class="prep" concept="1"><p>one way that art creates possibilities is through exploration of possibilities, based on pre-existing conditions (<em>what if</em>?)</p>
+<p>the museum is an art-object:</p>
+<ul>
+<li>space between museum objects</li>
+<li>what is there/what is not there: gaps to fill</li>
+<li>museums are concrete, but offer unexpected, personal situations</li>
+</ul>
+<p><em>psychogeography</em> - surrealists, <em>dérive</em></p>
+</div><div class="prep" concept="1"><img src="augmenting-the-gallery_assets/namjunepaik-research.jpg" alt="namjunepaik-research.jpg"></div><div class="prep" concept="1"><img src="augmenting-the-gallery_assets/missingdatasets.jpg" alt="missingdatasets.jpg"></div><div class="prep" concept="1"><p>mimi onuoha, missing datasets</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="1"><p>The artistic process itself requires some research: you need to know where you come from, what questions you want to ask, to whom, and which answers you might expect to get. To a certain extent, when artists develop a work of art, they do have to do research. The difference is in the restitution of this research: rather than rationally cognitized (as in books, papers, etc.), it is felt, emotionally received.</p>
+<p>As with all research, it is the curiosity that drives the intent: why are things this way? could things be different if we were to change our perception of it? The paradigms shift that we see in science (newtonian revolution, etc.) are not actually limited to science. By developing ideas, we can change these ideas.</p>
+<p>The role of museums can then be to show not only the result, but also the process (the same way that academic papers don&#39;t limit their contribution to just publishing the conclusion, but also the methodology and results).</p>
+<p>Further reading <a target='_blank' href="https://www.jar-online.net/what-artistic-research">here</a>.</p>
+<p>The picture here is a copy from a letter of the media artist <a target='_blank' href="https://gagosian.com/quarterly/2019/10/30/essay-reading-nam-june-paik/">Nam June Paik</a>, showing the questions that he asked himself about the art-making process (<em>what is art? is it the moon? or the finger pointing at the moon?</em>) and his medium of choice (<em>ultimate goal of video revolution is the establishment of space to space [...] how to achieve this goal?</em>)</p>
+</div></div><div class="page-group"><h3 class="page-name">speculative design</h3><div class="prep" concept="1"><p>another way is by presenting specific instances of objects that would be in use in this alternative world.</p>
+<p>rabby and dunne</p>
+</div><div class="prep" concept="1"><img src="augmenting-the-gallery_assets/spymaker-0.jpg" alt="spymaker-0.jpg"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="1"><p>As a part of design, and therefore neither exclusively artistic, or exclusively engineering, speculative design looks at current and past trends to propose concrete solutions which we as a society might or might not need. These objects, displayed in museums, have something to say about the future through being in the present.</p>
+<p>This particular piece is called the Spymaker, by Dunne and Raby, a UK-based design studio which is known for developing speculative design objects. Here, the mask for a dog blanks out sight, hearing and smell, and connects the smell-sensing part of the dog&#39;s brain to an antenna which senses electro-magnetic waves. Effectively, this allows the dog to guide humans towards places with less EM waves and therefore escape digital surveillance.</p>
+</div></div><div class="page-group"><h3 class="page-name">examples</h3><div class="prep" concept="1"><p>museums can highlight the processes of the making of a work - <a target='_blank' href="https://www.hkw.de/en/programm/projekte/2018/humanity_at_work/humanity_at_work_start.php">hkw - humanity at work</a></p>
+<p>museums can arrange artworks to suggest alternate realities - <a target='_blank' href="https://www.chassenature.org/en/atlas-dune-cosmogonie/">musée de la chasse - atlas of a cosmogony</a></p>
+<p>museums can re-activate cultural heritage and project it into the future - <a target='_blank' href="https://www.brooklynmuseum.org/exhibitions/rise_of_sneaker_culture/">brooklyn  museum - rise of sneaker culture</a></p>
+</div><div class="prep" concept="1"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="1"><p>Humanity at work is a good example of displaying the process of the artist(s) at the same time as the final piece. this highlights the thought paradigms of the makers during the creation process, and allows the audience to ask themselves similar questions.</p>
+<p>Atlas of a cosmogony is an example of how contemporary artworks can enter in a dialogue with a much older culture (here, the culture of hunting and fishing), and inform it in new ways, asking questions about our own animality and the animality of other life-forms.</p>
+<p>Finally, the rise of sneaker culture is a more classical case of highlighting a specific cultural phenomenon (sneakers) and re-imagining the world around it, as an identity marker.</p>
+</div></div><div class="page-group"><h3 class="page-name">practices in digital media</h3><div class="prep" concept="1"><p>how can AR help with these kinds of expositions/communications?</p>
+</div><div class="prep" concept="1"><p>-&gt; you can provide additional paratexts/metadata about the <strong>artistic process</strong>.</p>
+<p>-&gt; you can suggest parallel histories simply by purposefully omitting some things and highlighting others.</p>
+<p>-&gt; you can tell a story from (a) different perspective(s) (e.g. from the art historian to the painting&#39;s subject)</p>
+</div><div class="prep" concept="1"><p>exhibit curated by wes anderson in vienna: very broad in scope, representations of children in media, everything made of green velvet</p>
+<p>miniature version of the world made in lego, focused on architecture and static</p>
+<p>legos and scale, from the small to the 1:1 vs. legos in the building process?</p>
+<p>unfinished at the met breuer</p>
+</div><div class="prep" concept="1"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="1"><p>What kind of parallel history can you suggest? in which the dominated is dominating? in which the unusual is banal? in which the visible is made invisible?</p>
+<p>An example of re-investing classical historical forms with alternative narratives is <a target='_blank' href="https://en.wikipedia.org/wiki/The_Dinner_Party">the dinner party</a>, which takes the iconography of the banquet/last supper and replaces the participants with icons of feminism.</p>
+</div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="augmented exercises">augmented exercises</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">hidden life of a (virtual) object</h3><div class="prep" concept="2"><p>what did you try to communicate?</p>
+<p>how?</p>
+</div><div class="prep" concept="2"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="2"></div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="development processes">development processes</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">practices for getting a project done</h3><div class="prep" concept="3"><p>practices in developing software (and any project, really):</p>
+<ul>
+<li>planning</li>
+<li>collaborating</li>
+<li>user-testing</li>
+<li>writing documentation</li>
+</ul>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="3"><div>Here are some of the easy steps you can implement to facilitate development, from the organization of code to the establishment of a clear time-table and the continuous testing of your project.</div></div></div><div class="page-group"><h3 class="page-name">planning</h3><div class="prep" concept="3"><p>two means of planning:</p>
+<ul>
+<li>long term, with retroplanning</li>
+<li>short term, with agile development</li>
+</ul>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="3"><p>Retroplanning means starting from the end. When do you have to deliver your project? Working from that deadline, you allocate time to complete each step of the project (starting from delivery -&gt; testing -&gt;merging -&gt; additional features development -&gt; assets integration -&gt; core feature development -&gt; etc.). This prevents you from being surprised by a deadline.</p>
+<p>Github offers the <a target='_blank' href="https://help.github.com/en/github/managing-your-work-on-github/about-task-lists">tasks</a> view in any repository, as well as <a target='_blank' href="https://trello.com/b/6otslC4i/template-board-agile-with-trello">Trello</a>. The most important categories/columns that you need are:</p>
+<ul>
+<li>Backlog (this is where all the tasks you need to do go)</li>
+<li>To do (this is where the tasks you plan to do this week go)</li>
+<li>Doing (this is where the items you are currently working on goes)</li>
+<li>Done (this is where what you have finished goes)</li>
+</ul>
+</div></div><div class="page-group"><h3 class="page-name">integrating parts</h3><div class="prep" concept="3"><p>in addition to using unity collab or github:</p>
+<ul>
+<li>make sure everyone knows which part of the project they&#39;re working on (and not overwrite your groupmates&#39; work) -&gt; each works on a separate scene</li>
+<li>make sure everyone is always working with the  latest version</li>
+<li><strong>merging parts together takes time</strong></li>
+</ul>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="3"><p>by using version control systems, you can take a lot off the load of manually merging changes together. however, it&#39;s still important to clearly delimitate who works on what (which script, which scene, which prefab, etc.), and to make sure that <strong>everyone always works on the latest version</strong>! This means checking Unity Collab as soon as you open Unity. If you work on a version that is not the latest, there be troubles...</p>
+<p>finally, you might want to divide up the work in clear, separate parts. more often than not, this is helpful for the duration of development, and then comes back to bite you when you need to put all the parts together. you then have two solutions: allocate some time at the end of the project to do it or do it gradually (at the end of each sprint).</p>
+</div></div><div class="page-group"><h3 class="page-name">unity collab</h3><div class="prep" concept="3"><p>full tutorial on the <a target='_blank' href="https://github.com/periode/augmenting-gallery/wiki/Collaborating-with-Unity">class wiki</a></p>
+</div><div class="prep" concept="3"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="3"></div></div><div class="page-group"><h3 class="page-name">user-testing</h3><div class="prep" concept="3"><p>user-testing is the secret to any successful project. until they reach the user, your design decisions are only assumptions.</p>
+<p>user-testing is about <strong>observing</strong> and <strong>listening</strong>.</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="3"><p>while it might seem a little complicated to do it remotely, you can still user-test by using <em>interactive prototypes</em> (such as adobe XD), and sending it to friends and classmates.</p>
+<p>once they interact with it, your goal is to know what is the intuition that they are having as they navigate your app, and whether that intuition matches what you would like your users to do. in order to have access to that train of thought, you should be closely <em>observing</em> what they are doing (where do they click, how long do they hesitate, etc.) and <em>listening</em> (particularly by asking them to think out loud as they interact with your prototypes; any stream of consciousness is useful.</p>
+<p>finally, make sure that you are <strong>taking notes</strong>: it will make your tester feel like her opinion is valued, and will allow you to have concrete material when you circle back with your team and assess what aspects of the prototype worked and what didn&#39;t.</p>
+</div></div><div class="page-group"><h3 class="page-name">documentation</h3><div class="prep" concept="3"><p>writing documentation helps you and your team understand what is going on. it includes:</p>
+<ul>
+<li>folder structure</li>
+<li>naming conventions for media assets</li>
+<li>comments in code for each functions/variables (what the code does -&gt; why it does it)</li>
+<li>written description of what the software does at each step</li>
+</ul>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="3"><p>by order of easiness, these are the different steps that can help your workflow by keeping things clean, organized and meaningul.</p>
+<p>folder structure means that files go in the corresponding folders. for instance, <code>Assets/Scripts/Scene 1/RaycastManager.cs</code> or <code>Assets/Sprites/Main Scene/UI</code>. This way, you know at all times what is supposed to go where and prevent unnecessary confusion for you and your teammates.</p>
+<p>naming convention means that each file should be named according to the same pattern. this pattern will help you identify in which case should one be using a particular file, and what is the latest file to be used (e.g. <code>TYPE_FUNCTION_LOCATION_VERSION.FORMAT</code> -&gt; <code>Button_OK_StartScene_2.png</code>)</p>
+<p>comments in code are a little harder to maintain, but helps a lot for you and your groupmates when it comes to editing someone else&#39;s code. the trick here is not only to describe the <em>what</em> of the code (e.g. <code>//--here we loop over an array</code>) but also the <em>why</em> (e.g. <code>//--we loop over an array because we&#39;re looking for the matching selected artwork</code>), which give you a bigger picture and a better understanding of how the code is supposed to behave.</p>
+</div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="retroplannings">retroplannings</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">checkin with groups</h3><div class="prep" concept="4"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="4"></div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="outro">outro</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">recap</h3><div class="prep" concept="5"><p>museum can question the present and suggest future worlds by:</p>
+<ul>
+<li>presenting the creation process</li>
+<li>highlighting specific aspects of an existing story</li>
+<li>uncovering untold stories of the past</li>
+</ul>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="5"></div></div><div class="page-group"><h3 class="page-name">homework</h3><div class="prep" concept="5"><p>this thursday:</p>
+<ul>
+<li>augmented exercise</li>
+<li>planning done</li>
+</ul>
+<p>next week:</p>
+<ul>
+<li>the database you&#39;ve picked for the last assignment</li>
+</ul>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="5"></div></div></div><br><div class="break-after" style="page-break-after:always;"></div></body></html>
