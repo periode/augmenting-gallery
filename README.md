@@ -35,7 +35,7 @@ A technical course about spatial information delivery focused on art spaces and 
 
 ## How
 
-A mix of readings and technical exercises, complemented by a collaboration with the [Museum4Punkt0](http://museum4punkt0.de) organization.
+A mix of readings and technical exercises, complemented by a collaboration with partner cultural institutions and museums in Berlin, such as the [Museum4Punkt0](http://museum4punkt0.de) organization.
 
 ## Why
 
