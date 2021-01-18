@@ -8,9 +8,9 @@ IMNY-UT 9001
 **Email** [pierre.depaz@nyu.edu](mailto:pd1102@nyu.edu)
 
 ## Details
-**Location** St. Agnes
+**Location** Academic Center (Prenzlauer Berg)
 
-**Time** Wed 09.15 - 12.45
+**Time** Mon 10.00 - 11.15 / Tue 10.00 - 12.00
 
 **Office Hours**
 
@@ -35,7 +35,7 @@ A technical course about spatial information delivery focused on art spaces and 
 
 ## How
 
-A mix of readings and technical exercises, complemented by a collaboration with the [Museum4Punkt0](http://museum4punkt0.de) organization.
+A mix of readings and technical exercises, complemented by a collaboration with partner cultural institutions and museums in Berlin, such as the [Museum4Punkt0](http://museum4punkt0.de) organization.
 
 ## Why
 
