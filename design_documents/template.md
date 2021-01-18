@@ -1,13 +1,11 @@
 # Design Document
 ### Template
 
-
 - Include the name of your project
 - Include the name of each team member
 
-
 ## GENERAL OVERVIEW
-### (one page)
+### (half a page)
 
 - Describe **what your project is about**.
 
@@ -28,7 +26,7 @@ Something that other projects in the same field don't have to take care of, but 
 ---
 
 ## DESIGN OVERVIEW
-#### (two pages)
+#### (one pages)
 
 - Describe **the context** of your project.
 
@@ -53,7 +51,7 @@ What are the assets that you are going to need? Photos, drawings, renderings, so
 ---
 
 ## EXPERIENCE OVERVIEW
-#### (one page)
+#### (half page)
 
 - Describe **the overall experience** of the audience member. How do they join? Where do they start? What would they typically do? How would they conclude their experience? Emphasize the important moments and the transition moments.
 
