@@ -10,7 +10,7 @@ IMNY-UT 9001
 ## Details
 **Location** Academic Center (Prenzlauer Berg)
 
-**Time** Mon 10.00 - 11.15 / Tue 10.00 - 12.00
+**Time** Tue 13.00 - 14.15 / Thu 13.00 - 15.00
 
 **Office Hours**
 
@@ -35,7 +35,7 @@ A technical course about spatial information delivery focused on art spaces and 
 
 ## How
 
-A mix of readings and technical exercises, complemented by a collaboration with partner cultural institutions and museums in Berlin, such as the [Museum4Punkt0](http://museum4punkt0.de) organization.
+A mix of readings and technical exercises, complemented by a collaboration with partner cultural institutions and museums in Berlin, such as the Humboldt Forum, the Gemäldegalerie, or the M4P0 organization.
 
 ## Why
 
