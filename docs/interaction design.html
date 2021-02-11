@@ -1,0 +1,513 @@
+<!DOCTYPE html><html><head><meta charset="utf8"><title>augmenting-the-gallery | interaction design</title><style>body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Inter UI', Trebuchet MS;
+	background-color: white;
+}
+
+header {
+	background-color: black;
+	color: white;
+  padding: 10px;
+	overflow: auto;
+}
+
+header h1{
+	display: inline-block;
+	margin-left: 5%;
+	margin-right: 5%;
+	width: 40%;
+	font-size: 2.5em;
+}
+
+@media print{
+	header h1{
+		font-size: 1em;
+	}
+}
+
+.subject-name{
+	float: right;
+	text-align: right;
+}
+
+.topic-name{
+	float: left;
+	text-align: left;
+}
+
+a {
+	text-decoration: none;
+  color: #e77607;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:visited {
+  color: #b25900;
+}
+
+header a{
+	color: white;
+	text-decoration: none;
+	border: 2px solid white;
+	padding: 3px;
+}
+
+main{
+	position: absolute;
+	margin-left: 20%;
+	width: 60%;
+	display: block;
+}
+
+@media print{
+	main{
+		margin-left: 5%;
+		width: 90%;
+	}
+}
+
+hr {
+	border: none;
+	height: 2px;
+	background-color: black;
+	float: left;
+	width: 100%;
+}
+
+img {
+	max-height: 300px;
+	max-width: 90%;
+}
+
+.concept-group{
+	width: 80%;
+	margin-left: 10%;
+	display: block;
+	float: left;
+}
+
+.concept-nav{
+	width: 30%;
+	float: right;
+	margin-right: 10%;
+}
+
+.overview-holder{
+	float: left;
+	width: 38%;
+	margin-left: 10%;
+}
+
+@media print{
+	.concept-group, .concept-nav{
+		width: 90%;
+		margin-left: 5%;
+	}
+}
+
+.concept-name {
+	width: 98%;
+	text-align: right;
+	float: right;
+	color: black;
+	border-bottom: 2px solid black;
+	padding: 1%;
+	font-size: 2em;
+}
+
+.break-before, .break-after{
+	display: block;
+	width: 100%;
+	height: 5px;
+	float: left;
+}
+
+.break-after{
+	page-break-after: always;
+}
+
+.page-group{
+	position: relative;
+	font-size: 1.2em;
+	width: 50%;
+	float: left;
+}
+
+@media print{
+
+	.page-group{
+		width: 70%;
+		page-break-inside: avoid;
+	}
+
+	.prep{
+		font-size: 0.8em;
+	}
+}
+
+.page-name{
+	width: 100%;
+	float: left;
+}
+
+.note-group{
+	position: relative;
+	width: 50%;
+	float: left;
+	overflow: auto;
+	text-align: left;
+}
+
+@media print{
+	.note-group{
+		width: 30%;
+	}
+}
+
+.note {
+	position: relative;
+	margin-bottom: 10px;
+	width: 100%;
+	overflow: auto;
+	white-space: pre;
+}
+
+@media print {
+	.note{
+		white-space: normal;
+	}
+}
+
+.writeup-group{
+	width: 100%;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	float: left;
+}
+
+@media print{
+	.writeup-group{
+		break-inside: avoid;
+		font-size: 0.9em;
+	}
+}
+
+.context{
+	white-space: pre-line;
+	border: 2px solid black;
+	width: 45%;
+	padding: 5px;
+	float: right;
+}
+
+@media print{
+	.context{
+		width: 100%
+	}
+}
+
+.writeup{
+	width: 100%;
+	float: left;
+	margin-bottom: 10px;
+	font-style: italic;
+	white-space: pre-line;
+}
+
+.web-only{
+	display: inherit;
+}
+
+.print-only{
+	display: none;
+}
+
+@media print{
+	* {
+		float: none !important;
+	}
+
+	.break-before{
+		page-break-before: always !important;
+	}
+
+	.break-after{
+		page-break-after: always !important;
+	}
+
+	.web-only{
+		display: none;
+	}
+
+	.print-only{
+		display: inline-block;
+	}
+}
+</style></head><body><header><h1 class="topic-name">interaction design</h1><h1 class="subject-name"><a href="index.html">augmenting-the-gallery</a></h1></header><main><div class="overview-holder"><h1>overview</h1><p>This week is going to focus on interaction as a medium. After looking at different kinds of media, and how some content works better than some other content through these media, we&#39;ll focus more closely on the specificities of interaction.</p>
+<p>This will start from a high-level, conceptual perspective, and focusing all the way to the specifics of user interface design and user experience design (along with expliciting the difference between the two!).</p>
+<p>As for Unity, we will re-iterate the process of manipulating images in Unity, and then introduce arrays, inputs and UI systems.</p>
+</div><div class="concept-nav"><h1>summary</h1><ul><a class="web-only" href="#intro">intro</a><li class="print-only">intro</li></ul><ul><a class="web-only" href="#interaction and procedure">interaction and procedure</a><li class="print-only">interaction and procedure</li></ul><ul><a class="web-only" href="#expressive interactions">expressive interactions</a><li class="print-only">expressive interactions</li></ul><ul><a class="web-only" href="#interfaces and experiences">interfaces and experiences</a><li class="print-only">interfaces and experiences</li></ul><ul><a class="web-only" href="#recap">recap</a><li class="print-only">recap</li></ul><ul><a class="web-only" href="#break">break</a><li class="print-only">break</li></ul><ul><a class="web-only" href="#unity review">unity review</a><li class="print-only">unity review</li></ul><ul><a class="web-only" href="#unity interface">unity interface</a><li class="print-only">unity interface</li></ul><ul><a class="web-only" href="#outro">outro</a><li class="print-only">outro</li></ul><br></div><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="intro">intro</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">week 3 - interaction design</h3><div class="prep" concept="0"><p>welcome!</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="0"></div></div><div class="page-group"><h3 class="page-name">plan for this week</h3><div class="prep" concept="0"><p><em>what are some of the opportunities and challenges in working with interactive information?</em></p>
+<p><strong>lecture</strong></p>
+<p>-&gt; procedures and interactivity</p>
+<p>-&gt; designing interactions</p>
+<p>-&gt; user interfaces vs. user experiences</p>
+<p><strong>lab</strong></p>
+<p>-&gt; unity: review, canvas and UI</p>
+</div><div class="prep" concept="0"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="0"></div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="interaction and procedure">interaction and procedure</h3><div class="context"><div></div><div class="context-links"></div><hr><a href="http://www.immersence.com/publications/2003/2003-Mmorse.html">http://www.immersence.com/publications/2003/2003-Mmorse.html</a><div>Margaret Morse's take on interaction as a feminist practice.</div></div><div class="page-group"><h3 class="page-name">first thoughts</h3><div class="prep" concept="1"><p>how do you define interaction?</p>
+<p>think of an example of a <em>good</em> interaction, and a <em>bad</em> interaction (with a software system, not a human!).</p>
+<p>5min</p>
+<hr>
+<p>asking an interface to do something for you</p>
+<p>good:</p>
+<ul>
+<li>adding to a thread on twitter (ease of anticipation)</li>
+<li>xbox controllers, haptic feedback, instant feedback</li>
+<li>apple products (straightforward, few actions and a lot of possibilities)</li>
+</ul>
+<p>bad:</p>
+<ul>
+<li>albert (log out cycle, waitlist, hard to read)</li>
+<li>albert (too small, un-necessary refresh, time-based)</li>
+<li>nyu classes (dead end, opens new tab without you asking)</li>
+</ul>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="1"><p>Interaction is when you do something to someone?</p>
+<p>Interaction is when something <em>acknowledges</em> an action?</p>
+<p>Interaction is when you <em>initiate</em> something and get something <em>back</em>? What do you get back? An action, an information, a feeling?</p>
+</div></div><div class="page-group"><h3 class="page-name">models of interaction</h3><div class="prep" concept="1"><p>an interaction is an <strong>exchange</strong> between two or more agents (possibly conscious agents), in which <em>the result is greater than the sum of its parts</em>.</p>
+<p>(i.e. what has been accomplished could not have been done by only one of the interactors)</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="1"><p>In <a target='_blank' href="https://nostarch.com/interactive.htm">The Art of Interactive Design</a>, Chris Crawford defines an interaction as a <strong>conversation</strong>, between multiple agents who, one after the other, &quot;listen, think, and speak&quot;, which in computer terms, would consist of &quot;input, process, output&quot;.</p>
+<p>The richness of an interaction comes from the care in the listening experience (&quot;is everything that is being said, being heard?&quot; -think of non-verbal cues), to the depth in processing (&quot;what is it that is really being meant, and how can I extract that meaning to serve as the basis for my response?&quot;) to the quality and clarity of the output (&quot;is what I&#39;m saying clearly reflecting the results of my thought process? does it leave room for further exchange?&quot;)</p>
+<p>Whatever the response/output is, it&#39;s always important to <em>leave room for further action</em>. Even when an error happens, the handling of the error should be done &quot;gracefully&quot; (e.g. &quot;This operation did not succeed. Would you like to try again? Or try a different operation?)</p>
+<hr>
+<p>some of the requirements for interaction include:</p>
+<ul>
+<li>being able to communicate exactly what you intend,</li>
+<li>having an equal interest in both parties,</li>
+<li>having a common factor, common references,</li>
+<li>being able to receive information,</li>
+</ul>
+<hr>
+<p>links -&gt; recommendations or suggestions</p>
+</div></div><div class="page-group"><h3 class="page-name">elements of interaction</h3><div class="prep" concept="1"><p>how many elements needed for an interaction can you identify?</p>
+<ul>
+<li>a designer (Apple, assumes that no one know how to use a smartphone)</li>
+<li>a system (implements the assumption by providing a back button)</li>
+<li>a user (confirms the assumption by using the back button)</li>
+</ul>
+</div><div class="prep" concept="1"><p>how do these relate to janet murray&#39;s components of interaction — <strong>interactor</strong>, <strong>information</strong>, <strong>agency</strong>, <strong>transparence</strong> ?</p>
+<hr>
+<p>interactor: alluding to only doing one task, or a landscape of tasks</p>
+<p>information vs. data? information is more general (cannot be separated from content), data is more specific</p>
+<p><strong>information is interpreted data</strong></p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="1"><p>Most interactive systems include: the developer, the system and the user.</p>
+<p>In terms of the <strong>interactor</strong>, it&#39;s a significant switch from user: user means passive, while interactor means active. Just because one is on the final, receiving end of an event (even if it&#39;s an interactive event), doesn&#39;t mean that they do not re-appropriate the event for themselves, and engage with it in non-expected ways. There is a thin line between making a system error-proof (making sure the interactor doesn&#39;t break the system by inputting the wrong data), and making the system fool-proof (making sure the interactor doesn&#39;t do anything too complicated because the assumption is that the interactor can&#39;t know as well as the designer).</p>
+<p>The concept of <strong>agency</strong> is tied to the second meaning: an interactive system should <em>enable</em> its interactor, allowing them to do as much as they would like to do, as much as they can imagine, and perhaps even more. A good example of such a thing is the LEGO brick. A system which provides agency is <strong>a system which makes you responsible for what you want to be responsible for</strong>. On the opposite, a system like an automatic slide door doesn&#39;t provide much agency: it&#39;s either fully open or fully closed, and doesn&#39;t exactly tell you what is need for either of these states to change.</p>
+<p>The need for <strong>transparency</strong> in interactive systems comes from this similar idea. Thinking that a system is intuitive relies on a particular number of <strong>assumptions</strong>: you already know shortcuts, design heuristics, patterns and processes. A transparent system, on the other side, is a system which exposes itself to the interactor, and only assumes that she would be able to make sense of it, given a good interface. Robert Henke&#39;s <a target='_blank' href="http://www.roberthenke.de/concerts/cbm8032av.html">CBM8032</a> is a good example of the things someone can do if they&#39;re given access to all the <em>relevant</em> parts of a system.</p>
+<p>Additionally, interfaces on desktop between Mac, Linux and Windows assume very different behaviours of their users by showing them different amounts of information</p>
+</div></div><div class="page-group"><h3 class="page-name">interactive media vs. digital media vs. new media?</h3><div class="prep" concept="1"><p>what makes a computer different in its interactivity?</p>
+</div><div class="prep" concept="1"><img src="augmenting-the-gallery_assets/joe2.jpg" alt="joe2.jpg"></div><div class="prep" concept="1"><p>building procedures to express emotions</p>
+<ul>
+<li>computer doesn&#39;t understand</li>
+<li>but computer is less emotional, more pragmatic</li>
+<li>computer is always available</li>
+</ul>
+<p>trade-off between democratizing resources and special, individual relationships.</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="1"><p>The computer can &quot;think&quot;. That is, it can act and respond somewhat dynamically and contextually. If the programmers can think through the possible future situations that the computer will be confronted with, it will give the impression that the interactor is having a &quot;smart&quot; conversation with the system.</p>
+<p>In short, digital media is different from other media in that <strong>it can reconfigure itself as it goes</strong>. The problem, as we&#39;ve seen with Licklider the previous week, is that thinking through possible problems in advance turns out to be more complicated than expected. So the answer at this point is either to establish the digital product you have as either close-ended or open-ended. Close-ended means that you are not providing anything beyond the basics of the product can do: the scope is tight, the interactions safe, and the &quot;world&quot; narrow. On the other side, open-ended means that you leave some room for interpretation to the interactor. It might not be as rigorous—in the scientific sense of the term—but it will provide a different kind of engagement, by involving the interactor deeper into the meaning of what she is presented with. Open-ended systems involve some kind of <a target='_blank' href="https://en.wikipedia.org/wiki/Gestalt_psychology#Figure-Ground_Organization">gestalt</a> (the whole is greater than the sum of its parts).</p>
+<p>The image above exposes a kind of open-ended system: Joseph Weizenbaum developed a program called <a target='_blank' href="https://web.stanford.edu/class/linguist238/p36-weizenabaum.pdf">ELIZA</a>, a chatbot which would essentially &quot;bounce back&quot; questions that the interactor would input. For instance, if you would type &quot;I&#39;m unhappy&quot;, ELIZA would respond &quot;Why are you unhappy?&quot;. While the computer program has no idea of what &quot;unhappiness&quot; is, the interaction still elicits interesting thoughts in the interactor&#39;s mind.</p>
+</div></div><div class="page-group"><h3 class="page-name">the specificity of media</h3><div class="prep" concept="1"><p>how does a medium affect a particular message?</p>
+</div><div class="prep" concept="1"><img src="augmenting-the-gallery_assets/mcluhan.jpeg" alt="mcluhan.jpeg"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="1"><p>The guy in the picture right there is Marshall McLuhan, who in his books <a target='_blank' href="https://mitpress.mit.edu/books/understanding-media">Understanding Media</a> started the field of <em>media studies</em>.</p>
+<p>It makes things more or less difficult to say in particular mediums. While there is no &quot;true&quot;, &quot;actual&quot; limit to what can be said in a particular way, it&#39;s a lot easier to work in the field of classical Western philosophy when you have a pen and a paper than when you can only broadcast smoke signals.</p>
+<p>It also affects what <strong>receivers</strong> pay attention to. The predominance of a particular sense might be hard to overcome (and therefore should be taken into account), when a message is being received.</p>
+<p>A newer medium also develops <em>on top</em> of previous media, in a phenomenon called <strong>remediation</strong> (writing integrates parts of speech, photography integrate parts of drawing, cinema integrates parts of photography, etc.)</p>
+</div></div><div class="page-group"><h3 class="page-name">dimensions of digital media</h3><div class="prep" concept="1"><p>-&gt; spatial</p>
+<p>-&gt; procedural</p>
+<p>-&gt; encyclopedic</p>
+<p>-&gt; participatory</p>
+<p>(first developed in <a target='_blank' href="https://mitpress.mit.edu/books/hamlet-holodeck">hamlet on the holodeck</a>)</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="1"><p>The <strong>spatial</strong> component comes from this possibility of navigation, of going from one <em>place</em> to another. There are locations (websites), pathways (hyperlinks), landmarks (icons) which allow us to both <strong>explore</strong> and <strong>keep track of where we are</strong>. How do we make sure that the interactor never feels lost?</p>
+<p>The <strong>procedural</strong> component relies on the fact that we are dealing specifically with <strong>digital</strong> media. Through a computer, it becomes possible to set up rules, procedures, in order to allow for everything else (space, encyclopedia, participation).</p>
+<p>The <strong>encyclopedic</strong> component is the consequence of working with networked media. If one is connected to the Internet, there is no pre-existing reason as to why one shouldn&#39;t be able to access any information that is on the Internet. A good example of that is Assassin&#39;s Creed&#39;s <a target='_blank' href="https://www.standard.co.uk/stayingin/tech-gaming/assassins-creed-origins-discovery-tour-shows-how-video-games-could-be-an-education-gamechanger-a3663966.html">Discovery Mode</a> through which you walk around the game world and learn of the &quot;real world&quot; equivalent of what you&#39;re seeing.</p>
+</div></div><div class="page-group"><h3 class="page-name">interactive digital media</h3><div class="prep" concept="1"><p>interactive digital media can create <strong>conversations</strong> with whole <strong>worlds</strong>, allowing for the <strong>co-construction</strong> of meaning.</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="1"><p>So, as we start developing interactive experiences within the context of museums, it&#39;s important to keep in mind those things:</p>
+<ul>
+<li>How are you enabling an interesting conversation? How responsive and predictive is your system. For instance, if the visitor takes one action (view an object up close), then would be the next action (e.g. viewing other objects? viewing advanced information related to the same object?)</li>
+<li>What kind of world are you creating? What are its multiple components, and where do you put the emphasis? Is it a social world, an economic world, a world connected to other worlds, etc.?</li>
+<li>How is meaning co-constructed? How do you let the visitor explore them in more details, at their own pace, in their own way? And to what extent do you ensure that all visitors get the same amount of knowledge, and each visitor gets their own version?</li>
+</ul>
+</div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="expressive interactions">expressive interactions</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">expressive interaction</h3><div class="prep" concept="2"><p>how do we express things through interaction?</p>
+<p><a target='_blank' href="https://www.youtube.com/watch?v=5ujlefWcY-w">live-taped corridor</a></p>
+<p><a target='_blank' href="https://www.youtube.com/watch?v=QcaaVZrUC44">the other: rest energy</a></p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="2"><p>In Bruce Nauman&#39;s piece, Live-Taped Corridor, we can identify two obvious main components: the interactor (the person holding the phone in the video) and the system (comprised of the two monitors, the CCTV camera, and the corridor itself).</p>
+<p>It&#39;s possible to think of the system itself as made up of smaller components, yet the CCTV acts as an input receiver (filming the corridor), the monitors act as the output medium (showing the video), and the corridor itself acts as a scenography, making sure that the interactor enters the system in the &quot;correct&quot; way. Finally, the third component is <strong>the artist</strong>, or the designer, the person who set up the whole system and whose presence is like a ghost, or an angel, hovering above the piece while remaining transparent and barely visible.</p>
+<p>How does a ceremony express importance? How does the way to greet someone in different cultures express particular aspects of those cultures?</p>
+<p>How can we tell whether a space is &quot;safe&quot; or not? To what extent does it have to do with the layout of some specific rules? (e.g. codes of conduct?)</p>
+<p>This particular piece, by Marina Abramovic and Ulay (1980) works as an artwork since it does ask broader questions from a simple interaction: trust, balance, relationship, etc.</p>
+</div></div><div class="page-group"><h3 class="page-name">expressing and persuading</h3><div class="prep" concept="2"><p>how do you persuade someone of something?</p>
+</div><div class="prep" concept="2"><p>verbal rhetoric: using words to convince</p>
+</div><div class="prep" concept="2"><p>&quot;<em>the act we are about to accomplish is as beautiful as a rose, as beautiful as an eiffel tower besieged at dawn.</em>&quot; - christiane taubira, french minister of justice, presenting the same-sex law.</p>
+</div><div class="prep" concept="2"><p>with images</p>
+</div><div class="prep" concept="2"><img src="augmenting-the-gallery_assets/parr_india_goa.jpg" alt="parr_india_goa.jpg"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="2"><p>Rhetoric uses logic and (verbal) grammar to get its point across. However, there are other kinds of rhetoric, particularly visual rhetoric and procedural rhetoric. You can make <strong>logical</strong> connections, <strong>emotional</strong> connections, and <strong>aesthetic</strong> connections.</p>
+<p>Kenneth Burke&#39;s version is: &quot;the use of language as a symbolic means of inducing cooperation in beings that by nature respond to symbols&quot;.</p>
+<p>Christiane Taubira: &quot;the act we are about to accomplish is as beautiful as a rose, as an eiffel tower besieged at dawn.&quot;. This particular quote is powerful because of the linguistic tricks it uses:</p>
+<ul>
+<li>using the symbol of the rose both as beauty and as the symbol of the socialist party</li>
+<li>quoting from a french-guyanese poet (Léon Gontran Damas), a black MP whom had to endure adversities in order to sit in Parliament.</li>
+<li>referring to the Eiffel Tower as France (implying that all of France wants same-sex marriage)</li>
+<li>referring to the Eiffel Tower being besieged, implying that the conservative party is attacking France by rebuking the law.</li>
+</ul>
+<p>Similarly, Barack Obama&#39;s speech in 2008 in New Hampshire: &quot;Yes we can.</p>
+<p>It was the call of workers who organized; women who reached for the ballot; a President who chose the moon as our new frontier; and a King who took us to the mountaintop and pointed the way to the Promised Land.&quot;</p>
+<p>This speech made the subtle connection between the US-American people and the Jews of Israel by mentioning the Promised Land.</p>
+<p>Finally, rhetoric can also be visual: this cover is taken from an example in <a target='_blank' href="https://en.wikipedia.org/wiki/Mythologies_(book)">Mythologies</a>, a book about the significance of cultural objects. In it, the cover is analyzed as a system of visual signs re-enforcing the colonial vision of the colonized people as a cute child who looks up (implying inferiority) to an idea of France, while pledging allegiance, in a uniform halfway between boy-scouts and military.</p>
+</div></div><div class="page-group"><h3 class="page-name">expressing with procedures</h3><div class="prep" concept="2"><p>how do we express things with rules?</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="2"><p>An example is the Universal Declarations of Human Rights. There are a set of values, a particular worldview which wants to be expressed by the UN, and such a worldview is going to be realized through <strong>rules</strong>, through what one can or cannot do.</p>
+<p>Other legal systems assume different things about the world, and use rules to solidify these worldviews (e.g. the U.S. Supreme Court granting the same rights to companies as to individuals, interpretations of Sharia law prescribing a bigger share of inheritance to first-born sons over mothers.</p>
+</div></div><div class="page-group"><h3 class="page-name">a word on games</h3><div class="prep" concept="2"><p>could everything be a game?</p>
+</div><div class="prep" concept="2"><img src="augmenting-the-gallery_assets/Homo Ludens eng.jpg" alt="Homo Ludens eng.jpg"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="2"><div>Arguably, everything could be seen as a game. Johan Huizinga's argument in his book [Homo Ludens](https://en.wikipedia.org/wiki/Homo_Ludens) is that, since play isn't restricted to humans, then play actually predates civilization. Is it then possible to think of all civilization as an elaborate game?
+
+If everything has goals and rules, we can think of the U.S. Constitution as the goal of &quot;the pursuit of happiness&quot; and the rules as the Bill of Rights.
+
+In terms of games mimicking real systems, it is interesting to point out the case of [The Landlord's Game](https://en.wikipedia.org/wiki/The_Landlord%27s_Game), a board game originally designed to educate the masses about the evils of real-estate capitalism (i.e. winner-takes-all, others are ruined). The game was then the inspiration of Monopoly, a crude apology of land-grabbing practices.
+
+</div></div></div><div class="page-group"><h3 class="page-name">procedural rhetoric</h3><div class="prep" concept="2"><p>the art and activity of communicating an idea exclusively through the laying out of rules to be enacted.</p>
+<p><a target='_blank' href="https://www.youtube.com/watch?v=kMC-r0e_Ly4">the intricacies of being a border patrol agent</a></p>
+<p><a target='_blank' href="https://pippinbarr.github.io/itisasifyouweredoingwork/">it is as if you were doing work</a></p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="2"><p>Procedural rhetoric, then, is the ability to develop a system of rules which provides a statement about a particular world, about a particular group of people, about a particular practice, <em>without ever being explicit about that statement</em>.</p>
+<p>It is a different way to apprehend a problem: not by listening/reading an argument, not watching a poster or a movie, but instead <strong>acting through the consequences of a situation</strong>.</p>
+</div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="interfaces and experiences">interfaces and experiences</h3><div class="context"><div></div><div class="context-links"></div><hr><a href="https://developer.apple.com/design/human-interface-guidelines/ios/system-capabilities/augmented-reality/">https://developer.apple.com/design/human-interface-guidelines/ios/system-capabilities/augmented-reality/</a><div>The Apple human interface guidelines when designing for AR.</div></div><div class="page-group"><h3 class="page-name">the difference</h3><div class="prep" concept="3"><p>what is the difference between user interface (UI) and user experience (UX) ?</p>
+<hr>
+<p>user-interface is more concrete (buttons, scrollbars, icons) <em>touch-points</em></p>
+<p>user-experience is less concrete, about the overall feeling</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="3"><p>User Experience is comprised of <em>touch points</em>, of particular moments in which the public comes into contact with the product. For instance, the moment that someone books a ticket online for a museum, the moment someone enters the museum and goes through security check, the moment someone asks for directions at the information kiosk, etc. And how all of these come together in a coherent moment.</p>
+<p>On the other side, User Interface is the collection of specific graphical elements which help create a <em>metaphor</em> for the interactor to understand how to manipulate and communicate with such a system.</p>
+<p>In other words, UI is what we see, and UX is how we feel when we use something (the overarching ceremonial), and how we feel when we&#39;re done using it.</p>
+</div></div><div class="page-group"><h3 class="page-name">the problem</h3><div class="prep" concept="3"><p>we need to make our product/artefact/app <em>usable</em>, with the lowest cognitive friction, and the highest reliable output.</p>
+<hr>
+<p>the turing machine is 1-dimensional</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="3"><p>User interfaces are indeed a metaphor, either building on previous knowledge by the interactors (e.g the Trash on a desktop isn&#39;t really a trash, but it does the same thing as a trash does), or by developing new habits (the <a target='_blank' href="https://blog.placeit.net/history-of-the-hamburger-icon/">hamburger icon</a> ).</p>
+<p>The point of a good UI is to have itself be forgotten. It should be as invisible as possible, while at the same time being &quot;obvious&quot;. This pinnacle of obviousness was reached in Apple products, particularly with the iPod and the iPhone, which <em>didn&#39;t come with a user manual!</em></p>
+</div></div><div class="page-group"><h3 class="page-name">elements of user interface</h3><div class="prep" concept="3"><p>no interface is &quot;natural&quot; (<a target='_blank' href="https://www.designernews.co/stories/84443-redditors-design-worst-volume-sliders-possible">example</a>)</p>
+</div><div class="prep" concept="3"><img src="augmenting-the-gallery_assets/quicktime4.jpg" alt="quicktime4.jpg"></div><div class="prep" concept="3"><p>-&gt; graphical elements</p>
+<p>-&gt; input methods</p>
+<p>-&gt; system-related messages</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="3"><p>UI elements can be separated in three categories:</p>
+<ul>
+<li>graphical elements (buttons, icons, layout, typefaces, etc.)</li>
+<li>input methods (tap, swipe, hold, left-click, right-click, shake, etc.)</li>
+<li>system messages (confirmation, errors, dialog boxes, alert boxes, etc.)</li>
+</ul>
+<p>In their design guidelines for iOS, Apple separates them in three parts:</p>
+<ul>
+<li><a target='_blank' href="https://developer.apple.com/design/human-interface-guidelines/ios/bars/navigation-bars/">navigation bars</a></li>
+<li><a target='_blank' href="https://developer.apple.com/design/human-interface-guidelines/ios/views/action-sheets/">action sheets</a></li>
+<li><a target='_blank' href="https://developer.apple.com/design/human-interface-guidelines/ios/controls/buttons/">buttons</a></li>
+</ul>
+</div></div><div class="page-group"><h3 class="page-name">elements of interaction design</h3><div class="prep" concept="3"><p>-&gt; visibility</p>
+<p>-&gt; feedback</p>
+<p>-&gt; constraints</p>
+<p>-&gt; mapping</p>
+<p>-&gt; consistency</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="3"><p>Interaction Design is halfway between UI and UX, it is the art and science of providing the user with an environment in which her actions are <strong>meaningful</strong>—they are acknowledged and acted upon in a way that is coherent with what she expected.</p>
+<p>All of these elements are explained thoroughly in Jenny Preece&#39;s <a target='_blank' href="https://github.com/periode/augmenting-gallery/blob/master/resources/readings/Preece_InteractionDesign.pdf">Interaction Design</a> reading for this week.</p>
+</div></div><div class="page-group"><h3 class="page-name">diegetic vs. non-diegetic</h3><div class="prep" concept="3"><img src="augmenting-the-gallery_assets/diegetic.png" alt="diegetic.png"></div><div class="prep" concept="3"><img src="augmenting-the-gallery_assets/Spatial-UI-example.png" alt="Spatial-UI-example.png"></div><div class="prep" concept="3"><img src="augmenting-the-gallery_assets/farcry2.jpg" alt="farcry2.jpg"></div><div class="prep" concept="3"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="3"></div></div><div class="page-group"><h3 class="page-name">user-centered design</h3><div class="prep" concept="3"><p>user-centered design is the process of starting from a user, and then modifying the technical system to enable whatever it is that they might think of doing (and more!)</p>
+<p>the first question is therefore: <strong>who is going to be using my application?</strong></p>
+</div><div class="prep" concept="3"><p>how does one re-design Albert for different users?</p>
+<p>-&gt; how would it look like for <em>students</em>?</p>
+<p>-&gt; how would it look like for <em>faculty</em>?</p>
+<p>-&gt; how would it look like for <em>staff</em>?</p>
+<p>-&gt; who <em>else</em> could use it?</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="3"><p>Finally, the field of Human-Computer Interaction (HCI) has multiple approaches. One of the predominant of these is User-Centered Design, which starts from the development of a fictional &quot;user&quot; and designs the system around the wants and needs of that user.</p>
+<p>One of the most important practices of user-centered design is <strong>usability testing</strong>, the constant process of making sure that whatever stage of the development process you are at, a given user can still navigate, interact, and understand what is going on!</p>
+<p>While this is a better approach that a purely one-way perspective (design the system, and the provide the interface), one of the pitfalls might be that the fictional user whom serves as a base for this design might not actually exist! There is a huge difference between an ideal user and the diversity of individual in practice, and that is something that all designers should remain aware of.</p>
+</div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="recap">recap</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">interfaces</h3><div class="prep" concept="4"><p>the design of interfaces is the support for an empowering interaction, in which one discovers a world through a conversation.</p>
+<p>interfaces can reveal information <em>contextually</em> and <em>gradually</em>.</p>
+<p>-&gt; world space and screen space</p>
+<p>a procedural rhetoric is the process of persuading someone through the enactment of rules, represented by interfaces.</p>
+</div><div class="prep" concept="4"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="4"></div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="break">break</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">unity lab</h3><div class="prep" concept="5"><ul>
+<li>canvas (world space vs. screen space)</li>
+<li><ul>
+<li>text</li>
+</ul>
+</li>
+<li><ul>
+<li>images</li>
+</ul>
+</li>
+<li>button interactions with event trigger</li>
+<li>button interactions with script</li>
+</ul>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="5"></div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="unity review">unity review</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">review</h3><div class="prep" concept="6"><ul>
+<li><p>variables? things that store other things</p>
+</li>
+<li><p>functions? block of code that has been encapsulated ( { } )... things that do things</p>
+</li>
+<li><p>what is unity made of? objects -&gt; components -&gt; values</p>
+</li>
+<li><p>what&#39;s up with this <code>if</code> statement? { }</p>
+</li>
+</ul>
+<p>a condition that executes some code</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="6"><div></div></div></div><div class="page-group"><h3 class="page-name">inputs</h3><div class="prep" concept="6"><p><code>Input.GetMouseButtonDown(0)</code> is equal to <code>true</code> if the left mouse button has been clicked.</p>
+<p><code>Input.GetTouch(0)</code> gets you a tap.</p>
+<pre><code>if(Input.GetMouseButtonDown(0)){
+  Debug.Log(&quot;you&#39;ve just clicked!&quot;);
+}
+
+if(Input.GetTouch(0)){
+  Debug.Log(&quot;touched at position: &quot;+ Input.GetTouch(0).position);
+}</code></pre></div><div class="prep" concept="6"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="6"><p>Touch input is actually a little trickier, because there could be multiple touches, pinching, dragging, etc.</p>
+<p>This is why we need first to check (with an <code>if-statement</code>) whether there has been a touch, and then what kind of touch it is (do we want the first finger to touch the screen, the second finger, etc.)</p>
+</div></div><div class="page-group"><h3 class="page-name">materials and images</h3><div class="prep" concept="6"><p>Images can be <strong>Textures</strong> or <strong>Sprites</strong>. You can decide what they are in the Inspector panel.</p>
+<p><code>Sprites</code> are standalone images which can be used directly in the world, and inside UI elements</p>
+<p><code>Textures</code> are images that wrap over an object.</p>
+<p>In order to apply an image to an object, you need to create a <code>Material</code> (<code>Assets &gt; Create &gt; Material</code>).</p>
+<p>Inside this material, you set your <code>Texture</code> as the <code>Main Maps &gt; Albedo</code> and then set the <code>Material</code> directly on the <code>Renderer</code> component of the <code>GameObject</code>.</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="6"><p>In particular, textures are usually a different aspect ration (a power of 2: 512<em>512, 1024</em>1024), so while you can technically use a Sprite as a Texture, it might look a little strange (but maybe that&#39;s what you want!)</p>
+<p>In terms of Materials, an object can have multiple Materials stacked on one another (imagine a &quot;skin tone&quot; material and then a &quot;sun burnt&quot; material on top of it), and Materials can have multiple textures, to simulate depth and shadows.</p>
+</div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="unity interface">unity interface</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">the canvas</h3><div class="prep" concept="7"><p>All UI elements have to go inside a <code>Canvas</code> object (you can have multiple Canvas objects).</p>
+<p>You also need an <code>EventSystem</code> object.</p>
+<p>Finally, <code>Canvases</code> can exist in <code>Screen Space</code> or in <code>World Space</code>.</p>
+<p>-&gt;<code>Screen space</code> means in relation to the two dimensions of your screen. </p>
+<p>-&gt; <code>World space</code> means in relation to the three dimensions of the Unity world.</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="7"><p>We can think of Canvas objects as special objects which will hold our UI elements (such as buttons, scrollbars, toggles, input fields), and automatically give them the special properties that UI elements usually have:</p>
+<ul>
+<li>they&#39;re directly interactable</li>
+<li>they&#39;re immediately rescaled based on the device screen size and the device orientation</li>
+</ul>
+<p>Every UI object (Text, Button, etc.) needs to be <em>the child</em> of a Canvas object.</p>
+</div></div><div class="page-group"><h3 class="page-name">clickable interface</h3><div class="prep" concept="7"><p>In order to make an interface clickable, we need to tell it <em>which function to execute</em>. To do so, we need to tell it:</p>
+<ol>
+<li>which object holds the script</li>
+<li>which script holds the function</li>
+<li>which function it should trigger</li>
+</ol>
+</div><div class="prep" concept="7"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="7"></div></div><div class="page-group"><h3 class="page-name">raycasting</h3><div class="prep" concept="7"><img src="augmenting-the-gallery_assets/unity-raycasting.jpg" alt="unity-raycasting.jpg"></div><div class="prep" concept="7"><p>the technique to translate a point on a screen (2D) to a point in a space (3D); it&#39;s essentially a computer&#39;s version of 15th century perspective.</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="7"><div>Raycasting has a long and beautiful story, starting with John Carmack's work on Wolfenstein 3D (first software application with real-time perspective) and Doom (first software application with real-time 3D—meaning you can look up and down).
+
+What a raycast does is that, given a point on a screen, and a description of the 3D world, it can figure out what its path in the 3D world will be: is it going to hit something? at which angle? how should the thing that it hits look like? if it's a ray of light, should the object become brighter? if it's a a ray of light blocked by another object, should it make the object behind darker?
+
+For our purposes, it allows us to translate between 2D space (the screen) to 3D space (the world).</div></div></div><div class="page-group"><h3 class="page-name">creating game objects</h3><div class="prep" concept="7"><p>We want to be able to create Game Objects while our app is running! To do that, we can use <code>Instantiate()</code>:</p>
+<pre><code>//--this is the gameobject we want to create
+public GameObject objectToCreate; 
+
+//-- now we want it to actually show up in the scene
+GameObject go = Instantiate(objectToCreate); 
+
+//-- this makes it twice as big!
+go.transform.localScale = new Vector3(2, 2, 2); </code></pre></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="7"></div></div><div class="page-group"><h3 class="page-name">importing assets</h3><div class="prep" concept="7"><img src="augmenting-the-gallery_assets/unity-asset-store-01.png" alt="unity-asset-store-01.png"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="7"><p>The asset store is built-in Unity and allows you to download (for free or for a fee) a ton of different assets: objects, sounds, textures, animations, scripts, etc.</p>
+</div></div><div class="page-group"><h3 class="page-name">exercise</h3><div class="prep" concept="7"><ul>
+<li>have a button that makes an image appear</li>
+<li>have another button that makes a text appear</li>
+<li><strong>extra</strong> have a button that cycles through some text or some images</li>
+</ul>
+<p>think about how you place those images and texts in 3D space around the object you&#39;ve chosen</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="7"></div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="outro">outro</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">homework</h3><div class="prep" concept="8"><p>homework for week 4 is <a target='_blank' href="https://github.com/periode/augmenting-gallery/wiki/Schedule#week-4---augmenting-objects">here</a></p>
+<p>-&gt; read about the secret life of objects</p>
+<p>-&gt; the <strong><a target='_blank' href="https://github.com/periode/augmenting-gallery/wiki/Augmented-Exercises#exercise-1---object-story">Augmented Object</a></strong> assignment is due next thursday (02/18)</p>
+</div><div class="prep" concept="8"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="8"></div></div></div><br><div class="break-after" style="page-break-after:always;"></div></main></body></html>
