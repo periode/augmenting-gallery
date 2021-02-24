@@ -1,0 +1,589 @@
+<!DOCTYPE html><html><head><meta charset="utf8"><title>augmenting-the-gallery | augmenting-objects</title><style>body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Inter UI', Trebuchet MS;
+	background-color: white;
+}
+
+header {
+	background-color: black;
+	color: white;
+  padding: 10px;
+	overflow: auto;
+}
+
+header h1{
+	display: inline-block;
+	margin-left: 5%;
+	margin-right: 5%;
+	width: 40%;
+	font-size: 2.5em;
+}
+
+@media print{
+	header h1{
+		font-size: 1em;
+	}
+}
+
+.subject-name{
+	float: right;
+	text-align: right;
+}
+
+.topic-name{
+	float: left;
+	text-align: left;
+}
+
+a {
+	text-decoration: none;
+  color: #e77607;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:visited {
+  color: #b25900;
+}
+
+header a{
+	color: white;
+	text-decoration: none;
+	border: 2px solid white;
+	padding: 3px;
+}
+
+main{
+	position: absolute;
+	margin-left: 20%;
+	width: 60%;
+	display: block;
+}
+
+@media print{
+	main{
+		margin-left: 5%;
+		width: 90%;
+	}
+}
+
+hr {
+	border: none;
+	height: 2px;
+	background-color: black;
+	float: left;
+	width: 100%;
+}
+
+img {
+	max-height: 300px;
+	max-width: 90%;
+}
+
+.concept-group{
+	width: 80%;
+	margin-left: 10%;
+	display: block;
+	float: left;
+}
+
+.concept-nav{
+	width: 30%;
+	float: right;
+	margin-right: 10%;
+}
+
+.overview-holder{
+	float: left;
+	width: 38%;
+	margin-left: 10%;
+}
+
+@media print{
+	.concept-group, .concept-nav{
+		width: 90%;
+		margin-left: 5%;
+	}
+}
+
+.concept-name {
+	width: 98%;
+	text-align: right;
+	float: right;
+	color: black;
+	border-bottom: 2px solid black;
+	padding: 1%;
+	font-size: 2em;
+}
+
+.break-before, .break-after{
+	display: block;
+	width: 100%;
+	height: 5px;
+	float: left;
+}
+
+.break-after{
+	page-break-after: always;
+}
+
+.page-group{
+	position: relative;
+	font-size: 1.2em;
+	width: 50%;
+	float: left;
+}
+
+@media print{
+
+	.page-group{
+		width: 70%;
+		page-break-inside: avoid;
+	}
+
+	.prep{
+		font-size: 0.8em;
+	}
+}
+
+.page-name{
+	width: 100%;
+	float: left;
+}
+
+.note-group{
+	position: relative;
+	width: 50%;
+	float: left;
+	overflow: auto;
+	text-align: left;
+}
+
+@media print{
+	.note-group{
+		width: 30%;
+	}
+}
+
+.note {
+	position: relative;
+	margin-bottom: 10px;
+	width: 100%;
+	overflow: auto;
+	white-space: pre;
+}
+
+@media print {
+	.note{
+		white-space: normal;
+	}
+}
+
+.writeup-group{
+	width: 100%;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	float: left;
+}
+
+@media print{
+	.writeup-group{
+		break-inside: avoid;
+		font-size: 0.9em;
+	}
+}
+
+.context{
+	white-space: pre-line;
+	border: 2px solid black;
+	width: 45%;
+	padding: 5px;
+	float: right;
+}
+
+@media print{
+	.context{
+		width: 100%
+	}
+}
+
+.writeup{
+	width: 100%;
+	float: left;
+	margin-bottom: 10px;
+	font-style: italic;
+	white-space: pre-line;
+}
+
+.web-only{
+	display: inherit;
+}
+
+.print-only{
+	display: none;
+}
+
+@media print{
+	* {
+		float: none !important;
+	}
+
+	.break-before{
+		page-break-before: always !important;
+	}
+
+	.break-after{
+		page-break-after: always !important;
+	}
+
+	.web-only{
+		display: none;
+	}
+
+	.print-only{
+		display: inline-block;
+	}
+}
+</style></head><body><header><h1 class="topic-name">augmenting-objects</h1><h1 class="subject-name"><a href="index.html">augmenting-the-gallery</a></h1></header><main><div class="overview-holder"><h1>overview</h1></div><div class="concept-nav"><h1>summary</h1><ul><a class="web-only" href="#intro">intro</a><li class="print-only">intro</li></ul><ul><a class="web-only" href="#culture">culture</a><li class="print-only">culture</li></ul><ul><a class="web-only" href="#objects">objects</a><li class="print-only">objects</li></ul><ul><a class="web-only" href="#break">break</a><li class="print-only">break</li></ul><ul><a class="web-only" href="#techniques of AR">techniques of AR</a><li class="print-only">techniques of AR</li></ul><ul><a class="web-only" href="#break">break</a><li class="print-only">break</li></ul><ul><a class="web-only" href="#unity">unity</a><li class="print-only">unity</li></ul><ul><a class="web-only" href="#outro">outro</a><li class="print-only">outro</li></ul><br></div><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="intro">intro</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">augmenting objects</h3><div class="prep" concept="0"><p>welcome!</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="0"></div></div><div class="page-group"><h3 class="page-name">plan for this day</h3><div class="prep" concept="0"><p>why do museums hold objects? what do these objects <em>mean</em>?</p>
+<p>-&gt; the making of culture</p>
+<p>-&gt; the meaning of objects</p>
+<p>-&gt; unity build</p>
+</div><div class="prep" concept="0"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="0"></div></div><div class="page-group"><h3 class="page-name">housekeeping</h3><div class="prep" concept="0"><p>slight shift in the schedule: museum kick-off is going to be a week later.</p>
+<p>no class on thursday -&gt; you&#39;ll present them in class next tuesday</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="0"></div></div><div class="page-group"><h3 class="page-name">interfaces</h3><div class="prep" concept="0"><ul>
+<li>transparency (it is obvious what it is supposed to do)</li>
+<li>feedback (it is obvious it has done something)</li>
+<li>coherent groupings (UI that relates to the same things are close to each other)</li>
+<li>affordances (hints or clues that instruct how to interact—buttons, toggles, sliders, etc.)</li>
+</ul>
+<p>the homework for next week (tuesday) is looking at the Met&#39;s new AR app, from a content and from an interface point of view.</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="0"><p>see <a target='_blank' href="https://periode.github.io/augmenting-gallery/interaction%20design.html#expressive%20interactions">expressive interactions</a>, during week 3.</p>
+<p>the most important parts in interface design are:</p>
+<ul>
+<li>feedback (tell the user what is going on!)</li>
+<li>consistency (in size, layout, color)</li>
+<li>shortness of action</li>
+</ul>
+</div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="culture">culture</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">the problem</h3><div class="prep" concept="1"><p>&quot;<em>Japan first encountered Western museum institutions when it participated in Europe&#39;s World&#39;s Fairs in the 1860s. The British Museum was described by one of their delegates as a &#39;hakubutsukan&#39;, a &#39;house of extensive things&#39; – this would eventually become accepted as the equivalent word for &#39;museum&#39; in Japan and China.</em>&quot;</p>
+<p>why do we even put seemingly disparate objects together in a special building?</p>
+<hr>
+<p>-&gt; to show the progress of civilization, how things have become more complex, etc.</p>
+<p>-&gt; for aesthetic reasons, fine arts (grouping of relevant objects together)</p>
+<p>-&gt; museum of national history: preserve history and keep records of things, very nationalistic (own things about own country), keep a <em>particular</em> narrative (re: soviet communism in prague). freedom museum vs. afrikaans museum in pretoria</p>
+<p>-&gt; the story of quincy jones, focusing on the history of black music in the US vs. country music hall of fame</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="1"><p>We do so because these objects are supposed to have something to do with &quot;culture&quot;, since they are part of a cultural institution. So two questions arise:</p>
+<ul>
+<li>how do objects represent this culture?</li>
+<li>what is this culture that we are supposed to represent?</li>
+</ul>
+</div></div><div class="page-group"><h3 class="page-name">culture is...</h3><div class="prep" concept="1"><p>??</p>
+<p>what are some definitions of culture?</p>
+<ul>
+<li>a way of life (of certain groups of people, afrikaans or the ANC)</li>
+<li>a framework for humans to share common knowledge (national museums)</li>
+<li>civilization and progress (&quot;cultured&quot; groups vs. &quot;non-cultured&quot; groups)</li>
+<li>higher taste vs. lower taste (museums create this!)</li>
+</ul>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="1"><p>A whole way of life, a group endeavour, or restricted to a particular set of people.</p>
+<p>-&gt; Something created through time and people, ever evolving, never concrete</p>
+<p>-&gt; Something which assigns meanings and associations to objects (materials, colors)</p>
+<p>-&gt; Culture could be a whole way of life (high-brow (fancy), low-brow (mass media) culture)</p>
+<p>-&gt; Culture emanates from social practices, and is being <em>reified</em> (made-thing) through artefacts</p>
+</div></div><div class="page-group"><h3 class="page-name">defining culture</h3><div class="prep" concept="1"><p><em>the set of visible and invisible relations between individuals of a similar group, as expressed through possessions, actions, location, speech, etc., in order to create and sustain a shared meaning</em></p>
+<p>aka practicing a collective dream</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="1"><p>Culture can be approached in multiple ways: culture as the coherent element of a group (&quot;youth culture&quot;) but also as the defining markers between different groups (&quot;high-brow&quot; vs. &quot;low-brow&quot; cultures).</p>
+<p>As the object of study of fields like anthropology (study of humans and human behavior, in particular through their meaning-making practices) or sociology (study of the patterns of social interactions), culture is diffused across all components of a social group, and therefore more elusive than the specific representations of, say, religion, politics or the arts. Culture is the web which underpins such other fields of action.</p>
+<p>Knowing about culture allows us to know more about ourselves; once we&#39;ve highlighted some findings, or some interesting things about culture, communicating it through digital media, as an information delivery medium, can help us achieve that goal.</p>
+</div></div><div class="page-group"><h3 class="page-name">cultural vs. natural</h3><div class="prep" concept="1"><p>what is the difference between something artificial and something natural?</p>
+<ul>
+<li>human-made (which has broad impacts)</li>
+<li><ul>
+<li>the planet itself</li>
+</ul>
+</li>
+<li><ul>
+<li>museum for natural history</li>
+</ul>
+</li>
+<li>the intention</li>
+</ul>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="1"><p>The difference is, no pun intended, artificial and intentional. It can be argued that everything that humans touch become artificial (including dog breeds, forests, mountains), while the denomination of &quot;the natural&quot; is a label applied to certain things which we imagine to be normal, untouched, like a &quot;natural&quot; park. Intentional, means that there was a purpose in its creation.</p>
+<p>The point of approaching our environment as artificial (i.e. human-made, or human-modified) is that it unlocks a set of questions as to <em>why</em> humans have created, or appropriated this particular object. What makes it important? What does it represent for the group of humans concerned with it? On how many different &quot;levels&quot; does it operate?</p>
+<p>What was the original intention of the object? What was the realized, actual function of the object?</p>
+</div></div><div class="page-group"><h3 class="page-name">cultural studies</h3><div class="prep" concept="1"><p>cultural studies is a field that studies cultural production and consumption in order to study the systems of power within a given group of people.</p>
+<p>what is one object which represents a contemporary culture that you are part of?</p>
+<hr>
+<ul>
+<li>smartphone -&gt; connectivity</li>
+<li>face masks -&gt; safety</li>
+<li>views and likes -&gt; statistics, quantification</li>
+<li>lime scooters -&gt; environment-friendly transportation</li>
+<li>avocado toasts -&gt; (wealthy) health / gentrification</li>
+<li>hydro flasks -&gt; environmentally conscious</li>
+<li>airpods -&gt; fashion (&quot;wearing them&quot;)</li>
+<li>small backpacks -&gt; fashion, trend (&quot;tumblr girl aesthetic&quot;) <strong>networks of meaning</strong>, dynamic youth, blurring of gender roles (from handbag to backpack)</li>
+<li>ikea furniture -&gt; coming-of-age, owning your own furniture, global systems of trade and consumption, modularity, logistics, the shift from craftsmanship to industry</li>
+<li>e-cigarettes -&gt; swag, &quot;being cool&quot;, vaping is cool, earphones -&gt; airpods, refuelling, tastes</li>
+</ul>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="1"><p>Cultural studies doesn&#39;t just look at culture just to explore what is going on (descriptive) but to give reasons as to why that must be going on (explicative). What do cultural practices (i.e. practices of meaning-making between humans) tell us about how those humans are organized? About what matters to them? About how they see the world.</p>
+<p>Particularly, cultural studies scholars such as Stuart Hall and Raymond Williams were interested in the class structures and systems of power as they manifest themselves not through explicit modes of constraint (like Foucault&#39;s investigation of disciplinary systems), or through quantitative methods (like Bourdieu&#39;s field study techniques), but through implicit, yet evocative practices. For example, how does how one set the table represent one&#39;s socio-economic belonging, or aspirations? How does one&#39;s leisure activities act as someone&#39;s desire to fit within a group? How could those activities be imposed, to an extent, upon those who practice them?</p>
+</div></div><div class="page-group"><h3 class="page-name">museums as cultural institutions</h3><div class="prep" concept="1"><p>what kind of culture do museums represent?</p>
+<ul>
+<li>particular aspects of a given culture</li>
+<li>by taking a stance, they also create culture</li>
+</ul>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="1"><p>Museums tend to develop both <strong>for</strong> cultural practices and <strong>as</strong> cultural practices. On the one hand, museums document, present and highlight aspects of different cultures (across time and/or space), and therefore have a responsibility in conveying a &quot;<em>truth</em>&quot; about the collections and the objects they are presenting.</p>
+<p>On the other hand, however, they also act <strong>as</strong> culture, and in that they are the object of a cultural practice (e.g. going to the museum on sundays). In that sense, the museums themselves become representative of our culture.</p>
+<p>The way they communicate their meanings can be through:</p>
+<ul>
+<li>wall labels</li>
+<li>wall text</li>
+<li>audio guides</li>
+<li>conference guides</li>
+<li>direct presentation</li>
+<li>collective exhibition</li>
+<li>catalogues</li>
+<li>...</li>
+</ul>
+</div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="objects">objects</h3><div class="context"><div></div><div class="context-links"></div><hr><a href="https://thesocietypages.org/cyborgology/2011/12/02/a-brief-summary-of-actor-network-theory/">https://thesocietypages.org/cyborgology/2011/12/02/a-brief-summary-of-actor-network-theory/</a><div>A short summary of actor network theory</div></div><div class="page-group"><h3 class="page-name">approaches</h3><div class="prep" concept="2"><p>what is an object? what is an artefact?</p>
+</div><div class="prep" concept="2"><p><em>an object is a material creation whose form and/or function support human living on <strong>multiple levels</strong></em></p>
+</div><div class="prep" concept="2"><p>ordering:</p>
+<ul>
+<li>difference between old (traditional) and new (modern)</li>
+<li>difference between low-tech and hi-tech</li>
+<li><ul>
+<li>scooters </li>
+</ul>
+</li>
+<li>difference between simple and complex</li>
+</ul>
+<p>there is an order (structures), there is progress, time is linear, and things get better over time.</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="2"><p>Objects are first and foremost materials: they can be seen, touched, heard, smelled, before they can be understood. Through this materiality, objects embody more invisible, evanescent, sometimes &quot;ideological&quot; relationships and therefore act as testimonies to our culture.</p>
+<p>Objects can have a range of sizes, from a toothpick to the sixth continent of plastic (often qualifying as <a target='_blank' href="http://www.cyborganthropology.com/Hyperobjects">hyperobjects</a>)</p>
+</div></div><div class="page-group"><h3 class="page-name">objects and culture</h3><div class="prep" concept="2"><p>&quot;<em>artefacts are a means by which we give form to, and come to an understanding of, ourselves, others</em>&quot; -daniel miller</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="2"><p>Daniel Miller is an anthropologist, and aims at highlighting the need for <em>all</em> societies to look at their objects as essential cultural artefacts, playing complex roles of function and signification between all of us; as a result, he doubts the usefulness of making a clear disctinction between <em>humans</em> and <em>objects</em>. More recently, he&#39;s been leading a research project on digital anthropology: <a target='_blank' href="https://www.uclpress.co.uk/collections/series-why-we-post">why we post</a></p>
+<p>Particularly, artefacts (as Miller calls them) are means of representing not just individuals (through their choice of using those) but mostly as manifestations of the historical and geographical contexts in which they operate. This isn&#39;t just limited to the, say, masks of &quot;primitive&quot; populations studied by anthropologists such as a Marcel Mauss and Levi-Strauss, but to all objects created by any society, including (and especially!) societies from which anthropologists typically come from.</p>
+<p>Even natural objects such as avocados can be subject to an examination as artefacts: products of human civilization. They serve the need of higher-class in Western societies and they are produced by lower-classes in the Global South.</p>
+</div></div><div class="page-group"><h3 class="page-name">ordering</h3><div class="prep" concept="2"><p>the way we classify things gives them a particular kind of meaning.</p>
+<p><strong>structuralism</strong> is an approach in which all things, peoples and relationships happen within one <em>defined</em> overarching structure, a cultural project with existing rules (either explicit or implicit).</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="2"><p>Ordering things gives them meaning in multiple ways:</p>
+<ul>
+<li>it applies a label, and therefore creates a connection between a word and an object, which is powerful in itself (e.g. labeling a <a target='_blank' href="https://www.youtube.com/watch?v=to4m1zu7x5g">song from fairuz</a> as &quot;world music&quot;)</li>
+<li>it also puts an object in a relationship with other objects, creating an implicit connection between them (e.g. think of having to buy shampoo in the kitchen cleaning section of the supermarket)</li>
+</ul>
+<p>One way to see these orderings of things is through ideology, which is a set of imagined relationships giving an explanation for the reality of our lives.</p>
+<p>Another is through structuralism, a current started by <a target='_blank' href="https://en.wikipedia.org/wiki/Ferdinand_de_Saussure">Ferdinand de Saussure</a> and his work on linguistics, and by represented best by <a target='_blank' href="https://en.wikipedia.org/wiki/Claude_L%C3%A9vi-Strauss">Claude Lévi-Strauss</a>. Both of these academics attempted to find the <em>abstract logic</em> present behind the relationships of humans and objects, and always bring them back to those abstract, immutable laws (also cf. Noam Chomsky&#39;s work on generative grammar).</p>
+</div></div><div class="page-group"><h3 class="page-name">being ordered</h3><div class="prep" concept="2"><p>on the other hand, being ordered means that objects act as a classification systems for humans.</p>
+<p>essentially, objects help humans represent themselves.</p>
+<ul>
+<li>iphone vs. android</li>
+<li>high-end brands vs. fast-fashion</li>
+<li>urban outfitters vs. zara vs. second-hand vs. upcycling</li>
+<li>how you want to present yourself -&gt; use of the object</li>
+</ul>
+</div><div class="prep" concept="2"><img src="augmenting-the-gallery_assets/subculturebook.jpg" alt="subculturebook.jpg"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="2"><p>This is the part where the objects act themselves as delimiters: they help act as identifiers for the individuals that use them.</p>
+<p>Indeed, objects can act as myth-carriers (<a target='_blank' href="https://www.newyorker.com/culture/richard-brody/the-uses-of-mythologies">mythologies</a>), from the scepters and crowns of rulers in medieval europe, to the choice between an Android and an iOS system in a globalized world. The choice (or lack thereof) of choosing one object is something that reflects how one is being classified within a social group.</p>
+<p>These myths, contrary to structuralism, are a bit more arbitrary: they only have the meaning that we collectively assign, and that meaning can change.</p>
+</div></div><div class="page-group"><h3 class="page-name">creating meaning</h3><div class="prep" concept="2"><p>how does the walkman create meaning?</p>
+<p>culture (overarching production conditions),</p>
+<p>media (family of technologies and communications)</p>
+<p>identity (how individual and groups relate to it)</p>
+</div><div class="prep" concept="2"><p>three moments in meaning-making:</p>
+<ul>
+<li><strong>production</strong> (where and when was it made? by whom?)</li>
+<li><strong>mediation</strong> (how does it present itself to its audience? what words and images are being used to represent it?)</li>
+<li><strong>consumption</strong> (how is it actually used? how is that use congruent with the intended use?)</li>
+</ul>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="2"><p>There are actually a couple of other moments, according to Paul DuGay and his co-authors of <em>Doing Cultural Studies</em>. These include:</p>
+<ul>
+<li>representation (how is the object shown to us? both by its creators, and by others?)</li>
+<li>identity (what are the traits that are associated with the object, beyond what the creators want to have explicitly presented?)</li>
+<li>production (in a very marxist sense: what are the practical conditions of the creation of the object, and how do those relate to broader ideological conditions?)</li>
+<li>consumption (how do people actually engage with it?)</li>
+<li>regulation (under what circumstances is the object allowed or not? by which legal/moral system?)</li>
+</ul>
+<p>A different approach is that of <em>culture</em>, <em>media</em> and <em>identity</em>. The culture created is both the one that it embeds itself in, the current state of the world and the assumptions and share meaning that exist at that moment (e.g. Japan is futuristic, culture is for everyone, at any time). The media refers to its technological reality, to a specific family of tools and devices (e.g. the camcorder, the camera, the high-fidelity audio system). Finally, the identity refers to the personal meaning created and attributed to the consumers (e.g. being a dynamic youth, or being a fan of cutting-edge technology).</p>
+</div></div><div class="page-group"><h3 class="page-name">exercise</h3><div class="prep" concept="2"><p>write down what are some of the meanings represented by the <strong>iPhone</strong></p>
+<ul>
+<li><p>production</p>
+</li>
+<li><ul>
+<li>technological advancement and development</li>
+</ul>
+</li>
+<li><ul>
+<li>&quot;Designed in California. Made in China&quot;</li>
+</ul>
+</li>
+<li><ul>
+<li>industrial reproduction (for example shenzhen)</li>
+</ul>
+</li>
+<li><ul>
+<li>line of assembly</li>
+</ul>
+</li>
+<li><ul>
+<li>UI design, typography, etc.</li>
+</ul>
+</li>
+<li><p>mediation (storytelling)</p>
+</li>
+<li><ul>
+<li>stay connected, be social</li>
+</ul>
+</li>
+<li><ul>
+<li>the apple event (WWDC)</li>
+</ul>
+</li>
+<li><ul>
+<li>computing power, cameras</li>
+</ul>
+</li>
+<li><ul>
+<li>&quot;I&#39;m a Mac, I&#39;m a PC&quot; -&gt; anthropomorphisizing</li>
+</ul>
+</li>
+<li><p>consumption</p>
+</li>
+<li><ul>
+<li>money status</li>
+</ul>
+</li>
+<li><ul>
+<li>social media more than actual phones</li>
+</ul>
+</li>
+<li><ul>
+<li>trendsetter</li>
+</ul>
+</li>
+</ul>
+</div><div class="prep" concept="2"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="2"><p>For instance, how are iPhones tied to the <a target='_blank' href="https://en.wikipedia.org/wiki/Foxconn_suicides">Foxconn Suicides</a>, and who were <a target='_blank' href="https://en.wikipedia.org/wiki/Xu_Lizhi_(poet)">the people</a> who made them?</p>
+<p>You could examine it through:</p>
+<ul>
+<li>production / mediation / consumption</li>
+<li>network of meanings</li>
+<li>scales of time</li>
+<li>tension between social and individual</li>
+</ul>
+</div></div><div class="page-group"><h3 class="page-name">the boundary between humans and objects</h3><div class="prep" concept="2"><p>there doesn&#39;t need to be a particular difference between objects and humans, since objects can have personality, and humans can act as objects.</p>
+<p>this idea is explored further in <strong>actor-network theory</strong>.</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="2"></div></div><div class="page-group"><h3 class="page-name">revealing meaning</h3><div class="prep" concept="2"><p>how do museums communicate the meanings of the objects they house?</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="2"><p>They do so through:</p>
+<ul>
+<li>wall labels</li>
+<li>wall texts</li>
+<li>catalogues</li>
+<li>audioguides</li>
+<li>conference guides</li>
+<li>direct exposition</li>
+<li>group exhibition</li>
+<li>...</li>
+</ul>
+</div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="break">break</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">indeed</h3><div class="prep" concept="3"><p>10min</p>
+</div><div class="prep" concept="3"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="3"></div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="techniques of AR">techniques of AR</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">recognizing objects</h3><div class="prep" concept="4"><p>the problem of AR is to make a correlation between the 3D (physical) world and the 3D (digital) world.</p>
+<p>the first and easiest way to do so was to use <strong>markers</strong> as a connection point, and then calculate the difference between the original image and the calculated image.</p>
+<p>(today, 3D objects can be used as markers as well, but you still need to scan them first)</p>
+</div><div class="prep" concept="4"><img src="augmenting-the-gallery_assets/AR-Basketball-App-Mug.jpg" alt="AR-Basketball-App-Mug.jpg"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="4"></div></div><div class="page-group"><h3 class="page-name">recognizing spaces</h3><div class="prep" concept="4"><p>this is called <strong>markerless</strong> AR, because it doesn&#39;t need a specific image, but instead uses a GPS, gyroscope and software to deduce the position, scale and orientation of what is being looked at.</p>
+</div><div class="prep" concept="4"><img src="augmenting-the-gallery_assets/markerless-ar-example.png" alt="markerless-ar-example.png"></div><div class="prep" concept="4"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="4"></div></div><div class="page-group"><h3 class="page-name">arkit, arcore and arfoundation</h3><div class="prep" concept="4"><p><strong><a target='_blank' href="https://developer.apple.com/augmented-reality/">ARKit</a></strong> is developed by Apple, has more advanced features, but targets less devices.</p>
+<p><strong><a target='_blank' href="https://developers.google.com/ar/">ARCore</a></strong>, made by Google, still catches up to apple&#39;s features, but addresses a lot more devices.</p>
+<p><strong><a target='_blank' href="https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@1.0/manual/index.html#using-ar-foundation">ARFoundation</a></strong> is Unity&#39;s answer to both, allowing us to develop in one framework, and indiscriminately target ARKit or ARCore</p>
+<p>finally, <strong><a target='_blank' href="https://www.ptc.com/en/products/augmented-reality/vuforia">Vuforia</a></strong> is the &quot;ancestor&quot; of contemporary AR, having been around for a bit longer, and a lot more reliable/stable, while not offering all the features of ARKit or ARCore.</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="4"><p>All of the above rely on a field of computer science called Computer Vision (a series of math operations being applied to an image in order to extract its features), and particularly aim at recognizing <strong>feature points</strong>, which are points in an image which can be kept track of, in order to build up spatial awareness of what is being looked at. These feature points are essential, and this is why you might not see good AR results if you are only, say, looking at a dark, flat surface with no reflections (e.g. <code>the void</code>)</p>
+<p>How these feature points are implemented differ slightly between libraries and software solutions, mostly based on funding of the teams and market demand: in the end, they all do the same thing!</p>
+</div></div><div class="page-group"><h3 class="page-name">implementation in unity</h3><div class="prep" concept="4"><p>any unity scene with AR capabilities needs three objects: <code>Session</code>, <code>Session Origin</code> and <code>AR Camera</code>.</p>
+<p><code>ARSessionOrigin</code>, with an <code>AR Camera</code> as a child, takes care of calculating where Unity is in the real world, and adjusting the virtual camera to match that view.</p>
+<p><code>ARSession</code> has the responsibility to start, save, restart, recall and close AR Sessions. it takes care of a lot of the nitty gritty that we don&#39;t particularly want to deal with. </p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="4"></div></div><div class="page-group"><h3 class="page-name">visualizing and interacting in unity</h3><div class="prep" concept="4"><p>To <strong>visualize</strong> the world as it is recognized by the ARFoundation framework, we need to add a <code>AR [xxxx] Manager</code>, (e.g. a <code>AR Plane Manager</code>), which will display all planes recognized by Unity, by instantiating an object at the detected location.</p>
+<p>To <strong>interact</strong> with the world, we need to use the special Racyast manager provided by ARFoundation, and which is located on the <code>ARSession</code> component. Which results in a code like:</p>
+<pre><code>GameObject go = GameObject.Find(&quot;AR Session&quot;);
+go.GetComponent&lt;ARSession&gt;().Raycast(Input.GetTouch(0).position, etc.);</code></pre></div><div class="prep" concept="4"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="4"><div>Details on how to set up a basic scene in AR Foundation can be found [here](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@1.0/manual/index.html#using-ar-foundation).
+
+A ready-made project is the [AR Foundation Basics](https://github.com/periode/augmenting-gallery/tree/master/code) on the class repo.</div></div></div><div class="page-group"><h3 class="page-name">exercise</h3><div class="prep" concept="4"><ol>
+<li>Import the ARFoundation and ARCore/ARKit packages</li>
+<li>Create an <code>AR Session Origin</code>, and an <code>AR Session</code> (delete the Main Camera)</li>
+<li>On the <code>AR Session Origin</code>, add an <code>AR Raycast Manager</code> component and an <code>AR Plane Manager Component</code></li>
+<li>On the <code>AR Session</code>, add an <code>AR Input Manager</code>.</li>
+<li>Create an <code>AR Default Plane</code> prefab through the GameObject menu and assign it in the <code>AR Plane Manager</code> script.</li>
+<li>Download the CubeManager from the class <a target='_blank' href="https://github.com/periode/augmenting-gallery/blob/master/code/CubeManager.cs">GitHub</a>, add it to the <code>AR Session Origin</code> and assign a prefab to instantiate.</li>
+<li>Build and Run!</li>
+</ol>
+</div><div class="prep" concept="4"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="4"></div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="break">break</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">break?</h3><div class="prep" concept="5"><p>break</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="5"></div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="unity">unity</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">unity review</h3><div class="prep" concept="6"><ul>
+<li><p>screen space vs. world space? (surface window 2D always visible vs. depth inside 3D not always visible)</p>
+</li>
+<li><p>how does one make a button interactable?</p>
+</li>
+<li><p>Event Listener -&gt; Add Object -&gt; Find Script Component -&gt; Select Function (<code>public</code>)</p>
+</li>
+<li><p>what are the two types of images?</p>
+</li>
+<li><p>Texture (wrap around an object) and ..... Sprite (standalone image)!</p>
+</li>
+</ul>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="6"><div></div></div></div><div class="page-group"><h3 class="page-name">importing assets</h3><div class="prep" concept="6"><ul>
+<li><p>from the asset store</p>
+</li>
+<li><p>from external sources</p>
+</li>
+</ul>
+</div><div class="prep" concept="6"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="6"></div></div><div class="page-group"><h3 class="page-name">toggling on and off</h3><div class="prep" concept="6"><ul>
+<li><p>boolean logic</p>
+</li>
+<li><p><code>GameObject.SetActive()</code></p>
+</li>
+<li><p>public variables vs. <code>GameObject.Find()</code></p>
+</li>
+</ul>
+</div><div class="prep" concept="6"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="6"></div></div><div class="page-group"><h3 class="page-name">exercise</h3><div class="prep" concept="6"><ul>
+<li><p>when you click on an object, a text appears</p>
+</li>
+<li><p>when you click on another object, the text that is displayed changes</p>
+</li>
+<li><p>(alternative) when you click a second time on the object, the text changes</p>
+</li>
+</ul>
+</div><div class="prep" concept="6"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="6"></div></div><div class="page-group"><h3 class="page-name">colliders</h3><div class="prep" concept="6"><p>A <code>Collider</code> is a component that we can add to a GameObject in order to make it interactable through physics.</p>
+<p><code>Colliders</code> can act as physical boundaries (bumping into other objects) or as triggers (activating something when a physical event happens, such as walking into a zone).</p>
+<p>In order to register those, one of the two colliding objects need to have a <code>Rigidbody</code>.</p>
+</div><div class="prep" concept="6"><img src="augmenting-the-gallery_assets/RigidbodyandCollider.png" alt="RigidbodyandCollider.png"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="6"></div></div><div class="page-group"><h3 class="page-name">creating a game object</h3><div class="prep" concept="6"><p>In order to create a GameObject <em>while the app is running</em>, we can use the following:</p>
+<pre><code>//-- we need to have an object, a position and a rotation
+public GameObject go;
+public Vector3 position;
+Quaternion rotation = Quaternion.Identity;
+
+//-- when we create a gameobject, we can store it in a variable
+//-- and then instantiate it further
+GameObject created = GameObject.Instantiate(go, position, rotation);
+//-- here we make it twice as big
+created.GetComponent&lt;Transform&gt;().localScale *= 2;</code></pre></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="6"></div></div><div class="page-group"><h3 class="page-name">prefabs</h3><div class="prep" concept="6"><p>Prefabs are a way to <strong>save</strong> and <strong>recall</strong> GameObjects.</p>
+<p>In order to create a prefab, create a new <code>GameObject</code> in the <code>Hierarchy</code>, and then drag it into the <code>Assets</code> panel. You will see it become blue in the <code>Hierarchy</code>, and you can now create as many copies as you want of this <code>Prefab</code>.</p>
+<p>This is particularly useful when you want to instantiate objects at runtime, without having them in your scene to start with.</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="6"></div></div><div class="page-group"><h3 class="page-name">exercise</h3><div class="prep" concept="6"><ul>
+<li>create two objects</li>
+<li>set one&#39;s collider as a trigger</li>
+<li>when the object enters the trigger, instantiate a <strong>prefab</strong> anywhere</li>
+</ul>
+<p>BONUS</p>
+<ul>
+<li>make a script which allows you to control the Camera using the directional arrows</li>
+</ul>
+</div><div class="prep" concept="6"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="6"></div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="outro">outro</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">recap</h3><div class="prep" concept="7"><p>-&gt; objects represent the <em>meaningful</em> relations between humans, and the <em>imagined</em> worldviews these humans share.</p>
+<p>-&gt; frameworks for analyzing objects:</p>
+<ul>
+<li>production / mediation / consumption</li>
+<li>media / representation / practices</li>
+<li>the role they play to different groups of people</li>
+<li>semantic networks (meaning by association) (art exhibitions)</li>
+</ul>
+<p>-&gt; <em>augmenting</em> is revealing the <em>meaning(s)</em> of things</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="7"></div></div><div class="page-group"><h3 class="page-name">next week</h3><div class="prep" concept="7"><p>the homework is <a target='_blank' href="https://github.com/periode/augmenting-gallery/wiki/Schedule#week-5---augmenting-spaces">here</a>.</p>
+<p>-&gt; readings about spaces</p>
+<p>-&gt; the homework on augmenting objects is due</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="7"></div></div></div><br><div class="break-after" style="page-break-after:always;"></div></main></body></html>

@@ -1,0 +1,424 @@
+<!DOCTYPE html><html><head><meta charset="utf8"><title>augmenting-the-gallery | augmenting spaces</title><style>body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Inter UI', Trebuchet MS;
+	background-color: white;
+}
+
+header {
+	background-color: black;
+	color: white;
+  padding: 10px;
+	overflow: auto;
+}
+
+header h1{
+	display: inline-block;
+	margin-left: 5%;
+	margin-right: 5%;
+	width: 40%;
+	font-size: 2.5em;
+}
+
+@media print{
+	header h1{
+		font-size: 1em;
+	}
+}
+
+.subject-name{
+	float: right;
+	text-align: right;
+}
+
+.topic-name{
+	float: left;
+	text-align: left;
+}
+
+a {
+	text-decoration: none;
+  color: #e77607;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:visited {
+  color: #b25900;
+}
+
+header a{
+	color: white;
+	text-decoration: none;
+	border: 2px solid white;
+	padding: 3px;
+}
+
+main{
+	position: absolute;
+	margin-left: 20%;
+	width: 60%;
+	display: block;
+}
+
+@media print{
+	main{
+		margin-left: 5%;
+		width: 90%;
+	}
+}
+
+hr {
+	border: none;
+	height: 2px;
+	background-color: black;
+	float: left;
+	width: 100%;
+}
+
+img {
+	max-height: 300px;
+	max-width: 90%;
+}
+
+.concept-group{
+	width: 80%;
+	margin-left: 10%;
+	display: block;
+	float: left;
+}
+
+.concept-nav{
+	width: 30%;
+	float: right;
+	margin-right: 10%;
+}
+
+.overview-holder{
+	float: left;
+	width: 38%;
+	margin-left: 10%;
+}
+
+@media print{
+	.concept-group, .concept-nav{
+		width: 90%;
+		margin-left: 5%;
+	}
+}
+
+.concept-name {
+	width: 98%;
+	text-align: right;
+	float: right;
+	color: black;
+	border-bottom: 2px solid black;
+	padding: 1%;
+	font-size: 2em;
+}
+
+.break-before, .break-after{
+	display: block;
+	width: 100%;
+	height: 5px;
+	float: left;
+}
+
+.break-after{
+	page-break-after: always;
+}
+
+.page-group{
+	position: relative;
+	font-size: 1.2em;
+	width: 50%;
+	float: left;
+}
+
+@media print{
+
+	.page-group{
+		width: 70%;
+		page-break-inside: avoid;
+	}
+
+	.prep{
+		font-size: 0.8em;
+	}
+}
+
+.page-name{
+	width: 100%;
+	float: left;
+}
+
+.note-group{
+	position: relative;
+	width: 50%;
+	float: left;
+	overflow: auto;
+	text-align: left;
+}
+
+@media print{
+	.note-group{
+		width: 30%;
+	}
+}
+
+.note {
+	position: relative;
+	margin-bottom: 10px;
+	width: 100%;
+	overflow: auto;
+	white-space: pre;
+}
+
+@media print {
+	.note{
+		white-space: normal;
+	}
+}
+
+.writeup-group{
+	width: 100%;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	float: left;
+}
+
+@media print{
+	.writeup-group{
+		break-inside: avoid;
+		font-size: 0.9em;
+	}
+}
+
+.context{
+	white-space: pre-line;
+	border: 2px solid black;
+	width: 45%;
+	padding: 5px;
+	float: right;
+}
+
+@media print{
+	.context{
+		width: 100%
+	}
+}
+
+.writeup{
+	width: 100%;
+	float: left;
+	margin-bottom: 10px;
+	font-style: italic;
+	white-space: pre-line;
+}
+
+.web-only{
+	display: inherit;
+}
+
+.print-only{
+	display: none;
+}
+
+@media print{
+	* {
+		float: none !important;
+	}
+
+	.break-before{
+		page-break-before: always !important;
+	}
+
+	.break-after{
+		page-break-after: always !important;
+	}
+
+	.web-only{
+		display: none;
+	}
+
+	.print-only{
+		display: inline-block;
+	}
+}
+</style></head><body><header><h1 class="topic-name">augmenting spaces</h1><h1 class="subject-name"><a href="index.html">augmenting-the-gallery</a></h1></header><main><div class="overview-holder"><h1>overview</h1><p>This week focuses on the relationship between augmentation and spaces: how do geographical locations get affected by information flows? how could information flows be affected by information flows? How do these open up new possibilities for aesthetic expression and for human existence?</p>
+<p>Questions of shared realities, of memories and customization will all be addressed in this context.</p>
+</div><div class="concept-nav"><h1>summary</h1><ul><a class="web-only" href="#intro">intro</a><li class="print-only">intro</li></ul><ul><a class="web-only" href="#reality vs. realities">reality vs. realities</a><li class="print-only">reality vs. realities</li></ul><ul><a class="web-only" href="#situated computing">situated computing</a><li class="print-only">situated computing</li></ul><ul><a class="web-only" href="#augmented space">augmented space</a><li class="print-only">augmented space</li></ul><ul><a class="web-only" href="#summary">summary</a><li class="print-only">summary</li></ul><ul><a class="web-only" href="#unity">unity</a><li class="print-only">unity</li></ul><ul><a class="web-only" href="#outro">outro</a><li class="print-only">outro</li></ul><br></div><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="intro">intro</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">augmenting spaces</h3><div class="prep" concept="0"><p>welcome!</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="0"></div></div><div class="page-group"><h3 class="page-name">plan for the week</h3><div class="prep" concept="0"><p>-&gt; assignment presentation</p>
+<p>-&gt; spaces, places and augmentation</p>
+<p>-&gt; AR basics</p>
+<p>-&gt; prefabs</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="0"></div></div><div class="page-group"><h3 class="page-name">housekeeping</h3><div class="prep" concept="0"><p>schedule shift:</p>
+<p>-&gt; augmented exercise #2 due on 03/09 (week 7)</p>
+<p>-&gt; museum presentations on 03/11</p>
+<p>-&gt; collection exploration due on 03/25</p>
+<p>-&gt; augmented exercise #3 due on 04/08</p>
+</div><div class="prep" concept="0"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="0"></div></div><div class="page-group"><h3 class="page-name">augmented exercise 1</h3><div class="prep" concept="0"><ul>
+<li>which object did you choose?</li>
+<li>which story did you choose to highlight?</li>
+<li>how could it have been highlighted further/differently? what other stories could have been highlighted?</li>
+</ul>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="0"></div></div><div class="page-group"><h3 class="page-name">the met AR</h3><div class="prep" concept="0"><p>The experience has been taken offline. You can find the documentation <a target='_blank' href="https://www.unit9.com/project/the-met-unframed/">here</a> to read about the rationale, the design and the development of a project.</p>
+</div><div class="prep" concept="0"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="0"><p>Pros include:</p>
+<ul>
+<li><p>relevance of the paintings being seen (symbolism)</p>
+</li>
+<li><p>levels of navigation through the interface</p>
+</li>
+</ul>
+</div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="reality vs. realities">reality vs. realities</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">adam greenfield</h3><div class="prep" concept="1"><p>adam greenfield is a writer and urbanist, between nokia, nyu and bartlett school of architecture.</p>
+<p>he is also very pessimistic (the whole book, <a target='_blank' href="https://www.theguardian.com/books/2017/jul/13/radical-technologies-adam-greenfield-review">radical technologies</a> is roughly against everything digital). for good reasons?</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="1"><div></div></div></div><div class="page-group"><h3 class="page-name">post-public</h3><div class="prep" concept="1"><p>what are his pros and cons of AR?</p>
+<p>concerns:</p>
+<ul>
+<li><p>AR for memorials -&gt; the evil of banality</p>
+</li>
+<li><ul>
+<li>memorial for the murdered jews</li>
+</ul>
+</li>
+<li><ul>
+<li>stolpensteiner</li>
+</ul>
+</li>
+<li><p>what is AR doing to the individual?</p>
+</li>
+<li><ul>
+<li>absence from common space</li>
+</ul>
+</li>
+<li><ul>
+<li>face-blindness: have a tech/app to recognize</li>
+</ul>
+</li>
+</ul>
+<p>what is the &quot;not too much&quot;? who decides it?</p>
+<ul>
+<li>tech companies</li>
+<li>ethical committees in tech companies</li>
+<li>individuals/users themselves</li>
+<li>designers</li>
+<li>political organizations (govts, courts of justice, etc.)</li>
+</ul>
+</div><div class="prep" concept="1"><p>pokemons in 9/11 memorial, cemetaries, etc.</p>
+<p>don&#39;t have pokemons show up in certain <strong>places</strong> (context)</p>
+<ul>
+<li>memorials</li>
+<li>places of worship</li>
+<li>places that are dangerous (cliffs, highways)</li>
+<li>unhealthy</li>
+</ul>
+<p><strong>individual beliefs</strong> (context)</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="1"><p>The fact is that we do not have a shared reality any longer: filter bubbles are the manifestation of our separations in the information sphere. Could that happen in the physical sphere? When you see is no longer what I see, an essential requirement of <em>living-together</em> vanishes into thin air, as we see by the <a target='_blank' href="https://en.wikipedia.org/wiki/The_dress">dress controversy</a>.</p>
+<p>The following question, then, is how to ensure a level of sharedness in a virtual world, or do we refrain ourselves from developing such a technology in the first place?</p>
+</div></div><div class="page-group"><h3 class="page-name">post-human</h3><div class="prep" concept="1"><p>what does it mean to be <em>post-human</em>?</p>
+<p><a target='_blank' href="https://lauren-mccarthy.com/us">lauren mccarthy - us+</a></p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="1"><p>Post-humanity is the movement of humans towards cyborgs: beings which aren&#39;t exclusively made up of flesh and bones, but of additional apparatuses, such as glasses, prosthetic legs, hearing aids, etc. Those augmentations could lead us to more separation with the rest of animal life or, as Donna Haraway puts it, could lead us to break down barriers between humans and non-humans.</p>
+</div></div><div class="page-group"><h3 class="page-name">the pessimism of AR</h3><div class="prep" concept="1"><p>the truth value of representation is even more important in AR.</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="1"><p>Most importantly, individual experiences enable shared conversations. He points out that AR might be changing the &quot;common factor&quot; in social life, in a similar way that the COVID-19 pandemic and the remote schooling that took place in its wake highlighted even more the digital divide between those who have access to high-quality communication technology, and those who have not.</p>
+<p>augmentability vs. accessibility.</p>
+<p>The &quot;interface effect&quot;: just because it&#39;s not on the menu, it doesn&#39;t mean that it doesn&#39;t exist!</p>
+</div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="situated computing">situated computing</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">types of context</h3><div class="prep" concept="2"><p>situatedness can imply a <strong>person</strong>, a <strong>moment</strong>, a <strong>place</strong>.</p>
+<p>let&#39;s take the example of a diary.</p>
+<p>how does <strong>time</strong> change our appreciation of this diary?</p>
+<ul>
+<li>availability of information of the diary (routines, perspectives)</li>
+</ul>
+<p>how does <strong>place</strong> change our appreciation of this diary?</p>
+<ul>
+<li>private vs. public</li>
+<li>levels of privateness</li>
+</ul>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="2"></div></div><div class="page-group"><h3 class="page-name">situatedness in digital media</h3><div class="prep" concept="2"><p>but why should <em>tools</em> take situations into account? what is the difference between knowing the tool and knowing how to use the tool?</p>
+<p>how do <strong>tools enable knowledge</strong>?</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="2"><p>Knowing how to use the tool allows you to get into the worldview of the developer/designer; you start to apprehend things the way they apprehend things, whether it empowers or limits your abilities.</p>
+<p>However, knowing the tool means that you also know the <em>potential</em> of the tool, and you can therefore make it yours. This process of making something one&#39;s own is essential to ownership; not just ownership in the material sense, but ownership of of knowledge as well. Once you&#39;ve made it, you own it, and you can only own the tool if you know the tool itself, and not just its use.</p>
+<p>This relates to <strong>epistemology</strong>, the question of where knowledge comes from. Knowledge of a thing, rather than knowledge of how to use a thing, is often more valuable.</p>
+</div></div><div class="page-group"><h3 class="page-name">constructive memory</h3><div class="prep" concept="2"><p>what is constructive memory? how does it differ from computer memory?</p>
+<p><a target='_blank' href="http://yesterscape.com/">yesterscape</a></p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="2"><p>Constructive memory means that we actively create memories as we recall them. While a computer, for now, is only accessing memory in a location, humans combine them to create new ones. Which means that our memories, obivously, aren&#39;t &quot;objective&quot;, they are tailored not only to our experiences, but to how we recall these experiences. The consequence of that is that, if computers start to have constructive memories, they would start to be <strong>personalized</strong>.</p>
+</div></div><div class="page-group"><h3 class="page-name">three different worlds</h3><div class="prep" concept="2"><p><em>external</em> world</p>
+<p><em>interpreted</em> world</p>
+<p><em>expected</em> world</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="2"><p>The external world is the world that exists, the world that we start from.</p>
+<p>The interpreted world is how we make sense of that world through pre-existing cultural knowledge, or through contextual cues.</p>
+<p>The expected world is the world that we would like to manifest through our actions (or lack thereof). It is the result of our intention as enabled by affordances; how we change the world.</p>
+<p>Digital applications help us in the 2nd and the 3rd worlds, traditionally: they help us interpret, and act upon the world. However, with AR, digital applications also affect the first world.</p>
+</div></div><div class="page-group"><h3 class="page-name">memories as the basis of the individual</h3><div class="prep" concept="2"><p>constructive memories means taking into account the individual. <strong>technology doesn&#39;t exist in a void</strong>.</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="2"><p>Just as we are constituted as a series of events, is it possible to apprehend computers as learning as well? To some extent, this is what AI is doing: developing recommendation algorithms happens through the recurring process of learning, presenting, learning again.</p>
+</div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="augmented space">augmented space</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">lev manovich </h3><div class="prep" concept="3"><p>lev manovich teaches at the cuny graduate center, and wrote the influential book <a target='_blank' href="https://mitpress.mit.edu/books/language-new-media">the language of new media</a>, in which he highlights the specificity of new media.</p>
+</div><div class="prep" concept="3"><img src="augmenting-the-gallery_assets/selfiecity.jpg" alt="selfiecity.jpg"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="3"><p>Manovich theorized the unique specificities of new media, which are:</p>
+<ul>
+<li><strong>numerical representation</strong>: everything can be a number</li>
+<li><strong>modularity</strong>: a system can be broken into smaller parts and replaced in different places, physical integrity is no longer a problem</li>
+<li><strong>automation</strong>: a set of rules can act on their own</li>
+<li><strong>variability</strong>: new media is customizable</li>
+<li><strong>transcoding</strong>: through numerical representation, data can be coded in different ways: e.g. data visualization</li>
+</ul>
+</div></div><div class="page-group"><h3 class="page-name">ways of augmenting space</h3><div class="prep" concept="3"><p>how does he see space as being augmented?</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="3"><p>The flows of data go in two directions:</p>
+<ul>
+<li>extraction (surveillance)</li>
+<li>insertion (augmentation</li>
+</ul>
+<p>Two different ways of doing augmentation: creating new data (sound walks) or highlighting existing data (jewish museum).</p>
+</div></div><div class="page-group"><h3 class="page-name">aesthetics vs. poetics</h3><div class="prep" concept="3"><p>what&#39;s the difference between the two?</p>
+</div><div class="prep" concept="3"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="3"><p>As literary theorist Gerard Genette approaches the concept of literature through both <em>diction</em> and <em>fiction</em>, we can understand the difference between <em>aesthetics</em> and <em>poetics</em>.</p>
+<p>The difference I would like to draw here is <strong>(1)</strong> between the scales of representation, and <strong>(2)</strong> between <em>formal representation</em>, encompassing the concrete signs which make up a work, and <em>conceptual representation</em>, the over-arching structures along which a work is composed and then communicated. Following the definition of Jacques Rancière, I understand aesthetics as a physical manifestation which can be grasped by the senses. Aesthetics belong to the <em>sensible</em>, whether &quot;the movement of a light, the brush a fabric, the splash of a color&quot; (Ranciere, 2019). These sensible moments, through their deliberate laying out by the (potential) author(s), act as symbols by virtue of being received by an audience. <em>Aesthetics</em> as delimited here are the myriad of symbols, linguistic or non-linguistic, which facilitate the communication of a given message of a given nature (e.g. a statement, an emotion, a question, etc.).</p>
+<p>As the counterpoint to Genette&#39;s <em>diction</em>, <em>fiction</em> operates on a higher level, and is an organizing force which shapes the work as a whole into a certain configuration, and thus affords the audience of the work the possibility it to apprehend from a particular angle. Fiction here is understood as a proposal for a conceptual representation, a certain way of framing, akin to the difference between comedy and tragedy, to take the Ancient Greek example. Poetics, then, moves toward <em>what</em> is being said, while aesthetics skews towards about <em>how</em> it is being said. In that sense, it is the process of representing the world, the process of world-making, as Goodman presents it. As a global act of making, poetics operate on a macro-level, and apprehend the subject of the work (be it itself, or something external to it) in a totality. It is an operating process upon that subject, one which transforms its manifestation holistically. If poetics is operating, then aesthetics is being, an existing feature of a work waiting to be received, interpreted through active engagement.</p>
+</div></div><div class="page-group"><h3 class="page-name">augmented places</h3><div class="prep" concept="3"><p>art galleries can be places for innovation in terms of medium delivery.</p>
+<p>which other places are the most innovative digitally, today?</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="3"><p>A place is a space that has a <em>purpose</em>, a <em>use</em>. This means that it has a past, and a future. The art gallery is a space that is turned into a place by being appropriated, manipulated, changed by the artists, curators, etc.</p>
+<p>Some of the places that are the most innovative today are commercial spaces: <a target='_blank' href="https://www.youtube.com/watch?v=dD36IajCz6A">NYTimes office</a> with a stream of text from the internet, and <a target='_blank' href="https://www.youtube.com/watch?v=XdPT8nXXJdo">KFC</a> (this in particular shows the intertwinings of the real and the cyber.</p>
+</div></div><div class="page-group"><h3 class="page-name">architecture</h3><div class="prep" concept="3"><p>software finds a  metaphore in architecture:</p>
+<ul>
+<li>designing places to facilitate living/thinking</li>
+<li>the process of conception and construction are similar</li>
+</ul>
+</div><div class="prep" concept="3"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="3"><p>There is a relationship in software architecture, how to organize components for it to make sense to the programmer, but there is also information architecture: how the user exists within an information space that is easy to navigate.</p>
+<p>If there is a concrete layer from which we have to start from (whether it&#39;s actual cement, or hardware), there is a way to arrange information around it such that the user can maximize her cognitive abillities (just like architecture maximizes the ability to live).</p>
+</div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="summary">summary</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">augmenting spaces</h3><div class="prep" concept="4"><p>context-awareness can be <strong>personal</strong>, <strong>chronological</strong> or <strong>geographical</strong>.</p>
+<p>subsuming physical reality with digital realities prioritizes the individual over the collective.</p>
+<p>the <em>post-human</em> can both close us off from our environment or open it up.</p>
+</div><div class="prep" concept="4"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="4"></div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="unity">unity</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">unity review</h3><div class="prep" concept="5"><p>what&#39;s a <strong>collider</strong>? how is it different from a <strong>trigger</strong>?</p>
+<p>what&#39;s a <strong>prefab</strong>? what is it useful for?</p>
+</div><div class="prep" concept="5"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="5"></div></div><div class="page-group"><h3 class="page-name">scene management</h3><div class="prep" concept="5"><p>A Unity project can be separated in different <code>Scenes</code>. Each scene contains its own active <code>GameObjects</code> and will not interfere with other scenes. Each scene must be added in the <code>Build Settings</code>.</p>
+<pre><code>using Unity.SceneManagement; //-- don&#39;t forget the namespace!
+
+void Start(){
+ //-- you can also refer to it by the number in the Build Settings
+  SceneManager.LoadScene(&quot;MainScene&quot;);
+}</code></pre></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="5"></div></div><div class="page-group"><h3 class="page-name">audio</h3><div class="prep" concept="5"><p>Unity can play audio given:</p>
+<ul>
+<li>an <code>Audio Source</code> (which is the component that plays audio)</li>
+<li>an <code>Audio Listener</code> (which is the component which simulates your ears)</li>
+</ul>
+<p>Unity can have 3D settings for how the audio should behave.</p>
+</div><div class="prep" concept="5"><img src="augmenting-the-gallery_assets/TypesOfRollOff.png" alt="TypesOfRollOff.png"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="5"></div></div><div class="page-group"><h3 class="page-name">lerping</h3><div class="prep" concept="5"><p>aka Linear Interpolation, a technique to smoothly transition from one value to another.</p>
+<pre><code>float lerpAmount = 0f;
+float lerpIncrease = 0.1f;
+float myValue;
+
+void Update(){
+  myValue = (20f, 34f, lerpAmount);
+  lerpAmount += lerpIncrease;
+}</code></pre></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="5"></div></div><div class="page-group"><h3 class="page-name">particle systems</h3><div class="prep" concept="5"><p>generating particles to highlight attention and interaction.</p>
+<p>(aka <a target='_blank' href="https://longwelwind.net/blog/juice-it/">juice</a>, the sugar of interaction.</p>
+<p>more on the <a target='_blank' href="https://docs.unity3d.com/Manual/ParticleSystems.html">unity manual</a></p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="5"></div></div><div class="page-group"><h3 class="page-name">exercise</h3><div class="prep" concept="5"><ul>
+<li>make two scenes.</li>
+<li>on the first scene, a UI greets you and lets you load the second scene.</li>
+<li>on the second scene, there are two objects. when you click on an object, a sound plays and some particles appear.</li>
+</ul>
+</div><div class="prep" concept="5"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="5"></div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="outro">outro</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">recap</h3><div class="prep" concept="6"><p>augmented reality questions our <em>shared</em> reality, by pushing further the idea of customization/personalization.</p>
+<p>however, this customization could be a good thing if we take into account the <em>situation</em> in which the use of a software takes place.</p>
+<p>finally, augmentation could also be seen as an artistic practice, as a means to <em>evoke</em> things about the physical world, and therefore co-existing with it.</p>
+</div><div class="prep" concept="6"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="6"></div></div><div class="page-group"><h3 class="page-name">next week</h3><div class="prep" concept="6"><p>-&gt; reading for <a target='_blank' href="https://github.com/periode/augmenting-gallery/blob/master/resources/readings/Glinka_Museum4Punkt0.pdf">museum4punkt0</a></p>
+<p>-&gt; presentations from m4p0</p>
+</div><div class="prep" concept="6"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="6"></div></div></div><br><div class="break-after" style="page-break-after:always;"></div></main></body></html>
