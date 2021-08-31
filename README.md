@@ -8,9 +8,9 @@ IMNY-UT 9001
 **Email** [pierre.depaz@nyu.edu](mailto:pd1102@nyu.edu)
 
 ## Details
-**Location** Academic Center (Prenzlauer Berg)
+**Location** Saint Agnes (Kreuzberg)
 
-**Time** Tue 13.00 - 14.15 / Thu 13.00 - 15.00
+**Time** Mon 10.00 - 11.15 / Wed 10.00 - 12.00
 
 **Office Hours**
 
