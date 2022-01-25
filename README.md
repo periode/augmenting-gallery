@@ -10,7 +10,7 @@ IMNY-UT 9001
 ## Details
 **Location** Saint Agnes (Kreuzberg)
 
-**Time** Mon 10.00 - 11.15 / Wed 10.00 - 12.00
+**Time** Wed 9.00 - 13.00
 
 **Office Hours**
 
