@@ -5,7 +5,7 @@
 - Include the name of each team member
 
 ## GENERAL OVERVIEW
-### (half a page)
+### (a page)
 
 - Describe **what your project is about**.
 
@@ -22,6 +22,10 @@ Why would anyone want to experience your particular project, and what would you 
 - Are there any **unusual aspects?**
 
 Something that other projects in the same field don't have to take care of, but that you're experimenting with for the first time?  This part is meant to show that you are not afraid to push boundaries of what exists, but that you are also aware of what you are doing.
+
+- Have similar projects **already been done?**
+
+Show that you've done your research and you're not reinventing the wheel. What other projects exist, either within a museum setting or not? How successful were they? How do you build on their achievements and/or shortcomings? What do you do similarly and what do you do differently?  
 
 ---
 
