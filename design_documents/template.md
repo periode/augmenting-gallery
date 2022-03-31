@@ -15,17 +15,15 @@ Describe what kind of experience you intend to offer the audience, what drives y
 
 What is it about AR that will make it different than on another medium? This is where you show the reader that you not only have a great idea, but that you also understand the technical aspects of the medium you're working in —whether you have a clear idea or whether you just want to test out an idea. Make sure you also mention why this is important as a cultural experience.
 
+Are there any unusual aspects? Something that other projects in the same field don't have to take care of, but that you're experimenting with for the first time?  This part is meant to show that you are not afraid to push boundaries of what exists, but that you are also aware of what you are doing.
+
 - Describe **the learning experience that you want to suggest** in your audience.
 
 Why would anyone want to experience your particular project, and what would you like them to get out of it? Do they learn/reflect/play/challenge? Include how you will achieve that goal through *interactions* and *content*.
 
-- Are there any **unusual aspects?**
-
-Something that other projects in the same field don't have to take care of, but that you're experimenting with for the first time?  This part is meant to show that you are not afraid to push boundaries of what exists, but that you are also aware of what you are doing.
-
 - Have similar projects **already been done?**
 
-Show that you've done your research and you're not reinventing the wheel. What other projects exist, either within a museum setting or not? How successful were they? How do you build on their achievements and/or shortcomings? What do you do similarly and what do you do differently?  
+Show that you've done your research and you're not reinventing the wheel. What other projects exist, either within a museum setting or not? How successful were they? How do you build on their achievements and/or shortcomings? What do you do similarly and what do you do differently? You can include images of those other apps.
 
 ---
 
@@ -42,7 +40,7 @@ Why does the audience want to do that interaction? Should they be walking, swipi
 
 - Describe **the navigation flow** of your project.
 
-How does the audience start your application? How does it end? What are the different screens they see and how do those screens connect between each other?
+How does the audience start your application? How does it end? What are the different screens they see and how do those screens connect between each other? This section should ultimately include a wireframe.
 
 - Describe **the interface** of your project.
 
