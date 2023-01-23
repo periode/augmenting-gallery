@@ -7,10 +7,14 @@ IMNY-UT 9001
 
 **Email** [pierre.depaz@nyu.edu](mailto:pd1102@nyu.edu)
 
+## Teaching Assistant
+
+**Name** Anton Filatov
+
 ## Details
 **Location** Saint Agnes (Kreuzberg)
 
-**Time** Wed 9.00 - 13.00
+**Time** Wed 9.30 - 13.00
 
 **Office Hours**
 
