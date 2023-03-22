@@ -11,6 +11,8 @@ IMNY-UT 9001
 
 **Name** Anton Filatov
 
+**Email** [anton.filatov@nyu.edu](mailto:anton.filatov@nyu.edu)
+
 ## Details
 **Location** Saint Agnes (Kreuzberg)
 
