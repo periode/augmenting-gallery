@@ -1,0 +1,51 @@
+body {
+    background-color: white;
+    color: black;
+}
+
+a {
+    color: grey;
+}
+
+a:hover{
+    color:darkblue;
+}
+
+p {
+
+}
+
+.heading {
+    font-family: 'Pangolin', cursive;
+}
+
+.heading:hover{
+    text-decoration: underline;
+}
+
+
+
+.my-intro{
+    font-style: italic;
+}
+
+.main-content{
+    width: 30%;
+    margin:auto;
+}
+
+
+.image-with-legend {
+    border: 1px black solid;
+    padding: 5px;
+    width:50%;
+}
+
+.img-legend{
+    font-style: italic;
+    font-size: 10px;
+}
+
+img{
+    width: 100%;
+}
