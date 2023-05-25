@@ -1,6 +1,46 @@
+/* 
+all CSS declarations follow this pattern:
+
+SELECTOR {
+    PROPERTY: VALUE;
+}
+*/
+
+
 body {
     background-color: white;
     color: black;
+    font-display: swap; /* displays the system font as long as the desired font isn't loaded yet */
+}
+
+.main-content{
+    width: 60%;
+    margin:auto;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.actual-content {
+    position: relative;
+    display: flex;
+    direction: row;
+    gap: 10px;
+}
+
+.toc-holder{
+    width: 80%;
+    position: sticky;
+    top: 0px;
+    align-self: flex-start;
+}
+
+.toc h3 {
+    margin: 0;
+}
+
+.toc a {
+    color: #000000;
 }
 
 a {
@@ -11,8 +51,11 @@ a:hover{
     color:darkblue;
 }
 
-p {
-
+hr {
+    border: 1px solid black;
+    width: 40%;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .heading {
@@ -24,16 +67,9 @@ p {
 }
 
 
-
 .my-intro{
     font-style: italic;
 }
-
-.main-content{
-    width: 30%;
-    margin:auto;
-}
-
 
 .image-with-legend {
     border: 1px black solid;
@@ -42,6 +78,9 @@ p {
 }
 
 .img-legend{
+    /* display - none - block */
+    /* visible: hidden - visible */
+    display: none; 
     font-style: italic;
     font-size: 10px;
 }
