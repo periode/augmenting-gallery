@@ -13,6 +13,21 @@ body {
     font-display: swap; /* displays the system font as long as the desired font isn't loaded yet */
 }
 
+
+
+.video{
+    width: 100%;
+}
+
+.video-start-text{
+    display: inline;
+    text-decoration: underline;
+}
+
+.video-start-text:hover{
+    cursor: pointer;
+}
+
 .main-content{
     width: 60%;
     margin:auto;
@@ -21,12 +36,32 @@ body {
     flex-direction: column;
 }
 
+/* apply styles if the width of the window is less than ____ pixels */
+@media (min-width: 390px) and (-webkit-device-pixel-ratio: 3) {
+    .main-content{
+        width: 95%;
+    }
+
+    button{
+        font-size: 36px;
+        width: 100%;
+        height: 48px;
+    }
+  }
+
 .actual-content {
     position: relative;
     display: flex;
-    direction: row;
+    flex-direction: row;
     gap: 10px;
 }
+
+@media (min-width: 390px) and (-webkit-device-pixel-ratio: 3) {
+    .actual-content {
+        flex-direction: column;
+        margin-bottom: 120px;
+    }
+  }
 
 .toc-holder{
     width: 80%;
@@ -34,6 +69,18 @@ body {
     top: 0px;
     align-self: flex-start;
 }
+
+@media (min-width: 390px) and (-webkit-device-pixel-ratio: 3) {
+    .toc-holder {
+        position: relative;
+        background-color: #ddd;
+        width: 96%;
+        padding: 2%;
+        margin-top: 20px;
+        margin-bottom: 100px;
+        border: 1px solid black;
+    }
+  }
 
 .toc h3 {
     margin: 0;
@@ -62,6 +109,16 @@ hr {
     font-family: 'Pangolin', cursive;
 }
 
+@media (min-width: 390px) and (-webkit-device-pixel-ratio: 3) {
+    h1 {
+       font-size: 72px;
+    }
+
+    h2, h3 {
+        font-size: 24px;
+    }
+  }
+
 .heading:hover{
     text-decoration: underline;
 }
@@ -84,6 +141,12 @@ hr {
     font-style: italic;
     font-size: 10px;
 }
+
+@media (min-width: 390px) and (-webkit-device-pixel-ratio: 3) {
+    .img-legend{
+        display: block;
+        font-size: 36px;
+    }
 
 img{
     width: 100%;
