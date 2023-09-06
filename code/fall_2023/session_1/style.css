@@ -1,0 +1,14 @@
+p {
+    color: blue;
+    font-size: 24px;
+}
+
+.aside-box {
+    color: red;
+}
+
+.warning{
+    background-color: yellow;
+    border: 2px solid black;
+    padding: 20px;
+}
