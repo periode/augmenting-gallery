@@ -8,7 +8,7 @@
 header {
 	background-color: black;
 	color: white;
-  padding: 10px;
+  	padding: 10px;
 	overflow: auto;
 }
 
@@ -61,6 +61,13 @@ main{
 	margin-left: 20%;
 	width: 60%;
 	display: block;
+}
+
+@media (min-width: 640px) {
+	main{
+		margin: auto;
+		width: 100%;
+	}
 }
 
 @media print{
@@ -250,41 +257,56 @@ img {
 </style></head><body><header><h1 class="topic-name">augmenting technologies</h1><h1 class="subject-name"><a href="index.html">augmenting-the-gallery</a></h1></header><main><div class="overview-holder"><h1>overview</h1><p>This class is going to take a look at some of the original visions of the people who worked on some of the first digital technologies. Starting from there, we will trace the history of augmented reality until today.</p>
 <p>What did they envision as they were just scratching the surface of what computers could do? How does this vision carry today? Can we, and should we try to change the direction in which these technologies are going?</p>
 <p>The second part of the week will be a review of Unity, both on interfaces and programming, and then an introduction to development with XCode.</p>
-</div><div class="concept-nav"><h1>summary</h1><ul><a class="web-only" href="#intro">intro</a><li class="print-only">intro</li></ul><ul><a class="web-only" href="#the dream">the dream</a><li class="print-only">the dream</li></ul><ul><a class="web-only" href="#the history">the history</a><li class="print-only">the history</li></ul><ul><a class="web-only" href="#the future">the future</a><li class="print-only">the future</li></ul><ul><a class="web-only" href="#unity intro">unity intro</a><li class="print-only">unity intro</li></ul><ul><a class="web-only" href="#assignment work">assignment work</a><li class="print-only">assignment work</li></ul><ul><a class="web-only" href="#unity export">unity export</a><li class="print-only">unity export</li></ul><ul><a class="web-only" href="#outro">outro</a><li class="print-only">outro</li></ul><br></div><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="intro">intro</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">augmenting technologies</h3><div class="prep" concept="0"><p>welcome!</p>
+</div><div class="concept-nav"><h1>summary</h1><ul><a class="web-only" href="#intro">intro</a><li class="print-only">intro</li></ul><ul><a class="web-only" href="#the dream">the dream</a><li class="print-only">the dream</li></ul><ul><a class="web-only" href="#the history">the history</a><li class="print-only">the history</li></ul><ul><a class="web-only" href="#the future">the future</a><li class="print-only">the future</li></ul><ul><a class="web-only" href="#unity intro">unity intro</a><li class="print-only">unity intro</li></ul><ul><a class="web-only" href="#exercise 1 - invisible stories">exercise 1 - invisible stories</a><li class="print-only">exercise 1 - invisible stories</li></ul><ul><a class="web-only" href="#html &amp; css">html &amp; css</a><li class="print-only">html &amp; css</li></ul><ul><a class="web-only" href="#unity export">unity export</a><li class="print-only">unity export</li></ul><ul><a class="web-only" href="#outro">outro</a><li class="print-only">outro</li></ul><br></div><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="intro">intro</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">augmenting technologies</h3><div class="prep" concept="0"><p>welcome!</p>
 </div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="0"><div></div></div></div><div class="page-group"><h3 class="page-name">plan for today</h3><div class="prep" concept="0"><ul>
-<li>housekeeping</li>
+<li>reading presentations</li>
 <li>augmenting technologies (dream, reality, future)</li>
-</ul>
-<hr>
-<ul>
-<li>unity tutorial</li>
-<li>work session</li>
+<li>exercise 1</li>
+<li>html, css and js: links and style</li>
 </ul>
 </div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="0"><p>We&#39;re going to focus on augmented reality as a branch of technology which stems from a practical dream, the one about the ultimate display, and a conceptual dream, the human-computer symbiosis.</p>
 <p>The second part will be reviewing what we did last time in Unity, and particularly spend time on setting up a <em>build pipeline</em> from Unity, via XCode, to your device.</p>
 </div></div><div class="page-group"><h3 class="page-name">housekeeping</h3><div class="prep" concept="0"><ul>
-<li>unity office hours</li>
-<li><ul>
-<li>will send a doodle after class</li>
-</ul>
+<li>schedule for readings<pre><code>5 - digital writing
+9 - mobile computing
+10 - networked media
+11 - augmenting objects
+12 - born-digital artefacts
+</code></pre>
 </li>
-<li><ul>
-<li>tuesday and thursday afternoons vs. monday and tuesday afternoons</li>
+<li>ta</li>
 </ul>
-</li>
-</ul>
-<hr>
-<p>agenda:</p>
-<ul>
-<li>transmediale and ctm</li>
-<li><a target='_blank' href="https://www.estherschipper.com/viewing-room/52-gronlund-nisunen-ryoji-ikeda-kaarel-kurismaa-organized-with-olivier-renaud-clement/">ryoji ikeda</a> at esther schipper</li>
-<li>strom festival</li>
-<li>berlinale!</li>
-</ul>
-</div><div class="prep" concept="0"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="0"><p>Quick highlight on Android vs. iOS: if you want to develop for iPhone, then you need to have a Macbook, and you will need to install XCode (check the <a target='_blank' href="https://github.com/periode/augmenting-gallery/wiki/Installing-Unity#ios">install instructions</a> ).</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="0"><p>Quick highlight on Android vs. iOS: if you want to develop for iPhone, then you need to have a Macbook, and you will need to install XCode (check the <a target='_blank' href="https://github.com/periode/augmenting-gallery/wiki/Installing-Unity#ios">install instructions</a> ).</p>
 <p>If you want to develop for Android, then you&#39;re good! It doesn&#39;t matter what computer you have, as long as you download the build module for Unity.</p>
-</div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="the dream">the dream</h3><div class="context"><div></div><div class="context-links"></div><hr><a href="https://www.kurzweilai.net/the-computer-as-a-communication-device">https://www.kurzweilai.net/the-computer-as-a-communication-device</a><div>The Computer As Communication Device, another paper by Licklider</div></div><div class="page-group"><h3 class="page-name">augmenting minds</h3><div class="prep" concept="1"><p>how do computers contribute to how we see, and to how we think?</p>
-</div><div class="prep" concept="1"><p><em>to augment: to increase the value of something by adding something</em></p>
+</div></div><div class="page-group"><h3 class="page-name">readings presentation</h3><div class="prep" concept="0"><p>karl &amp; beckett</p>
+<ul>
+<li>would you agree that computers act as prosthetic organs of philosophy? (emotions/memories that are unerasable)</li>
+<li>how do you think computers have influenced our ways of thinking about ourselves?</li>
+<li>are we going to become human cyborgs? is that ok?</li>
+<li><ul>
+<li>depends on the context (personal)</li>
+</ul>
+</li>
+<li><ul>
+<li>depends on the context (economical)</li>
+</ul>
+</li>
+<li>should the world need improvement?</li>
+</ul>
+<p><strong>hybridized consciousness</strong></p>
+</div><div class="prep" concept="0"><p>plato, phaedrus</p>
+<hr>
+<p>ludwig wittgenstein</p>
+<ol>
+<li><p>tractactus logico-philosophicus -&gt; world as logical language</p>
+</li>
+<li><p>philosophical investigations -&gt; world as context and embodiment</p>
+</li>
+</ol>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="0"></div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="the dream">the dream</h3><div class="context"><div></div><div class="context-links"></div><hr><a href="https://www.kurzweilai.net/the-computer-as-a-communication-device">https://www.kurzweilai.net/the-computer-as-a-communication-device</a><div>The Computer As Communication Device, another paper by Licklider</div></div><div class="page-group"><h3 class="page-name">augmenting minds</h3><div class="prep" concept="1"><p><em>to augment: to increase the value of something by adding something</em></p>
+<p>technology is the extension of humans</p>
+<p>what does the computer add? and what which value does it increase?</p>
+</div><div class="prep" concept="1"><p>thought extension for epistemic value</p>
 </div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="1"><p>Licklider selected and directed most of the people who worked on the ARPAnet, the precursor to the internet. Working on psychoacoustics, he realized that most of his time was taken up by monotonous, repetitive tasks, which could be automated by a computer. As director of the IPTO (1962-1964), he published memos outlining his vision for possible uses of computers to improve human lives.</p>
 <p>One of the people he influenced was on Doug Engelbart, a Stanford researcher who founded the <em>Augmented Research Center</em>, particularly well known for presenting <a target='_blank' href="https://en.wikipedia.org/wiki/The_Mother_of_All_Demos">the mother of all demos</a> (<a target='_blank' href="https://www.youtube.com/watch?v=JQ8ZiT1sn88">video</a>). Engelbart was also influenced by another thinker, Vanevar Bush, who wrote <a target='_blank' href="https://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/">As We May Think</a>.</p>
 <h3 id="additional-links">Additional links</h3>
@@ -296,16 +318,25 @@ img {
 <li>organize information</li>
 <li>suggest information</li>
 </ul>
-</div><div class="prep" concept="1"><p>they can help us access answers to known problems, by doing <em>mechanical</em> tasks.</p>
+</div><div class="prep" concept="1"><p>they can help us access answers to known problems, by doing <em>mechanical</em> tasks (finding, filtering, sorting, indexing).</p>
 </div><div class="prep" concept="1"><p>they can help us formulate problems and <em>construct</em> answers by organizing and presenting information.</p>
-<p>The Visual Display of Quantiative Information, Edward Tufte</p>
-</div><div class="prep" concept="1"><img src="augmenting-the-gallery_assets/exports-imports-tufte.png" alt="exports-imports-tufte.png"></div><div class="prep" concept="1"><p>they do not answer the question of <em>free time</em> and <em>purpose</em> (memory storage != meaning)</p>
+</div><div class="prep" concept="1"><img src="augmenting-the-gallery_assets/exports-imports-tufte.png" alt="exports-imports-tufte.png"></div><div class="prep" concept="1"><p>The Visual Display of Quantiative Information, Edward Tufte</p>
+</div><div class="prep" concept="1"><p>they do not answer the question of <em>intent</em> and <em>purpose</em> (memory storage != meaning)</p>
 </div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="1"><p>Licklider approaches the problem in terms of <strong>cooperation</strong>: what is it that we want to do? Do we want to solve math formulas, to pick a movie to watch, to invest money in different funds or to learn about a particular topic?</p>
 <p>In order to answer these questions, he compares the strengths of humans and the strengths of machines and extrapolates on how they could work together. This <em>working together</em>, this collaboration, implies that the answer to the problem is not yet known. There is no clear information that needs to be delivered, but rather information that needs to be pieced together in order for the investigator (i.e. the learner) to create their own knowledge. Such an approach is in line with a pedagogical theory called <strong>constructivism</strong>, which we will talk more about in the week about museums and education.</p>
 <p>This particular reading is interesting in how he lists out the practical obstacles of reaching such a collaboration (speed, language, and Input/Output). Out of those three obstacles, two of them have been overcome a long time ago. It&#39;s only the language part that is the problem. So now that we are close to having gotten rid of big technical hurdles, what are the non-technical hurdles left?</p>
-</div></div><div class="page-group"><h3 class="page-name">augmenting vision</h3><div class="prep" concept="1"><p>data -&gt; information -&gt; meaning</p>
+</div></div><div class="page-group"><h3 class="page-name">prosthetic knowledge</h3><div class="prep" concept="1"><p>when we use programming to represent the world, we deal with:</p>
+<ul>
+<li><strong>standardization and repetition</strong></li>
+<li><strong>addressing of ambiguities</strong></li>
+</ul>
+</div><div class="prep" concept="1"><p>how do we turn information into knowledge?</p>
+</div><div class="prep" concept="1"><p>associative thinking</p>
+<p>making something memorable</p>
+<p>responding to some need</p>
+</div><div class="prep" concept="1"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="1"><div></div></div></div><div class="page-group"><h3 class="page-name">augmenting vision</h3><div class="prep" concept="1"><p>data -&gt; information -&gt; meaning</p>
 <p>the presentation of information contributes to meaning</p>
-</div><div class="prep" concept="1"><img src="augmenting-the-gallery_assets/istockphoto-604864566-1024x1024.jpg" alt="istockphoto-604864566-1024x1024.jpg"></div><div class="prep" concept="1"><p><em>The Ultimate Display</em>, was written by Ivan Sutherland (following Licklider as the head of DARPA)</p>
+</div><div class="prep" concept="1"><img src="augmenting-the-gallery_assets/istockphoto-604864566-1024x1024.jpg" alt="istockphoto-604864566-1024x1024.jpg"></div><div class="prep" concept="1"><p>The next director of DARPA was thinking about <em>The Ultimate Display</em></p>
 <ul>
 <li>the first touchscreen, <a target='_blank' href="https://www.youtube.com/watch?v=6orsmFndx_o"><code>SKETCHPAD</code></a></li>
 <li>the first virtual reality headset, <a target='_blank' href="https://www.youtube.com/watch?v=eVUgfUvP4uk"><code>SWORD OF DAMOCLES</code></a></li>
@@ -360,7 +391,7 @@ img {
 <p>it lets ideas become things.</p>
 </div><div class="prep" concept="2"><p>1968 - ivan sutherland, <a target='_blank' href="https://www.youtube.com/watch?v=eVUgfUvP4uk">the sword of damocles</a>, overlaying computer images on the world.</p>
 </div><div class="prep" concept="2"><p>1969 - first heads-up display on a military aircraft</p>
-</div><div class="prep" concept="2"><img src="augmenting-the-gallery_assets/hud_jetfighter.jpg" alt="hud_jetfighter.jpg"></div><div class="prep" concept="2"><p>1975 - myron krueger, videoplace</p>
+</div><div class="prep" concept="2"><img src="augmenting-the-gallery_assets/hud_jetfighter.jpg" alt="hud_jetfighter.jpg"></div><div class="prep" concept="2"><p>1975 - myron krueger, videoplace (artificial reality)</p>
 </div><div class="prep" concept="2"><img src="augmenting-the-gallery_assets/videoplace.png" alt="videoplace.png"></div><div class="prep" concept="2"><p>1992 - louis rosenberg, virtual fixtures</p>
 </div><div class="prep" concept="2"><img src="augmenting-the-gallery_assets/virtual_fixtures.jpg" alt="virtual_fixtures.jpg"></div><div class="prep" concept="2"><p>1993 - steve feiner, <a target='_blank' href="https://graphics.cs.columbia.edu/projects/karma/karma.html">KARMA</a></p>
 </div><div class="prep" concept="2"><img src="augmenting-the-gallery_assets/karma.gif" alt="karma.gif"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="2"><p>Research in augmented realities started with the development of the Sword of Damocles, by Sutherland. Mounted on braces, it used physical rotation tilt in order to calculate where in space it was looking at, overlaying content in order to make it seem like it belonged to the world itself. More than a <em>product</em>, it was more of a research endeavour, a proof of concept. As it goes with most technologies, there first needs to be a long period of research and development before practical applications are found.</p>
@@ -374,7 +405,7 @@ img {
 </div><div class="prep" concept="2"><p>2017 - Apple releases iOS 11, including <a target='_blank' href="https://developer.apple.com/augmented-reality/arkit/">ARKit</a> (google follows with their own platform, ARCore the following year)</p>
 <p>2018 - magic leap ($4.5bn worth) releases the <a target='_blank' href="https://www.youtube.com/watch?v=hGsb-befW4E">magic leap one</a></p>
 <p>2021 - facebook and rayban announce partnership for head-mounted computers</p>
-</div><div class="prep" concept="2"><img src="augmenting-the-gallery_assets/ar_glasses_facebook.webp" alt="ar_glasses_facebook.webp"></div><div class="prep" concept="2"><p>2023 - apple expected to unveil mixed-reality headset</p>
+</div><div class="prep" concept="2"><img src="augmenting-the-gallery_assets/ar_glasses_facebook.webp" alt="ar_glasses_facebook.webp"></div><div class="prep" concept="2"><p>2023 - apple unveils apple vision pro</p>
 </div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="2"><p>The popularity of AR comes with its introduction in the commercial field, starting with the print industry, which has the advantage of being able to print out anything on a paper surface—at the time, AR technology could only recognize very specifc images, called <em>markers</em> or <em>trackers</em>. At this moment in time, a magazine cover is the ideal medium to support this approach. The intent is to investigate both the entertainment value (Esquire) as well as the consumer benefit (BMW).</p>
 <p>Between 2013 and 2016, Google unveils both the Google Glass, a compact pair of glasses featuring a small screen, effectively allowing a digital overlay on the world and an almost seamless integration, but was over-estimating the willingness of their customers to adopt this kind of wearable technology. On the other side, the massive success of Pokemon Go came from a more conservative approach, rebooting a popular franchise, along with an already existing community (the Google-owned developer, Niantic Labs, had already been successfully running a game called Ingress) and an existing infrastructure (the Google Maps database). Pokemon Go reached up to 45million daily users at its peak.</p>
 <p>Some more displays:</p>
@@ -411,21 +442,28 @@ img {
 <li>medicine / engineering</li>
 <li>warfare</li>
 </ul>
-</div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="the future">the future</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">the visions today</h3><div class="prep" concept="3"><p>Sutherland&#39;s vision of the ultimate display as a large-scale room has been flipped on its head to be realized as a <em>hand-held device</em>. <strong>it&#39;s not the room that has changed, it&#39;s the eye</strong>.</p>
+</div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="the future">the future</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">the visions today</h3><div class="prep" concept="3"><p>there is now (seemingly) infinite memory in the palm of our hands. how does that change our relationship to the world?</p>
+<ul>
+<li>economy</li>
+<li>technological abilities</li>
+<li>law</li>
+<li>culture</li>
+</ul>
+</div><div class="prep" concept="3"><p>things are getting faster and more equal</p>
 </div><div class="prep" concept="3"><p>additionally, we&#39;ve found it more complicated than expected to get the computer to <em>understand</em> us.</p>
 </div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="3"><p>In a certain way, mathematics are pretty easy: they mean what they are. We&#39;re less sure about the creation of meaning than about the way differential equations work, so in a lot of computer-aided applications, the problem is still to formulate exactly what the problem is. &quot;<em>I would like to see all that is relevant to the current task at hand</em>&quot; is too vague of a query for a computer to fulfill, and is a field that is still currently being worked on, particularly in the realm of personal assistants (e.g. Siri, Alexa, etc.). It&#39;s therefore still the task of the designer and developer to try to anticipate, accomodate, and encourage anything that their user might think about or attempt to do.</p>
 <p>On the other side, the interesting switch is that the vision of Sutherland realized in sort of a negative fashion: it&#39;s not the room that has become a whole display, but the display that has been concentrated so much that it almost matches our gaze itself. Our phone sees what we see, and therefore become an extension of our eye. One significant implication of this is that AR is moving towards the individual, the subjective, rather than towards the shared, subjective.</p>
 </div></div><div class="page-group"><h3 class="page-name">augmenting humans</h3><div class="prep" concept="3"><p>technology extends our abilities, for good and for bad.</p>
 <p>-&gt; what do we want to do?</p>
+</div><div class="prep" concept="3"><p>the goals can be set by the human or by the machine</p>
 </div><div class="prep" concept="3"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="3"><p>Talking about augmenting human capabilities, it&#39;s important to remember that computers can be—as Licklider wrote— a means to save us time from the mechanical tasks that take up most of our attention. The following question, then, is <strong>what do we do with the time we&#39;ve gained?</strong>.</p>
 <p>For example, searching through datasets in a library can result in more time dedicated to actual thinking about how those resources relate to us. Automatic formatting on a word processor allows us to take more time to think about the content.</p>
 <p>In the end, taking care of formal details actually helps us narrow down what it is that we&#39;re doing, and even asking <em>why</em> we&#39;re going it.</p>
-</div></div><div class="page-group"><h3 class="page-name">path dependence</h3><div class="prep" concept="3"><p><em>the decisions that we make today are dependent on decisions that people have made in the past</em>.</p>
+</div></div><div class="page-group"><h3 class="page-name">production and consumption</h3><div class="prep" concept="3"><p>digital technologies lower the barrier to consuming (doom scroll) and to producing (viral content)</p>
+<p>prosumer</p>
 </div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="3"><p>This concept helps us understand why our technology today is the way it is, and why it is sometimes complicated to think outside of the box (or outside of the path, rather). The moment at which this becomes easier is when existing ways of doing prove obviously uneffective; for instance, the WIMP (windows, icons, menus, pointer) is of limited use in AR, and therefore needs a re-thinking. As a corollary, the decisions we make today will influence what people will do in the future.</p>
 <p>Rethinking one part of a system (here, its input), can also push us to rethink other aspects, such as its purpose, its audience, its output, etc.</p>
-</div></div><div class="page-group"><h3 class="page-name">speculative applications</h3><div class="prep" concept="3"><p>so there is still room to think about questions such as  <strong>if we could fast-forward 40 years, <em>what would we see</em>?</strong></p>
-<p>how much would that be influenced by actions of the past?</p>
-<p>how much is that already the case?</p>
+</div></div><div class="page-group"><h3 class="page-name">personal encyclopedia</h3><div class="prep" concept="3"><p>organizing memory for access, rather than consumption</p>
 </div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="3"><p>The development of AR is still quite open, and as such still prone to new innovations. In terms of innovation, the most far-fetched ideas often do not end up being widely adopted as is, but will influence heavily the further design of other applications.</p>
 <p>The term <em>speculative design</em>, popularized by <a target='_blank' href="http://www.designinginteractions.com/interviews/DunneandRaby">Dunne and Raby</a> is the process of inventing applications which might not have an immediate use in the world as we know it today, but instead suggest a world in which such applications would become common place (i.e. designing an application for tracking individual CO2 emissions, or for deciding on which budget will tax money be spent on, or for checking on the mood of one&#39;s home assistant, etc.). In terms of museum design, it could be an app in which all museum users connected to the museum&#39;s WiFi network could chat and exchange comments on any artwork.</p>
 </div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="unity intro">unity intro</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">basics of unity</h3><div class="prep" concept="4"><p>Unity is a software which allows you to create 3D environments, and attach <strong>scripts</strong> to make that environment dynamic.</p>
@@ -484,29 +522,21 @@ Now that the function is described, we need to actually **call it**, simply by w
 <li><p>you should end up with two objects. when the user clicks, one changes. when the user presses a key, the other one changes (in a different way)</p>
 </li>
 </ol>
-</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="4"></div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="assignment work">assignment work</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">augmented exercise 1</h3><div class="prep" concept="5"><ul>
-<li>revealing information about an object</li>
-<li><ul>
-<li>find an object on one of the <a target='_blank' href="https://github.com/periode/augmenting-gallery/wiki/Resources#3d-models">3D model websites</a> or the <a target='_blank' href="https://assetstore.unity.com/">Unity Asset Store</a>, download it and import it unity and place it in the scene</li>
-</ul>
-</li>
-<li><ul>
-<li>find a couple of images or sounds you would like to add to enrich our understanding of the object</li>
-</ul>
-</li>
-<li><ul>
-<li>place them all around the unity scene so that they are clearly visible through the camera view.</li>
-</ul>
-</li>
-</ul>
-<p><strong>next week</strong> </p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="4"></div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="exercise 1 - invisible stories">exercise 1 - invisible stories</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">exercise 1</h3><div class="prep" concept="5"><p>Design and develop a simple website that documents the story of a culture that you feel is under-represented in public narratives.</p>
+<p>You can define culture and public narratives the way you want it.</p>
+<p>The app should convey some information to the reader, with at least text, images, and hyperlinks, and some interactivity.</p>
 <ul>
-<li>add some interactivity by hiding and revealing objects, or triggering sounds through clicks.</li>
+<li>show &amp; tell</li>
+<li>compare</li>
+<li>associate</li>
 </ul>
-</div><div class="prep" concept="5"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="5"></div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="unity export">unity export</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">AR foundation</h3><div class="prep" concept="6"><p>AR capacities vary by phone manufacturer (i.e. Apple&#39;s <a target='_blank' href="https://developer.apple.com/arkit/">ARKit</a> vs. Google&#39;s <a target='_blank' href="https://developers.google.com/ar/discover/concepts">ARCore</a>).</p>
+</div><div class="prep" concept="5"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="5"></div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="html &amp; css">html &amp; css</h3><div class="page-group"><h3 class="page-name">attributes and positioning</h3><div class="prep" concept="6"><p>every html element can be given a <code>class</code></p>
+<p>classes allow us to target html elements</p>
+<p>for positioning, we use the generic <code>div</code> element</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="6"></div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="unity export">unity export</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">AR foundation</h3><div class="prep" concept="7"><p>AR capacities vary by phone manufacturer (i.e. Apple&#39;s <a target='_blank' href="https://developer.apple.com/arkit/">ARKit</a> vs. Google&#39;s <a target='_blank' href="https://developers.google.com/ar/discover/concepts">ARCore</a>).</p>
 <p>Thankfully, Unity has a consolidated framework called <a target='_blank' href="https://unity.com/unity/features/arfoundation">AR Foundation</a>, which we can download in Unity using the <code>Package Manager</code>.</p>
 <p>It takes care of a lot for us, but we still need to learn how to export our app to our phone.</p>
-</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="6"></div></div><div class="page-group"><h3 class="page-name">the build process</h3><div class="prep" concept="6"><p>Building an app is the process of <em>compiling</em> all our assets into one executable file. The main parts of that process are:</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="7"></div></div><div class="page-group"><h3 class="page-name">the build process</h3><div class="prep" concept="7"><p>Building an app is the process of <em>compiling</em> all our assets into one executable file. The main parts of that process are:</p>
 <ol>
 <li><p>Set up our app details in Unity.</p>
 </li>
@@ -516,8 +546,9 @@ Now that the function is described, we need to actually **call it**, simply by w
 </li>
 </ol>
 <p>Here is a <a target='_blank' href="https://github.com/periode/augmenting-gallery/wiki/How-to-build-an-AR-iPhone-app">full walkthrough</a>.</p>
-</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="6"></div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="outro">outro</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">recap</h3><div class="prep" concept="7"><p>AR has its roots in dreams of computers working with us, in order to ask better questions and find better answers about what we cannot immediately <em>see</em>.</p>
-</div><div class="prep" concept="7"><p>The development of the technology is based around the interplay of military, business, advertisement and academia. None of these influences are neutral.</p>
-</div><div class="prep" concept="7"><p>With the question of technical efficiency far behind us, XR today is still coming up with answers to the questions of <strong>relevant content</strong> and <strong>user experiences</strong>.</p>
-</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="7"></div></div><div class="page-group"><h3 class="page-name">homework</h3><div class="prep" concept="7"><p>next week, we will focus on all the invisible things that objects represent.</p>
-</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="7"></div></div></div><br><div class="break-after" style="page-break-after:always;"></div></main></body></html>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="7"></div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="outro">outro</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">recap</h3><div class="prep" concept="8"><p>The computer augments human knowledge by <strong>storing</strong>, <strong>organizing</strong>, and <strong>connecting</strong> pieces of rationalized, visualized and interactive information.</p>
+<p>The question is how to transform data, into information, into meaning?</p>
+</div><div class="prep" concept="8"><p>The development of the technology is based around the interplay of military, business, advertisement and academia. None of these influences are neutral.</p>
+</div><div class="prep" concept="8"><p>With the question of technical efficiency far behind us, XR today is still coming up with answers to the questions of <strong>relevant content</strong> and <strong>user experiences</strong>.</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="8"></div></div><div class="page-group"><h3 class="page-name">homework</h3><div class="prep" concept="8"><p>next week, we will focus on all the invisible things that objects represent.</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="8"></div></div></div><br><div class="break-after" style="page-break-after:always;"></div></main></body></html>
