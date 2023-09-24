@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- this is the code we got from fonts.google.com -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet">
+
+    <!-- this is our own css stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- on this element, we specify the function to be called for onmouseenter (showLinks) and for onmouseleave (hideLinks) -->
+    <div class="menu" id="menu" onmouseenter="showLinks()" onmouseleave="hideLinks()">
+        <div>menu</div>
+        <!-- here we need to add an id for the element that holds -->
+        <ul class="links" id="links">
+            <li>home</li>
+            <li>about</li>
+            <li>more</li>
+        </ul>
+    </div>
+
+
+
+    <div class="content">
+        <!-- here, we use the onclick attribute to tell the button to call the greet() function when we click it -->
+        <button onclick="greet()">click me!</button>
+
+        <div>welcome to the website</div>
+
+        <!-- here, we have an empty div with an id that will be used in javascript -->
+        <div id="welcome-message"></div>
+    </div>
+
+    <div>
+        <!-- here, we put on an onclick attribute on the image itself -->
+        <img onclick="toggleLegend()"
+            src="https://publicdelivery.org/wp-content/uploads/2019/02/Xu-Bing-Book-from-the-Sky-1987-1991-multi-media-installation-installation-view-Museum-MACAN-2019-scaled.jpg"
+            height="400" alt="Picture from the Book from the Sky">
+
+        <!-- this div has an id "legend" which we will use in javascript to change the style of the element -->
+        <div id="legend" class="legend">Xu Bing's Book from the Sky plays with the familiarity and strangeness of
+            language</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

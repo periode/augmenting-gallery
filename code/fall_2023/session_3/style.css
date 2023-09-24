@@ -1,0 +1,12 @@
+body {
+    background-color: rgb(211, 252, 148);
+    font-family: 'Mooli', sans-serif;
+}
+
+.links {
+    display: none;
+}
+
+.legend {
+    display: none;
+}
