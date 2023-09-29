@@ -8,7 +8,7 @@
 header {
 	background-color: black;
 	color: white;
-  padding: 10px;
+  	padding: 10px;
 	overflow: auto;
 }
 
@@ -61,6 +61,13 @@ main{
 	margin-left: 20%;
 	width: 60%;
 	display: block;
+}
+
+@media (min-width: 640px) {
+	main{
+		margin: auto;
+		width: 100%;
+	}
 }
 
 @media print{
@@ -251,24 +258,36 @@ img {
 <p>This will start from a high-level, conceptual perspective, and focusing all the way to the specifics of user interface design and user experience design (along with expliciting the difference between the two!).</p>
 <p>As for Unity, we will re-iterate the process of manipulating images in Unity, and then introduce arrays, inputs and UI systems.</p>
 </div><div class="concept-nav"><h1>summary</h1><ul><a class="web-only" href="#intro">intro</a><li class="print-only">intro</li></ul><ul><a class="web-only" href="#interaction and procedure">interaction and procedure</a><li class="print-only">interaction and procedure</li></ul><ul><a class="web-only" href="#expressive interactions">expressive interactions</a><li class="print-only">expressive interactions</li></ul><ul><a class="web-only" href="#interfaces and experiences">interfaces and experiences</a><li class="print-only">interfaces and experiences</li></ul><ul><a class="web-only" href="#recap">recap</a><li class="print-only">recap</li></ul><ul><a class="web-only" href="#break">break</a><li class="print-only">break</li></ul><ul><a class="web-only" href="#web making part. 2">web making part. 2</a><li class="print-only">web making part. 2</li></ul><ul><a class="web-only" href="#outro">outro</a><li class="print-only">outro</li></ul><br></div><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="intro">intro</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">interaction design</h3><div class="prep" concept="0"><p>welcome!</p>
-</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="0"></div></div><div class="page-group"><h3 class="page-name">housekeeping</h3><div class="prep" concept="0"></div><div class="prep" concept="0"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="0"></div></div><div class="page-group"><h3 class="page-name">plan for the day</h3><div class="prep" concept="0"><p><em>what are some of the opportunities and challenges in working with interactive information?</em></p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="0"></div></div><div class="page-group"><h3 class="page-name">housekeeping</h3><div class="prep" concept="0"><p>reading responses are not optional</p>
+<p>we will have a TA next week</p>
+</div><div class="prep" concept="0"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="0"></div></div><div class="page-group"><h3 class="page-name">plan for the day</h3><div class="prep" concept="0"><p>-&gt; exercise 1</p>
+<p>-&gt; reading presentation</p>
 <p>-&gt; designing interactions</p>
 <p>-&gt; user interfaces vs. user experiences</p>
 <hr>
-<p>-&gt; html &amp; css recap</p>
-<p>-&gt; aligning and positioning elements</p>
-<p>-&gt; javascript interaction</p>
+<p>-&gt; html, css and js recap</p>
+<p>-&gt; intro to react</p>
 </div><div class="prep" concept="0"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="0"></div></div><div class="page-group"><h3 class="page-name">augmented exercise 1</h3><div class="prep" concept="0"><p>html &amp; invisible stories</p>
-</div><div class="prep" concept="0"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="0"></div></div><div class="page-group"><h3 class="page-name">reading presentations</h3><div class="prep" concept="0"><p>n/a</p>
-</div><div class="prep" concept="0"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="0"></div></div><div class="page-group"><h3 class="page-name">the anti-mac interface</h3><div class="prep" concept="0"><ul>
-<li>making interfaces enriched vs. automating tasks and delegating</li>
-<li>simplified interfaces for a majority of users</li>
-<li>metaphors (to help understand)</li>
-<li>tumblr (UX vs. UI)</li>
+<p>what story did you represent? what images and text did you use?</p>
+<p>what were the struggles?</p>
+</div><div class="prep" concept="0"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="0"></div></div><div class="page-group"><h3 class="page-name">reading presentations</h3><div class="prep" concept="0"><p>jackson</p>
+<p>are there any negatives or drawbacks to expanding culture through interaction design/digital media?</p>
+<ul>
+<li>older people, people without devices</li>
+<li>overreliance on devices</li>
+<li>addiction (biological, economical)</li>
+<li>physical hands</li>
 </ul>
+<p>good designs / software?</p>
+<ul>
+<li>playful interaction</li>
+<li>including 3d design</li>
+<li>apple health (fits to the domain)</li>
+<li>pinterest (managing information, between similarity and discovery)</li>
+<li>red (combinations between reddit, pinterest, tiktok,search)</li>
+</ul>
+<p>presentation and organization of information</p>
 </div><div class="prep" concept="0"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="0"></div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="interaction and procedure">interaction and procedure</h3><div class="context"><div></div><div class="context-links"></div><hr><a href="http://www.immersence.com/publications/2003/2003-Mmorse.html">http://www.immersence.com/publications/2003/2003-Mmorse.html</a><div>Margaret Morse's take on interaction as a feminist practice.</div></div><div class="page-group"><h3 class="page-name">first thoughts</h3><div class="prep" concept="1"><p>what did you think of a cultural perspective on interaction design?</p>
-</div><div class="prep" concept="1"><p>how do you define interaction?</p>
-<p>what is an example of a <em>good</em> interaction, and a <em>bad</em> interaction?</p>
 </div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="1"><p>Interaction is when you do something to someone?</p>
 <p>Interaction is when something <em>acknowledges</em> an action?</p>
 <p>Interaction is when you <em>initiate</em> something and get something <em>back</em>? What do you get back? An action, an information, a feeling?</p>
@@ -289,12 +308,12 @@ img {
 </div></div><div class="page-group"><h3 class="page-name">elements of interaction</h3><div class="prep" concept="1"><ul>
 <li>a designer</li>
 <li>a system</li>
-<li>a <em>problem domain</em></li>
-<li>a user</li>
+<li>a <em>domain</em></li>
+<li>a visitor</li>
 </ul>
 </div><div class="prep" concept="1"><p>how do these relate to janet murray&#39;s components of interaction — <strong>interactor</strong>, <strong>information</strong>, <strong>agency</strong>, <strong>transparence</strong> ?</p>
 <p>new media vs. digital media</p>
-<p>user vs. interactor (vs. partner?)</p>
+<p>user vs. interactor</p>
 <p>content vs. information</p>
 <p>intuition vs. transparency</p>
 <p>interaction vs. agency</p>
@@ -317,7 +336,7 @@ img {
 <p>It also affects what <strong>receivers</strong> pay attention to. The predominance of a particular sense might be hard to overcome (and therefore should be taken into account), when a message is being received.</p>
 <p>A newer medium also develops <em>on top</em> of previous media, in a phenomenon called <strong>remediation</strong> (writing integrates parts of speech, photography integrate parts of drawing, cinema integrates parts of photography, etc.)</p>
 </div></div><div class="page-group"><h3 class="page-name">dimensions of digital media</h3><div class="prep" concept="1"><p>-&gt; spatial</p>
-<p>-&gt; procedural</p>
+<p>-&gt; procedural / dynamic</p>
 <p>-&gt; encyclopedic</p>
 <p>-&gt; participatory</p>
 <p>(first developed in <a target='_blank' href="https://mitpress.mit.edu/books/hamlet-holodeck">hamlet on the holodeck</a>)</p>
@@ -325,6 +344,7 @@ img {
 <p>The <strong>procedural</strong> component relies on the fact that we are dealing specifically with <strong>digital</strong> media. Through a computer, it becomes possible to set up rules, procedures, in order to allow for everything else (space, encyclopedia, participation).</p>
 <p>The <strong>encyclopedic</strong> component is the consequence of working with networked media. If one is connected to the Internet, there is no pre-existing reason as to why one shouldn&#39;t be able to access any information that is on the Internet. A good example of that is Assassin&#39;s Creed&#39;s <a href="https://www.standard.co.uk/stayingin/tech-gaming/assassins-creed-origins-discovery-tour-shows-how-video-games-could-be-an-education-gamechanger-a3663966.html">Discovery Mode</a> through which you walk around the game world and learn of the &quot;real world&quot; equivalent of what you&#39;re seeing.</p>
 </div></div><div class="page-group"><h3 class="page-name">interactive digital media</h3><div class="prep" concept="1"><p>interactive digital media can create <strong>explorations</strong> of whole <strong>worlds</strong>, allowing for the <strong>co-construction</strong> of meaning.</p>
+<p>the interface is the gateway to access these worlds</p>
 </div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="1"><p>So, as we start developing interactive experiences within the context of museums, it&#39;s important to keep in mind those things:</p>
 <ul>
 <li>How are you enabling an interesting conversation? How responsive and predictive is your system. For instance, if the visitor takes one action (view an object up close), then would be the next action (e.g. viewing other objects? viewing advanced information related to the same object?)</li>
@@ -369,15 +389,23 @@ img {
 </div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="2"><p>Procedural rhetoric, then, is the ability to develop a system of rules which provides a statement about a particular world, about a particular group of people, about a particular practice, <em>without ever being explicit about that statement</em>.</p>
 <p>It is a different way to apprehend a problem: not by listening/reading an argument, not watching a poster or a movie, but instead <strong>acting through the consequences of a situation</strong>.</p>
 </div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="interfaces and experiences">interfaces and experiences</h3><div class="context"><div></div><div class="context-links"></div><hr><a href="https://developer.apple.com/design/human-interface-guidelines/ios/system-capabilities/augmented-reality/">https://developer.apple.com/design/human-interface-guidelines/ios/system-capabilities/augmented-reality/</a><div>The Apple human interface guidelines when designing for AR.</div></div><div class="page-group"><h3 class="page-name">the difference</h3><div class="prep" concept="3"><p>what is the difference between user interface (UI) and user experience (UX) ?</p>
+<ul>
+<li><p>UI: visual, art direction</p>
+</li>
+<li><p>UX: interaction of the whole, navigation, process</p>
+</li>
+</ul>
 </div><div class="prep" concept="3"><p>-&gt; interface: information, functionality (number of buttons, the number of clicks, shortcuts, etc.)</p>
 <p>-&gt; experience: atmosphere and feeling (color, fonts, animations, sounds)</p>
 </div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="3"><p>User Experience is comprised of <em>touch points</em>, of particular moments in which the public comes into contact with the product. For instance, the moment that someone books a ticket online for a museum, the moment someone enters the museum and goes through security check, the moment someone asks for directions at the information kiosk, etc. And how all of these come together in a coherent moment.</p>
 <p>On the other side, User Interface is the collection of specific graphical elements which help create a <em>metaphor</em> for the interactor to understand how to manipulate and communicate with such a system.</p>
 <p>In other words, UI is what we see, and UX is how we feel when we use something (the overarching ceremonial), and how we feel when we&#39;re done using it.</p>
 </div></div><div class="page-group"><h3 class="page-name">the problem</h3><div class="prep" concept="3"><p>we need to make our product/artefact/app <em>usable</em>, with the lowest cognitive friction, and the highest reliable output.</p>
+<p><em>remediation</em></p>
 </div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="3"><p>User interfaces are indeed a metaphor, either building on previous knowledge by the interactors (e.g the Trash on a desktop isn&#39;t really a trash, but it does the same thing as a trash does), or by developing new habits (the <a target='_blank' href="https://blog.placeit.net/history-of-the-hamburger-icon/">hamburger icon</a> ).</p>
 <p>The point of a good UI is to have itself be forgotten. It should be as invisible as possible, while at the same time being &quot;obvious&quot;. This pinnacle of obviousness was reached in Apple products, particularly with the iPod and the iPhone, which <em>didn&#39;t come with a user manual!</em></p>
-</div></div><div class="page-group"><h3 class="page-name">elements of user interface</h3><div class="prep" concept="3"><p>no interface is &quot;natural&quot; (<a target='_blank' href="https://www.designernews.co/stories/84443-redditors-design-worst-volume-sliders-possible">example</a>)</p>
+</div></div><div class="page-group"><h3 class="page-name">metaphors</h3><div class="prep" concept="3"><img src="augmenting-the-gallery_assets/microsoft_bob.jpg" alt="microsoft_bob.jpg"></div><div class="prep" concept="3"><p><a target='_blank' href="https://polylogue.com/constellation/">constellation</a></p>
+</div><div class="prep" concept="3"><img src="augmenting-the-gallery_assets/pagination1_break.png" alt="pagination1_break.png"></div><div class="prep" concept="3"><img src="augmenting-the-gallery_assets/hamburger-menu-512.webp" alt="hamburger-menu-512.webp"></div><div class="prep" concept="3"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="3"></div></div><div class="page-group"><h3 class="page-name">elements of user interface</h3><div class="prep" concept="3"><p>no interface is &quot;natural&quot; (<a target='_blank' href="https://www.designernews.co/stories/84443-redditors-design-worst-volume-sliders-possible">example</a>)</p>
 </div><div class="prep" concept="3"><img src="augmenting-the-gallery_assets/quicktime4.jpg" alt="quicktime4.jpg"></div><div class="prep" concept="3"><img src="augmenting-the-gallery_assets/loop-video-mac-quicktime-player.jpg" alt="loop-video-mac-quicktime-player.jpg"></div><div class="prep" concept="3"><p>-&gt; graphical elements</p>
 <p>-&gt; input methods (typing, drag and drop, clicking, light sensor, camera, microphone, swipes/multi touch, heat sensor, motion)</p>
 <p>-&gt; system-related messages (success messages, error messages, etc.)</p>
@@ -400,7 +428,10 @@ img {
 <p>-&gt; <strong>consistency</strong> (does the input always do the same thing?)</p>
 </div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="3"><p>Interaction Design is halfway between UI and UX, it is the art and science of providing the user with an environment in which her actions are <strong>meaningful</strong>—they are acknowledged and acted upon in a way that is coherent with what she expected.</p>
 <p>All of these elements are explained thoroughly in Jenny Preece&#39;s <a target='_blank' href="https://github.com/periode/augmenting-gallery/blob/master/resources/readings/Preece_InteractionDesign.pdf">Interaction Design</a> reading for this week.</p>
-</div></div><div class="page-group"><h3 class="page-name">diegetic vs. non-diegetic</h3><div class="prep" concept="3"><img src="augmenting-the-gallery_assets/diegetic.png" alt="diegetic.png"></div><div class="prep" concept="3"><img src="augmenting-the-gallery_assets/Spatial-UI-example.png" alt="Spatial-UI-example.png"></div><div class="prep" concept="3"><img src="augmenting-the-gallery_assets/farcry2.jpg" alt="farcry2.jpg"></div><div class="prep" concept="3"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="3"></div></div><div class="page-group"><h3 class="page-name">user-centered design</h3><div class="prep" concept="3"><p>user-centered design is the process of starting from a user, and then modifying the technical system to enable whatever it is that they might think of doing (and more!)</p>
+</div></div><div class="page-group"><h3 class="page-name">diegetic vs. non-diegetic</h3><div class="prep" concept="3"><p><strong>diegetic</strong> belongs to the fiction of the application</p>
+<p><strong>non-diegetic</strong> exists beyond the fiction of the application</p>
+<p><a target='_blank' href="http://radio.garden">radio.garden</a> offers both diegetic and non diegetic interfaces</p>
+</div><div class="prep" concept="3"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="3"></div></div><div class="page-group"><h3 class="page-name">user-centered design</h3><div class="prep" concept="3"><p>user-centered design is the process of starting from a user, and then modifying the technical system to enable whatever it is that they might think of doing (and more!)</p>
 <p>the first question is therefore: <strong>who is going to be using my application?</strong></p>
 </div><div class="prep" concept="3"><p>how does one re-design Albert for different users?</p>
 <p>-&gt; how would it look like for <em>students</em>?</p>
@@ -431,10 +462,21 @@ img {
 </div><div class="prep" concept="6"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="6"></div></div><div class="page-group"><h3 class="page-name">Javascript interaction</h3><div class="prep" concept="6"><ul>
 <li><p>adding a script</p>
 </li>
-<li><p>selecting elements</p>
+<li><p>defining functions</p>
 </li>
-<li><p>adding event listeners</p>
+<li><p>connecting functions to the HTML</p>
 </li>
 </ul>
-</div><div class="prep" concept="6"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="6"></div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="outro">outro</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">homework</h3><div class="prep" concept="7"><p>homework for day 3 is <a target='_blank' href="https://github.com/periode/augmenting-gallery/wiki/Schedule#homework-2">here</a></p>
+</div><div class="prep" concept="6"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="6"></div></div><div class="page-group"><h3 class="page-name">react</h3><div class="prep" concept="6"><p>react is a more contemporary way to write websites</p>
+<p>react focuses on <strong>components</strong> and <strong>states</strong></p>
+</div><div class="prep" concept="6"><p><strong>components</strong> are like building blocks of the web application, which can be reused, and completed with data</p>
+<p><strong>states</strong> are the particular values of variables across the whole website, which should remain the same across the whole website</p>
+</div><div class="prep" concept="6"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="6"></div></div><div class="page-group"><h3 class="page-name">getting started</h3><div class="prep" concept="6"><p><a target='_blank' href="https://react.dev/learn/start-a-new-react-project">starting from scratch</a></p>
+<ul>
+<li>install <a target='_blank' href="https://nodejs.org/en/download">node</a></li>
+<li>open the terminal, navigate to your class folder and create a new folder
+<code>mkdir YOURFOLDERNAME</code></li>
+<li><code>npx create-react-app my-app</code> (<a target='_blank' href="https://create-react-app.dev/docs/getting-started/">src</a>)</li>
+</ul>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="6"></div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="outro">outro</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">homework</h3><div class="prep" concept="7"><p>homework for day 3 is <a target='_blank' href="https://github.com/periode/augmenting-gallery/wiki/Schedule#homework-2">here</a></p>
 </div><div class="prep" concept="7"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="7"></div></div></div><br><div class="break-after" style="page-break-after:always;"></div></main></body></html>
