@@ -9,9 +9,9 @@ IMNY-UT 9001
 
 ## Teaching Assistant
 
-**Name** Anton Filatov
+**Name** Clemens Schöll
 
-**Email** [anton.filatov@nyu.edu](mailto:anton.filatov@nyu.edu)
+**Email** clemens at neopostmodern dot com
 
 ## Details
 **Location** Saint Agnes (Kreuzberg)
