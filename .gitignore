@@ -7,6 +7,11 @@ archive/
 emails.md
 recitation-*.md
 
+# React
+
+node_modules/
+package-*.json
+
 # UNITY
 
 [Tt]emp/
