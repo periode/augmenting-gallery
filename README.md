@@ -11,7 +11,7 @@ IMNY-UT 9001
 
 **Name** Clemens Schöll
 
-**Email** clemens at neopostmodern dot com
+**Email** [cms10067@nyu.edu](mailto:cms10067@nyu.edu)
 
 ## Details
 **Location** Saint Agnes (Kreuzberg)
@@ -21,6 +21,10 @@ IMNY-UT 9001
 **Office Hours**
 
 By appointment
+
+**Tutorials**
+
+In person at the student residences in room 1.Q, Mondays 6–8pm
 
 ## [Course wiki](https://github.com/periode/augmenting-gallery/wiki)
 
