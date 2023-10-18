@@ -1,0 +1,9 @@
+.walltextcontents {
+  font-size: 36px;
+}
+
+@media (max-width: 550px) {
+  .walltextcontents {
+    background-color: red;
+  }
+}
