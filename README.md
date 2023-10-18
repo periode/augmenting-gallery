@@ -9,9 +9,9 @@ IMNY-UT 9001
 
 ## Teaching Assistant
 
-**Name** Anton Filatov
+**Name** Clemens Schöll
 
-**Email** [anton.filatov@nyu.edu](mailto:anton.filatov@nyu.edu)
+**Email** [cms10067@nyu.edu](mailto:cms10067@nyu.edu)
 
 ## Details
 **Location** Saint Agnes (Kreuzberg)
@@ -21,6 +21,10 @@ IMNY-UT 9001
 **Office Hours**
 
 By appointment
+
+**Tutorials**
+
+In person at the student residences in room 1.Q, Mondays 6–8pm
 
 ## [Course wiki](https://github.com/periode/augmenting-gallery/wiki)
 
