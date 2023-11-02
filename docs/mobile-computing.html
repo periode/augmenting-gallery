@@ -1,0 +1,401 @@
+<!DOCTYPE html><html><head><meta charset="utf8"><title>augmenting-the-gallery | mobile-computing</title><style>body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Inter UI', Trebuchet MS;
+	background-color: white;
+}
+
+header {
+	background-color: black;
+	color: white;
+  	padding: 10px;
+	overflow: auto;
+}
+
+header h1{
+	display: inline-block;
+	margin-left: 5%;
+	margin-right: 5%;
+	width: 40%;
+	font-size: 2.5em;
+}
+
+@media print{
+	header h1{
+		font-size: 1em;
+	}
+}
+
+.subject-name{
+	float: right;
+	text-align: right;
+}
+
+.topic-name{
+	float: left;
+	text-align: left;
+}
+
+a {
+	text-decoration: none;
+  color: #e77607;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:visited {
+  color: #b25900;
+}
+
+header a{
+	color: white;
+	text-decoration: none;
+	border: 2px solid white;
+	padding: 3px;
+}
+
+main{
+	position: absolute;
+	margin-left: 20%;
+	width: 60%;
+	display: block;
+}
+
+@media (min-width: 640px) {
+	main{
+		margin: auto;
+		width: 100%;
+	}
+}
+
+@media print{
+	main{
+		margin-left: 5%;
+		width: 90%;
+	}
+}
+
+hr {
+	border: none;
+	height: 2px;
+	background-color: black;
+	float: left;
+	width: 100%;
+}
+
+img {
+	max-height: 300px;
+	max-width: 90%;
+}
+
+.concept-group{
+	width: 80%;
+	margin-left: 10%;
+	display: block;
+	float: left;
+}
+
+.concept-nav{
+	width: 30%;
+	float: right;
+	margin-right: 10%;
+}
+
+.overview-holder{
+	float: left;
+	width: 38%;
+	margin-left: 10%;
+}
+
+@media print{
+	.concept-group, .concept-nav{
+		width: 90%;
+		margin-left: 5%;
+	}
+}
+
+.concept-name {
+	width: 98%;
+	text-align: right;
+	float: right;
+	color: black;
+	border-bottom: 2px solid black;
+	padding: 1%;
+	font-size: 2em;
+}
+
+.break-before, .break-after{
+	display: block;
+	width: 100%;
+	height: 5px;
+	float: left;
+}
+
+.break-after{
+	page-break-after: always;
+}
+
+.page-group{
+	position: relative;
+	font-size: 1.2em;
+	width: 50%;
+	float: left;
+}
+
+@media print{
+
+	.page-group{
+		width: 70%;
+		page-break-inside: avoid;
+	}
+
+	.prep{
+		font-size: 0.8em;
+	}
+}
+
+.page-name{
+	width: 100%;
+	float: left;
+}
+
+.note-group{
+	position: relative;
+	width: 50%;
+	float: left;
+	overflow: auto;
+	text-align: left;
+}
+
+@media print{
+	.note-group{
+		width: 30%;
+	}
+}
+
+.note {
+	position: relative;
+	margin-bottom: 10px;
+	width: 100%;
+	overflow: auto;
+	white-space: pre;
+}
+
+@media print {
+	.note{
+		white-space: normal;
+	}
+}
+
+.writeup-group{
+	width: 100%;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	float: left;
+}
+
+@media print{
+	.writeup-group{
+		break-inside: avoid;
+		font-size: 0.9em;
+	}
+}
+
+.context{
+	white-space: pre-line;
+	border: 2px solid black;
+	width: 45%;
+	padding: 5px;
+	float: right;
+}
+
+@media print{
+	.context{
+		width: 100%
+	}
+}
+
+.writeup{
+	width: 100%;
+	float: left;
+	margin-bottom: 10px;
+	font-style: italic;
+	white-space: pre-line;
+}
+
+.web-only{
+	display: inherit;
+}
+
+.print-only{
+	display: none;
+}
+
+@media print{
+	* {
+		float: none !important;
+	}
+
+	.break-before{
+		page-break-before: always !important;
+	}
+
+	.break-after{
+		page-break-after: always !important;
+	}
+
+	.web-only{
+		display: none;
+	}
+
+	.print-only{
+		display: inline-block;
+	}
+}
+</style></head><body><header><h1 class="topic-name">mobile-computing</h1><h1 class="subject-name"><a href="index.html">augmenting-the-gallery</a></h1></header><main><div class="overview-holder"><h1>overview</h1></div><div class="concept-nav"><h1>summary</h1><ul><a class="web-only" href="#intro">intro</a><li class="print-only">intro</li></ul><ul><a class="web-only" href="#research directions">research directions</a><li class="print-only">research directions</li></ul><ul><a class="web-only" href="#mobile computing">mobile computing</a><li class="print-only">mobile computing</li></ul><ul><a class="web-only" href="#personal dynamic media">personal dynamic media</a><li class="print-only">personal dynamic media</li></ul><ul><a class="web-only" href="#examples">examples</a><li class="print-only">examples</li></ul><ul><a class="web-only" href="#mapping the concept">mapping the concept</a><li class="print-only">mapping the concept</li></ul><ul><a class="web-only" href="#programming memory">programming memory</a><li class="print-only">programming memory</li></ul><ul><a class="web-only" href="#outro">outro</a><li class="print-only">outro</li></ul><br></div><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="intro">intro</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">mobile computing</h3><div class="prep" concept="0"><p>welcome!</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="0"></div></div><div class="page-group"><h3 class="page-name">plan for the day</h3><div class="prep" concept="0"><p>-&gt; research directions and group formation</p>
+<p>-&gt; mobile computing</p>
+<p>-&gt; mapping the field</p>
+<p>-&gt; interactivity and storage</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="0"></div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="research directions">research directions</h3><div class="page-group"><h3 class="page-name">research directions</h3><div class="prep" concept="1"><p>who is interested in what?</p>
+<p>chaerin - hezheng - ambra -- TBD</p>
+<p>nikolai - bingyi - catherine -- trees in berlin</p>
+<p>liz - alex - beckett --  catastrophy memes / TBD</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="1"></div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="mobile computing">mobile computing</h3><div class="page-group"><h3 class="page-name">questions</h3><div class="prep" concept="2"><p>what do we do with phones?</p>
+<ul>
+<li>take pictures</li>
+<li>public social media (communication, creator and receiver)</li>
+<li>private social media</li>
+<li>listening</li>
+<li>watching videos</li>
+<li>maps</li>
+<li>translating</li>
+<li>alarms / clock</li>
+<li>research (looking up information, web browsing, answer to a question)</li>
+<li>emails</li>
+<li>calendar</li>
+<li>weather</li>
+<li>gaming</li>
+<li>paying/buying things</li>
+</ul>
+</div><div class="prep" concept="2"><p>what don&#39;t we do with phones that we do with computing?</p>
+<ul>
+<li>programming</li>
+<li>drawing</li>
+<li>drafting up a document</li>
+<li>making music</li>
+<li>adobe software</li>
+</ul>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="2"><p>what we do with phones (browsing, social media, pictures, music)</p>
+<p>what do we do with computers? why don&#39;t we do it with phones?</p>
+<p>we work, we do some research, we are more <em>productive</em></p>
+</div></div><div class="page-group"><h3 class="page-name">the history</h3><div class="prep" concept="2"><ol>
+<li><p>minimizing</p>
+</li>
+<li><p>connecting</p>
+</li>
+<li><p>converging &lt;&gt; diverging</p>
+</li>
+<li><p>apps and ecosystems</p>
+</li>
+</ol>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="2"></div></div><div class="page-group"><h3 class="page-name">the role of design</h3><div class="prep" concept="2"><p>from hardware design</p>
+</div><div class="prep" concept="2"><img src="augmenting-the-gallery_assets/Palm-IMG_7025.jpg" alt="Palm-IMG_7025.jpg"></div><div class="prep" concept="2"><ul>
+<li>miniaturization (transistors)</li>
+<li>battery life (Li-ion batteries)</li>
+<li>connectivity (GSM)</li>
+</ul>
+</div><div class="prep" concept="2"><p>to interaction design</p>
+</div><div class="prep" concept="2"><img src="augmenting-the-gallery_assets/multitouch.jpg" alt="multitouch.jpg"></div><div class="prep" concept="2"><ul>
+<li>input mechanism via natural gestures</li>
+<li>navigation between software</li>
+<li>negotiating different uses</li>
+</ul>
+</div><div class="prep" concept="2"><p>to interface design</p>
+</div><div class="prep" concept="2"><img src="augmenting-the-gallery_assets/iphone_apps.jpg" alt="iphone_apps.jpg"></div><div class="prep" concept="2"><ul>
+<li>ease of access to the web / WAP</li>
+<li>focusing on content rather than form</li>
+<li>transforming hardware into software</li>
+</ul>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="2"></div></div><div class="page-group"><h3 class="page-name">next steps</h3><div class="prep" concept="2"><p>requirements are there (speed, resolution, portability, connectivity)</p>
+<p>the next step is <strong>context</strong> and <strong>content</strong></p>
+<p>where/when/who is the user, and what do they want to do?</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="2"></div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="personal dynamic media">personal dynamic media</h3><div class="page-group"><h3 class="page-name">theoretical underpinning</h3><div class="prep" concept="3"><img src="augmenting-the-gallery_assets/Dynabook.png" alt="Dynabook.png"></div><div class="prep" concept="3"><p>alan kay&#39;s dynabook</p>
+<p>xerox parc - xerox star</p>
+</div><div class="prep" concept="3"><p>does this sound like something that we have today?</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="3"></div></div><div class="page-group"><h3 class="page-name">computation for education</h3><div class="prep" concept="3"><p>between military, leisure and business is education</p>
+</div><div class="prep" concept="3"><p>take 5min and recall a moment where you feel you have learned something</p>
+<ul>
+<li>video tutorial, keep watching until it works (cooking a korean dish)</li>
+<li>descriptions of an art work (between organic life and architecture)</li>
+<li>clemens teaching me how to make link, telling step by step, dropping hints, then assisting</li>
+<li>conversation with someone knowledgeable</li>
+</ul>
+</div><div class="prep" concept="3"><img src="augmenting-the-gallery_assets/seymour-papert.jpg" alt="seymour-papert.jpg"></div><div class="prep" concept="3"><p>seymour papert, and constructivist education, derived from jean piaget</p>
+<p><em>learning to learn how to think</em></p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="3"><p>manipulating symbols can be done for video games, for spreadsheets, or for epistemic actions</p>
+</div></div><div class="page-group"><h3 class="page-name">mental models</h3><div class="prep" concept="3"><p>mental models are a dynamic, structured representation formed in memory as a result of using personal knowledge and environment cues, which help interpret, explain, and act on a target system</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="3"></div></div><div class="page-group"><h3 class="page-name">nodes and edges</h3><div class="prep" concept="3"><p>the nature of a concept, or of concepts, is represented through <strong>things</strong> and <strong>relations</strong></p>
+</div><div class="prep" concept="3"><img src="augmenting-the-gallery_assets/Mind-Map-Pic.jpg" alt="Mind-Map-Pic.jpg"></div><div class="prep" concept="3"><img src="augmenting-the-gallery_assets/Screenshot from 2023-10-31 19-44-41.png" alt="Screenshot from 2023-10-31 19-44-41.png"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="3"></div></div><div class="page-group"><h3 class="page-name">programming knowledge</h3><div class="prep" concept="3"><p>the dynabook is about the simulation of activities and concepts</p>
+</div><div class="prep" concept="3"><ol>
+<li>the domain represented</li>
+<li>how it is represented</li>
+</ol>
+</div><div class="prep" concept="3"><p>the domain represented: <strong>knowledge</strong></p>
+<p>how is it represented: <strong>a library</strong></p>
+</div><div class="prep" concept="3"><p>what are some features of a library?</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="3"></div></div><div class="page-group"><h3 class="page-name">implementation</h3><div class="prep" concept="3"><ul>
+<li><p>dynabook as portable hardware -&gt; smartphone</p>
+</li>
+<li><p>smalltalk as portable language -&gt; objects</p>
+</li>
+</ul>
+<p>manipulating concepts is translated as manipulating objects</p>
+<p><em>gestalt</em></p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="3"></div></div><div class="page-group"><h3 class="page-name">interactions</h3><div class="prep" concept="3"><p>some interactions developed in smalltalk can be called <em>epistemic actions</em>:</p>
+<ul>
+<li>mark</li>
+<li>peek</li>
+<li>save</li>
+<li>compare</li>
+<li>orient</li>
+<li>change</li>
+<li>...</li>
+</ul>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="3"></div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="examples">examples</h3><div class="page-group"><h3 class="page-name">mark</h3><div class="prep" concept="4"><p><a target='_blank' href="https://web.hypothes.is/">hypothesis</a></p>
+<p><a target='_blank' href="https://help.medium.com/hc/en-us/articles/214406358-About-highlights">medium</a></p>
+<p><a target='_blank' href="https://jon-e.net/infrastructure/#introduction">highlight essays</a></p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="4"></div></div><div class="page-group"><h3 class="page-name">peek</h3><div class="prep" concept="4"><p><a target='_blank' href="https://developh.org/library/">developh</a></p>
+<p><a target='_blank' href="https://en.wikipedia.org/wiki/Peek">wikipedia</a></p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="4"></div></div><div class="page-group"><h3 class="page-name">save</h3><div class="prep" concept="4"><p><a target='_blank' href="https://www.zotero.org/">zotero</a></p>
+<p>The State of the Transistor in 3 Charts—IEEE Spectrum. (n.d.). Retrieved November 1, 2023, from <a target='_blank' href="https://spectrum.ieee.org/transistor-density">https://spectrum.ieee.org/transistor-density</a></p>
+<p><a target='_blank' href="http://pinterest.com/">pinterest</a></p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="4"></div></div><div class="page-group"><h3 class="page-name">compare</h3><div class="prep" concept="4"><p><a target='_blank' href="https://aegean.forensic-architecture.org/">driftbacks</a></p>
+<p><a target='_blank' href="https://www.digitalviolence.org/#/platform">digital violence</a></p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="4"></div></div><div class="page-group"><h3 class="page-name">orient</h3><div class="prep" concept="4"><p><a target='_blank' href="http://npl.wiki/view/welcome-visitors/view/growing-regions">growing regions</a></p>
+<p><a target='_blank' href="https://sourcecode.enframed.net/understanding/means-understanding/">aesthetics of source code</a></p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="4"></div></div><div class="page-group"><h3 class="page-name">change</h3><div class="prep" concept="4"><p><a target='_blank' href="http://worrydream.com/Tangle/">tangled</a></p>
+<p><a target='_blank' href="https://ciechanow.ski/bicycle/">bicycle</a></p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="4"></div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="mapping the concept">mapping the concept</h3><div class="page-group"><h3 class="page-name">making a draft of a field</h3><div class="prep" concept="5"><ul>
+<li>as a slice</li>
+<li>as a layer</li>
+</ul>
+</div><div class="prep" concept="5"><p>take 30min and draw out:</p>
+<ul>
+<li>the single elements of your knowledge field</li>
+<li>the relations between each of these elements</li>
+</ul>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="5"></div></div><div class="page-group"><h3 class="page-name">results</h3></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="5"></div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="programming memory">programming memory</h3><div class="page-group"><h3 class="page-name">programming</h3><div class="prep" concept="6"><p>the most important is for the computer to remember</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="6"></div></div><div class="page-group"><h3 class="page-name">computer memory</h3><div class="prep" concept="6"><p>a database is just a spreadsheet</p>
+<p><strong>key</strong>: value</p>
+</div><div class="prep" concept="6"><p><code>window.localStorage</code> is where we can save some interactions</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="6"></div></div><div class="page-group"><h3 class="page-name">saving bookmarks</h3><div class="prep" concept="6"><ol>
+<li>have a button to add an object to an array</li>
+<li>save this array every time we add a new one</li>
+<li>load the array when we open the page</li>
+</ol>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="6"></div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="outro">outro</h3><div class="page-group"><h3 class="page-name">homework</h3><div class="prep" concept="7"><p>next week we will focus on <strong>hypermedia</strong></p>
+<p>homework: write a description of the field you will work on with your group</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="7"></div></div></div><br><div class="break-after" style="page-break-after:always;"></div></main></body></html>
