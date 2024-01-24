@@ -1,0 +1,271 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter UI', Trebuchet MS;
+    font-size: 1em;
+    background-color: white;
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    overflow: auto;
+}
+
+header h1 {
+    display: inline-block;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 40%;
+    font-size: 2.5em;
+}
+
+@media print {
+    header h1 {
+        font-size: 1em;
+    }
+}
+
+.subject-name {
+    float: right;
+    text-align: right;
+}
+
+.topic-name {
+    float: left;
+    text-align: left;
+}
+
+a {
+    text-decoration: none;
+    color: #e77607;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #b25900;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    border: 2px solid white;
+    padding: 3px;
+}
+
+main {
+    width: 60%;
+    margin: auto;
+    display: block;
+}
+
+@media (max-width: 1040px) {
+    body{
+        font-size: 2em;
+    }
+    
+    main {
+        margin: auto;
+        width: 90%;
+    }
+}
+
+@media print {
+    main {
+        margin-left: 5%;
+        width: 90%;
+    }
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: black;
+    float: left;
+    width: 100%;
+}
+
+img {
+    max-height: 300px;
+    max-width: 90%;
+}
+
+.concept-group {
+    width: 80%;
+    margin-left: 10%;
+    display: block;
+    float: left;
+}
+
+.concept-nav {
+    width: 30%;
+    float: right;
+    margin-right: 10%;
+}
+
+.overview-holder {
+    float: left;
+    width: 38%;
+    margin-left: 10%;
+}
+
+@media print {
+
+    .concept-group,
+    .concept-nav {
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+
+.concept-name {
+    width: 98%;
+    text-align: right;
+    float: right;
+    color: black;
+    border-bottom: 2px solid black;
+    padding: 1%;
+    font-size: 2em;
+}
+
+.break-before,
+.break-after {
+    display: block;
+    width: 100%;
+    height: 5px;
+    float: left;
+}
+
+.break-after {
+    page-break-after: always;
+}
+
+.page-group {
+    position: relative;
+    font-size: 1.2em;
+    width: 50%;
+    float: left;
+}
+
+@media (max-width: 1040px) {
+    .page-group {
+        width: 100%;
+    }
+}
+
+
+@media print {
+
+    .page-group {
+        width: 70%;
+        page-break-inside: avoid;
+    }
+
+    .prep {
+        font-size: 0.8em;
+    }
+}
+
+.page-name {
+    width: 100%;
+    float: left;
+}
+
+.note-group {
+    position: relative;
+    width: 50%;
+    float: left;
+    overflow: auto;
+    text-align: left;
+}
+
+@media print {
+    .note-group {
+        width: 30%;
+    }
+}
+
+.note {
+    position: relative;
+    margin-bottom: 10px;
+    width: 100%;
+    overflow: auto;
+    white-space: pre;
+}
+
+@media print {
+    .note {
+        white-space: normal;
+    }
+}
+
+.writeup-group {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    float: left;
+}
+
+@media print {
+    .writeup-group {
+        break-inside: avoid;
+        font-size: 0.9em;
+    }
+}
+
+.context {
+    white-space: pre-line;
+    border: 2px solid black;
+    width: 45%;
+    padding: 5px;
+    float: right;
+    display: none;
+}
+
+@media print {
+    .context {
+        width: 100%
+    }
+}
+
+.writeup {
+    width: 100%;
+    float: left;
+    margin-bottom: 10px;
+    font-style: italic;
+    white-space: pre-line;
+}
+
+.web-only {
+    display: inherit;
+}
+
+.print-only {
+    display: none;
+}
+
+@media print {
+    * {
+        float: none !important;
+    }
+
+    .break-before {
+        page-break-before: always !important;
+    }
+
+    .break-after {
+        page-break-after: always !important;
+    }
+
+    .web-only {
+        display: none;
+    }
+
+    .print-only {
+        display: inline-block;
+    }
+}
