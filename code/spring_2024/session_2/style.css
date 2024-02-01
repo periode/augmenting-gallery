@@ -1,0 +1,23 @@
+body {
+    background-color: #f7972a;
+    font-family: sans-serif;
+
+    width: 40%;
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+img {
+    border: 2px solid black;
+}
+
+/* i should change this name */
+.top-content {
+    font-family: serif;
+}
+
+.main-content {
+    color: blue;
+}
