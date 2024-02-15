@@ -1,264 +1,7 @@
-<!DOCTYPE html><html><head><meta charset="utf8"><title>augmenting-the-gallery | interaction design</title><style>body {
-	margin: 0;
-	padding: 0;
-	font-family: 'Inter UI', Trebuchet MS;
-	background-color: white;
-}
-
-header {
-	background-color: black;
-	color: white;
-  	padding: 10px;
-	overflow: auto;
-}
-
-header h1{
-	display: inline-block;
-	margin-left: 5%;
-	margin-right: 5%;
-	width: 40%;
-	font-size: 2.5em;
-}
-
-@media print{
-	header h1{
-		font-size: 1em;
-	}
-}
-
-.subject-name{
-	float: right;
-	text-align: right;
-}
-
-.topic-name{
-	float: left;
-	text-align: left;
-}
-
-a {
-	text-decoration: none;
-  color: #e77607;
-}
-
-a:hover {
-	text-decoration: underline;
-}
-
-a:visited {
-  color: #b25900;
-}
-
-header a{
-	color: white;
-	text-decoration: none;
-	border: 2px solid white;
-	padding: 3px;
-}
-
-main{
-	position: absolute;
-	margin-left: 20%;
-	width: 60%;
-	display: block;
-}
-
-@media (min-width: 640px) {
-	main{
-		margin: auto;
-		width: 100%;
-	}
-}
-
-@media print{
-	main{
-		margin-left: 5%;
-		width: 90%;
-	}
-}
-
-hr {
-	border: none;
-	height: 2px;
-	background-color: black;
-	float: left;
-	width: 100%;
-}
-
-img {
-	max-height: 300px;
-	max-width: 90%;
-}
-
-.concept-group{
-	width: 80%;
-	margin-left: 10%;
-	display: block;
-	float: left;
-}
-
-.concept-nav{
-	width: 30%;
-	float: right;
-	margin-right: 10%;
-}
-
-.overview-holder{
-	float: left;
-	width: 38%;
-	margin-left: 10%;
-}
-
-@media print{
-	.concept-group, .concept-nav{
-		width: 90%;
-		margin-left: 5%;
-	}
-}
-
-.concept-name {
-	width: 98%;
-	text-align: right;
-	float: right;
-	color: black;
-	border-bottom: 2px solid black;
-	padding: 1%;
-	font-size: 2em;
-}
-
-.break-before, .break-after{
-	display: block;
-	width: 100%;
-	height: 5px;
-	float: left;
-}
-
-.break-after{
-	page-break-after: always;
-}
-
-.page-group{
-	position: relative;
-	font-size: 1.2em;
-	width: 50%;
-	float: left;
-}
-
-@media print{
-
-	.page-group{
-		width: 70%;
-		page-break-inside: avoid;
-	}
-
-	.prep{
-		font-size: 0.8em;
-	}
-}
-
-.page-name{
-	width: 100%;
-	float: left;
-}
-
-.note-group{
-	position: relative;
-	width: 50%;
-	float: left;
-	overflow: auto;
-	text-align: left;
-}
-
-@media print{
-	.note-group{
-		width: 30%;
-	}
-}
-
-.note {
-	position: relative;
-	margin-bottom: 10px;
-	width: 100%;
-	overflow: auto;
-	white-space: pre;
-}
-
-@media print {
-	.note{
-		white-space: normal;
-	}
-}
-
-.writeup-group{
-	width: 100%;
-	margin-top: 30px;
-	margin-bottom: 30px;
-	float: left;
-}
-
-@media print{
-	.writeup-group{
-		break-inside: avoid;
-		font-size: 0.9em;
-	}
-}
-
-.context{
-	white-space: pre-line;
-	border: 2px solid black;
-	width: 45%;
-	padding: 5px;
-	float: right;
-}
-
-@media print{
-	.context{
-		width: 100%
-	}
-}
-
-.writeup{
-	width: 100%;
-	float: left;
-	margin-bottom: 10px;
-	font-style: italic;
-	white-space: pre-line;
-}
-
-.web-only{
-	display: inherit;
-}
-
-.print-only{
-	display: none;
-}
-
-@media print{
-	* {
-		float: none !important;
-	}
-
-	.break-before{
-		page-break-before: always !important;
-	}
-
-	.break-after{
-		page-break-after: always !important;
-	}
-
-	.web-only{
-		display: none;
-	}
-
-	.print-only{
-		display: inline-block;
-	}
-}
-</style></head><body><header><h1 class="topic-name">interaction design</h1><h1 class="subject-name"><a href="index.html">augmenting-the-gallery</a></h1></header><main><div class="overview-holder"><h1>overview</h1><p>This week is going to focus on interaction as a medium. After looking at different kinds of media, and how some content works better than some other content through these media, we&#39;ll focus more closely on the specificities of interaction.</p>
+<!DOCTYPE html><html><head><meta charset="utf8"><title>augmenting-the-gallery | interaction design</title><link rel="stylesheet" href="styles/main.css"></head><body><header><h1 class="topic-name">interaction design</h1><h1 class="subject-name"><a href="index.html">augmenting-the-gallery</a></h1></header><main><div class="overview-holder"><h1>overview</h1><p>This week is going to focus on interaction as a medium. After looking at different kinds of media, and how some content works better than some other content through these media, we&#39;ll focus more closely on the specificities of interaction.</p>
 <p>This will start from a high-level, conceptual perspective, and focusing all the way to the specifics of user interface design and user experience design (along with expliciting the difference between the two!).</p>
-</div><div class="concept-nav"><h1>summary</h1><ul><a class="web-only" href="#intro">intro</a><li class="print-only">intro</li></ul><ul><a class="web-only" href="#interaction and procedure">interaction and procedure</a><li class="print-only">interaction and procedure</li></ul><ul><a class="web-only" href="#expressive interactions">expressive interactions</a><li class="print-only">expressive interactions</li></ul><ul><a class="web-only" href="#interfaces and experiences">interfaces and experiences</a><li class="print-only">interfaces and experiences</li></ul><ul><a class="web-only" href="#recap">recap</a><li class="print-only">recap</li></ul><ul><a class="web-only" href="#break">break</a><li class="print-only">break</li></ul><ul><a class="web-only" href="#web making part. 2">web making part. 2</a><li class="print-only">web making part. 2</li></ul><ul><a class="web-only" href="#outro">outro</a><li class="print-only">outro</li></ul><br></div><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="intro">intro</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">interaction design</h3><div class="prep" concept="0"><p>welcome!</p>
-</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="0"></div></div><div class="page-group"><h3 class="page-name">housekeeping</h3><div class="prep" concept="0"><p>reading responses are not optional</p>
-<p>we will have a TA next week</p>
+</div><div class="concept-nav"><h1>summary</h1><ul><a class="web-only" href="#intro">intro</a><li class="print-only">intro</li></ul><ul><a class="web-only" href="#interaction and procedure">interaction and procedure</a><li class="print-only">interaction and procedure</li></ul><ul><a class="web-only" href="#expressive interactions">expressive interactions</a><li class="print-only">expressive interactions</li></ul><ul><a class="web-only" href="#interfaces and experiences">interfaces and experiences</a><li class="print-only">interfaces and experiences</li></ul><ul><a class="web-only" href="#recap">recap</a><li class="print-only">recap</li></ul><ul><a class="web-only" href="#break">break</a><li class="print-only">break</li></ul><ul><a class="web-only" href="#making a webpage live">making a webpage live</a><li class="print-only">making a webpage live</li></ul><ul><a class="web-only" href="#web making part. 2">web making part. 2</a><li class="print-only">web making part. 2</li></ul><ul><a class="web-only" href="#outro">outro</a><li class="print-only">outro</li></ul><br></div><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="intro">intro</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">interaction design</h3><div class="prep" concept="0"><p>welcome!</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="0"></div></div><div class="page-group"><h3 class="page-name">housekeeping</h3><div class="prep" concept="0"><p>berlinale starts friday!</p>
 </div><div class="prep" concept="0"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="0"></div></div><div class="page-group"><h3 class="page-name">plan for the day</h3><div class="prep" concept="0"><p>-&gt; exercise 1</p>
 <p>-&gt; reading presentation</p>
 <p>-&gt; designing interactions</p>
@@ -269,24 +12,37 @@ img {
 </div><div class="prep" concept="0"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="0"></div></div><div class="page-group"><h3 class="page-name">augmented exercise 1</h3><div class="prep" concept="0"><p>html &amp; invisible stories</p>
 <p>what story did you represent? what images and text did you use?</p>
 <p>what were the struggles?</p>
-</div><div class="prep" concept="0"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="0"></div></div><div class="page-group"><h3 class="page-name">reading presentations</h3><div class="prep" concept="0"><p>jackson</p>
-<p>are there any negatives or drawbacks to expanding culture through interaction design/digital media?</p>
+<p>are there any other stories we can connect it to?</p>
+</div><div class="prep" concept="0"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="0"></div></div><div class="page-group"><h3 class="page-name">reading presentations</h3><div class="prep" concept="0"><p>Rachel</p>
 <ul>
-<li>older people, people without devices</li>
-<li>overreliance on devices</li>
-<li>addiction (biological, economical)</li>
-<li>physical hands</li>
+<li>do you think mac os principles should be reconsidered?</li>
 </ul>
-<p>good designs / software?</p>
+<p>(only in relation to hardware -&gt; interface design depends on means of interaction, like mouse or trackpad)</p>
 <ul>
-<li>playful interaction</li>
-<li>including 3d design</li>
-<li>apple health (fits to the domain)</li>
-<li>pinterest (managing information, between similarity and discovery)</li>
-<li>red (combinations between reddit, pinterest, tiktok,search)</li>
+<li>do you find there are bad examples of interface design?</li>
 </ul>
-<p>presentation and organization of information</p>
-</div><div class="prep" concept="0"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="0"></div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="interaction and procedure">interaction and procedure</h3><div class="context"><div></div><div class="context-links"></div><hr><a href="http://www.immersence.com/publications/2003/2003-Mmorse.html">http://www.immersence.com/publications/2003/2003-Mmorse.html</a><div>Margaret Morse's take on interaction as a feminist practice.</div></div><div class="page-group"><h3 class="page-name">first thoughts</h3><div class="prep" concept="1"><p>what did you think of a cultural perspective on interaction design?</p>
+<p>accessing folders</p>
+<p>icons are too abstract</p>
+<p>too much information hidden</p>
+<p>accessibility -&gt; how to activate it</p>
+<ul>
+<li>somethings that might change in the future?</li>
+</ul>
+<p>apple vision pro -&gt; touch controls + spatial layout</p>
+</div><div class="prep" concept="0"><h2 id="magic-ink">magic ink</h2>
+<ul>
+<li><strong>information</strong> software (learn)</li>
+<li>manipulation software (interact)</li>
+<li>communication software (talk)</li>
+</ul>
+<p>context is important (environment, history, interaction)</p>
+<p>designers should be pioneers</p>
+</div><div class="prep" concept="0"><p>is information software just graphic design rather than interaction?</p>
+<p>do you think that CSS is an appropriate tool?</p>
+<p>figma? high-level programming? more natural/fluidity, but there might be a gap in control/understanding if you don&#39;t know css. css is more direct.</p>
+<p>css is not always the best to reduce noise in communication</p>
+<p>what is the relationship between information and interaction?</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="0"></div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="interaction and procedure">interaction and procedure</h3><div class="context"><div></div><div class="context-links"></div><hr><a href="http://www.immersence.com/publications/2003/2003-Mmorse.html">http://www.immersence.com/publications/2003/2003-Mmorse.html</a><div>Margaret Morse's take on interaction as a feminist practice.</div></div><div class="page-group"><h3 class="page-name">first thoughts</h3><div class="prep" concept="1"><p>what did you think of a cultural perspective on interaction design?</p>
 </div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="1"><p>Interaction is when you do something to someone?</p>
 <p>Interaction is when something <em>acknowledges</em> an action?</p>
 <p>Interaction is when you <em>initiate</em> something and get something <em>back</em>? What do you get back? An action, an information, a feeling?</p>
@@ -443,7 +199,11 @@ img {
 </div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="recap">recap</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">interfaces</h3><div class="prep" concept="4"><p>the design of interfaces is the support for an empowering interaction, at minimum to get things done, at maximum to discover a world through a conversation.</p>
 <p>interfaces can reveal information <em>contextually</em> and <em>gradually</em>, acting as a guide for the user, following certain basic elements (graphical elements, input methods, system messages)</p>
 <p>a procedural rhetoric is the process of persuading someone through the enactment of rules, represented by interfaces.</p>
-</div><div class="prep" concept="4"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="4"></div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="break">break</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">break</h3><div class="prep" concept="5"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="5"></div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="web making part. 2">web making part. 2</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">HTML &amp; CSS recap</h3><div class="prep" concept="6"><pre><code>&lt;html&gt;
+</div><div class="prep" concept="4"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="4"></div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="break">break</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">break</h3><div class="prep" concept="5"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="5"></div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="making a webpage live">making a webpage live</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">demystify the cloud</h3><div class="prep" concept="6"><ul>
+<li>upload files to a server (the machine)</li>
+<li>change the configuration of the server (the server) to redirect the visitor to the correct file</li>
+</ul>
+</div><div class="prep" concept="6"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="6"></div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="web making part. 2">web making part. 2</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">HTML &amp; CSS recap</h3><div class="prep" concept="7"><pre><code>&lt;html&gt;
 &lt;head&gt;
 &lt;/head&gt;
 
@@ -451,14 +211,14 @@ img {
 &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
-</div><div class="prep" concept="6"><p><code>&lt;tagname attribute=&quot;value&quot;&gt;...visible content...&lt;/tagname&gt;</code></p>
+</div><div class="prep" concept="7"><p><code>&lt;tagname attribute=&quot;value&quot;&gt;...visible content...&lt;/tagname&gt;</code></p>
 <hr>
 <pre><code>selector {
    property: value;
 }
 </code></pre>
-</div><div class="prep" concept="6"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="6"></div></div><div class="page-group"><h3 class="page-name">positioning</h3><div class="prep" concept="6"><p>absolute vs. relative vs. sticky</p>
-</div><div class="prep" concept="6"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="6"></div></div><div class="page-group"><h3 class="page-name">Javascript interaction</h3><div class="prep" concept="6"><ul>
+</div><div class="prep" concept="7"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="7"></div></div><div class="page-group"><h3 class="page-name">positioning</h3><div class="prep" concept="7"><p>absolute vs. relative vs. sticky</p>
+</div><div class="prep" concept="7"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="7"></div></div><div class="page-group"><h3 class="page-name">Javascript interaction</h3><div class="prep" concept="7"><ul>
 <li><p>adding a script</p>
 </li>
 <li><p>defining functions</p>
@@ -466,16 +226,24 @@ img {
 <li><p>connecting functions to the HTML</p>
 </li>
 </ul>
-</div><div class="prep" concept="6"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="6"></div></div><div class="page-group"><h3 class="page-name">react</h3><div class="prep" concept="6"><p>react is a more contemporary way to write websites</p>
+</div><div class="prep" concept="7"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="7"></div></div><div class="page-group"><h3 class="page-name">react</h3><div class="prep" concept="7"><p>web framework</p>
+<p>react is a more contemporary way to write websites</p>
 <p>react focuses on <strong>components</strong> and <strong>states</strong></p>
-</div><div class="prep" concept="6"><p><strong>components</strong> are like building blocks of the web application, which can be reused, and completed with data</p>
+<ul>
+<li><strong>pwd</strong>: where am i?</li>
+<li><strong>cd</strong> [NAME OF FOLDER]: go to this folder</li>
+<li><strong>mkdir</strong> [NAME OF FOLDER]: create folder</li>
+</ul>
+</div><div class="prep" concept="7"><p><strong>components</strong> are like building blocks of the web application, which can be reused, and completed with data</p>
 <p><strong>states</strong> are the particular values of variables across the whole website, which should remain the same across the whole website</p>
-</div><div class="prep" concept="6"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="6"></div></div><div class="page-group"><h3 class="page-name">getting started</h3><div class="prep" concept="6"><p><a target='_blank' href="https://react.dev/learn/start-a-new-react-project">starting from scratch</a></p>
+</div><div class="prep" concept="7"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="7"></div></div><div class="page-group"><h3 class="page-name">using glitch</h3><div class="prep" concept="7"><p>to upload our website</p>
+<p>to create a new react application</p>
+</div><div class="prep" concept="7"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="7"></div></div><div class="page-group"><h3 class="page-name">getting started</h3><div class="prep" concept="7"><p><a target='_blank' href="https://react.dev/learn/start-a-new-react-project">starting from scratch</a></p>
 <ul>
 <li>install <a target='_blank' href="https://nodejs.org/en/download">node</a></li>
 <li>open the terminal, navigate to your class folder and create a new folder
 <code>mkdir YOURFOLDERNAME</code></li>
-<li><code>npx create-react-app my-app</code> (<a target='_blank' href="https://create-react-app.dev/docs/getting-started/">src</a>)</li>
+<li><code>npx create-react-app my-app</code> (<a target='_blank' href="https://create-react-app.dev/docs/getting-started/">documentation</a>)</li>
 </ul>
-</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="6"></div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="outro">outro</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">homework</h3><div class="prep" concept="7"><p>homework for day 3 is <a target='_blank' href="https://github.com/periode/augmenting-gallery/wiki/Schedule#homework-2">here</a></p>
-</div><div class="prep" concept="7"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="7"></div></div></div><br><div class="break-after" style="page-break-after:always;"></div></main></body></html>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="7"></div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="outro">outro</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">homework</h3><div class="prep" concept="8"><p>homework for day 3 is <a target='_blank' href="https://github.com/periode/augmenting-gallery/wiki/Schedule#homework-2">here</a></p>
+</div><div class="prep" concept="8"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="8"></div></div></div><br><div class="break-after" style="page-break-after:always;"></div></main></body></html>
