@@ -1,268 +1,46 @@
-<!DOCTYPE html><html><head><meta charset="utf8"><title>augmenting-the-gallery | hypertext</title><style>body {
-	margin: 0;
-	padding: 0;
-	font-family: 'Inter UI', Trebuchet MS;
-	background-color: white;
-}
-
-header {
-	background-color: black;
-	color: white;
-  	padding: 10px;
-	overflow: auto;
-}
-
-header h1{
-	display: inline-block;
-	margin-left: 5%;
-	margin-right: 5%;
-	width: 40%;
-	font-size: 2.5em;
-}
-
-@media print{
-	header h1{
-		font-size: 1em;
-	}
-}
-
-.subject-name{
-	float: right;
-	text-align: right;
-}
-
-.topic-name{
-	float: left;
-	text-align: left;
-}
-
-a {
-	text-decoration: none;
-  color: #e77607;
-}
-
-a:hover {
-	text-decoration: underline;
-}
-
-a:visited {
-  color: #b25900;
-}
-
-header a{
-	color: white;
-	text-decoration: none;
-	border: 2px solid white;
-	padding: 3px;
-}
-
-main{
-	position: absolute;
-	margin-left: 20%;
-	width: 60%;
-	display: block;
-}
-
-@media (min-width: 640px) {
-	main{
-		margin: auto;
-		width: 100%;
-	}
-}
-
-@media print{
-	main{
-		margin-left: 5%;
-		width: 90%;
-	}
-}
-
-hr {
-	border: none;
-	height: 2px;
-	background-color: black;
-	float: left;
-	width: 100%;
-}
-
-img {
-	max-height: 300px;
-	max-width: 90%;
-}
-
-.concept-group{
-	width: 80%;
-	margin-left: 10%;
-	display: block;
-	float: left;
-}
-
-.concept-nav{
-	width: 30%;
-	float: right;
-	margin-right: 10%;
-}
-
-.overview-holder{
-	float: left;
-	width: 38%;
-	margin-left: 10%;
-}
-
-@media print{
-	.concept-group, .concept-nav{
-		width: 90%;
-		margin-left: 5%;
-	}
-}
-
-.concept-name {
-	width: 98%;
-	text-align: right;
-	float: right;
-	color: black;
-	border-bottom: 2px solid black;
-	padding: 1%;
-	font-size: 2em;
-}
-
-.break-before, .break-after{
-	display: block;
-	width: 100%;
-	height: 5px;
-	float: left;
-}
-
-.break-after{
-	page-break-after: always;
-}
-
-.page-group{
-	position: relative;
-	font-size: 1.2em;
-	width: 50%;
-	float: left;
-}
-
-@media print{
-
-	.page-group{
-		width: 70%;
-		page-break-inside: avoid;
-	}
-
-	.prep{
-		font-size: 0.8em;
-	}
-}
-
-.page-name{
-	width: 100%;
-	float: left;
-}
-
-.note-group{
-	position: relative;
-	width: 50%;
-	float: left;
-	overflow: auto;
-	text-align: left;
-}
-
-@media print{
-	.note-group{
-		width: 30%;
-	}
-}
-
-.note {
-	position: relative;
-	margin-bottom: 10px;
-	width: 100%;
-	overflow: auto;
-	white-space: pre;
-}
-
-@media print {
-	.note{
-		white-space: normal;
-	}
-}
-
-.writeup-group{
-	width: 100%;
-	margin-top: 30px;
-	margin-bottom: 30px;
-	float: left;
-}
-
-@media print{
-	.writeup-group{
-		break-inside: avoid;
-		font-size: 0.9em;
-	}
-}
-
-.context{
-	white-space: pre-line;
-	border: 2px solid black;
-	width: 45%;
-	padding: 5px;
-	float: right;
-}
-
-@media print{
-	.context{
-		width: 100%
-	}
-}
-
-.writeup{
-	width: 100%;
-	float: left;
-	margin-bottom: 10px;
-	font-style: italic;
-	white-space: pre-line;
-}
-
-.web-only{
-	display: inherit;
-}
-
-.print-only{
-	display: none;
-}
-
-@media print{
-	* {
-		float: none !important;
-	}
-
-	.break-before{
-		page-break-before: always !important;
-	}
-
-	.break-after{
-		page-break-after: always !important;
-	}
-
-	.web-only{
-		display: none;
-	}
-
-	.print-only{
-		display: inline-block;
-	}
-}
-</style></head><body><header><h1 class="topic-name">hypertext</h1><h1 class="subject-name"><a href="index.html">augmenting-the-gallery</a></h1></header><main><div class="overview-holder"><h1>overview</h1></div><div class="concept-nav"><h1>summary</h1><ul><a class="web-only" href="#intro">intro</a><li class="print-only">intro</li></ul><ul><a class="web-only" href="#hyperlinks">hyperlinks</a><li class="print-only">hyperlinks</li></ul><ul><a class="web-only" href="#remote resources">remote resources</a><li class="print-only">remote resources</li></ul><ul><a class="web-only" href="#spatial organization">spatial organization</a><li class="print-only">spatial organization</li></ul><ul><a class="web-only" href="#javascript">javascript</a><li class="print-only">javascript</li></ul><ul><a class="web-only" href="#outro">outro</a><li class="print-only">outro</li></ul><br></div><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="intro">intro</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">hypertexts</h3><div class="prep" concept="0"><p>welcome!</p>
+<!DOCTYPE html><html><head><meta charset="utf8"><title>augmenting-the-gallery | hypertext</title><link rel="stylesheet" href="styles/main.css"></head><body><header><h1 class="topic-name">hypertext</h1><h1 class="subject-name"><a href="index.html">augmenting-the-gallery</a></h1></header><main><div class="overview-holder"><h1>overview</h1></div><div class="concept-nav"><h1>summary</h1><ul><a class="web-only" href="#intro">intro</a><li class="print-only">intro</li></ul><ul><a class="web-only" href="#hyperlinks">hyperlinks</a><li class="print-only">hyperlinks</li></ul><ul><a class="web-only" href="#remote resources">remote resources</a><li class="print-only">remote resources</li></ul><ul><a class="web-only" href="#enriching the text">enriching the text</a><li class="print-only">enriching the text</li></ul><ul><a class="web-only" href="#spatial organization">spatial organization</a><li class="print-only">spatial organization</li></ul><ul><a class="web-only" href="#javascript">javascript</a><li class="print-only">javascript</li></ul><ul><a class="web-only" href="#outro">outro</a><li class="print-only">outro</li></ul><br></div><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="intro">intro</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">hypertexts</h3><div class="prep" concept="0"><p>welcome!</p>
 </div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="0"></div></div><div class="page-group"><h3 class="page-name">plan for the day</h3><div class="prep" concept="0"><ul>
-<li>hyperlinks and hypertexts</li>
-<li>making a semantic map</li>
-<li>drafting a dynamic website with figma</li>
-<li>mobile styling review</li>
+<li><p>hyperlinks and hypertexts</p>
+</li>
+<li><p>hypertext exercise</p>
+</li>
+<li><p>reading presentation on dynamic documents</p>
+</li>
+<li><p>javascript in react</p>
+</li>
+<li><p>mobile responsive, and add some javascript and more pages</p>
+</li>
 </ul>
-</div><div class="prep" concept="0"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="0"></div></div><div class="page-group"><h3 class="page-name">housekeeping</h3><div class="prep" concept="0"><p>clemens lecture on 06/12</p>
-</div><div class="prep" concept="0"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="0"></div></div><div class="page-group"><h3 class="page-name">readings presentation</h3><div class="prep" concept="0"><p>alex</p>
+</div><div class="prep" concept="0"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="0"></div></div><div class="page-group"><h3 class="page-name">housekeeping</h3><div class="prep" concept="0"><p><a target='_blank' href="https://www.smb.museum/en/museums-institutions/kunstgewerbemuseum/exhibitions/detail/more-than-human/">kunstgewerbemuseum - more than human</a></p>
+<p><a target='_blank' href="https://kraftwerkberlin.de/en/programme">vektor.art</a></p>
+</div><div class="prep" concept="0"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="0"></div></div><div class="page-group"><h3 class="page-name">readings presentation</h3><div class="prep" concept="0"><ul>
+<li><p>the hypertext as subversive -&gt; non-linear reading</p>
+</li>
+<li><p>literary machines, ted nelson -&gt; imagining hypertext</p>
+</li>
+<li><p>objects of intense feeling: the case of the twitter API -&gt; machines talking to each other</p>
+</li>
+</ul>
+</div><div class="prep" concept="0"><p>what was the reading experience?</p>
+<ul>
+<li>confusing, going back and forth</li>
+<li>fun to click around</li>
+</ul>
+<p>what does a hyperlinked university look like?</p>
+<p>what are the pros and cons of linearity vs. non-linearity?</p>
+<p>what was it about?</p>
+<ul>
+<li>university: hyperlinks create more and more information, but it needs to have some sort of the limitation</li>
+</ul>
+<p>the university is becoming panoptic (all-seeing, all-watching) -&gt; is it better to have all the information highly structured vs. loosely structured</p>
+<p>what do we archive ? and who does it?</p>
+<ul>
+<li>everyone could have an archive, and the web makes it possible</li>
+</ul>
+<p>there is always going to be a design (decisions that were made about the content and the links)</p>
+<ul>
+<li>fairy tales????</li>
+</ul>
 </div><div class="prep" concept="0"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="0"></div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="hyperlinks">hyperlinks</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">hyper-</h3><div class="prep" concept="1"><p>what makes it hyper?</p>
 </div><div class="prep" concept="1"><p>hyper comes from the scientific denotation for <strong>beyond</strong>,  rather than the literary <strong>extra</strong></p>
 </div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="1"></div></div><div class="page-group"><h3 class="page-name">historically</h3><div class="prep" concept="1"><p>the web contributed to popularization of the hyperlink</p>
@@ -274,9 +52,11 @@ img {
 </ul>
 </div><div class="prep" concept="1"><img src="augmenting-the-gallery_assets/mundaneum-01.jpg" alt="mundaneum-01.jpg"></div><div class="prep" concept="1"><img src="augmenting-the-gallery_assets/mundaneum-10.jpg" alt="mundaneum-10.jpg"></div><div class="prep" concept="1"><p>paul otlet, henri lafontaine and <a target='_blank' href="https://en.wikipedia.org/wiki/Mundaneum">the mundaneum</a>, 1890s</p>
 </div><div class="prep" concept="1"><img src="augmenting-the-gallery_assets/project-xanadu.png" alt="project-xanadu.png"></div><div class="prep" concept="1"><p>ted nelson and project xanadu, 1960</p>
+<p>intertextuality: the dialogue between things makes new sense</p>
 </div><div class="prep" concept="1"><img src="augmenting-the-gallery_assets/first-web-page-in-line-mode-browser.jpg" alt="first-web-page-in-line-mode-browser.jpg"></div><div class="prep" concept="1"><p><a target='_blank' href="https://info.cern.ch/hypertext/WWW/TheProject.html">the first website</a></p>
 </div><div class="prep" concept="1"><p>the move from the single text to the networks of texts</p>
 <p>intratextuality -&gt; intertextuality</p>
+<p><a target='_blank' href="https://diagram.website/">diagram.website</a></p>
 </div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="1"></div></div><div class="page-group"><h3 class="page-name">the hyper document</h3><div class="prep" concept="1"><p>requires some internal structure:</p>
 <ul>
 <li>themes</li>
@@ -291,7 +71,8 @@ img {
 <li>increase</li>
 <li>decrease</li>
 </ul>
-<p>with those relations, an <em>external structure</em> appears</p>
+</div><div class="prep" concept="1"><p>with those relations, an <em>external structure</em> appears</p>
+<p>gestalt: &quot;the whole is more than the sum of its parts&quot;</p>
 </div><div class="prep" concept="1"><img src="augmenting-the-gallery_assets/Reification.svg" alt="Reification.svg"></div><div class="prep" concept="1"><p>hyperdocumented and underdocumented</p>
 </div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="1"></div></div><div class="page-group"><h3 class="page-name">browsing</h3><div class="prep" concept="1"><p>pros and cons of multidirectional readings vs. linear reading?</p>
 </div><div class="prep" concept="1"><p><em>One thing hypertext can offer this task is an endlessly wide margin on which to inscribe comments and make links, the chance to move in new directions.</em></p>
@@ -310,28 +91,37 @@ img {
 </ul>
 </div><div class="prep" concept="2"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="2"></div></div><div class="page-group"><h3 class="page-name">different directions</h3><div class="prep" concept="2"><p>&lt;- -&gt; centrifugal: hyperlinks navigate away from the page</p>
 <p>-&gt; &lt;- centripetal: APIs bring data into the page</p>
-</div><div class="prep" concept="2"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="2"></div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="spatial organization">spatial organization</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">making the semantic space</h3><div class="prep" concept="3"><p>mental models are the sum of connections between different parts of a theme/concept/focus</p>
-</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="3"></div></div><div class="page-group"><h3 class="page-name">exercise</h3><div class="prep" concept="3"><p>turn your final presentation proposal into a collaborative hypertext</p>
+</div><div class="prep" concept="2"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="2"></div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="enriching the text">enriching the text</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">exercise</h3><div class="prep" concept="3"><ul>
+<li>create a new page on your react application</li>
+<li>find a course that you liked (or not), and copy the course description into your page</li>
+<li>insert at least <strong>10</strong> links to other websites inside that description.</li>
+</ul>
+<p>it&#39;s up to you the kind of <em>relations</em> you choose and the kind of <em>structure</em> you suggest.</p>
+</div><div class="prep" concept="3"></div><div class="prep" concept="3"><p>media queries help you define what to change on the page when the screen size changes</p>
+<p>media queries ? responsive ? (accessibility)</p>
+<p>to make a website accessible, we design responsive screens, and we implement it using media queries</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="3"></div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="spatial organization">spatial organization</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">making the semantic space</h3><div class="prep" concept="4"><p>mental models are the sum of connections between different parts of a theme/concept/focus</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="4"></div></div><div class="page-group"><h3 class="page-name">exercise</h3><div class="prep" concept="4"><p>turn your final presentation proposal into a collaborative hypertext</p>
 <ol>
 <li>set up a new shared glitch react project</li>
 <li>create a page</li>
 <li>add hyperlinks to <em>as many words and phrases as you can</em></li>
 <li>is there anything missing? anything you&#39;ve discovered in the process?</li>
 </ol>
-</div><div class="prep" concept="3"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="3"></div></div><div class="page-group"><h3 class="page-name">click-through prototypes</h3><div class="prep" concept="3"><p>to mimick this navigation, we make <em>clickthrough prototypes</em></p>
+</div><div class="prep" concept="4"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="4"></div></div><div class="page-group"><h3 class="page-name">click-through prototypes</h3><div class="prep" concept="4"><p>to mimick this navigation, we make <em>clickthrough prototypes</em></p>
 <ol>
 <li>structures the information on a single document</li>
 <li>structures the information across documents</li>
 </ol>
-</div><div class="prep" concept="3"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="3"></div></div><div class="page-group"><h3 class="page-name">figma prototype</h3><div class="prep" concept="3"><p>a prototype also serves as the blueprint for our development process</p>
+</div><div class="prep" concept="4"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="4"></div></div><div class="page-group"><h3 class="page-name">figma prototype</h3><div class="prep" concept="4"><p>a prototype also serves as the blueprint for our development process</p>
 <p><a target='_blank' href="https://figma.com">figma.com</a></p>
-</div><div class="prep" concept="3"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="3"></div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="javascript">javascript</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">mobile queries</h3><div class="prep" concept="4"><p>review:</p>
+</div><div class="prep" concept="4"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="4"></div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="javascript">javascript</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">mobile queries</h3><div class="prep" concept="5"><p>review:</p>
 <ul>
 <li>CSS modules</li>
 <li><code>@media {}</code></li>
 <li>changing visibility, size, position of elements</li>
 </ul>
-</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="4"></div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="outro">outro</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">homework</h3><div class="prep" concept="5"><p>complete a clickthrough prototype on figma</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="5"></div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="outro">outro</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">homework</h3><div class="prep" concept="6"><p>complete a clickthrough prototype on figma</p>
 <p>it should have all pages, but the details of the pages do not need to be completely filled out</p>
 <p>come ready to show it in class</p>
-</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="5"></div></div></div><br><div class="break-after" style="page-break-after:always;"></div></main></body></html>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="6"></div></div></div><br><div class="break-after" style="page-break-after:always;"></div></main></body></html>
