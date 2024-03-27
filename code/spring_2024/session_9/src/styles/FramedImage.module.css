@@ -1,0 +1,28 @@
+.image {
+  background-color: red;
+  padding: 10px;
+  border: solid 2px white;
+  width: 60%;
+  transition: all 0.1s linear;
+}
+
+.image img {
+    width: 100%;
+}
+
+/* As long as the screen width is smaller than 967px */
+/* here, 967px is called a __breakpoint__ */
+@media only screen and (max-width: 967px) {
+    /* apply the following rules */
+  .image {
+    width: 80%;
+  }
+}
+
+/* We can specify as many rules for as many breakpoints as we want */
+/* Here, we make the image even larger when we get to a smaller mobile screen */
+@media only screen and (max-width: 767px) {
+  .image {
+    width: 90%;
+  }
+}
