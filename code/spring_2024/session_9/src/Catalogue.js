@@ -1,10 +1,15 @@
 import { useState } from "react";
+
+// these are the modules that enable us to use 3D
+// we install them with `npm install @react-three/fiber` and `npm install @react-three/drei`
 import { Canvas, useLoader } from '@react-three/fiber'
 import { OrbitControls } from '@react-three/drei'
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader'
 
 function Catalogue() {
+    // this is where we load the 3D model, the file itself has to be in the public folder
     const tower = useLoader(GLTFLoader, '/models/Wood_Tower.glb')
+
 
     // TOGGLE BETWEEN AN IMAGE AND A TEXT
 
@@ -12,9 +17,13 @@ function Catalogue() {
     // if we want to GET the value, we use "language"
     // if we want to SET the value, we use "setLanguage"
     const [language, setLanguage] = useState("english")
+    
+    // here we declaire the color variables
     const [colorRed, setColorRed] = useState(255)
     const [colorBlue, setColorBlue] = useState(255)
 
+    // this is the function to handle the slider inputs
+    // note the "e" value as an argument where we can extract the value
     function handleSliderRedChange(e) {
         console.log(e.target.value)
         setColorRed(e.target.value)
@@ -37,6 +46,7 @@ function Catalogue() {
     }
 
     return (
+        // this <div> is where we set the background color
         <div style={{ backgroundColor: "rgb(" + colorRed + ", 255, " + colorBlue + ")" }}>
             <h1>catalogue</h1>
             <div>
@@ -55,11 +65,13 @@ function Catalogue() {
                 }
             </div>
             <button onClick={toggleLanguage}>translate to {language == "english" ? "deutsch" : "english"}</button>
+
+            {/* range inputs are the sliders */}
             <input type="range" min={0} max={255} onChange={handleSliderRedChange}></input>
             <input type="range" min={0} max={255} onChange={handleSliderBlueChange}></input>
             
-            <div style={{ height: "900px" }}>
 
+            <div style={{ height: "900px" }}>
                 <Canvas>
                     <ambientLight intensity={1} />
                     {/* <directionalLight color="blue" position={[0, 0, 5]} /> */}
