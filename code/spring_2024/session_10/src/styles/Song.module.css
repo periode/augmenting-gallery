@@ -1,0 +1,12 @@
+.songCard {
+    padding: 30px;
+    border: 1px solid black;
+    margin: 10px;
+    width: 400px;
+    transition: all 0.5s linear;
+}
+
+.songCard:hover{
+    transform: translate(20px);
+    background-color: yellow;
+}
