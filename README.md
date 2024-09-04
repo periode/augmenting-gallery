@@ -7,12 +7,6 @@ IMNY-UT 9001
 
 **Email** [pierre.depaz@nyu.edu](mailto:pd1102@nyu.edu)
 
-## Teaching Assistant
-
-**Name** Clemens Schöll
-
-**Email** [cms10067@nyu.edu](mailto:cms10067@nyu.edu)
-
 ## Details
 **Location** Saint Agnes (Kreuzberg)
 
@@ -22,10 +16,6 @@ IMNY-UT 9001
 
 By appointment
 
-**Tutorials**
-
-In person at the student residences in room 1.Q, Mondays 6–8pm
-
 ## [Course wiki](https://github.com/periode/augmenting-gallery/wiki)
 
 
@@ -34,19 +24,19 @@ In person at the student residences in room 1.Q, Mondays 6–8pm
 
 ## Course Description
 
-Art institutions, from museums to galleries, depend and represent a wealth of contexts, connotations, relationships beyond time and space. Today, wall labels, audio guides and informative maps are just some of the ways galleries and museums convey additional information about an art collection. How can we utilize new interactive mixed-reality tools to design and deliver immersive experiences and information fluxes that breathe a different life into an exhibit?
+Wall labels, audio guides, and informative maps are just some of the ways by which galleries and museums attempt at archiving and sharing culture in its broadest understanding. Given the changing role of museums and galleries in the 21st century, how can we utilize digital technologies to design and deliver experiences that extend our concept of an exhibit, and to assist us in cultural transmission? How can such tools do so without distracting from the power and importance of a collection of artworks, or by purposefully challenging problematic aspects such as an exhibit’s disputed provenance or ethical concerns? And how can these tools make collections more accessible to a wider audience?
 
-Augmented and virtual reality are powerful tools for new media production and storytelling, but how can these tools serve to enhance our gallery experience without distracting from the power and importance of a pre-existing collection? How do we design digital applications for a specific moment and space? This production course seeks to experiment with new ways to experience a museum collection through mixed reality. Topics covered include exhibition installation and curation, mixed reality and mobile production in Unity, and object-oriented ontology.
+This course mobilizes resources from media studies, museography, art history, sociology, interaction design and web design and development to answer these questions. Topics covered include exhibition installation and curation, design and development in the React web framework for mobile development. The course is open to students from a variety of academic backgrounds interested in gaining hands-on experience in applying new technologies to virtual exhibitions and cultural heritage.
 
 
 ## What
 
-A technical course about spatial information delivery focused on art spaces and art objects.
+A technical course about information delivery focused on (in)tangible cultural heritage.
 
 ## How
 
-A mix of readings and technical exercises, complemented by a collaboration with partner cultural institutions and museums in Berlin, such as the Humboldt Forum, the Gemäldegalerie, or the M4P0 organization.
+A mix of readings and technical exercises, centered around building websites and mobile web apps.
 
 ## Why
 
-With the increase of computing possibilities in everyday situations, this class aims at understanding the content, the context and the form of knowledge delivery in cultural institutions.
+With the increase of computing possibilities in everyday situations, this class aims at understanding the content, the context and the form of knowledge delivery of cultural artifacts and narratives.
