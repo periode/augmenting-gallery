@@ -1,0 +1,10 @@
+/** here, we list the style rules for the <p> element **/
+p {
+    /** there is only one rule, setting the color of the font to green **/
+    color: green;
+}
+
+h1 {
+    /** we can also use RGB notation! **/
+    color: rgb(205, 120, 90);
+}
