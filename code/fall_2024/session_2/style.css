@@ -1,0 +1,30 @@
+/* We can use "Inria Sans" as a font because we're linking to Google Fonts in the HTML page */
+body {
+    font-family: "Inria Sans";
+}
+
+a {
+    color: red;
+}
+
+/* Here, we overwrite the default paragraph styles so that it has a normal, serif font */
+.intro {
+    font-family: serif;
+    margin-left: 50px;
+    color: gray;
+}
+
+.content {
+    width: 400px;
+    margin: auto;
+}
+
+/* Here, we the display: flex property is required in order to align and center elements (in our case, an image) */
+.image-holder {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    width: 100px;
+}
