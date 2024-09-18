@@ -1,0 +1,44 @@
+/* here we remove any margin or padding added by default by the browser */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* our container class has the 'display: flex' property, which allows us to use things like
+flex-wrap, for wrapping elements around
+justify-content, for setting space between elements
+gap, for forcing a minimum amount of space between elements */
+.container  {
+    display: flex;
+    justify-content: space-even;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+    background-color: lightpink;
+    width: 100%;
+}
+
+/* everything in media block (delimited by { and } ) will only apply rules given a particular condition */
+/* here, that condition is "if the screen is less than 812px" */
+/* you can find standard screen sizes here https://css-tricks.com/snippets/css/media-queries-for-standard-devices/ */
+@media (max-width: 812px) {
+    /* the rules here only apply if the screen has a particular witdth */
+    .container {
+        background-color: lightblue;
+        justify-content: center;
+    }
+}
+
+.photo-holder {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* if the screen is less than 812px */
+@media (max-width: 812px) {
+    /* the rules here only apply if the screen has a particular witdth */
+    .photo-holder {
+        font-size: 30px;
+    }
+}
