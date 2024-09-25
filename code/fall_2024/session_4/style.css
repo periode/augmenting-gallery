@@ -1,0 +1,7 @@
+.introduce-button {
+    cursor: pointer;
+}
+
+.introduce-button:hover {
+    text-decoration: underline;
+}
