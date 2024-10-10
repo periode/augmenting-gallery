@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Javascript playground</h1>
+    <!-- this element has an ID, which allows us to refer to it via Javascript's "getDocumentById" (see script.js line 5) -->
+    <h2 id="welcome-message"></h2>
+
+    <!-- here, we use the 'onclick' attribute to say what kind of Javascript we want to trigger when we click on the element -->
+    <!-- in this case, we call the function greetUser, which we defined in script.js line 1 -->
+    <div class="introduce-button" onclick="greetUser()">introduce yourself</div>
+
+    <img onclick="toggleImageSize(event)" src="dependency.png" alt="some dependency issues" class="image">
+    <img onclick="toggleImageSize(event)" src="dependency.png" alt="some dependency issues" class="image">
+    <img onclick="toggleImageSize(event)" src="dependency.png" alt="some dependency issues" class="image">
+    <img onclick="toggleImageSize(event)" src="dependency.png" alt="some dependency issues" class="image">
+    <img onclick="toggleImageSize(event)" src="dependency.png" alt="some dependency issues" class="image">
+    <img onclick="toggleImageSize(event)" src="dependency.png" alt="some dependency issues" class="image">
+
+    <!-- here, we include the script at the very bottom of the document, so that we know everything else is loaded before -->
+    <script src="script.js"></script>
+</body>
+</html>
