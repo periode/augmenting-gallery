@@ -1,306 +1,42 @@
-<!DOCTYPE html><html><head><meta charset="utf8"><title>augmenting-the-gallery | virtual museums</title><style>body {
-	margin: 0;
-	padding: 0;
-	font-family: 'Inter UI', Trebuchet MS;
-	background-color: white;
-}
-
-header {
-	background-color: black;
-	color: white;
-  padding: 10px;
-	overflow: auto;
-}
-
-header h1{
-	display: inline-block;
-	margin-left: 5%;
-	margin-right: 5%;
-	width: 40%;
-	font-size: 2.5em;
-}
-
-@media print{
-	header h1{
-		font-size: 1em;
-	}
-}
-
-.subject-name{
-	float: right;
-	text-align: right;
-}
-
-.topic-name{
-	float: left;
-	text-align: left;
-}
-
-a {
-	text-decoration: none;
-  color: #e77607;
-}
-
-a:hover {
-	text-decoration: underline;
-}
-
-a:visited {
-  color: #b25900;
-}
-
-header a{
-	color: white;
-	text-decoration: none;
-	border: 2px solid white;
-	padding: 3px;
-}
-
-main{
-	position: absolute;
-	margin-left: 20%;
-	width: 60%;
-	display: block;
-}
-
-@media print{
-	main{
-		margin-left: 5%;
-		width: 90%;
-	}
-}
-
-hr {
-	border: none;
-	height: 2px;
-	background-color: black;
-	float: left;
-	width: 100%;
-}
-
-img {
-	max-height: 300px;
-	max-width: 90%;
-}
-
-.concept-group{
-	width: 80%;
-	margin-left: 10%;
-	display: block;
-	float: left;
-}
-
-.concept-nav{
-	width: 30%;
-	float: right;
-	margin-right: 10%;
-}
-
-.overview-holder{
-	float: left;
-	width: 38%;
-	margin-left: 10%;
-}
-
-@media print{
-	.concept-group, .concept-nav{
-		width: 90%;
-		margin-left: 5%;
-	}
-}
-
-.concept-name {
-	width: 98%;
-	text-align: right;
-	float: right;
-	color: black;
-	border-bottom: 2px solid black;
-	padding: 1%;
-	font-size: 2em;
-}
-
-.break-before, .break-after{
-	display: block;
-	width: 100%;
-	height: 5px;
-	float: left;
-}
-
-.break-after{
-	page-break-after: always;
-}
-
-.page-group{
-	position: relative;
-	font-size: 1.2em;
-	width: 50%;
-	float: left;
-}
-
-@media print{
-
-	.page-group{
-		width: 70%;
-		page-break-inside: avoid;
-	}
-
-	.prep{
-		font-size: 0.8em;
-	}
-}
-
-.page-name{
-	width: 100%;
-	float: left;
-}
-
-.note-group{
-	position: relative;
-	width: 50%;
-	float: left;
-	overflow: auto;
-	text-align: left;
-}
-
-@media print{
-	.note-group{
-		width: 30%;
-	}
-}
-
-.note {
-	position: relative;
-	margin-bottom: 10px;
-	width: 100%;
-	overflow: auto;
-	white-space: pre;
-}
-
-@media print {
-	.note{
-		white-space: normal;
-	}
-}
-
-.writeup-group{
-	width: 100%;
-	margin-top: 30px;
-	margin-bottom: 30px;
-	float: left;
-}
-
-@media print{
-	.writeup-group{
-		break-inside: avoid;
-		font-size: 0.9em;
-	}
-}
-
-.context{
-	white-space: pre-line;
-	border: 2px solid black;
-	width: 45%;
-	padding: 5px;
-	float: right;
-}
-
-@media print{
-	.context{
-		width: 100%
-	}
-}
-
-.writeup{
-	width: 100%;
-	float: left;
-	margin-bottom: 10px;
-	font-style: italic;
-	white-space: pre-line;
-}
-
-.web-only{
-	display: inherit;
-}
-
-.print-only{
-	display: none;
-}
-
-@media print{
-	* {
-		float: none !important;
-	}
-
-	.break-before{
-		page-break-before: always !important;
-	}
-
-	.break-after{
-		page-break-after: always !important;
-	}
-
-	.web-only{
-		display: none;
-	}
-
-	.print-only{
-		display: inline-block;
-	}
-}
-</style></head><body><header><h1 class="topic-name">virtual museums</h1><h1 class="subject-name"><a href="index.html">augmenting-the-gallery</a></h1></header><main><div class="overview-holder"><h1>overview</h1><p>This topic is about the consequence of digital reproduction, and digital access, in the context of museums, as well as the framing of such reproduction and access in virtual spaces.</p>
-</div><div class="concept-nav"><h1>summary</h1><ul><a class="web-only" href="#intro">intro</a><li class="print-only">intro</li></ul><ul><a class="web-only" href="#reproduction">reproduction</a><li class="print-only">reproduction</li></ul><ul><a class="web-only" href="#digital collections">digital collections</a><li class="print-only">digital collections</li></ul><ul><a class="web-only" href="#visitor practices">visitor practices</a><li class="print-only">visitor practices</li></ul><ul><a class="web-only" href="#today">today</a><li class="print-only">today</li></ul><ul><a class="web-only" href="#museum projects">museum projects</a><li class="print-only">museum projects</li></ul><ul><a class="web-only" href="#unity">unity</a><li class="print-only">unity</li></ul><ul><a class="web-only" href="#outro">outro</a><li class="print-only">outro</li></ul><br></div><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="intro">intro</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">virtual museums</h3><div class="prep" concept="0"><p>welcome!</p>
-</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="0"></div></div><div class="page-group"><h3 class="page-name">plan for today</h3><div class="prep" concept="0"><p>-&gt; collection activations</p>
-<p>-&gt; museum objects and their reproduction</p>
-<p>-&gt; digitizing and presenting collections</p>
-<p>-&gt; physics in unity</p>
-</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="0"></div></div><div class="page-group"><h3 class="page-name">collection activation</h3><div class="prep" concept="0"><p>which museum did you pick? how did you use the collection?</p>
-</div><div class="prep" concept="0"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="0"></div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="reproduction">reproduction</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">reproducing artworks</h3><div class="prep" concept="1"><p>how do you use museum websites?</p>
+<!DOCTYPE html><html><head><meta charset="utf8"><title>augmenting-the-gallery | virtual museums</title><link rel="stylesheet" href="styles/main.css"></head><body><header><h1 class="topic-name">virtual museums</h1><h1 class="subject-name"><a href="index.html">augmenting-the-gallery</a></h1></header><main><div class="overview-holder"><h1>overview</h1><p>This topic is about the consequence of digital reproduction, and digital access, in the context of museums, as well as the framing of such reproduction and access in virtual spaces.</p>
+</div><div class="concept-nav"><h1>summary</h1><ul><a class="web-only" href="#intro">intro</a><li class="print-only">intro</li></ul><ul><a class="web-only" href="#reproduction">reproduction</a><li class="print-only">reproduction</li></ul><ul><a class="web-only" href="#digital museums">digital museums</a><li class="print-only">digital museums</li></ul><ul><a class="web-only" href="#visitor practices">visitor practices</a><li class="print-only">visitor practices</li></ul><ul><a class="web-only" href="#today">today</a><li class="print-only">today</li></ul><ul><a class="web-only" href="#museum projects">museum projects</a><li class="print-only">museum projects</li></ul><ul><a class="web-only" href="#unity">unity</a><li class="print-only">unity</li></ul><ul><a class="web-only" href="#javascript">javascript</a><li class="print-only">javascript</li></ul><ul><a class="web-only" href="#outro">outro</a><li class="print-only">outro</li></ul><br></div><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="intro">intro</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">digital copies</h3><div class="prep" concept="0"><p>welcome!</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="0"></div></div><div class="page-group"><h3 class="page-name">plan for today</h3><div class="prep" concept="0"><p>-&gt; reproduction technologies for art &amp; culture</p>
+<p>-&gt; websites and final project</p>
+<p>-&gt; recap on routers + interaction in react</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="0"></div></div><div class="page-group"><h3 class="page-name">housekeeping</h3><div class="prep" concept="0"><p>midterm review: what could be adjusted in the class?</p>
 <ul>
-<li>some museums are getting better</li>
-<li>learning about / referencing back to artists</li>
-<li>doing a paper (getting there via google, rather than directly on the website)</li>
-<li>virtual chinese memes museum</li>
-<li>planning a potential visit</li>
-<li>high-quality images of artworks</li>
+<li>diagrams/drawings of files/data/all of it</li>
+<li>more css</li>
 </ul>
-</div><div class="prep" concept="1"><p>how do you browse art online?</p>
+</div><div class="prep" concept="0"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="0"></div></div><div class="page-group"><h3 class="page-name">final project</h3><div class="prep" concept="0"><p>group project</p>
+<p>an interactive web application on mobile (3d interactions, map interactions)</p>
+<p>documenting a particular <strong>knowledge field</strong> (objective) or <strong>culture</strong> (subjective):</p>
 <ul>
-<li>behance</li>
-<li>are.na</li>
-<li>tumblr</li>
-<li>pinterest</li>
-<li>google search -&gt; artist -&gt; google images -&gt; articles</li>
-<li>@art21 on tiktok</li>
-<li>instagram (hyper-contemporary production)</li>
-<li>museum accounts (whitney, moma ps1, the high museum)</li>
+<li>for knowledge field, as <em>detailed</em> as you can get</li>
+<li>for culture, as <em>extensive</em> as you can get</li>
 </ul>
-</div><div class="prep" concept="1"><p>collections:</p>
+<p>schedule:</p>
 <ul>
-<li>bookmarks</li>
-<li>following on instagram</li>
-<li>save posts of artists</li>
-<li>screenshot</li>
-<li>slideshows</li>
-<li>albums in the photos app</li>
+<li>week 9: exchanging ideas (what, how, why?)</li>
+<li>week 10: making wireframes and interactions</li>
+<li>week 11-15: development</li>
 </ul>
-</div><div class="prep" concept="1"><p>what&#39;s wrong with making copies?</p>
+</div><div class="prep" concept="0"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="0"></div></div><div class="page-group"><h3 class="page-name">readings presentation</h3><div class="prep" concept="0"><p>eldah</p>
+</div><div class="prep" concept="0"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="0"></div></div><div class="page-group"><h3 class="page-name">midterm websites</h3><div class="prep" concept="0"><p>how far did you get? what was the hard part?</p>
+</div><div class="prep" concept="0"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="0"></div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="reproduction">reproduction</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">reproducing artworks</h3><div class="prep" concept="1"><p>what are the pros of making copies? what are the cons?</p>
+</div><div class="prep" concept="1"><p>against making copies?</p>
 <p><strong>before</strong> (15th century), it used to depreciate the value of a work based on specific workshops.</p>
 <p><strong>today</strong> (16th century onwards), it depreciates the value of a work based on names and tradition.</p>
-</div><div class="prep" concept="1"><img src="augmenting-the-gallery_assets/vasari.jpg" alt="vasari.jpg"></div><div class="prep" concept="1"><p>what changed with photography?</p>
-<ul>
-<li>an artwork has an &quot;aura&quot;, and photographs/recording techniques decrease/deafens/dispersal this aura</li>
-<li>photography is an act of violence towards the object photographed</li>
-<li>mutation of existence</li>
-<li>enrich the aura through reproduction</li>
-</ul>
+</div><div class="prep" concept="1"><img src="augmenting-the-gallery_assets/vasari.jpg" alt="vasari.jpg"></div><div class="prep" concept="1"><p>(meanwhile, moxie 模写 relies on &#39;transmission by copying&#39; )</p>
+</div><div class="prep" concept="1"><p>what changed with photography?</p>
 </div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="1"><p>Making copies has been frowned upon in Western art history ever since the figure of the artist as solitary creator has emerged. This appearance is marked in part by Giorgio Vasari&#39;s opus: <em>The Lives of the Artists</em>, in which he depicts the biographies of the artists of his time, essentially giving them a specific status. That status was based on &quot;uniqueness&quot;, as opposed to only &quot;skill&quot;.</p>
 <p>Incidentally, Vasari is also the one who orchestrated the construction and design of the Uffizi palaces, one of the first modern museums. What happened then, is the separation of the artist from the artesan: the former working on unique pieces, while the latter was working on generic designs. The mastery of skill, along with new storytellers like Vasari led to the emergence of the artist as a lone genius. Created by such an artist, the artwork also acquires unique aspects.</p>
 <p>Today, museums are built around the core idea of preservation: that there is one original which needs to be safeguarded, because it has lived through history, and perhaps bears its marks. The assumption is that, without this original component of tradition, there would be no following pieces, and no tradition.</p>
 </div></div><div class="page-group"><h3 class="page-name">the age of reproduction</h3><div class="prep" concept="1"><p>this question acquires a new dimension in the context of chemical reproduction (photo, film), and then digital reproduction.</p>
 <p><a target='_blank' href="https://web.mit.edu/allanmc/www/benjamin.pdf">walter benjamin</a> wrote about the relationship of <strong>aura</strong>, <strong>tradition</strong> and <strong>politics</strong>.</p>
 </div><div class="prep" concept="1"><img src="augmenting-the-gallery_assets/benjamin.jpg" alt="benjamin.jpg"></div><div class="prep" concept="1"><ul>
-<li>the aestheticization of politics - fascist</li>
-<li>the politicization of aesthetics -  communist</li>
+<li>the aestheticization of politics</li>
+<li>the politicization of aesthetics</li>
 </ul>
 </div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="1"><p>Benjamin talks about the change in our conception of the art object that is brought about by reproduction technologies. Considering the relationship between the original and the copy, he assigns to the original the <em>aura</em>, the sum of historical events that have left a mark on the materiality of that object. This is what copies do not and will never possess. However, he also considers the aura as a means to sustain a fascination for the past/tradition. In that sense, he considers such a reverence for the original object a potential pathway to fascist behaviour (the text itself was written in 1934 as an address to the Institute for the Study of Fascism).</p>
 <p>His answer is to offer reproduction as a means to include the broadest public in the appreciation and appropriation of art. He suggests that distributing copies, and allowing any individual to be featured in reproducible materials (i.e. amateur photographs and amateur films), is a necessity for anti-fascistic democratic behavior.</p>
@@ -314,18 +50,26 @@ img {
 <li>tryptich</li>
 <li>moodboard</li>
 </ul>
-</div><div class="prep" concept="1"><img src="augmenting-the-gallery_assets/malraux.jpg" alt="malraux.jpg"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="1"><p>This imaginary museum places the emphasis on the creative act of curation, rather than the production of artworks.</p>
+</div><div class="prep" concept="1"><img src="augmenting-the-gallery_assets/malraux.jpg" alt="malraux.jpg"></div><div class="prep" concept="1"><p>between access and decontextualization</p>
+</div><div class="prep" concept="1"><p>what kinds of collections do we browse online?</p>
+<p>where do they come from?</p>
+<p>what kinds of collections do you make?</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="1"><p>This imaginary museum places the emphasis on the creative act of curation, rather than the production of artworks.</p>
 <p>By forcing them out of the context of the museum, and re-appropriating them, these works of art undergo a kind of metamorphosis, through the change in size, in zoom levels, in juxtaposition, in continuity. This is a precursor to the moodboard.</p>
-</div></div><div class="page-group"><h3 class="page-name">exit through the gift shop</h3><div class="prep" concept="1"><p>do you stop at museum gift shops?</p>
+</div></div><div class="page-group"><h3 class="page-name">everyday aesthetics</h3><div class="prep" concept="1"><p>documenting lives of people, providing one&#39;s own point of view</p>
+<p><em>in our glory</em>, by bell hooks</p>
+</div><div class="prep" concept="1"><p>new technologies can help develop visual cultures beyond institutional reach</p>
+</div><div class="prep" concept="1"><img src="augmenting-the-gallery_assets/Screenshot from 2023-10-24 15-18-59.png" alt="Screenshot from 2023-10-24 15-18-59.png"></div><div class="prep" concept="1"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="1"></div></div><div class="page-group"><h3 class="page-name">exit through the gift shop</h3><div class="prep" concept="1"><p>do you stop at museum gift shops?</p>
 </div><div class="prep" concept="1"><p>the gift shop (and reproduction in general), can prevent artworks from decaying, by having users re-activate them on their own terms (e.g. magnets on fridges, bookmarks).</p>
 </div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="1"><p>Activating an artwork is an integral part of what the work is actually <em>about</em>, which means that the <strong>aura</strong> of the original has to be intepreted as a complex web of historical dynamics, rather than as a simple, ephemeral object. The personal interpretation and appropriation of an artwork is what he calls <strong>implementation</strong>, and it is essential to the survival of said artwork.</p>
-</div></div><div class="page-group"><h3 class="page-name">conclusion</h3><div class="prep" concept="1"><p>digital reproduction in the museum exacerbates the tension between the original and the copy, between the proof and the memory.</p>
-<p><em>how can museum still provide the quality traditionally associated with uniqueness in the age of infinite digital reproduction?</em></p>
+</div></div><div class="page-group"><h3 class="page-name">conclusion</h3><div class="prep" concept="1"><p>digital reproduction exacerbates the tension between the original and the copy, between the proof and the memory.</p>
+<p><em>the value of the artwork becomes more dependent on the context</em></p>
+<p><em>the role of the curator/editor increases relative to the creator</em></p>
 </div><div class="prep" concept="1"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="1"><p>The original is still one of the best proofs of historical events, while reproduction is necessary both for democratic ideals and the survival of said works. On the other hand, reproducing works allows for memories of the visitor to be grounded, and last longer.</p>
 <p><strong>how do museums address those challenges in practice?</strong></p>
 <p>it explains the historical context, acts as historical proof</p>
 <p>it justifies the copy, and all the elements/components of the piece</p>
-</div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="digital collections">digital collections</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">getting online</h3><div class="prep" concept="2"><p>in the mid-2000s, museums embraced the web as a possibility for expanding their reach, in the midst of the <a target='_blank' href="https://www.oreilly.com/pub/a/web2/archive/what-is-web-20.html">web 2.0</a>, and <strong>everything became a blog</strong> </p>
+</div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="digital museums">digital museums</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">getting online</h3><div class="prep" concept="2"><p>in the mid-2000s, museums embraced the web as a possibility for expanding their reach, in the midst of the <a target='_blank' href="https://www.oreilly.com/pub/a/web2/archive/what-is-web-20.html">web 2.0</a>, and <strong>everything became a blog</strong> </p>
 <p>two problems, though:</p>
 <p>-&gt; inaccuracy of digital reproduction</p>
 <p>-&gt; unequal technical skills reveal a lack of clear intent</p>
@@ -393,11 +137,6 @@ Regarding the last point, APIs are a digital protocol which allows two systems t
 <li><a target='_blank' href="https://www.instagram.com/tussenkunstenquarantaine/">museums in quarantine</a>, dedicated instagram account</li>
 </ul>
 </div><div class="prep" concept="4"><p>pros and cons of the involvement of museums in social media?</p>
-<ul>
-<li>more accessibility to their content (beyond their archive)</li>
-<li>more buzzfeed, while the aura is still the same in the actual place</li>
-<li>out of context presentation</li>
-</ul>
 </div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="4"><p>Here are some examples of what museums across the world are doing during the COViD-9 2020 pandemic. In order to keep in touch with their publics, we see here the strategies that are put into place around existing social media platforms.</p>
 </div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="museum projects">museum projects</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">design documents</h3><div class="prep" concept="5"><p>due next week!</p>
 </div><div class="prep" concept="5"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="5"></div></div><div class="page-group"><h3 class="page-name">next step</h3><div class="prep" concept="5"><p>sit down together, review the slides, and draft a couple of design proposals</p>
@@ -410,13 +149,31 @@ Regarding the last point, APIs are a digital protocol which allows two systems t
 </div><div class="prep" concept="6"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="6"></div></div><div class="page-group"><h3 class="page-name">homework reminder</h3><div class="prep" concept="6"><p>-&gt; augmented exercise 3</p>
 <p>-&gt; database collection</p>
 <hr>
-<p>lack of tech knowledge is a big obstacle</p>
-<p>make sure screen is big</p>
-<p>sometimes the technical goes too fast</p>
-<p>one device two screens</p>
-<p>group questions can be helpful, but not sacrifice too much discussions</p>
 </div><div class="prep" concept="6"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="6"></div></div><div class="page-group"><h3 class="page-name">midterm evaluations</h3><div class="prep" concept="6"><p><a target='_blank' href="https://forms.gle/535Pr3tBdGyyaknu7">https://forms.gle/535Pr3tBdGyyaknu7</a></p>
-</div><div class="prep" concept="6"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="6"></div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="outro">outro</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">outro</h3><div class="prep" concept="7"><p>reproduction is necessary for art and democracy.</p>
+</div><div class="prep" concept="6"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="6"></div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="javascript">javascript</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">javascript review</h3><div class="prep" concept="7"><ul>
+<li>variables and functions</li>
+</ul>
+</div><div class="prep" concept="7"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="7"></div></div><div class="page-group"><h3 class="page-name">data representation</h3><div class="prep" concept="7"><p>array:</p>
+<pre><code>let myListOfThings = [&quot;one&quot;, &quot;two&quot;, &quot;three&quot;]
+</code></pre>
+<p>object:</p>
+<pre><code>{
+   key: value
+}
+
+{
+   &quot;name&quot;: &quot;pierre&quot;
+}
+</code></pre>
+</div><div class="prep" concept="7"><p>using JSON to make a slideshow</p>
+</div><div class="prep" concept="7"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="7"></div></div><div class="page-group"><h3 class="page-name">media elements and manipulation</h3><div class="prep" concept="7"><p><code>&lt;audio&gt;</code></p>
+<p><code>&lt;video&gt;</code></p>
+</div><div class="prep" concept="7"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="7"></div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="outro">outro</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">outro</h3><div class="prep" concept="8"><p>reproduction is necessary for art and democracy.</p>
 <p>the approach has been to focus on visitors and reach them in their online worlds rather than create their own.</p>
-</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="7"><p>While reproduction seemed to be a problem at first, it&#39;s actually a democratic necessity. the second problem after that is to build the interface which allows you to interact with those reproductions. As usual, this is modulated by visitor behaviour, which leads us today, to integration with social media platform and integration into the life of the user by bringing them back always to the museum.</p>
-</div></div></div><br><div class="break-after" style="page-break-after:always;"></div></main></body></html>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="8"><p>While reproduction seemed to be a problem at first, it&#39;s actually a democratic necessity. the second problem after that is to build the interface which allows you to interact with those reproductions. As usual, this is modulated by visitor behaviour, which leads us today, to integration with social media platform and integration into the life of the user by bringing them back always to the museum.</p>
+</div></div><div class="page-group"><h3 class="page-name">homework</h3><div class="prep" concept="8"><ul>
+<li>think about <strong>two</strong> topics you would like to work on</li>
+<li>post them on the discussions page</li>
+<li>we will form groups next week!</li>
+</ul>
+</div><div class="prep" concept="8"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="8"></div></div></div><br><div class="break-after" style="page-break-after:always;"></div></main></body></html>
