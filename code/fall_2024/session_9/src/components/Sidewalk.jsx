@@ -1,9 +1,14 @@
-function Sidewalk({sidewalkName}){
+import "./Sidewalk.css"
+
+function Sidewalk({name, description}){
     return(
-        <div>
+        <div class="sidewalk">
             <h1>
-                { sidewalkName }
+                { name }
             </h1>
+            <div>
+                { description }
+            </div>
         </div>
     )
 }
