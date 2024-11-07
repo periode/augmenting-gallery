@@ -1,17 +1,9 @@
-# React javascript example
+# React data example
 
-This project builds on the one from [session 7](../session_7/README.md).
+In this example, we display some data inside a component.
 
-The main changes is that we added some variables and functions, to add interactivity on the page.
+In `data/dialogue.js`, you can see our data consists of two sets of dialogue lines, belonging to two different characters, "character 1" and "character 2"
 
-## Variables
+In the `App.jsx`, we have two buttons to decide which dialogue to display ("character 1", or "character 2"). Whatever is the current name of the dialogue is, we pass it to the componenent `DialogueBox`.
 
-In order to use variables in React, we depart from the traditional way of writing `var myVariable = "hello"`, and instead we write:
-
-```jsx
-import {useState} from 'react'
-
-const [myVariable, setMyVariable] = useState("hello")
-```
-
-then, to access the variable we can use `myVariable`, as usual. But to change the variable, we have to use `setMyVariable("guten tag")`.
+In `components/DialogueBox.jsx`, we import the data (`data/dialogue.js`), we check if the current name is not empty (i.e if the visitor has actually clicked on a button), and if that's the case, we display each line of that dialogue, one by one. If we run out of lines, we set the name to nothing (`""`), so we effectively hide the dialogue box, until the visitor clicks on another button.
