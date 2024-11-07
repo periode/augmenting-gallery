@@ -1,0 +1,24 @@
+.dialogue-box {
+    width: 60vw;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 5px;
+    margin-top: 20px;
+}
+
+.dialogue-name {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.dialogue-lines {
+    font-style: italic;
+}
+
+.dialogue-next {
+    align-self: end;
+    background-color: white;
+    color: black;
+}
