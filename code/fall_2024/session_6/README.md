@@ -1,5 +1,9 @@
 # React base project
 
+## To create a new React project
+
+`npm create vite@latest --template react`
+
 This is a basic React template.
 
 All files that you want to modify are in the `src/`.
