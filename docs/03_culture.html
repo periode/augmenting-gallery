@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>publi | Cultural studies</title>
+    <style>
+      :root {
+      /* https://stephango.com/flexoki */
+      --bg: rgb(255, 252, 240);
+      --bg-2: rgb(242, 240, 229);
+      --ui: rgb(230, 228, 217);
+      --ui-2: rgb(218, 216, 206);
+      --ui-3: rgb(206, 205, 195);
+      --tx: rgb(16, 15, 15);
+      --tx-2: rgb(111, 110, 105);
+      --tx-3: rgb(183, 181, 172);
+
+      --red: rgb(209, 77, 65);
+      --red-dark: rgb(175, 48, 41);
+      --orange: rgb(218, 112, 44);
+      --orange-dark: rgb(188, 82, 21);
+      --yellow: rgb(208, 162, 21);
+      --yellow-dark: rgb(173, 131, 1);
+      --green: rgb(135, 154, 57);
+      --green-dark: rgb(102, 128, 11);
+      --cyan: rgb(58, 169, 159);
+      --cyan-dark: rgb(36, 131, 123);
+      --blue: rgb(67, 133, 190);
+      --blue-dark: rgb(32, 94, 166);
+
+      --sans-serif: "Open Sans";
+      --serif: "Crimson Pro";
+
+      --margin: 5px;
+      }
+
+      /* SANS-SERIF FONT */
+      @font-face {
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: 400;
+      src: local("Open Sans"),
+      url("https://fonts.cdnfonts.com/s/14884/OpenSans-Regular.woff")
+      format("woff");
+      }
+      @font-face {
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: 400;
+      src: local("Open Sans"),
+      url("https://fonts.cdnfonts.com/s/14884/OpenSans-Regular.woff")
+      format("woff");
+      }
+      @font-face {
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: 400;
+      src: local("Open Sans"),
+      url("https://fonts.cdnfonts.com/s/14884/OpenSans-VariableFont_wdthwght.woff")
+      format("woff");
+      }
+      @font-face {
+      font-family: "Open Sans";
+      font-style: italic;
+      font-weight: 400;
+      src: local("Open Sans"),
+      url("https://fonts.cdnfonts.com/s/14884/OpenSans-Italic.woff")
+      format("woff");
+      }
+      @font-face {
+      font-family: "Open Sans";
+      font-style: italic;
+      font-weight: 400;
+      src: local("Open Sans"),
+      url("https://fonts.cdnfonts.com/s/14884/OpenSans-Italic-VariableFont_wdthwght.woff")
+      format("woff");
+      }
+      @font-face {
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: 300;
+      src: local("Open Sans"),
+      url("https://fonts.cdnfonts.com/s/14884/OpenSans-Light.woff") format("woff");
+      }
+      @font-face {
+      font-family: "Open Sans";
+      font-style: italic;
+      font-weight: 300;
+      src: local("Open Sans"),
+      url("https://fonts.cdnfonts.com/s/14884/OpenSans-LightItalic.woff")
+      format("woff");
+      }
+      @font-face {
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: 600;
+      src: local("Open Sans"),
+      url("https://fonts.cdnfonts.com/s/14884/OpenSans-SemiBold.woff")
+      format("woff");
+      }
+      @font-face {
+      font-family: "Open Sans";
+      font-style: italic;
+      font-weight: 600;
+      src: local("Open Sans"),
+      url("https://fonts.cdnfonts.com/s/14884/OpenSans-SemiBoldItalic.woff")
+      format("woff");
+      }
+      @font-face {
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: 700;
+      src: local("Open Sans"),
+      url("https://fonts.cdnfonts.com/s/14884/OpenSans-Bold.woff") format("woff");
+      }
+      @font-face {
+      font-family: "Open Sans";
+      font-style: italic;
+      font-weight: 700;
+      src: local("Open Sans"),
+      url("https://fonts.cdnfonts.com/s/14884/OpenSans-BoldItalic.woff")
+      format("woff");
+      }
+      @font-face {
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: 800;
+      src: local("Open Sans"),
+      url("https://fonts.cdnfonts.com/s/14884/OpenSans-ExtraBold.woff")
+      format("woff");
+      }
+      @font-face {
+      font-family: "Open Sans";
+      font-style: italic;
+      font-weight: 800;
+      src: local("Open Sans"),
+      url("https://fonts.cdnfonts.com/s/14884/OpenSans-ExtraBoldItalic.woff")
+      format("woff");
+      }
+      @font-face {
+      font-family: "Open Sans Light";
+      font-style: normal;
+      font-weight: 300;
+      src: local("Open Sans Light"),
+      url("https://fonts.cdnfonts.com/s/14884/OpenSans-Light-webfont.woff")
+      format("woff");
+      }
+      @font-face {
+      font-family: "Open Sans Condensed";
+      font-style: normal;
+      font-weight: 700;
+      src: local("Open Sans Condensed"),
+      url("https://fonts.cdnfonts.com/s/14884/OpenSans-CondBold.woff")
+      format("woff");
+      }
+
+      /* SERIF FONT */
+      @font-face {
+      font-family: "Crimson Pro";
+      font-style: normal;
+      font-weight: 400;
+      src: local("Crimson Pro"),
+      url("https://fonts.cdnfonts.com/s/29946/CrimsonPro[wght].woff")
+      format("woff");
+      }
+      @font-face {
+      font-family: "Crimson Pro";
+      font-style: italic;
+      font-weight: 400;
+      src: local("Crimson Pro"),
+      url("https://fonts.cdnfonts.com/s/29946/CrimsonPro-Italic[wght].woff")
+      format("woff");
+      }
+      @font-face {
+      font-family: "Crimson Pro";
+      font-style: normal;
+      font-weight: 200;
+      src: local("Crimson Pro"),
+      url("https://fonts.cdnfonts.com/s/29946/CrimsonPro-ExtraLight.woff")
+      format("woff");
+      }
+      @font-face {
+      font-family: "Crimson Pro";
+      font-style: italic;
+      font-weight: 200;
+      src: local("Crimson Pro"),
+      url("https://fonts.cdnfonts.com/s/29946/CrimsonPro-ExtraLightItalic.woff")
+      format("woff");
+      }
+
+      /* GENERAL ELEMENTS */
+
+      html {
+      font-size: 18pt;
+      }
+
+      @media screen and (max-width: 1000px) {
+      main {
+      font-size: 24pt;
+      }
+      }
+
+      body {
+      margin: 0;
+      color: var(--tx);
+      background-color: var(--bg);
+      }
+
+      main {
+      width: 60vw;
+      margin: auto;
+      padding-bottom: 30vh;
+      }
+
+      @media screen and (max-width: 1000px) {
+      main {
+      width: 75vw;
+      font-size: 24pt;
+      margin-left: 5vw;
+      margin-right: 0;
+      }
+      }
+
+      img {
+      max-height: 60vh;
+      max-width: 100%;
+      }
+
+      hr {
+      border: none;
+      }
+
+      a {
+      color: var(--tx);
+      }
+
+      pre {
+      white-space: break-spaces;
+      overflow-x: hidden;
+      }
+
+      footer {
+      position: fixed;
+      bottom: 0;
+      }
+
+      h1,
+      h2,
+      h3 {
+      font-family: var(--serif), serif;
+      font-style: normal;
+      font-weight: normal;
+      }
+
+      .footnote-link {
+      vertical-align: super;
+      font-size: 0.8em;
+      cursor: pointer;
+      }
+
+      emph {
+      font-style: italic;
+      }
+
+      /* CONTENT */
+
+      p,
+      figcaption,
+      div.notes,
+      ol,
+      ul {
+      font-family: var(--sans-serif), serif;
+      margin-top: 1em;
+      margin-bottom: 1em;
+      }
+
+      div.notes p,
+      div.notes ul {
+      font-style: italic;
+      font-size: 0.9em;
+      }
+
+      figure {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      }
+
+      figcaption {
+      font-size: 0.8em;
+      }
+
+      pre {
+      background-color: #eee;
+      padding: 5px;
+      border: 1px solid #aaa;
+      }
+
+      quote p {
+      font-family: var(--sans-serif), serif;
+      display: block;
+      font-style: italic;
+      border-left: 2px solid black;
+      padding: 1em;
+      margin-left: 1em;
+      background-color: rgb(255, 250, 200);
+      }
+
+      li {
+      font-family: var(--sans-serif), serif;
+      margin-bottom: 5px;
+      }
+    </style>
+    <style>
+      /* SNAP SCROLL */
+
+      /* main {
+      scroll-snap-type: y mandatory;
+      height:100vh;
+      overflow-y: scroll;
+
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+      }
+
+      main::-webkit-scrollbar {
+      display: none;
+      }
+
+      main h1, main h2, main h3 {
+      scroll-snap-align: center;
+      } */
+
+      main {
+      display: flex;
+      gap: 20px;
+      }
+
+      hr {
+      height: 90vh;
+      }
+
+      h1,
+      h2,
+      h3 {
+      margin-top: 30vh;
+      padding-top: 10vh;
+      }
+
+      main h1,
+      main h2,
+      main h3 {
+      border-bottom: 2px solid var(--tx);
+      padding-bottom: 10px;
+      }
+
+      h1 {
+      font-size: 4em;
+      }
+
+      h2 {
+      font-size: 3em;
+      }
+
+      h3 {
+      font-size: 2em;
+      }
+
+      p {
+      font-size: 1.1em;
+      }
+
+      pre {
+      overflow-x: auto;
+      }
+
+      figure {
+      margin: 0;
+      align-items: start;
+      }
+
+      /* CONTENT */
+
+      .content {
+      width: 100%;
+      }
+
+      .notes {
+      font-size: 0.9em;
+      }
+
+      .invisible {
+      display: none;
+      }
+
+      #board {
+      position: fixed;
+      top: 5vw;
+      right: 5vw;
+      left: 5vw;
+      bottom: 5vw;
+      padding: 20px;
+      opacity: 0.9;
+      border: 1px solid var(--tx);
+      }
+
+      #board textarea {
+      width: 100%;
+      height: 100%;
+      font-size: 2em;
+      opacity: 0.9;
+      background-color: var(--bg);
+      font-family: var(--serif);
+      resize: none;
+      border: none;
+      outline: none;
+      }
+
+      /* TABLE OF CONTENTS */
+
+      .toc {
+      position: fixed;
+      top: 0;
+      bottom: var(--margin);
+      right: var(--margin);
+      max-width: 15vw;
+      margin: 5px;
+      text-align: right;
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      place-content: end;
+
+      font-size: 20pt;
+      }
+
+      @media screen and (max-width: 1000px) {
+      .toc {
+      max-width: 20vw;
+      font-size: 28pt;
+      }
+      }
+
+      .toc h1,
+      .toc h2,
+      .toc h3 {
+      font-family: var(--sans-serif), sans-serif;
+      margin: 0;
+      padding: 0;
+      }
+
+      .toc h1 {
+      font-family: var(--serif);
+      position: fixed;
+      top: var(--margin);
+      right: var(--margin);
+      max-width: 15vw;
+      margin: 5px;
+      padding: 0;
+      }
+
+      @media screen and (max-width: 1000px) {
+      .toc h1 {
+      max-width: 20vw;
+      }
+      }
+
+      .toc h2,
+      .toc h3 {
+      cursor: pointer;
+      }
+
+      .toc h2:hover,
+      .toc h3:hover {
+      text-decoration: underline;
+      }
+
+      .toc h1 {
+      font-size: 1em;
+      }
+
+      .toc h2 {
+      font-size: 0.8em;
+      margin-top: 3px;
+      margin-bottom: 0px;
+      }
+
+      .toc h3 {
+      font-size: 0.6em;
+      }
+
+      .current-heading {
+      font-weight: bold;
+      }
+
+      /* FOOTNOTES */
+
+      .footnotes {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin-bottom: var(--margin);
+      }
+
+      .footnotes ol {
+      width: 60vw;
+      margin: auto;
+      padding-left: 0;
+
+      display: flex;
+      flex-direction: column;
+      background-color: var(--bg);
+      list-style: none;
+
+      font-size: 0.8em;
+      }
+
+      @media screen and (max-width: 1000px) {
+      .footnotes ol {
+      width: 70vw;
+      font-size: 0.9em;
+      text-align: center;
+      }
+      }
+
+      .footnotes li::before {
+      content: attr(data-footnote-id);
+      margin-right: 2px;
+      vertical-align: super;
+      font-size: 0.7em;
+      }
+
+      /* INTERFACE */
+
+      button {
+      background-color: var(--bg);
+      cursor: pointer;
+      }
+
+      .button-holder {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      margin: 5px;
+      }
+
+      .button-holder button {
+      font-size: 0.6em;
+      }
+
+      .button-holder button:hover {
+      background-color: var(--bg-2);
+      }
+
+      @media screen and (max-width: 1000px) {
+      .button-holder button {
+      font-size: 1.2em;
+      }
+      }
+
+      /* COMPLETION ANIMATION */
+
+      @keyframes scaleProgress {
+      0% {
+      transform: scaleY(0);
+      }
+      100% {
+      transform: scaleY(1);
+      }
+      }
+
+      .progress {
+      position: fixed;
+      top: 0;
+      left: 0;
+      transform-origin: top;
+      animation: scaleProgress auto linear;
+      animation-timeline: scroll(root);
+      background-color: black;
+      width: 3px;
+      height: 100vh;
+      }
+    </style>
+    <script></script>
+    <script>
+      'use strict';
+
+      const init = () => {
+      initHeadingsObserver()
+      initFootnotesObserver();
+
+      document.body.addEventListener('keydown', (evt) => {
+      if(evt.key === 'Escape')
+      document.getElementById("board").classList.add("invisible")
+      })
+      }
+
+      const initFootnotesObserver = () => {
+      const options = {
+      root: null,
+      rootMargin: "-10%",
+      threshold: 1.0,
+      };
+
+      const refs = document.querySelectorAll(".footnote-link")
+      const toggleFootnoteVisibility = (entries) => {
+      entries.forEach((entry) => {
+      const id = entry.target.dataset.id
+      const fn = document.getElementById(`footnote-${id}`)
+      if (!fn) {
+      console.warn(`could not find footnote #${id}`)
+      return
+      }
+      if (entry.intersectionRatio === 1) {
+      fn.classList.remove("invisible")
+      } else {
+      fn.classList.add("invisible")
+      }
+      })
+      }
+
+      const observer = new IntersectionObserver(toggleFootnoteVisibility, options);
+      refs.forEach(r => observer.observe(r))
+      }
+
+      const initHeadingsObserver = () => {
+      document.querySelectorAll(".toc h3").forEach(e => e.classList.add("invisible"))
+
+      const options = {
+      root: null,
+      rootMargin: "-10%",
+      threshold: 1.0,
+      };
+
+      const h2 = document.querySelectorAll("main h2")
+      const h3 = document.querySelectorAll("main h3")
+      const headings = [...h2, ...h3]
+
+      let current;
+      const toggleToCHighlight = (entries) => {
+      entries.forEach((entry) => {
+      var el = document.querySelector(`.toc #toc-${entry.target.id}`)
+      if (entry.intersectionRatio > 0.9) {
+      if (current === el) return
+
+      // set current style
+      if (current) current.classList.remove("current-heading")
+      el.classList.add("current-heading")
+      current = el
+
+      // toggle sub-heading visibility
+      if (el.tagName == "H2") {
+      document.querySelectorAll(".toc h3").forEach(e => e.classList.add("invisible"))
+      let sibling = el.nextElementSibling
+
+      while (sibling != null && sibling.tagName == "H3") {
+      sibling.classList.remove("invisible")
+      sibling = sibling.nextElementSibling
+      }
+      }
+      }
+      });
+      };
+
+      const observer = new IntersectionObserver(toggleToCHighlight, options);
+      headings.forEach(h => observer.observe(h))
+      }
+
+      const setFullscreen = () => {
+      document.documentElement.requestFullscreen()
+      }
+
+      const toggleNotes = () => {
+      let els = document.querySelectorAll(".notes")
+      if (els) els.forEach(e => e.classList.toggle("invisible"))
+      else console.warn("could not find notes")
+      }
+
+      const toggleBoard = () => {
+      let el = document.getElementById("board")
+      el.classList.toggle("invisible")
+      }
+
+      const goToHeading = (anchor) => {
+      const el = document.getElementById(anchor)
+      if (el) el.scrollIntoView({ behavior: "smooth" })
+      else console.warn("could not find heading with anchor", anchor)
+      }
+    </script>
+  </head>
+  <body onload="init()">
+    <div class="progress"></div>
+    <header></header>
+    <div class="toc">
+      <h1 id="toc-cultural-studies" onclick="goToHeading('cultural-studies')">Cultural Studies</h1>
+      <h2 id="toc-intro" onclick="goToHeading('intro')">Intro</h2>
+      <h2 id="toc-what-is-culture" onclick="goToHeading('what-is-culture')">What is culture?</h2>
+      <h2 id="toc-cultural-institutions" onclick="goToHeading('cultural-institutions')">Cultural institutions</h2>
+      <h2 id="toc-css-recap" onclick="goToHeading('css-recap')">CSS Recap</h2>
+      <h2 id="toc-javascript-and-interactions" onclick="goToHeading('javascript-and-interactions')">JavaScript and interactions</h2>
+      <h2 id="toc-outro" onclick="goToHeading('outro')">Outro</h2>
+    </div>
+    <main>
+      <div class="content">
+        <h1 id="cultural-studies">Cultural Studies</h1>
+        <p>Welcome!</p>
+        <div class="notes invisible">
+          <p>In this session, we take a break from the technical, and we consider what exactly constitutes culture. We look at it from the perspective of shared realities, practices and stories, and particularly objects.</p>
+          <p>Discussing Hall and DuGay's analysis of the Walkman, we consider cultural objects through the triple lens of production, communication and consumption.</p>
+        </div>
+        <hr/>
+        <h2 id="intro">Intro</h2>
+        <hr/>
+        <p>Plan for the day:</p>
+        <ul>
+          <li>reading presentation (maya)</li>
+          <li>grasping and representing culture</li>
+          <li>javascript and interactivity</li>
+        </ul>
+        <hr/>
+        <ul>
+          <li>
+            <a href="https://github.com/periode/augmenting-gallery/blob/master/resources/readings/DuGay_DoingCulturalStudies_SonyWalkman.pdf" target="_blank"></a>
+            <em>Doing Cultural Studies: The Story of the Sony Walkman</em>, Paul Du Gay and Stuart Hall, The Open University, 1997.
+          </li>
+          <li>
+            <a href="https://www.e-flux.com/journal/10/61362/in-defense-of-the-poor-image/" target="_blank"></a>
+            <em>In defense of the poor image</em>, Hito Steyerl, e-flux, vol 70, 2016.
+          </li>
+          <li>
+            <a href="https://github.com/periode/augmenting-gallery/blob/master/resources/readings/Goodman_TheEndOfTheMuseum.pdf" target="_blank"></a>
+            <em>The End of the Museum?</em>, Nelson Goodman, Journal of Aesthetic Education, University of Illinois Press, Summer 1985, pp.53-62.
+          </li>
+        </ul>
+        <div class="notes invisible">
+          <p>The first reading focuses on "everyday" culture, a change of perspective in the 1960s where the attention switched from a conception of culture as "high" or "low" to another, more encompassing one.</p>
+          <p>The second reading illustrates this attention to the mundane: the poor image is not a fine painting, or a unique illustration, but it is the kind of image which we encounter the most.</p>
+          <p>The third reading inquires at the ability of museums to really communicate and represent culture: aren't they just limited to "proper" cultural artefacts?</p>
+        </div>
+        <hr/>
+        <h2 id="what-is-culture">What is culture?</h2>
+        <hr/>
+        <p>Culture is <strong>the set of visible and invisible relations between individuals of a similar group</strong>, as expressed through possessions, actions, location, speech, etc. <strong>in order to create and sustain shared meaning.</strong></p>
+        <div class="notes invisible">
+          <p>Culture can be approached in multiple ways: culture as the coherent element of a group ("youth culture") but also as the defining markers between different groups ("high-brow" vs. "low-brow" cultures).</p>
+          <p>As the object of study of fields like anthropology (study of humans and human behavior, in particular through their meaning-making practices) or sociology (study of the patterns of social interactions), culture is diffused across all components of a social group, and therefore more elusive than the specific representations of, say, religion, politics or the arts. Culture is the web which underpins such other fields of action.</p>
+          <p>Knowing about culture allows us to know more about ourselves; once we've highlighted some findings, or some interesting things about culture, communicating it through digital media, as an information delivery medium, can help us achieve that goal.</p>
+        </div>
+        <hr/>
+        <p>aka telling a collective story with <strong>beliefs</strong>, <strong>practices</strong> and <strong>objects</strong>.</p>
+        <div class="notes invisible">
+          <p>A whole way of life, a group endeavour, or restricted to a particular set of people.</p>
+          <p>-> Something created through time and people, ever evolving, never concrete</p>
+          <p>-> Something which assigns meanings and associations to objects (materials, colors)</p>
+          <p>-> Culture could be a whole way of life (high-brow (fancy), low-brow (mass media) culture)</p>
+          <p>-> Culture emanates from social practices, and is being <em>reified</em> (made-thing) through artefacts</p>
+          <ul>
+            <li>collection of meanings and practices</li>
+            <li>across time, across space (both with modifications)</li>
+            <li>high-culture vs. low-culture</li>
+          </ul>
+          <p>
+            the opposite of culture is:
+            - trends (culture is a bit longer lasting, the meaning is a bit more stabilized)
+          </p>
+        </div>
+        <hr/>
+        <p>The difference between cultures is not hierarchical.</p>
+        <div class="notes invisible">
+          <p>Such a differentiation would be arbitrary and discursive.</p>
+          <p>The difference between what is cultural and what is not is maintained by a network of institutions, practices and beliefs.</p>
+          <p>The difference is, no pun intended, artificial and intentional. It can be argued that everything that humans touch become artificial (including dog breeds, forests, mountains), while the denomination of "the natural" is a label applied to certain things which we imagine to be normal, untouched, like a "natural" park. Intentional, means that there was a purpose in its creation.</p>
+          <p>The point of approaching our environment as artificial (i.e. human-made, or human-modified) is that it unlocks a set of questions as to <em>why</em> humans have created, or appropriated this particular object. What makes it important? What does it represent for the group of humans concerned with it? On how many different "levels" does it operate?</p>
+          <p>What was the original intention of the object? What was the realized, actual function of the object?</p>
+        </div>
+        <hr/>
+        <p>cultural studies is a field that <strong>studies cultural production and consumption</strong> in order to study <strong>the systems of power</strong> within a given group of people.</p>
+        <div class="notes invisible">
+          <p>Cultural studies doesn't just look at culture just to explore what is going on (descriptive) but to give reasons as to why that must be going on (explicative). What do cultural practices (i.e. practices of meaning-making between humans) tell us about how those humans are organized? About what matters to them? About how they see the world.</p>
+          <p>Particularly, cultural studies scholars such as Stuart Hall and Raymond Williams were interested in the class structures and systems of power as they manifest themselves not through explicit modes of constraint (like Foucault's investigation of disciplinary systems), or through quantitative methods (like Bourdieu's field study techniques), but through implicit, yet evocative practices. For example, how does how one set the table represent one's socio-economic belonging, or aspirations? How does one's leisure activities act as someone's desire to fit within a group? How could those activities be imposed, to an extent, upon those who practice them?</p>
+        </div>
+        <hr/>
+        <p>Culture is made up of more or less tangible objects, and every cultural object is:</p>
+        <ul>
+          <li>produced</li>
+          <li>presented</li>
+          <li>used</li>
+        </ul>
+        <div class="notes invisible">
+          <p>Examples of studying a certain kind of 2020s youth culture</p>
+          <ul>
+            <li>smartphone -> connectivity</li>
+            <li>face masks -> safety</li>
+            <li>views and likes -> statistics, quantification</li>
+            <li>lime scooters -> environment-friendly transportation</li>
+            <li>avocado toasts -> (wealthy) health / gentrification</li>
+            <li>hydro flasks -> environmentally conscious</li>
+            <li>airpods -> fashion ("wearing them")</li>
+            <li>small backpacks -> fashion, trend ("tumblr girl aesthetic") <strong>networks of meaning</strong>, dynamic youth, blurring of gender roles (from handbag to backpack)</li>
+            <li>ikea furniture -> coming-of-age, owning your own furniture, global systems of trade and consumption, modularity, logistics, the shift from craftsmanship to industry</li>
+            <li>e-cigarettes -> swag, "being cool", vaping is cool, earphones -> airpods, refuelling, tastes</li>
+          </ul>
+        </div>
+        <hr/>
+        <h2 id="cultural-institutions">Cultural institutions</h2>
+        <hr/>
+        <p>Museums as cultural institutions.</p>
+        <quote>
+          <p>Japan first encountered Western museum institutions when it participated in Europe's World's Fairs in the 1860s. The British Museum was described by one of their delegates as a 'hakubutsukan', a 'house of extensive things' – this would eventually become accepted as the equivalent word for 'museum' in Japan and China.</p>
+        </quote>
+        <p>Why do we put seemingly disparate objects in a special building?</p>
+        <div class="notes invisible">
+          <p>Museums preserve a particular aspects of a given culture; but by taking a stance, they also create culture.</p>
+          <p>Museums tend to develop both <strong>for</strong> cultural practices and <strong>as</strong> cultural practices. On the one hand, museums document, present and highlight aspects of different cultures (across time and/or space), and therefore have a responsibility in conveying a "<em>truth</em>" about the collections and the objects they are presenting.</p>
+          <p>On the other hand, however, they also act <strong>as</strong> culture, and in that they are the object of a cultural practice (e.g. going to the museum on sundays). In that sense, the museums themselves become representative of our culture.</p>
+        </div>
+        <hr/>
+        <p>Museums <strong>preserve</strong>, <strong>research</strong> and <strong>communicate</strong> arts and culture.</p>
+        <p>By providing <strong>access</strong> to original works, by providing <strong>context</strong> to these works, and possibly <strong>duplicates</strong> of those works.</p>
+        <div class="notes invisible">
+          <p>The way they communicate their meanings can be through:</p>
+          <ul>
+            <li>wall labels</li>
+            <li>wall text</li>
+            <li>audio guides</li>
+            <li>conference guides</li>
+            <li>direct presentation</li>
+            <li>collective exhibition</li>
+            <li>catalogues</li>
+            <li>...</li>
+          </ul>
+        </div>
+        <hr/>
+        <p>Everyday life as a cultural institution:</p>
+        <ul>
+          <li>documenting before preserving</li>
+          <li>sharing before curating</li>
+          <li>practicing before telling</li>
+        </ul>
+        <div class="notes invisible">
+          <p>Augmenting a museum also means complementing their approach.</p>
+        </div>
+        <hr/>
+        <h2 id="css-recap">CSS Recap</h2>
+        <hr/>
+        <p><em>Cascading Style Sheets</em> are lists of rules on how to format an HTML document</p>
+        <pre><code lang="text">&lt;div class="container"&gt;
+&lt;p&gt; a great digital museum is 
+&lt;a href="https://archive.org"&gt;the internet archive&lt;/a&gt;
+&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+        <p><strong>classes</strong> allow us to target specific HTML elements.</p>
+        <p><strong>flexbox</strong> allows us to do elaborate layouts when fitting boxes within boxes.</p>
+        <hr/>
+        <h2 id="javascript-and-interactions">JavaScript and interactions</h2>
+        <hr/>
+        <p>the third component of the Web is JavaScript, and it adds interactivity</p>
+        <ul>
+          <li><strong>variables</strong> store things</li>
+          <li><strong>functions</strong> do things (they can affect HTML and CSS!)</li>
+          <li><strong>control flow</strong> decides on things</li>
+        </ul>
+        <hr/>
+        <p><strong>Variables</strong> allow us to save data and then re-use it later.</p>
+        <p>For example, we can save the value "detailed" in the variable <code>viewMode</code>:</p>
+        <pre><code lang="js">let viewMode = "detailed"</code></pre>
+        <p>Notice that we use double-quotes to specify a text value. If we want to store a number value:</p>
+        <pre><code lang="js">let zoomLevel = 3</code></pre>
+        <p>And we can even store whole HTML elements!</p>
+        <pre><code lang="js">let containerElement = document.getElementById("container")</code></pre>
+        <hr/>
+        <p><strong>Functions</strong> describes a series of actions that should be taken at once. They can have inputs (<em>arguments</em>) and outputs (<em>returns</em>).</p>
+        <p>As a rule of thumb, anything that has a <code>()</code> is a function (like the <code>getElementById</code> above, with the argument <code>"container"</code>).</p>
+        <pre><code lang="js">function greetUser(username) {
+    let fullGreeting = "Hello, " + username + "!"
+    console.log(fullGreeting)
+}
+
+greetUser("Sam")</code></pre>
+        <hr/>
+        <ul>
+          <li>making a button to toggle content</li>
+          <li>using events to trigger actions</li>
+        </ul>
+        <hr/>
+        <p>Exercise:</p>
+        <p>Make a button which toggles the visibility of some content on your HTML page (it could be an image, or some text).</p>
+        <hr/>
+        <h2 id="outro">Outro</h2>
+        <p>Culture is a shared reality that link people together. It is embodied in tangible and intangible objects, which can be analyzed through how they are <strong>made</strong>, how they are <strong>presented</strong>, and how they are <strong>used</strong>.</p>
+        <p>Homework:</p>
+        <ul>
+          <li>Write your reading response on a new page on your website. Add <strong>two</strong> different interactions with JavaScript.</li>
+        </ul>
+        <hr/>
+      </div>
+      <div class="footnotes">
+        <h2 class="invisible">Appendix</h2>
+        <ol class="footnotes"></ol>
+      </div>
+    </main>
+    <div id="board" class="invisible">
+      <textarea></textarea>
+    </div>
+    <footer>
+      <div class="button-holder">
+        <button onclick="toggleBoard()">board</button>
+        <button onclick="toggleNotes()">notes</button>
+        <button onclick="setFullscreen()">screen</button>
+      </div>
+    </footer>
+  </body>
+</html>
