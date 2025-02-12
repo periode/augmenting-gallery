@@ -134,9 +134,13 @@ How do they relate to knowledge and archival?
 
 <!--
 
-As the media theorist Marshall McLuhan and computer scientist Joseph Weizenbaum have respectively said, *media are extensions of man*, and *tools are projections of ourselves*.
+As the media theorist Marshall McLuhan and computer scientist Joseph Weizenbaum have respectively said, *media are extensions of man*, and *tools are projections of ourselves*, in his book [Understanding Media](https://mitpress.mit.edu/books/understanding-media) started the field of media studies.
 
-The apps we use in our everyday lives have a particular impact on how we interact with the world and with society. Since no technology is intrinsically good or bad, we can rather think about what the *uses* of those apps are: when are they helpful? to whom? when are they not? what are the tradeoffs?
+He also popularized the idea that "the medium is the message", meanging that things can be more or less difficult to say in particular mediums. While there is no "true", "actual" limit to what can be said in a particular way, it's a lot easier to work in the works of classical Western philosophy when you have a pen and a paper than when you can only broadcast smoke signals.
+
+It also affects what **receivers** pay attention to. The predominance of a particular sense might be hard to overcome (and therefore should be taken into account), when a message is being received.
+
+The apps are the new kind of medium we use in our everyday lives, and they have a particular impact on how we interact with the world and with society. Since no technology is intrinsically good or bad, we can rather think about what the *uses* of those apps are: when are they helpful? to whom? when are they not? what are the tradeoffs?
 
 One thing to be remembered in terms of human-centered computer applications (e.g., the ones we use in our everyday lives), is that computers are supposed to _free time_ for us to dispose with as we wish. Examining what we do with our free time is a correlate to using applications.
 
