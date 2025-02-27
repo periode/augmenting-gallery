@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>publi | 01_intro.md</title>
+    <style>
+      :root {
+      /* https://stephango.com/flexoki */
+      --bg: rgb(255, 252, 240);
+      --bg-2: rgb(242, 240, 229);
+      --ui: rgb(230, 228, 217);
+      --ui-2: rgb(218, 216, 206);
+      --ui-3: rgb(206, 205, 195);
+      --tx: rgb(16, 15, 15);
+      --tx-2: rgb(111, 110, 105);
+      --tx-3: rgb(183, 181, 172);
+
+      --red: rgb(209, 77, 65);
+      --red-dark: rgb(175, 48, 41);
+      --orange: rgb(218, 112, 44);
+      --orange-dark: rgb(188, 82, 21);
+      --yellow: rgb(208, 162, 21);
+      --yellow-dark: rgb(173, 131, 1);
+      --green: rgb(135, 154, 57);
+      --green-dark: rgb(102, 128, 11);
+      --cyan: rgb(58, 169, 159);
+      --cyan-dark: rgb(36, 131, 123);
+      --blue: rgb(67, 133, 190);
+      --blue-dark: rgb(32, 94, 166);
+
+      --sans-serif: "Open Sans";
+      --serif: "Crimson Pro";
+
+      --margin: 5px;
+      }
+
+      /* SANS-SERIF FONT */
+      @font-face {
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: 400;
+      src: local("Open Sans"),
+      url("https://fonts.cdnfonts.com/s/14884/OpenSans-Regular.woff")
+      format("woff");
+      }
+      @font-face {
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: 400;
+      src: local("Open Sans"),
+      url("https://fonts.cdnfonts.com/s/14884/OpenSans-Regular.woff")
+      format("woff");
+      }
+      @font-face {
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: 400;
+      src: local("Open Sans"),
+      url("https://fonts.cdnfonts.com/s/14884/OpenSans-VariableFont_wdthwght.woff")
+      format("woff");
+      }
+      @font-face {
+      font-family: "Open Sans";
+      font-style: italic;
+      font-weight: 400;
+      src: local("Open Sans"),
+      url("https://fonts.cdnfonts.com/s/14884/OpenSans-Italic.woff")
+      format("woff");
+      }
+      @font-face {
+      font-family: "Open Sans";
+      font-style: italic;
+      font-weight: 400;
+      src: local("Open Sans"),
+      url("https://fonts.cdnfonts.com/s/14884/OpenSans-Italic-VariableFont_wdthwght.woff")
+      format("woff");
+      }
+      @font-face {
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: 300;
+      src: local("Open Sans"),
+      url("https://fonts.cdnfonts.com/s/14884/OpenSans-Light.woff") format("woff");
+      }
+      @font-face {
+      font-family: "Open Sans";
+      font-style: italic;
+      font-weight: 300;
+      src: local("Open Sans"),
+      url("https://fonts.cdnfonts.com/s/14884/OpenSans-LightItalic.woff")
+      format("woff");
+      }
+      @font-face {
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: 600;
+      src: local("Open Sans"),
+      url("https://fonts.cdnfonts.com/s/14884/OpenSans-SemiBold.woff")
+      format("woff");
+      }
+      @font-face {
+      font-family: "Open Sans";
+      font-style: italic;
+      font-weight: 600;
+      src: local("Open Sans"),
+      url("https://fonts.cdnfonts.com/s/14884/OpenSans-SemiBoldItalic.woff")
+      format("woff");
+      }
+      @font-face {
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: 700;
+      src: local("Open Sans"),
+      url("https://fonts.cdnfonts.com/s/14884/OpenSans-Bold.woff") format("woff");
+      }
+      @font-face {
+      font-family: "Open Sans";
+      font-style: italic;
+      font-weight: 700;
+      src: local("Open Sans"),
+      url("https://fonts.cdnfonts.com/s/14884/OpenSans-BoldItalic.woff")
+      format("woff");
+      }
+      @font-face {
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: 800;
+      src: local("Open Sans"),
+      url("https://fonts.cdnfonts.com/s/14884/OpenSans-ExtraBold.woff")
+      format("woff");
+      }
+      @font-face {
+      font-family: "Open Sans";
+      font-style: italic;
+      font-weight: 800;
+      src: local("Open Sans"),
+      url("https://fonts.cdnfonts.com/s/14884/OpenSans-ExtraBoldItalic.woff")
+      format("woff");
+      }
+      @font-face {
+      font-family: "Open Sans Light";
+      font-style: normal;
+      font-weight: 300;
+      src: local("Open Sans Light"),
+      url("https://fonts.cdnfonts.com/s/14884/OpenSans-Light-webfont.woff")
+      format("woff");
+      }
+      @font-face {
+      font-family: "Open Sans Condensed";
+      font-style: normal;
+      font-weight: 700;
+      src: local("Open Sans Condensed"),
+      url("https://fonts.cdnfonts.com/s/14884/OpenSans-CondBold.woff")
+      format("woff");
+      }
+
+      /* SERIF FONT */
+      @font-face {
+      font-family: "Crimson Pro";
+      font-style: normal;
+      font-weight: 400;
+      src: local("Crimson Pro"),
+      url("https://fonts.cdnfonts.com/s/29946/CrimsonPro[wght].woff")
+      format("woff");
+      }
+      @font-face {
+      font-family: "Crimson Pro";
+      font-style: italic;
+      font-weight: 400;
+      src: local("Crimson Pro"),
+      url("https://fonts.cdnfonts.com/s/29946/CrimsonPro-Italic[wght].woff")
+      format("woff");
+      }
+      @font-face {
+      font-family: "Crimson Pro";
+      font-style: normal;
+      font-weight: 200;
+      src: local("Crimson Pro"),
+      url("https://fonts.cdnfonts.com/s/29946/CrimsonPro-ExtraLight.woff")
+      format("woff");
+      }
+      @font-face {
+      font-family: "Crimson Pro";
+      font-style: italic;
+      font-weight: 200;
+      src: local("Crimson Pro"),
+      url("https://fonts.cdnfonts.com/s/29946/CrimsonPro-ExtraLightItalic.woff")
+      format("woff");
+      }
+
+      /* GENERAL ELEMENTS */
+
+      html {
+      font-size: 18pt;
+      }
+
+      @media screen and (max-width: 1000px) {
+      main {
+      font-size: 24pt;
+      }
+      }
+
+      body {
+      margin: 0;
+      color: var(--tx);
+      background-color: var(--bg);
+      }
+
+      main {
+      width: 60vw;
+      margin: auto;
+      padding-bottom: 30vh;
+      }
+
+      @media screen and (max-width: 1000px) {
+      main {
+      width: 75vw;
+      font-size: 24pt;
+      margin-left: 5vw;
+      margin-right: 0;
+      }
+      }
+
+      img {
+      max-height: 60vh;
+      max-width: 100%;
+      }
+
+      hr {
+      border: none;
+      }
+
+      a {
+      color: var(--tx);
+      }
+
+      pre {
+      white-space: break-spaces;
+      overflow-x: hidden;
+      }
+
+      footer {
+      position: fixed;
+      bottom: 0;
+      }
+
+      h1,
+      h2,
+      h3 {
+      font-family: var(--serif), serif;
+      font-style: normal;
+      font-weight: normal;
+      }
+
+      .footnote-link {
+      vertical-align: super;
+      font-size: 0.8em;
+      cursor: pointer;
+      }
+
+      emph {
+      font-style: italic;
+      }
+
+      /* CONTENT */
+
+      p,
+      figcaption,
+      div.notes,
+      ol,
+      ul {
+      font-family: var(--sans-serif), serif;
+      margin-top: 1em;
+      margin-bottom: 1em;
+      }
+
+      div.notes p,
+      div.notes ul {
+      font-style: italic;
+      font-size: 0.9em;
+      }
+
+      figure {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      }
+
+      figcaption {
+      font-size: 0.8em;
+      }
+
+      pre {
+      background-color: #eee;
+      padding: 5px;
+      border: 1px solid #aaa;
+      }
+
+      quote p {
+      font-family: var(--sans-serif), serif;
+      display: block;
+      font-style: italic;
+      border-left: 2px solid black;
+      padding: 1em;
+      margin-left: 1em;
+      background-color: rgb(255, 250, 200);
+      }
+
+      li {
+      font-family: var(--sans-serif), serif;
+      margin-bottom: 5px;
+      }
+    </style>
+    <style>
+      /* SNAP SCROLL */
+
+      /* main {
+      scroll-snap-type: y mandatory;
+      height:100vh;
+      overflow-y: scroll;
+
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+      }
+
+      main::-webkit-scrollbar {
+      display: none;
+      }
+
+      main h1, main h2, main h3 {
+      scroll-snap-align: center;
+      } */
+
+      main {
+      display: flex;
+      gap: 20px;
+      }
+
+      hr {
+      height: 90vh;
+      }
+
+      h1,
+      h2,
+      h3 {
+      margin-top: 30vh;
+      padding-top: 10vh;
+      }
+
+      main h1,
+      main h2,
+      main h3 {
+      border-bottom: 2px solid var(--tx);
+      padding-bottom: 10px;
+      }
+
+      h1 {
+      font-size: 4em;
+      }
+
+      h2 {
+      font-size: 3em;
+      }
+
+      h3 {
+      font-size: 2em;
+      }
+
+      p {
+      font-size: 1.1em;
+      }
+
+      pre {
+      overflow-x: auto;
+      }
+
+      figure {
+      margin: 0;
+      align-items: start;
+      }
+
+      /* CONTENT */
+
+      .content {
+      width: 100%;
+      }
+
+      .notes {
+      font-size: 0.9em;
+      }
+
+      .invisible {
+      display: none;
+      }
+
+      #board {
+      position: fixed;
+      left: 5vw;
+      top: 5vw;
+      width: 90vw;
+      height: 80vh;
+      opacity: 0.9;
+      }
+
+      #board textarea {
+      width: 100%;
+      height: 100%;
+      font-size: 2em;
+      padding: 20px;
+      opacity: 0.9;
+      font-family: var(--serif);
+      }
+
+      /* TABLE OF CONTENTS */
+
+      .toc {
+      position: fixed;
+      top: 0;
+      bottom: var(--margin);
+      right: var(--margin);
+      max-width: 15vw;
+      margin: 5px;
+      text-align: right;
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      place-content: end;
+
+      font-size: 20pt;
+      }
+
+      @media screen and (max-width: 1000px) {
+      .toc {
+      max-width: 20vw;
+      font-size: 28pt;
+      }
+      }
+
+      .toc h1,
+      .toc h2,
+      .toc h3 {
+      font-family: var(--sans-serif), sans-serif;
+      margin: 0;
+      padding: 0;
+      }
+
+      .toc h1 {
+      font-family: var(--serif);
+      position: fixed;
+      top: var(--margin);
+      right: var(--margin);
+      max-width: 15vw;
+      margin: 5px;
+      padding: 0;
+      }
+
+      @media screen and (max-width: 1000px) {
+      .toc h1 {
+      max-width: 20vw;
+      }
+      }
+
+      .toc h2,
+      .toc h3 {
+      cursor: pointer;
+      }
+
+      .toc h2:hover,
+      .toc h3:hover {
+      text-decoration: underline;
+      }
+
+      .toc h1 {
+      font-size: 1em;
+      }
+
+      .toc h2 {
+      font-size: 0.8em;
+      margin-top: 3px;
+      margin-bottom: 0px;
+      }
+
+      .toc h3 {
+      font-size: 0.6em;
+      }
+
+      .current-heading {
+      font-weight: bold;
+      }
+
+      /* FOOTNOTES */
+
+      .footnotes {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin-bottom: var(--margin);
+      }
+
+      .footnotes ol {
+      width: 60vw;
+      margin: auto;
+      padding-left: 0;
+
+      display: flex;
+      flex-direction: column;
+      background-color: var(--bg);
+      list-style: none;
+
+      font-size: 0.8em;
+      }
+
+      @media screen and (max-width: 1000px) {
+      .footnotes ol {
+      width: 70vw;
+      font-size: 0.9em;
+      text-align: center;
+      }
+      }
+
+      .footnotes li::before {
+      content: attr(data-footnote-id);
+      margin-right: 2px;
+      vertical-align: super;
+      font-size: 0.7em;
+      }
+
+      /* INTERFACE */
+
+      button {
+      background-color: var(--bg);
+      cursor: pointer;
+      }
+
+      .button-holder {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      margin: 5px;
+      }
+
+      .button-holder button {
+      font-size: 0.6em;
+      }
+
+      .button-holder button:hover {
+      background-color: var(--bg-2);
+      }
+
+      @media screen and (max-width: 1000px) {
+      .button-holder button {
+      font-size: 1.2em;
+      }
+      }
+
+      /* COMPLETION ANIMATION */
+
+      @keyframes scaleProgress {
+      0% {
+      transform: scaleY(0);
+      }
+      100% {
+      transform: scaleY(1);
+      }
+      }
+
+      .progress {
+      position: fixed;
+      top: 0;
+      left: 0;
+      transform-origin: top;
+      animation: scaleProgress auto linear;
+      animation-timeline: scroll(root);
+      background-color: black;
+      width: 3px;
+      height: 100vh;
+      }
+    </style>
+    <script></script>
+    <script>
+      'use strict';
+
+      const init = () => {
+      initHeadingsObserver()
+      initFootnotesObserver();
+
+      document.body.addEventListener('keydown', (evt) => {
+      if(evt.key === 'Escape')
+      document.getElementById("board").classList.add("invisible")
+      })
+      }
+
+      const initFootnotesObserver = () => {
+      const options = {
+      root: null,
+      rootMargin: "-10%",
+      threshold: 1.0,
+      };
+
+      const refs = document.querySelectorAll(".footnote-link")
+      const toggleFootnoteVisibility = (entries) => {
+      entries.forEach((entry) => {
+      const id = entry.target.dataset.id
+      const fn = document.getElementById(`footnote-${id}`)
+      if (!fn) {
+      console.warn(`could not find footnote #${id}`)
+      return
+      }
+      if (entry.intersectionRatio === 1) {
+      fn.classList.remove("invisible")
+      } else {
+      fn.classList.add("invisible")
+      }
+      })
+      }
+
+      const observer = new IntersectionObserver(toggleFootnoteVisibility, options);
+      refs.forEach(r => observer.observe(r))
+      }
+
+      const initHeadingsObserver = () => {
+      document.querySelectorAll(".toc h3").forEach(e => e.classList.add("invisible"))
+
+      const options = {
+      root: null,
+      rootMargin: "-10%",
+      threshold: 1.0,
+      };
+
+      const h2 = document.querySelectorAll("main h2")
+      const h3 = document.querySelectorAll("main h3")
+      const headings = [...h2, ...h3]
+
+      let current;
+      const toggleToCHighlight = (entries) => {
+      entries.forEach((entry) => {
+      var el = document.querySelector(`.toc #toc-${entry.target.id}`)
+      if (entry.intersectionRatio > 0.9) {
+      if (current === el) return
+
+      // set current style
+      if (current) current.classList.remove("current-heading")
+      el.classList.add("current-heading")
+      current = el
+
+      // toggle sub-heading visibility
+      if (el.tagName == "H2") {
+      document.querySelectorAll(".toc h3").forEach(e => e.classList.add("invisible"))
+      let sibling = el.nextElementSibling
+
+      while (sibling != null && sibling.tagName == "H3") {
+      sibling.classList.remove("invisible")
+      sibling = sibling.nextElementSibling
+      }
+      }
+      }
+      });
+      };
+
+      const observer = new IntersectionObserver(toggleToCHighlight, options);
+      headings.forEach(h => observer.observe(h))
+      }
+
+      const setFullscreen = () => {
+      document.documentElement.requestFullscreen()
+      }
+
+      const toggleNotes = () => {
+      let els = document.querySelectorAll(".notes")
+      if (els) els.forEach(e => e.classList.toggle("invisible"))
+      else console.warn("could not find notes")
+      }
+
+      const toggleBoard = () => {
+      let el = document.getElementById("board")
+      el.classList.toggle("invisible")
+      }
+
+      const goToHeading = (anchor) => {
+      const el = document.getElementById(anchor)
+      if (el) el.scrollIntoView({ behavior: "smooth" })
+      else console.warn("could not find heading with anchor", anchor)
+      }
+    </script>
+  </head>
+  <body onload="init()">
+    <div class="progress"></div>
+    <header></header>
+    <div class="toc">
+      <h1 id="toc-augmenting-the-gallery" onclick="goToHeading('augmenting-the-gallery')">Augmenting the Gallery</h1>
+      <h2 id="toc-introductions" onclick="goToHeading('introductions')">Introductions</h2>
+      <h3 id="toc-pierre" onclick="goToHeading('pierre')">pierre</h3>
+      <h3 id="toc-you" onclick="goToHeading('you')">you</h3>
+      <h3 id="toc-this-class" onclick="goToHeading('this-class')">this class</h3>
+      <h2 id="toc-augmenting" onclick="goToHeading('augmenting')">Augmenting</h2>
+      <h2 id="toc-galleries" onclick="goToHeading('galleries')">Galleries</h2>
+      <h2 id="toc-examples-and-inspirations" onclick="goToHeading('examples-and-inspirations')">Examples and inspirations</h2>
+      <h2 id="toc-web-technologies" onclick="goToHeading('web-technologies')">Web technologies</h2>
+      <h3 id="toc-anatomy-of-a-webpage" onclick="goToHeading('anatomy-of-a-webpage')">Anatomy of a webpage</h3>
+      <h2 id="toc-outro" onclick="goToHeading('outro')">Outro</h2>
+    </div>
+    <main>
+      <div class="content">
+        <h1 id="augmenting-the-gallery">Augmenting the Gallery</h1>
+        <div class="notes invisible">
+          <p>This week is about getting an overview of the whole course, and discussing our relationship with digital media, as well as with culture and art.</p>
+          <p>We will also get started on the basics of HTML and CSS.</p>
+        </div>
+        <hr/>
+        <h2 id="introductions">Introductions</h2>
+        <hr/>
+        <p>plan for today:</p>
+        <ul>
+          <li>introductions (me, you, this course)</li>
+          <li>augmenting?</li>
+          <li>gallery?</li>
+          <li>introduction to web technologies</li>
+        </ul>
+        <hr/>
+        <h3 id="pierre">pierre</h3>
+        <p>
+          pierre depaz (
+          <a href="mailto:pierre.depaz@nyu.edu" target="_blank">pierre.depaz@nyu.edu</a>
+          , 
+          <a href="https://pierredepaz.net" target="_blank">pierredepaz.net</a>
+          )
+        </p>
+        <p>teacher in media arts</p>
+        <p>researcher in media philosophy</p>
+        <div class="notes invisible">
+          <p>I've started teaching game development and programming at the game center at NYU in new york. After spending a couple of year at NYU Abu Dhabi, I'm now teaching this class in Berlin, along with a Fall class on digital culture at a political science university in France.</p>
+          <p>I also do a lot of programming work for the cultural sector. In NYC also worked at the Whitney Museum and the MoMA PS1. I've also developed prototypes of AR applications for news sources via the Empathetic Media startup. We ended up making augmented stories for the Washington Post and the Associated Press. In Berlin, I made apps, websites and installations for galleries, universities and theater companies.</p>
+          <p>
+            Research-wise, I wrote a PhD on 
+            <a href="https://source.enframed.net" target="_blank">the aesthetics of machine languages</a>
+            , and I'm very interested in how computers allow us to think things.
+          </p>
+        </div>
+        <hr/>
+        <h3 id="you">you</h3>
+        <p>what about you?</p>
+        <p>what's your name? where are you from? what's your major? what do you expect from this class?</p>
+        <p><em>bonus question: what do you (dis)like about computers and/or galleries?</em></p>
+        <div class="notes invisible">
+          <p>Spoiler: no wrong answers</p>
+        </div>
+        <hr/>
+        <h3 id="this-class">this class</h3>
+        <hr/>
+        <p><strong>what</strong></p>
+        <p>a course about building digital interfaces for arts and culture.</p>
+        <hr/>
+        <p><strong>why</strong></p>
+        <p>museums, galleries and libraries used to provide access to physical objects, BUT:</p>
+        <ul>
+          <li>digital media changed the game of <strong>accessibility</strong></li>
+          <li>more and more objects are <strong>born-digital</strong></li>
+        </ul>
+        <hr/>
+        <p><strong>how</strong></p>
+        <p>through discussions on cultural studies, interaction design and web development, through practical web design and development, leading to a series of digital catalogues.</p>
+        <hr/>
+        <p>
+          <a href="https://github.com/periode/augmenting-gallery" target="_blank">github.com/periode/augmenting-gallery</a>
+        </p>
+        <p>for all class resources, code, tutorials.</p>
+        <div class="notes invisible">
+          <p>This is the website of the course, where class code and notes will be published weekly. As such, you shouldn't have to take notes on your computer (you can take them on paper if you want).</p>
+          <p>One of the reasons for that is that taking notes on laptops inevitably lead to browsing the internet, and browsing the internet inevitably leads to the persons sitting next to you being distracted by what's happening on your screen, so please do not use laptops in class (outside of programming time), out of respect for your neighbour.</p>
+        </div>
+        <hr/>
+        <h2 id="augmenting">Augmenting</h2>
+        <hr/>
+        <p>what does it mean to <em>augment</em> something?</p>
+        <hr/>
+        <quote>
+          <p>The microscope, the telescope, are extensions of his sight; the telephone is the extension of his voice; then we have the plow and the sword, extensions of the arm. But the book is something else altogether: the book is an extension of memory and imagination.<a data-id="1" class="footnote-link">1</a></p>
+        </quote>
+        <div class="notes invisible">
+          <p>Media, in general, is an extension of humans. If books help us extend our thought processes, so do computers! Computers were originally dreamt up to make us think better and faster, as we'll discuss in session 2.</p>
+        </div>
+        <hr/>
+        <p>Augmenting is the process of using technology to better achieve one's goals.</p>
+        <div class="notes invisible">
+          <p>
+            This idea has been around specifically since computers became more powerful, in the 1960s, and it was formulated by Douglas Engelbart in a report titled <em></em>
+            <a href="https://dougengelbart.org/content/view/138/" target="_blank">Augmenting Human Intellect: A Conceptual Framework</a>
+            . To better understand problems and to better derive solutions.
+          </p>
+        </div>
+        <hr/>
+        <p>Which technologies augment your life? How do they do it?</p>
+        <p>How do they relate to knowledge and archival?</p>
+        <div class="notes invisible">
+          <p>As the media theorist Marshall McLuhan and computer scientist Joseph Weizenbaum have respectively said, <em>media are extensions of man</em>, and <em>tools are projections of ourselves</em>.</p>
+          <p>The apps we use in our everyday lives have a particular impact on how we interact with the world and with society. Since no technology is intrinsically good or bad, we can rather think about what the <em>uses</em> of those apps are: when are they helpful? to whom? when are they not? what are the tradeoffs?</p>
+          <p>One thing to be remembered in terms of human-centered computer applications (e.g., the ones we use in our everyday lives), is that computers are supposed to <em>free time</em> for us to dispose with as we wish. Examining what we do with our free time is a correlate to using applications.</p>
+        </div>
+        <hr/>
+        <p>Augmenting to improve is only one side of the <strong>pharmakon</strong>.</p>
+        <div class="notes invisible">
+          <p>
+            The pharmakôn is a concept that has been going around since the Greek philosophers. Essentially, it is one word that describes both a poison and a cure. It is used to reflect the ambivalence of technology: it can solve problems, but it can also create problems as well. You can read more on 
+            <a href="https://en.wikipedia.org/wiki/Pharmakon" target="_blank">the Wikipedia article</a>
+            .
+          </p>
+        </div>
+        <hr/>
+        <p>What are the pros and cons of Google Maps?</p>
+        <div class="notes invisible">
+          <p>Maps are always an interface to the world, they are an <strong>abstraction</strong>, and abstractions are ways of thinking that allow us to remove unnecessary in order to get to the essence of a given thing. A map therefore abstracts the physical world, presenting a more understandable, but simpler version of our surroundings.</p>
+          <p>
+            For example:
+            - if something doesn't exist on google maps, does it still exist?
+            - if means of transportation are an abstraction of how to go from A to B, how about ways of transportation? being exposed to more or less pollution? taking a detour through a pedestrian street, or by a canal?
+          </p>
+          <p>These choices are made, but aren't always transparent, because some level of opacity is the necessary consequence of abstracting. If a story is a path through events, then Google Maps tells a very specific kind of story.</p>
+        </div>
+        <hr/>
+        <p><strong>+</strong> accessibility</p>
+        <p><strong>-</strong> decontextualization</p>
+        <div class="notes invisible">
+          <p>On the plus side, the digital lowers the barrier to participation, and makes things more accessible. It's easier for people to create and contribute.</p>
+          <p>On the down side, the digital works because it decontextualizes information. It doesn't know about place, culture, slang or myths. It only knows that 0s and 1s work everywhere.</p>
+        </div>
+        <hr/>
+        <ul>
+          <li>what is beyond our reach? how do we make it accessible?</li>
+          <li>how do we organize information for a better experience?</li>
+          <li>what kinds of stories can we tell through a digital gallery?</li>
+        </ul>
+        <div class="notes invisible">
+          <p>To conclude our section introducting AR and digital applications, here are some broad questions that will guide our exploration of this medium throughout the semester.</p>
+          <ul>
+            <li>Augmenting is about <strong>revealing information</strong>. This revealing of information always implies an abstraction: choosing to show thing A instead of thing B because you think it's important to focus on A. These choices need to be deliberate and thoughtful, taking into account what you want to do, and who you're doing it to.</li>
+            <li>Augmenting is about <strong>opening up knowledge possibilities</strong>. With an interactive media, you're letting your users do things that they couldn't do before, when we had just books and paintings in museums. What is it that you want them to be able to do, and what is the "best" way to do so? This question relates closely to UI and UX design.</li>
+            <li>Augmenting is about <em>reality</em>. By archiving arts and culture, and designing access to it, we also change how we perceive the world, and therefore ourselves. I believe it's important not to think in terms of set beliefs (for instance "more is always better"), but rather in terms of what we might gain, and what we might lose, when we use digital technologies.</li>
+          </ul>
+        </div>
+        <hr/>
+        <h2 id="galleries">Galleries</h2>
+        <hr/>
+        <p>What do we do in galleries?</p>
+        <div class="notes invisible">
+          <p>A gallery is an umbrella term for a collection of things that are exposed to viewing (and maybe even using!). The tip of the iceberg is the art gallery, followed by the museum, but we also have libraries and archives.</p>
+          <p>We sometimes go to museums to learn about the history of a country, or of a trade, or of a theme. We can also go for temporary exhibitions or events. We can even go to get a coffee or a meal. Museums aim to be, as some would say today, "platforms", they enable multiple kinds of activities through the layout of their infrastructure.</p>
+          <p>Reflecting upon why you go, and what you do in a museum is a good starting point when designing an application in the context of a museum. However, it shouldn't be the only perspective you think from. What about the team that works at a museum? What is their vision? What about a elementary school class visit? Why do they come? What about someone who's never been to a museum? Why would they want to come?</p>
+        </div>
+        <hr/>
+        <p>how well are museums and galleries communicating culture?</p>
+        <hr/>
+        <p>They do so by making <strong>knowledge</strong> accessible, and telling <strong>stories</strong>.</p>
+        <p>The stories (through <strong>artworks</strong>, or <strong>artefacts</strong>) relate to one another, and that relate to us.</p>
+        <div class="notes invisible">
+          <p>Museums are cultural institutions, perhaps one of the most important cultural institutions in the western world. They have multiple roles: they display, preserve, educate, and connect. How they do each of these things, and how well they do it -that is up for debate.</p>
+          <p>There are two big differences museums and galleries: <strong>money</strong>, and <strong>time</strong>. Objects in a gallery are for sale, while objects in a museum aren't, and galleries mostyl deal with the present (what is being done), while museums mostly deal with the past (what has been done).</p>
+          <p>Galleries can also take multiple forms and shapes, like pop-up galleries, studio galleries, university galleries. They focus on the display of art works, while museums focus on the display of cultural works.</p>
+          <p>Particularly, this class will pay attention to the <strong>storytelling</strong> of museums: what kinds of stories, from which perspective, and to what end, are told by museums and galleries?</p>
+        </div>
+        <hr/>
+        <p>They do so by presenting a network of:</p>
+        <ul>
+          <li>objects</li>
+          <li>people</li>
+          <li>places</li>
+          <li>stories</li>
+          <li>practices</li>
+          <li>...</li>
+        </ul>
+        <hr/>
+        <p>We're going to augment this by making <strong>pocket galleries</strong>.</p>
+        <p>Websites you can pull up on your smartphone, which represent a part of culture that you consider important to share.</p>
+        <hr/>
+        <h2 id="examples-and-inspirations">Examples and inspirations</h2>
+        <hr/>
+        <p>
+          <a href="https://eaiaiaiaoi.w-i-t-m.net/index.php" target="_blank">let's amplify unspeakable things</a>
+        </p>
+        <p>
+          <a href="https://neal.fun/wonders-of-street-view/" target="_blank">wonders of streetview</a>
+        </p>
+        <p>
+          <a href="https://en.wal.unesco.org/discover/languages" target="_blank">unesco languages</a>
+        </p>
+        <p>
+          <a href="https://ownedbyothers.org/" target="_blank">owned by others</a>
+        </p>
+        <p>
+          <a href="https://www.airpressure.info/" target="_blank">air pressure</a>
+        </p>
+        <p>
+          <a href="https://mimionuoha.com/the-library-of-missing-datasets" target="_blank">library of missing datasets</a>
+        </p>
+        <p>
+          <a href="https://trashheap.party/issues/" target="_blank">trash heap</a>
+        </p>
+        <p>
+          <a href="https://archiveofourown.org/" target="_blank">archive of our own</a>
+        </p>
+        <p>
+          <a href="https://hhellblauu.tumblr.com/" target="_blank">hhellblauu</a>
+        </p>
+        <p>
+          <a href="http://thenonist.com/index.php/thenonist/permalink/stick_charts/" target="_blank">polynesian stick charts</a>
+        </p>
+        <p>
+          <a href="https://oa.letterformarchive.org/" target="_blank">letter form archive</a>
+        </p>
+        <p>
+          <a href="https://www.brokenarchive.org/" target="_blank">broken archive</a>
+        </p>
+        <p>
+          <a href="https://www.buchstabenmuseum.de/en/" target="_blank">buchstaben museum</a>
+        </p>
+        <p>
+          <a href="http://www.toastermuseum.com/" target="_blank">toastermuseum.com</a>
+        </p>
+        <p>
+          <a href="https://www.handprint.com/" target="_blank">handprint</a>
+        </p>
+        <p>
+          <a href="https://512kb.club/" target="_blank">512kb club</a>
+        </p>
+        <p>
+          <a href="https://www.instagram.com/museumoffailure/" target="_blank">museum of failure</a>
+        </p>
+        <p>
+          <a href="https://www.queeringthemap.com/" target="_blank">queering the map</a>
+        </p>
+        <p>
+          <a href="https://www.google.com/maps/d/u/0/viewer?mid=1SSk24deubO3anQXw1TXlA6ia0HxAtmz0&ll=35.15158963665428%2C133.99710075&z=7" target="_blank">map of sunsets</a>
+        </p>
+        <hr/>
+        <h2 id="web-technologies">Web technologies</h2>
+        <hr/>
+        <p>What is the Web?</p>
+        <div class="notes invisible">
+          <p>The Web is a way to access files on someone else's computer. It's a way of exchanging information that was designed in the late 90s by Tim Berners-Lee.</p>
+        </div>
+        <hr/>
+        <p>The Web is a collection of <strong>pages</strong> linked together.</p>
+        <p>A page is made of <strong>content</strong>, with a particular <strong>style</strong>, and some <strong>interactivity</strong>.</p>
+        <p>These pages need to be written in a language that computers understand.</p>
+        <ul>
+          <li><code>HTML</code> is the language for structure and content</li>
+          <li><code>CSS</code> is the language for style</li>
+          <li><code>JS</code> is the language interaction</li>
+        </ul>
+        <div class="notes invisible">
+          <p>
+            You can find some general introduction of what the web is, and what HTML is, on the class website here: 
+            <a href="https://github.com/periode/augmenting-gallery/wiki/Resources#general" target="_blank">General web resources</a>
+          </p>
+        </div>
+        <hr/>
+        <p>These languages are translated by a special software called a <strong>web browser</strong>.</p>
+        <p>Let's use the Developer Tools to reveal the source code of a web page!</p>
+        <p><code>Menu > Developer Tools > Inspect</code> (doesn't work on Safari :/ )</p>
+        <hr/>
+        <p>
+          Our websites will be hosted on 
+          <a href="https://glitch.com" target="_blank">Glitch.com</a>
+          .
+        </p>
+        <p>Go ahead and create an account and a <code>glitch-hello-website</code>.</p>
+        <hr/>
+        <h3 id="anatomy-of-a-webpage">Anatomy of a webpage</h3>
+        <hr/>
+        <p>HTML is made of tags, which tell the computer how the page is structured.</p>
+        <p>This structure is described by <strong>tags</strong>, which say when an <strong>element</strong> begins, and ends.</p>
+        <hr/>
+        <p>
+          <div>
+            <figure>
+            <img src="data:image/png;base64,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" alt="A basic HTML tag"/>
+            <figcaption>A basic HTML tag</figcaption>
+            <figure>
+          </div>
+        </p>
+        <hr/>
+        <p>Some of the tags include:</p>
+        <ul>
+          <li><code>p</code> for paragraph</li>
+          <li><code>h1</code> for heading</li>
+          <li><code>a</code> for link</li>
+        </ul>
+        <hr/>
+        <p>Tags can be augmented through <strong>attributes</strong>.</p>
+        <p>The <code>href</code> attribute of the <code>a</code> tag turns it into a link!</p>
+        <p>
+          <div>
+            <figure>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyMAAAF5CAMAAAC7hwVPAAADAFBMVEX///8AgDf//+j29vbt7e1ogf+srKzZ2dlScf+mpqbo///3//+mp6636v9Xcf/j4uJSc//8/Pz///ilVQH/V1em4v+tpqbH6P//5Kb/0v+b0v////Cop6jSoP+cdv9Cil3W/v+6paX7///w//9TiP8AVaX/6cenqbj//+3O/v///98Agcbe4N9Tp+fr/f+/r6fy8vO2h/+EyP9fc//pyK+61v/b29v//8bG//6nu9b/+v/GggX//tfmp1Tg///Xq//O7///8P+lkDj/+Od6uP+OzP/88NzX6fv/4/9Xev/JsaatuMJ/wP9tcv//8dPquv9pev/n6OSBBAH/3aVsrP/+x4VTAFGns8umrsX/9b/o+v+3z+/txf/Kua6txuSy5v/QwLHz4cv91rxXnv/Qp3rhtP99go6psrzh8P5ff/+5xNe8vruEf//Vu6hutvIDAAizqael0/LGmP//cG7x2P9SAABdqP+uh/9mi//x1bi6kmOXcXb/y5OxYwnI3vX//s6ndT9raI3/YmGAcv+Oc/8JMYuHMQac2/8DBIMORny6kP/4yv9Se/9Mo9z/4722vq+h1//vsWwAgZJfYmoDkLDA4v790I9sha3gwKratInW9f+Bqb3lz8H/otINgly99f/60KYrgjdOLxp9RgNTt+wCAFb5unmkyPtSg//ao05EEXVblb1/wvTcw7nG9f/Ay+cxAwo2h8uLiMhGBUfKiDz/2P+sn45IhD3/ZFf/uOt3DTgJgUGTi/+usZaYs/yMZVywo3X/oIlSmP+VsNizwM/qvpGshI9yQIHdyv++qP8EZZUacbjdqmy6dRZ3n9pyteSSXggUOVUGgnONxusLAEPNkYuYShPi1agUZ7NzhDkZm8M9YYz/ZW9jVU1+HEYNRZl/nf9PACe/njl+XkuLlqf/i7iZpf//fJVDfLC1prgiUp1EkYz/kF9Uk84YhMpulf+6sLAmh112K1UJJXvt4/L09P/5/P/q/+yctL1rn6UAnMXa4Out29JKfaXe67Gcss6RDnUSAAAYqklEQVR4nOzdeXwURf7/8UqYJD1MCMkQYuKExAQ3hABGSDAQjgCRK0o4AosR5IgQwBgOEZH7kksFlkU5BDm/ooCCigI/L1AXb10PvO/VXV2P/e59/Pb6Pqq6Z6a7MzMQJCZMXs8/JD3TPemeqXdVfaonDwUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAYE5W/v1I5Z2h9ti3vO2PdzpoCLK3bNh6pPLJe+cs/klT21PlKzrU00nVF/cjD7mEKP/k/hD7rP8wYEY8c39Zd+eF+uR+5L3WQuS06CR61MhI6RdTAx6TNW/sj3JuP76Nh1fKf/b9aUctDlr0zsuthYhsYetQIhd/etE5Pj3Ui72nVKvYeG+AjNS0cbdMTfJPWwZ6OAx0W6XGiBHTppae2P+v575YPUOIsiWT5r7mGr/4J+9+sfs1lxg/d1UXz5ZZ98/dvbqZEKXztp5YsuOfQrjz93xddSjhlSXrjveVg8rWJze0bO6q7+vBOeBZ4Jtdy4y4J2xaN2+GEBuXTDqy6W/VezoIX9sQO5esm3eg32Qhiicc3lq1MOv41hObepoeDgORLfR+InlWB5F8+IBL7Ft+sPyxviLnnamixxv3iuSfrhRixKouomDY1z3FIy+73K+uEaLbQ/qxHYQof2ylGLG8rdjXziX2yQEa579FK3yjh8xIj5ddovyxvjnvdBLimqbqY/e2jfJPVoqCx/oK7ziy72VXToup5ofPf5aMfN5JiLLPO61f1UXktHhI9FjeVhQM6+TNyFT1hql3qJs6SJ9rJQhRtr+L6NZOiB6rqO3DgjUji2SR7lnwO8+rq+/0fuzetiGDUTBMzblVRtx/FaJbB/PDYaDbqi5CzbX06xXJszr1OLVhQ+WXd6kuxJSRTr5ORQ4yvoxkHXnu41VdxIhverpffai+rwbnRPaCT3uqHwrlR14w7Eqh+sXSxQ+uHmtkxGgbkQumirL9zYQ3I57NR47v7mB+OAx4a/blbY2MHF7ZQ49NkIzs/GLDlzPU8+rN2rh/hxpH1h7fUPks1UiY2HuPqr839vWNI5ELfuf5syhdvLytJSPuCR8v+bKXOkY2H8+CNWocMT0cBoy13z/2lUPIVCHWv9d6rZxIli4MnJHI53r6ju22Rjwgw9Vjf5dDb9dmXQwNnN4qvGu/qh75Y8uCh12ibL81I8mv+Y4p+KRlTtWwqaJ8xZpt/3mtXk//nDtZeUWuuoeYfLjy709uukuItce35v639fjFq8d4Jjx4oP/4xfc8+7ctsw70H//66jGuR6ZNmzbtG1V4lD3/5L3l73z4ZfvFm+5cLx9eHa4r5I3Pycornqx8svOc11d3be2esKlq3gxRMO/Ldcff8myZ9fVCX9tYtEJ+7t+rCcQr/87o9coblc+O+PC/5ofDQoLxr32BOyHg3ifHOhzjF3dSP2dm6v8IIXbOcDiGzg2XKg2qGMkM+py3bXh+63A43n2+i/m5zMAPh4UaN4ECelsOIXsvtD+8RQ4hZaHu1iMMLXpYzsyes986DvLwea907qmtC89gt6Qrqp57q8bDORmTqo5QtDc6O2OrcisvONOHG4vC+j4BNCSZgSdkQR4GAAAAAAAAAAAAAAAAAOAHaeJwOBxN6vss0HAkyBZxaX2fRUPiiImJiXHU91mg4WgiW0Tz+j6LhoSMwIqM2JERWJEROzICKzJiR0ZgRUbsyAisyIgdGYEVGbEjI7AiI3ZkBFZkxI6MwIqM2JERWJEROzICKzJiR0ZgRUbsyAisyIgdGYEVGdElXBYT0GWB/78kCH/tA7eImMb7t0WOwG8If1rTaDUJ3CIa8xQjYLfBCNuIDWViYROw22jMb0ijF3D+3bgnFgG6jcY8riLQ/LuRTyxqdhvtGUYat+Y1MtJ4C3ZdjW6jcY+rqDn/ZmJhK9uH1vf5oL45mFjYWLuNRr2CAcU2/2ZiYes2GFchLqVgtzF3G+3r+2TQEJjLdiYWwtptNPYVDCgJTCzsmlOww8LBxMImgYIdFgntmVjYOBhXYdGEiYWN3m0wrsJnKBMLm0sZV2GhVjuZWJgN5Q2BhYOJhU3CZYyrsGjPxMKG/68XrJpQsAMAAAAAAAAAAAAAAAAAAADAj+TGzpbNFy44B695q/azc/Aq9aV7RuwPeBMS+sVcfS7PJnwsej8iYmqtjsg6sSti+7czTrNX4S2a1ukHndlpf0F8W9PmgEEXtz7NEa007faeoXfpqF14Ls6tLnTPcDq7nm6XH5IRd7Wz89kfHc5y5h6N+J/aHLD2aMQf0tN3/bxLzafync5R8rMc2VR2yUO0y61PF1katUi79ixPWXdb3E3mzYnalac7YmJUntY29C6WccR2vudI1nTnyEtEtbNmcy7NcDqdsp26q+UPo6zPRpZE1yoj3TO6ZtbqxEoz2lxUqwMajczM+bXLyL6I+2WnE+iPFyvkJ9w9w6l/OCn2jLTSmpk30y5uelZnbLhVG2t5tfiDpz+m4+kyYmE733NEvj9CVDtrNsic3FRndBvZyjdHpzpjF9qfz0o6TUZsv+eq2r2/+c4xtdo/TBSPiz794FvLjPwq0Aiiy0qKvUBElhjdXd1mxDa3so0qQTSEjESWyLaYb2SkIvY6UxFQ7QtOdYA+/ZxnpN81be7ybeTkxvYK9DK5V/SvxW893xSPS3K20TOy9uljiYkf3V0YaLf5Ef/j2XI04s231JasTz5wuTe/H7H9l+qBfieORjz+7VveBpndJ3hGume06SW7SL0/khmZOEQb6JvhB83IgDzt9p6jr4/TbvZOiOXGwKcm3zLcu/MNWry1wRZpfc2b+qgyUdM0raX+tFF83PhEnjbwM+PT76i1HX29Fv+/xmZh0RBNu7nz6Dg1IskKSjPXI9bz7f2i3PleV8ArLyxSZ19kDGZy33j9YtK0+IMTBw0cK4ryBurzuGo5i6rQJ6SiIslpSslmOVeS8YgsuUpVTp5t053O2F9MVs9mJXUtHpfqjP2Fsf/4XLkxNLerOqe1SU6n0zLXMmfEvS031Zlqae79rnE6J/kzUpHa1bi20qeXJiZ+9Ove+kau0xm2KVEJOaRf9neJiR/NnHks8deBQjI/Yk2fiD+k79quSuzIuem77vhbn4jt6bs+kAevfT9ie3r6rogP5Gfm+VWE4QOZmdLpToP+2eTkyt4v3yj9UrTLb9WmROXpze4GzUt2+L1v8W22FGLAE3nab+IGRkXFGUXF4DhtSlRUXFycr2TpqFmr6cJbbjd3tMaoMnqQNuVmdSqjo/K0/20qRCv9leIvNF5F/pohmm8zPipqiBZnvPRsueH9LdbzFWLAMm1gVFSedvElAd7CwjT9laboqbpxkKYuZrhLlWVPxUXF3f6i/I865c2pnU1jQvYDppTk63NV+Z+RrfUxJzU6Osl4e7OSJuU6o6NTnXrvPyfVGR0d7XQ69SyU/j46OtWbEf8nk3qn3PZUO9XOsb4iRyVkob9icVenGh3UXqOxfKWHxD0+XFOiErLQ2+lVqBHE811iSoBd50c8/vOxQpQd/f9q98zsPnf02f6WEAlys/T9N2fIQ195fI18vyakp+96PD09PV2NMf1yow2TVM+cXSI/2Qrjg0rR4m6/QDbfZzJVwRyVJ5trVJTq/2fLhiu3blY9bytNDQsDrteLDL24KLxVC5qR0dpw86Z3VLlN7fWC7HfTnnHJsF17tYqk3sF31OJbqjasNh/Nu9al/1LfS6f4frSdb2GaOlJMDDin66gNl79mdJ7KSO9lKoO9Z6vJZooWN1ZMlMNgkZ6gfDnYds/wTf4923wpqXCOEhWpzq4ia3pXfaVpjIzK+CQ188pKcl41WbV32eNnl8TK5p9d7fSPF/nejOTkRkfLeHk/mXznyKvVeoExn1IJ6W+u6bOmX2Ws+WXdrcKxN/H/GU8lhGVKrAnx2em7bLP5EW/Kjz+nzx36e53dR39AytyrKnQhPN4pVqi5llWKpjf42d45VYh6pJXR5I2yIu0+/fNKCzrXmq3tMG35RpUBg4bLF3kmUwwYdLnphR7NU7VRRyNK+iJYStxw48mx/nMOMtca7Z3a3RpgsSsl7lqXcZbNTIEtTJP7pmjPZIrBcjQaHKy+cW+b7oy97hKZgjGiOja6zUXyB9luR+pTXH1ozkpqo1q4XjlEluhbnpKuvg86P8hcq3uGEYCK1DEBEyLEZvs62trEu/0bYZiSfGfqKHNCIucvTUxc+tXTQTKiBpBsU0bW+J70Ta4itq80nj3zjKgBRHQ8o4zoqSy8RT1YpMV/9pvOC/8S9LUfzbvW/BH7RxX5ojdo2kExWE3iBvlmTOpcOmp6vTBgkBqg0rSBv3nqhf5/NZ9zkIy00syTQ5si71F6PTLbuzJQpP3MWLoYLGMTNCNCuDerRd/uGV1zckfmx95ZoUJR4fRRkUkaqX+om9Wz+c7USVXXxUw2vRHBMpKV5Hsh+RLVztiFtnXh7hm+8t2zc6beWO427zA+ydk1cC12npLjiCn23Y8lLp05c2ZiYpCMqHUtU0be9PWr2X3UzEr6dqzxiD8j9rmWlXdd68wy0szy4Ogn8mRzvDjQSotQHbblfrh/VGmlHey9bEreleIGObKkyLpAd3mmaV1rwDJ9EicrbU3Thrf2n3OQjHTU511yclhzpdB+YcbgJQbLV0vR43FhqIyMz9XHkciSq8YnjcpKGqM39nxnrPcNHmVe1zIqvvG/T5Wtvo1/kThYRir0eZd0nUuNI6nGOoDXHKf3bkrkd6qxHEs0Z6TfuNRwG0f0lPiG0xGJ+orW/DPMyM/904lfvWnrNs0ZsdfsVrXLiGUcUT/+5cYX84LcF++97D7zE6ZR5TbtwtHa2LSLL0mTA4cxXvjYxhEhMkXhX16Yrd3kP+eg40iIdeAie2Kt48iFp8mISoiqR7JL2oyL7RVZctU1qgCpsN6xsI0jktsxdJwxAxMhxxHbqrGcbZnbvFHcSGXGyk6yPyP9xoXdTEunUqIPqeuNWn3EGWbkDn/jXW//okpt5lq1yYi1HrncfoS1HhltvaluaqO9lw2ffV/Pidq9g9QeaZbVrxr1iP6SpmAGzcjgGrfxBwzShhvJvM1bj3hPx1qPhMyI258QIWQxclVTsTk2WtUPWUkjzfeA7PVIV3tiQtQjNW63WFPiq3z8jaTMmxF7nsKKSkkvtUQhL7f46TOda5kykqWva4l+J9a4jGfPOiN6O7vxeiMAHWWTKZw4pFmgdS3VVAcs8xXI1nWt2Zab6oW3mEaV2fFxV4oBg+L09likqXUtceMTzUSNda0UYy430b/EbMmI+Xx7L9PXtXq/6A1Giqb5ojVbu1y+O71vjTsYYF0rVEayppvvj4h8VXmsTXKqJptdoq9rZW9T9zGs61qRJanXqQV40xdQzBmJLJEb2Q+ou8jV+rqWe9vv/TvItj/SmHGZKvadahzxzDfmWpHhnBDhv89eeizxI1mOPJ24dOYA2y6RJ45GbP+2mTiZvuvx9PuFKPOu7urrWZnzj0ZsT08/GhFxR88aa78h3TBEG3jzQTE6Ki8+Sm94vZep2yXeHnl0XHxUVJw+PrSy3h9Juz0vPkpu+u7UWzLyaJ5lAdYyqhRpsjbpqBmxuVVT90fU0Y9en3ffE5r//kiKNkXWK0OMIaooSv480Fu72M5Xv+cxxB8Mc0Z6G/dHjLsntvsjAy8Xg/X/TKnxnTLrfXZRoWatObnGVxVKc1Uhoeay7geinZOm+++PRJakpupPdlW3Uq6Jlk95axe9pjcOVTdajJsp5q8t+u6zm8eZ4u/0xvLVsaUzU8L+Prtfv6ePJS799QAxIrHGHZKcPvqa1b6IiAg5oIx43FjH8n5BpfTE0YiIP/xjjKvmPcSQ0vQ1oCL5j9HUb3wiTpvylK9YfOF6Ld64cd1Kayaf9N5nT7up9+w8751qxTLXClqxq/zIjn503HDfL4nT4m9Wv/S2OO0Z1wv+++wpcT9T9/ONu/D+u4beb7lYzlfdZx/4WWfvKphprmXcZx/4mXdOb7nPrmnXZt4Wp90kBmva6b4wk5Wkbr/ne7v14gemO52pk2SOskuczlH9rvHdZ48sGTn0mlSns80hdbY5ub6lK6P28Dww3Zk6SX9Wv2Gf2sZWqXv5K3Y13ziWuPSrFFF2LOC0I6y5Az6aafkngMJM//O1+yLp6Zhu+tcoiUP9puAVe+1+ae2c9YENn6li9wncWlB/avX1QdvX4G84r/8uqiFYa10bQINUq4xYvwZvG1VQe9X2e+xocG5TX40afoYzptr/cRVC4o+rzgODLZXy6UyMs/xx1Q118teCjcnapEb5x1UAAAAAAAAAAAAAAAAAAABoaJok1PcZ1KmEQP+fC6A22jev7zOoU47LwrsPQN1zxMSEc0/bJCbGUd/ngPNbQkxMTPsw7mnbx8TENKnvk8B5rXlMTDj3tA55ee3r+yxwPrs0RgnXnjbhspjw7gNQ5xLa6xkJ17J9qH55lO04a44YQ3iW7U28lze0vs8E5ytfGwrTnra97/rCdTKJutbc14bCcsru8F8eZTvOyqUxJuHX0xoFe/j2AahzljYUhj1tc/PlhedkEnVsaIxFuPW0l1ovL1yX7lCHmljbULj1tAntbdcXnkt3qEv2NhRmC6QO++WF8zduUCdqtKHwKtvto2QYTiZRx6wFe/iV7c1rXl5Y9QGoe0MDtKEw6mkvDXR5lO2ohQBTESlcpuyBRknKdtRKjYJdFy5le4BiKyb8lu5Ql5o4vNS8vblvMzwaUYLvetSUsr1vk4oEtecIrzrErgl1CH4oMgKERkaA0MgIEBoZAUIjI0BoZAQIjYwAoZERIDQyAoRGRoDQyAgQGhkBQiMjQGhkBAAAAAAAAAAAAAAAAAAA1L2CYR+u2/PSuj0/aXoGO7u3vb76F1eL4i1LDm2be2pr1eIPLxDF4/a8dF3rH+FMz5L71fsDPFo8YVanejgZnI8Knm8b2aKdKF8SMiOeub/Uf+imslTwsBAj7mkp3K8ubyvk4Q1Y+bB2rgAPJwfNSNa8sfaHfJePxqjgYdXI3RkBMrJx91Tjp8gWHfQfrBkRPe5p2dAzsn7ePTXafMiMJP+0pf0h3+WjMfL8WW/kf25dtuHvc793iTmvt9uy+5ueO5esm3eg32TxyqZ182a48/d8XXXIVTMj++5p1sAz4nnuP8Nk0ue83u7kx2/IadeWTeuOvyWSZz07d/c3vYRwT5BXKIonHP7X4gfvl7Oww1urFurXXTzh89da51cu9F0+Gim9kbtfXSMKHusrRLfVd659uPyTlWpr7/K2omx/syDjSPd3HnI18Iwkv+ZZ8GlPoS5LbNy/Q+z99CKxd9WO5Fnfu3JaPCREj5ddovyxviL58IGEtzt7xxHjut2PvNf6ZDPGkUbPaORul8hp0UnGoKfeUAqGdfAsaCdE2ed9A2Vk2oaPD7/lP7yBemWlWH9qpTzz91rLq1JX5InR51rd2olFKzoI4VnwO5E860r9CHnp3usW5Sv+8RRzLRiNvLjkyBe7OxkxiFwwVR8/3tiwofJZl6+RPKL65IJn1ThSPmyN9/DC4oa5tNX9+IYNHz/4kFB5kM0/ssUa9YQ3IwXDrtSj7ytQZEa81y3E+j/tICPQM7JoxVTvONJUztI/XvJlLxG5oJ2xi9FI1q/qIoQof0qfa8mS3Tj87S71exFBbJwq9NU3X0aMK7KMI5FqHDFnxNhL5Pz2VTWdJCONm97Ikz/vK8p2X7mttcpI8mv6c+tl86q4S3RbIx5oqlZSpwpRuKWZnpGcd95rqh+eM69hZuTtHTIoshY3MiLW/+mgEDvHejOi1yN/bOnPSMEnLXMOGdftfrtt+WPyYOPy0TiVrlM3Ad2PvFE5o8eHY+a8vvqKyWLRimnTpk373iW2LLniyAwhyp5/8l6199rjm6oyZggxZ+6prf3FiAcP/HPcnpeqqhZ/0xCbkKd6ySgh3O+ueGnUnD0vjSqee2rrZHFyyaQjM4onPHig/5zXXzrkck/YVKXWtR48MEo/6pV/Z/TSr7t4wtb+pYtXz/BfPiAy9X+yf+twON593j84ZGbW3zn9UGf9vwLOLPT9dB5fPurGooeFEO7nLqrv8wAarJ2xVbmVF9T3WQANGLMLAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGgM/i8AAP//bqjgjscN7lsAAAAASUVORK5CYII=" alt="A basic anchor tag"/>
+            <figcaption>A basic anchor tag</figcaption>
+            <figure>
+          </div>
+        </p>
+        <hr/>
+        <h2 id="outro">Outro</h2>
+        <hr/>
+        <p>This class is about designing digital galleries for arts and cultures (and thinking about what that means!).</p>
+        <hr/>
+        <p>For next week:</p>
+        <ul>
+          <li>
+            Sign up to do one presentation by listing <strong>two possible choices</strong> on the 
+            <a href="https://github.com/periode/augmenting-gallery/discussions/14" target="_blank">discussions page</a>
+          </li>
+          <li>
+            Set up your Glitch account and post your URL on the 
+            <a href="https://github.com/periode/augmenting-gallery/discussions/30" target="_blank">discussions page</a>
+          </li>
+          <li>Write your response to the reading by adding one heading, one link, one paragraph and one image.</li>
+        </ul>
+        <p>We will be talking about the historical dreams of augmenting humans through computers.</p>
+        <hr/>
+      </div>
+      <div class="footnotes">
+        <h2 class="invisible">Appendix</h2>
+        <ol class="footnotes">
+          <li id="footnote-1" class="footnote invisible"> Jose-Luis Borges, Fictions, 1956.</li>
+        </ol>
+      </div>
+    </main>
+    <div id="board" class="invisible">
+      <textarea></textarea>
+    </div>
+    <footer>
+      <div class="button-holder">
+        <button onclick="toggleBoard()">board</button>
+        <button onclick="toggleNotes()">notes</button>
+        <button onclick="setFullscreen()">screen</button>
+      </div>
+    </footer>
+  </body>
+</html>
