@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>publi | Copying Media</title>
+    <style>
+      :root {
+      /* https://stephango.com/flexoki */
+      --bg: rgb(255, 252, 240);
+      --bg-2: rgb(242, 240, 229);
+      --ui: rgb(230, 228, 217);
+      --ui-2: rgb(218, 216, 206);
+      --ui-3: rgb(206, 205, 195);
+      --tx: rgb(16, 15, 15);
+      --tx-2: rgb(111, 110, 105);
+      --tx-3: rgb(183, 181, 172);
+
+      --red: rgb(209, 77, 65);
+      --red-dark: rgb(175, 48, 41);
+      --orange: rgb(218, 112, 44);
+      --orange-dark: rgb(188, 82, 21);
+      --yellow: rgb(208, 162, 21);
+      --yellow-dark: rgb(173, 131, 1);
+      --green: rgb(135, 154, 57);
+      --green-dark: rgb(102, 128, 11);
+      --cyan: rgb(58, 169, 159);
+      --cyan-dark: rgb(36, 131, 123);
+      --blue: rgb(67, 133, 190);
+      --blue-dark: rgb(32, 94, 166);
+
+      --sans-serif: "Open Sans";
+      --serif: "Crimson Pro";
+
+      --margin: 5px;
+      }
+
+      /* SANS-SERIF FONT */
+      @font-face {
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: 400;
+      src: local("Open Sans"),
+      url("https://fonts.cdnfonts.com/s/14884/OpenSans-Regular.woff")
+      format("woff");
+      }
+      @font-face {
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: 400;
+      src: local("Open Sans"),
+      url("https://fonts.cdnfonts.com/s/14884/OpenSans-Regular.woff")
+      format("woff");
+      }
+      @font-face {
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: 400;
+      src: local("Open Sans"),
+      url("https://fonts.cdnfonts.com/s/14884/OpenSans-VariableFont_wdthwght.woff")
+      format("woff");
+      }
+      @font-face {
+      font-family: "Open Sans";
+      font-style: italic;
+      font-weight: 400;
+      src: local("Open Sans"),
+      url("https://fonts.cdnfonts.com/s/14884/OpenSans-Italic.woff")
+      format("woff");
+      }
+      @font-face {
+      font-family: "Open Sans";
+      font-style: italic;
+      font-weight: 400;
+      src: local("Open Sans"),
+      url("https://fonts.cdnfonts.com/s/14884/OpenSans-Italic-VariableFont_wdthwght.woff")
+      format("woff");
+      }
+      @font-face {
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: 300;
+      src: local("Open Sans"),
+      url("https://fonts.cdnfonts.com/s/14884/OpenSans-Light.woff") format("woff");
+      }
+      @font-face {
+      font-family: "Open Sans";
+      font-style: italic;
+      font-weight: 300;
+      src: local("Open Sans"),
+      url("https://fonts.cdnfonts.com/s/14884/OpenSans-LightItalic.woff")
+      format("woff");
+      }
+      @font-face {
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: 600;
+      src: local("Open Sans"),
+      url("https://fonts.cdnfonts.com/s/14884/OpenSans-SemiBold.woff")
+      format("woff");
+      }
+      @font-face {
+      font-family: "Open Sans";
+      font-style: italic;
+      font-weight: 600;
+      src: local("Open Sans"),
+      url("https://fonts.cdnfonts.com/s/14884/OpenSans-SemiBoldItalic.woff")
+      format("woff");
+      }
+      @font-face {
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: 700;
+      src: local("Open Sans"),
+      url("https://fonts.cdnfonts.com/s/14884/OpenSans-Bold.woff") format("woff");
+      }
+      @font-face {
+      font-family: "Open Sans";
+      font-style: italic;
+      font-weight: 700;
+      src: local("Open Sans"),
+      url("https://fonts.cdnfonts.com/s/14884/OpenSans-BoldItalic.woff")
+      format("woff");
+      }
+      @font-face {
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: 800;
+      src: local("Open Sans"),
+      url("https://fonts.cdnfonts.com/s/14884/OpenSans-ExtraBold.woff")
+      format("woff");
+      }
+      @font-face {
+      font-family: "Open Sans";
+      font-style: italic;
+      font-weight: 800;
+      src: local("Open Sans"),
+      url("https://fonts.cdnfonts.com/s/14884/OpenSans-ExtraBoldItalic.woff")
+      format("woff");
+      }
+      @font-face {
+      font-family: "Open Sans Light";
+      font-style: normal;
+      font-weight: 300;
+      src: local("Open Sans Light"),
+      url("https://fonts.cdnfonts.com/s/14884/OpenSans-Light-webfont.woff")
+      format("woff");
+      }
+      @font-face {
+      font-family: "Open Sans Condensed";
+      font-style: normal;
+      font-weight: 700;
+      src: local("Open Sans Condensed"),
+      url("https://fonts.cdnfonts.com/s/14884/OpenSans-CondBold.woff")
+      format("woff");
+      }
+
+      /* SERIF FONT */
+      @font-face {
+      font-family: "Crimson Pro";
+      font-style: normal;
+      font-weight: 400;
+      src: local("Crimson Pro"),
+      url("https://fonts.cdnfonts.com/s/29946/CrimsonPro[wght].woff")
+      format("woff");
+      }
+      @font-face {
+      font-family: "Crimson Pro";
+      font-style: italic;
+      font-weight: 400;
+      src: local("Crimson Pro"),
+      url("https://fonts.cdnfonts.com/s/29946/CrimsonPro-Italic[wght].woff")
+      format("woff");
+      }
+      @font-face {
+      font-family: "Crimson Pro";
+      font-style: normal;
+      font-weight: 200;
+      src: local("Crimson Pro"),
+      url("https://fonts.cdnfonts.com/s/29946/CrimsonPro-ExtraLight.woff")
+      format("woff");
+      }
+      @font-face {
+      font-family: "Crimson Pro";
+      font-style: italic;
+      font-weight: 200;
+      src: local("Crimson Pro"),
+      url("https://fonts.cdnfonts.com/s/29946/CrimsonPro-ExtraLightItalic.woff")
+      format("woff");
+      }
+
+      /* GENERAL ELEMENTS */
+
+      html {
+      font-size: 18pt;
+      }
+
+      @media screen and (max-width: 1000px) {
+      main {
+      font-size: 24pt;
+      }
+      }
+
+      body {
+      margin: 0;
+      color: var(--tx);
+      background-color: var(--bg);
+      }
+
+      main {
+      width: 60vw;
+      margin: auto;
+      padding-bottom: 30vh;
+      }
+
+      @media screen and (max-width: 1000px) {
+      main {
+      width: 75vw;
+      font-size: 24pt;
+      margin-left: 5vw;
+      margin-right: 0;
+      }
+      }
+
+      img {
+      max-height: 60vh;
+      max-width: 100%;
+      }
+
+      hr {
+      border: none;
+      }
+
+      a {
+      color: var(--tx);
+      }
+
+      pre {
+      white-space: break-spaces;
+      overflow-x: hidden;
+      }
+
+      footer {
+      position: fixed;
+      bottom: 0;
+      }
+
+      h1,
+      h2,
+      h3 {
+      font-family: var(--serif), serif;
+      font-style: normal;
+      font-weight: normal;
+      }
+
+      .footnote-link {
+      vertical-align: super;
+      font-size: 0.8em;
+      cursor: pointer;
+      }
+
+      emph {
+      font-style: italic;
+      }
+
+      /* CONTENT */
+
+      p,
+      figcaption,
+      div.notes,
+      ol,
+      ul {
+      font-family: var(--sans-serif), serif;
+      margin-top: 1em;
+      margin-bottom: 1em;
+      }
+
+      div.notes p,
+      div.notes ul {
+      font-style: italic;
+      font-size: 0.9em;
+      }
+
+      figure {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      }
+
+      figcaption {
+      font-size: 0.8em;
+      }
+
+      pre {
+      background-color: #eee;
+      padding: 5px;
+      border: 1px solid #aaa;
+      }
+
+      quote p {
+      font-family: var(--sans-serif), serif;
+      display: block;
+      font-style: italic;
+      border-left: 2px solid black;
+      padding: 1em;
+      margin-left: 1em;
+      background-color: rgb(255, 250, 200);
+      }
+
+      li {
+      font-family: var(--sans-serif), serif;
+      margin-bottom: 5px;
+      }
+    </style>
+    <style>
+      /* SNAP SCROLL */
+
+      /* main {
+      scroll-snap-type: y mandatory;
+      height:100vh;
+      overflow-y: scroll;
+
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+      }
+
+      main::-webkit-scrollbar {
+      display: none;
+      }
+
+      main h1, main h2, main h3 {
+      scroll-snap-align: center;
+      } */
+
+      main {
+      display: flex;
+      gap: 20px;
+      }
+
+      hr {
+      height: 90vh;
+      }
+
+      h1,
+      h2,
+      h3 {
+      margin-top: 30vh;
+      padding-top: 10vh;
+      }
+
+      main h1,
+      main h2,
+      main h3 {
+      border-bottom: 2px solid var(--tx);
+      padding-bottom: 10px;
+      }
+
+      h1 {
+      font-size: 4em;
+      }
+
+      h2 {
+      font-size: 3em;
+      }
+
+      h3 {
+      font-size: 2em;
+      }
+
+      p {
+      font-size: 1.1em;
+      }
+
+      pre {
+      overflow-x: auto;
+      }
+
+      figure {
+      margin: 0;
+      align-items: start;
+      }
+
+      /* CONTENT */
+
+      .content {
+      width: 100%;
+      }
+
+      .notes {
+      font-size: 0.9em;
+      }
+
+      .invisible {
+      display: none;
+      }
+
+      #board {
+      position: fixed;
+      top: 5vw;
+      right: 5vw;
+      left: 5vw;
+      bottom: 5vw;
+      padding: 20px;
+      opacity: 0.9;
+      border: 1px solid var(--tx);
+      }
+
+      #board textarea {
+      width: 100%;
+      height: 100%;
+      font-size: 2em;
+      opacity: 0.9;
+      background-color: var(--bg);
+      font-family: var(--serif);
+      resize: none;
+      border: none;
+      outline: none;
+      }
+
+      /* TABLE OF CONTENTS */
+
+      .toc {
+      position: fixed;
+      top: 0;
+      bottom: var(--margin);
+      right: var(--margin);
+      max-width: 15vw;
+      margin: 5px;
+      text-align: right;
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      place-content: end;
+
+      font-size: 20pt;
+      }
+
+      @media screen and (max-width: 1000px) {
+      .toc {
+      max-width: 20vw;
+      font-size: 28pt;
+      }
+      }
+
+      .toc h1,
+      .toc h2,
+      .toc h3 {
+      font-family: var(--sans-serif), sans-serif;
+      margin: 0;
+      padding: 0;
+      }
+
+      .toc h1 {
+      font-family: var(--serif);
+      position: fixed;
+      top: var(--margin);
+      right: var(--margin);
+      max-width: 15vw;
+      margin: 5px;
+      padding: 0;
+      }
+
+      @media screen and (max-width: 1000px) {
+      .toc h1 {
+      max-width: 20vw;
+      }
+      }
+
+      .toc h2,
+      .toc h3 {
+      cursor: pointer;
+      }
+
+      .toc h2:hover,
+      .toc h3:hover {
+      text-decoration: underline;
+      }
+
+      .toc h1 {
+      font-size: 1em;
+      }
+
+      .toc h2 {
+      font-size: 0.8em;
+      margin-top: 3px;
+      margin-bottom: 0px;
+      }
+
+      .toc h3 {
+      font-size: 0.6em;
+      }
+
+      .current-heading {
+      font-weight: bold;
+      }
+
+      /* FOOTNOTES */
+
+      .footnotes {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin-bottom: var(--margin);
+      }
+
+      .footnotes ol {
+      width: 60vw;
+      margin: auto;
+      padding-left: 0;
+
+      display: flex;
+      flex-direction: column;
+      background-color: var(--bg);
+      list-style: none;
+
+      font-size: 0.8em;
+      }
+
+      @media screen and (max-width: 1000px) {
+      .footnotes ol {
+      width: 70vw;
+      font-size: 0.9em;
+      text-align: center;
+      }
+      }
+
+      .footnotes li::before {
+      content: attr(data-footnote-id);
+      margin-right: 2px;
+      vertical-align: super;
+      font-size: 0.7em;
+      }
+
+      /* INTERFACE */
+
+      button {
+      background-color: var(--bg);
+      cursor: pointer;
+      }
+
+      .button-holder {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      margin: 5px;
+      }
+
+      .button-holder button {
+      font-size: 0.6em;
+      }
+
+      .button-holder button:hover {
+      background-color: var(--bg-2);
+      }
+
+      @media screen and (max-width: 1000px) {
+      .button-holder button {
+      font-size: 1.2em;
+      }
+      }
+
+      /* COMPLETION ANIMATION */
+
+      @keyframes scaleProgress {
+      0% {
+      transform: scaleY(0);
+      }
+      100% {
+      transform: scaleY(1);
+      }
+      }
+
+      .progress {
+      position: fixed;
+      top: 0;
+      left: 0;
+      transform-origin: top;
+      animation: scaleProgress auto linear;
+      animation-timeline: scroll(root);
+      background-color: black;
+      width: 3px;
+      height: 100vh;
+      }
+    </style>
+    <script></script>
+    <script>
+      'use strict';
+
+      const init = () => {
+      initHeadingsObserver()
+      initFootnotesObserver();
+
+      document.body.addEventListener('keydown', (evt) => {
+      if(evt.key === 'Escape')
+      document.getElementById("board").classList.add("invisible")
+      })
+      }
+
+      const initFootnotesObserver = () => {
+      const options = {
+      root: null,
+      rootMargin: "-10%",
+      threshold: 1.0,
+      };
+
+      const refs = document.querySelectorAll(".footnote-link")
+      const toggleFootnoteVisibility = (entries) => {
+      entries.forEach((entry) => {
+      const id = entry.target.dataset.id
+      const fn = document.getElementById(`footnote-${id}`)
+      if (!fn) {
+      console.warn(`could not find footnote #${id}`)
+      return
+      }
+      if (entry.intersectionRatio === 1) {
+      fn.classList.remove("invisible")
+      } else {
+      fn.classList.add("invisible")
+      }
+      })
+      }
+
+      const observer = new IntersectionObserver(toggleFootnoteVisibility, options);
+      refs.forEach(r => observer.observe(r))
+      }
+
+      const initHeadingsObserver = () => {
+      document.querySelectorAll(".toc h3").forEach(e => e.classList.add("invisible"))
+
+      const options = {
+      root: null,
+      rootMargin: "-10%",
+      threshold: 1.0,
+      };
+
+      const h2 = document.querySelectorAll("main h2")
+      const h3 = document.querySelectorAll("main h3")
+      const headings = [...h2, ...h3]
+
+      let current;
+      const toggleToCHighlight = (entries) => {
+      entries.forEach((entry) => {
+      var el = document.querySelector(`.toc #toc-${entry.target.id}`)
+      if (entry.intersectionRatio > 0.9) {
+      if (current === el) return
+
+      // set current style
+      if (current) current.classList.remove("current-heading")
+      el.classList.add("current-heading")
+      current = el
+
+      // toggle sub-heading visibility
+      if (el.tagName == "H2") {
+      document.querySelectorAll(".toc h3").forEach(e => e.classList.add("invisible"))
+      let sibling = el.nextElementSibling
+
+      while (sibling != null && sibling.tagName == "H3") {
+      sibling.classList.remove("invisible")
+      sibling = sibling.nextElementSibling
+      }
+      }
+      }
+      });
+      };
+
+      const observer = new IntersectionObserver(toggleToCHighlight, options);
+      headings.forEach(h => observer.observe(h))
+      }
+
+      const setFullscreen = () => {
+      document.documentElement.requestFullscreen()
+      }
+
+      const toggleNotes = () => {
+      let els = document.querySelectorAll(".notes")
+      if (els) els.forEach(e => e.classList.toggle("invisible"))
+      else console.warn("could not find notes")
+      }
+
+      const toggleBoard = () => {
+      let el = document.getElementById("board")
+      el.classList.toggle("invisible")
+      }
+
+      const goToHeading = (anchor) => {
+      const el = document.getElementById(anchor)
+      if (el) el.scrollIntoView({ behavior: "smooth" })
+      else console.warn("could not find heading with anchor", anchor)
+      }
+    </script>
+  </head>
+  <body onload="init()">
+    <div class="progress"></div>
+    <header></header>
+    <div class="toc">
+      <h1 id="toc-copying-media" onclick="goToHeading('copying-media')">Copying Media</h1>
+      <h2 id="toc-reproducing-images" onclick="goToHeading('reproducing-images')">Reproducing images</h2>
+      <h2 id="toc-final-project-ideas" onclick="goToHeading('final-project-ideas')">Final project ideas</h2>
+      <h2 id="toc-react" onclick="goToHeading('react')">React</h2>
+      <h3 id="toc-outro" onclick="goToHeading('outro')">Outro</h3>
+    </div>
+    <main>
+      <div class="content">
+        <h1 id="copying-media">Copying Media</h1>
+        <p>Welcome!</p>
+        <hr/>
+        <p>Plan for the day:</p>
+        <ul>
+          <li>Copying media</li>
+          <li>Final project ideas</li>
+          <li>Figma and React</li>
+        </ul>
+        <hr/>
+        <h2 id="reproducing-images">Reproducing images</h2>
+        <hr/>
+        <p><em>The Age of Art in the Age of Mechanical Reproduction</em>, Walter Benjamin.</p>
+        <ul>
+          <li>Cultural critic and philosopher</li>
+          <li>Adjacent to the Frankfurt school</li>
+          <li>Killed by Nazis as he was crossing the Spanish border</li>
+        </ul>
+        <p>This text is written in 1935, in the middle of the rise of Nazism.</p>
+        <div class="notes invisible">
+          <p>Benjamin talks about the change in our conception of the art object that is brought about by reproduction technologies. Considering the relationship between the original and the copy, he assigns to the original the <em>aura</em>, the sum of historical events that have left a mark on the materiality of that object. This is what copies do not and will never possess. However, he also considers the aura as a means to sustain a fascination for the past/tradition. In that sense, he considers such a reverence for the original object a potential pathway to fascist behaviour (the text itself was written in 1934 as an address to the Institute for the Study of Fascism).</p>
+          <p>His answer is to offer reproduction as a means to include the broadest public in the appreciation and appropriation of art. He suggests that distributing copies, and allowing any individual to be featured in reproducible materials (i.e. amateur photographs and amateur films), is a necessity for anti-fascistic democratic behavior.</p>
+        </div>
+        <hr/>
+        <p>What are some themes of the essay?</p>
+        <hr/>
+        <p>What are the pros and cons of copying?</p>
+        <div class="notes invisible">
+          <p>(meanwhile, moxie 模写 relies on 'transmission by copying' )</p>
+        </div>
+        <hr/>
+        <p>The history of the production of art reflects the industrial revolution.</p>
+        <div class="notes invisible">
+          <p>Making copies has been frowned upon in Western art history ever since the figure of the artist as solitary creator has emerged. This appearance is marked in part by Giorgio Vasari's opus: <em>The Lives of the Artists</em>, in which he depicts the biographies of the artists of his time, essentially giving them a specific status. That status was based on "uniqueness", as opposed to only "skill".</p>
+          <p>Incidentally, Vasari is also the one who orchestrated the construction and design of the Uffizi palaces, one of the first modern museums. What happened then, is the separation of the artist from the artesan: the former working on unique pieces, while the latter was working on generic designs. The mastery of skill, along with new storytellers like Vasari led to the emergence of the artist as a lone genius. Created by such an artist, the artwork also acquires unique aspects.</p>
+          <p>Today, museums are built around the core idea of preservation: that there is one original which needs to be safeguarded, because it has lived through history, and perhaps bears its marks. The assumption is that, without this original component of tradition, there would be no following pieces, and no tradition.</p>
+        </div>
+        <hr/>
+        <p>The <em>aura</em> of a work is devaluated by its reproduction.</p>
+        <hr/>
+        <p>Accessibility vs. elitism.</p>
+        <hr/>
+        <p>Art as politics: the aestheticization of politics vs. the politicization of aesthetics.</p>
+        <hr/>
+        <p><em>In Our Glory: Photography and Black Life</em>, bell hooks.</p>
+        <ul>
+          <li>Writer, pedagogue and philosopher.</li>
+          <li>Part of interesectional feminism.</li>
+        </ul>
+        <p>What is the role of photography in bell hook's text?</p>
+        <hr/>
+        <p>The access to self-representation.</p>
+        <div class="notes invisible">
+          <p>documenting lives of people, providing one's own point of view</p>
+        </div>
+        <hr/>
+        <p>The constitution of non-institutional curation.</p>
+        <hr/>
+        <p>An imaginary museum, proposed by André Malraux</p>
+        <p>
+          <div>
+            <figure>
+            <img src="../docs/augmenting-the-gallery_assets/malraux.jpg" alt="André Malraux inside his imaginary museum"/>
+            <figcaption>André Malraux inside his imaginary museum</figcaption>
+            <figure>
+          </div>
+        </p>
+        <div class="notes invisible">
+          <p>the virtual museum takes the new function of objects, and uses it to recreate a world, one that originates from the editor/curator.</p>
+          <p>modification of objects through scale</p>
+          <ul>
+            <li>collage</li>
+            <li>feed/social media profile</li>
+            <li>portfolio</li>
+            <li>tryptich</li>
+            <li>moodboard</li>
+          </ul>
+          <p>This imaginary museum places the emphasis on the creative act of curation, rather than the production of artworks.</p>
+          <p>By forcing them out of the context of the museum, and re-appropriating them, these works of art undergo a kind of metamorphosis, through the change in size, in zoom levels, in juxtaposition, in continuity. This is a precursor to the moodboard.</p>
+        </div>
+        <hr/>
+        <p>Reproduction lies between access and decontextualization.</p>
+        <p>But new technologies (and gift shops!) can help develop visual cultures beyond institutional reach.</p>
+        <div class="notes invisible">
+          <p>digital reproduction exacerbates the tension between the original and the copy, between the proof and the memory.</p>
+          <p><em>the value of the artwork becomes more dependent on the context</em></p>
+          <p><em>the role of the curator/editor increases relative to the creator</em></p>
+        </div>
+        <hr/>
+        <h2 id="final-project-ideas">Final project ideas</h2>
+        <hr/>
+        <p>What topics are you interested in?</p>
+        <hr/>
+        <p>Next steps:</p>
+        <ul>
+          <li>interactive wireframe</li>
+          <li>website references</li>
+        </ul>
+        <hr/>
+        <p>A wireframe is a sketch of a website focusing on:</p>
+        <ul>
+          <li><strong>kinds of content</strong></li>
+          <li><strong>interface layouts</strong></li>
+          <li><strong>interactive transitions</strong></li>
+        </ul>
+        <p>How are things broadly organized? How do I move from one page to another? What are the interesting interactions?</p>
+        <p>
+          <a href="https://github.com/periode/augmenting-gallery/wiki/Resources#wireframes" target="_blank">Wireframe resources</a>
+        </p>
+        <hr/>
+        <h2 id="react">React</h2>
+        <hr/>
+        <p>what does <code>useState</code> do?</p>
+        <hr/>
+        <p><code>useState</code> is used to create variables that will react to changes throughout the webpage.</p>
+        <p><code>useState</code> involves separating the variable in two parts: one to <strong>get</strong> the value, one to <strong>set</strong> the value.</p>
+        <hr/>
+        <p>Using APIs</p>
+        <ol>
+          <li>getting a key from a source</li>
+          <li>creating a request with search parameters</li>
+          <li>receiving the data and parsing it</li>
+        </ol>
+        <hr/>
+        <h3 id="outro">Outro</h3>
+        <p>Homework:</p>
+        <ul>
+          <li>Complete your final project page on your website with a link to references, and to a wireframe.</li>
+        </ul>
+        <hr/>
+      </div>
+      <div class="footnotes">
+        <h2 class="invisible">Appendix</h2>
+        <ol class="footnotes"></ol>
+      </div>
+    </main>
+    <div id="board" class="invisible">
+      <textarea></textarea>
+    </div>
+    <footer>
+      <div class="button-holder">
+        <button onclick="toggleBoard()">board</button>
+        <button onclick="toggleNotes()">notes</button>
+        <button onclick="setFullscreen()">screen</button>
+      </div>
+    </footer>
+  </body>
+</html>
