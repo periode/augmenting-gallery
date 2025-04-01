@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>publi | Augmenting artefacts</title>
+    <style>
+      :root {
+      /* https://stephango.com/flexoki */
+      --bg: rgb(255, 252, 240);
+      --bg-2: rgb(242, 240, 229);
+      --ui: rgb(230, 228, 217);
+      --ui-2: rgb(218, 216, 206);
+      --ui-3: rgb(206, 205, 195);
+      --tx: rgb(16, 15, 15);
+      --tx-2: rgb(111, 110, 105);
+      --tx-3: rgb(183, 181, 172);
+
+      --red: rgb(209, 77, 65);
+      --red-dark: rgb(175, 48, 41);
+      --orange: rgb(218, 112, 44);
+      --orange-dark: rgb(188, 82, 21);
+      --yellow: rgb(208, 162, 21);
+      --yellow-dark: rgb(173, 131, 1);
+      --green: rgb(135, 154, 57);
+      --green-dark: rgb(102, 128, 11);
+      --cyan: rgb(58, 169, 159);
+      --cyan-dark: rgb(36, 131, 123);
+      --blue: rgb(67, 133, 190);
+      --blue-dark: rgb(32, 94, 166);
+
+      --sans-serif: "Open Sans";
+      --serif: "Crimson Pro";
+
+      --margin: 5px;
+      }
+
+      /* SANS-SERIF FONT */
+      @font-face {
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: 400;
+      src: local("Open Sans"),
+      url("https://fonts.cdnfonts.com/s/14884/OpenSans-Regular.woff")
+      format("woff");
+      }
+      @font-face {
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: 400;
+      src: local("Open Sans"),
+      url("https://fonts.cdnfonts.com/s/14884/OpenSans-Regular.woff")
+      format("woff");
+      }
+      @font-face {
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: 400;
+      src: local("Open Sans"),
+      url("https://fonts.cdnfonts.com/s/14884/OpenSans-VariableFont_wdthwght.woff")
+      format("woff");
+      }
+      @font-face {
+      font-family: "Open Sans";
+      font-style: italic;
+      font-weight: 400;
+      src: local("Open Sans"),
+      url("https://fonts.cdnfonts.com/s/14884/OpenSans-Italic.woff")
+      format("woff");
+      }
+      @font-face {
+      font-family: "Open Sans";
+      font-style: italic;
+      font-weight: 400;
+      src: local("Open Sans"),
+      url("https://fonts.cdnfonts.com/s/14884/OpenSans-Italic-VariableFont_wdthwght.woff")
+      format("woff");
+      }
+      @font-face {
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: 300;
+      src: local("Open Sans"),
+      url("https://fonts.cdnfonts.com/s/14884/OpenSans-Light.woff") format("woff");
+      }
+      @font-face {
+      font-family: "Open Sans";
+      font-style: italic;
+      font-weight: 300;
+      src: local("Open Sans"),
+      url("https://fonts.cdnfonts.com/s/14884/OpenSans-LightItalic.woff")
+      format("woff");
+      }
+      @font-face {
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: 600;
+      src: local("Open Sans"),
+      url("https://fonts.cdnfonts.com/s/14884/OpenSans-SemiBold.woff")
+      format("woff");
+      }
+      @font-face {
+      font-family: "Open Sans";
+      font-style: italic;
+      font-weight: 600;
+      src: local("Open Sans"),
+      url("https://fonts.cdnfonts.com/s/14884/OpenSans-SemiBoldItalic.woff")
+      format("woff");
+      }
+      @font-face {
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: 700;
+      src: local("Open Sans"),
+      url("https://fonts.cdnfonts.com/s/14884/OpenSans-Bold.woff") format("woff");
+      }
+      @font-face {
+      font-family: "Open Sans";
+      font-style: italic;
+      font-weight: 700;
+      src: local("Open Sans"),
+      url("https://fonts.cdnfonts.com/s/14884/OpenSans-BoldItalic.woff")
+      format("woff");
+      }
+      @font-face {
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: 800;
+      src: local("Open Sans"),
+      url("https://fonts.cdnfonts.com/s/14884/OpenSans-ExtraBold.woff")
+      format("woff");
+      }
+      @font-face {
+      font-family: "Open Sans";
+      font-style: italic;
+      font-weight: 800;
+      src: local("Open Sans"),
+      url("https://fonts.cdnfonts.com/s/14884/OpenSans-ExtraBoldItalic.woff")
+      format("woff");
+      }
+      @font-face {
+      font-family: "Open Sans Light";
+      font-style: normal;
+      font-weight: 300;
+      src: local("Open Sans Light"),
+      url("https://fonts.cdnfonts.com/s/14884/OpenSans-Light-webfont.woff")
+      format("woff");
+      }
+      @font-face {
+      font-family: "Open Sans Condensed";
+      font-style: normal;
+      font-weight: 700;
+      src: local("Open Sans Condensed"),
+      url("https://fonts.cdnfonts.com/s/14884/OpenSans-CondBold.woff")
+      format("woff");
+      }
+
+      /* SERIF FONT */
+      @font-face {
+      font-family: "Crimson Pro";
+      font-style: normal;
+      font-weight: 400;
+      src: local("Crimson Pro"),
+      url("https://fonts.cdnfonts.com/s/29946/CrimsonPro[wght].woff")
+      format("woff");
+      }
+      @font-face {
+      font-family: "Crimson Pro";
+      font-style: italic;
+      font-weight: 400;
+      src: local("Crimson Pro"),
+      url("https://fonts.cdnfonts.com/s/29946/CrimsonPro-Italic[wght].woff")
+      format("woff");
+      }
+      @font-face {
+      font-family: "Crimson Pro";
+      font-style: normal;
+      font-weight: 200;
+      src: local("Crimson Pro"),
+      url("https://fonts.cdnfonts.com/s/29946/CrimsonPro-ExtraLight.woff")
+      format("woff");
+      }
+      @font-face {
+      font-family: "Crimson Pro";
+      font-style: italic;
+      font-weight: 200;
+      src: local("Crimson Pro"),
+      url("https://fonts.cdnfonts.com/s/29946/CrimsonPro-ExtraLightItalic.woff")
+      format("woff");
+      }
+
+      /* GENERAL ELEMENTS */
+
+      html {
+      font-size: 18pt;
+      }
+
+      @media screen and (max-width: 1000px) {
+      main {
+      font-size: 24pt;
+      }
+      }
+
+      body {
+      margin: 0;
+      color: var(--tx);
+      background-color: var(--bg);
+      }
+
+      main {
+      width: 60vw;
+      margin: auto;
+      padding-bottom: 30vh;
+      }
+
+      @media screen and (max-width: 1000px) {
+      main {
+      width: 75vw;
+      font-size: 24pt;
+      margin-left: 5vw;
+      margin-right: 0;
+      }
+      }
+
+      img {
+      max-height: 60vh;
+      max-width: 100%;
+      }
+
+      hr {
+      border: none;
+      }
+
+      a {
+      color: var(--tx);
+      }
+
+      pre {
+      white-space: break-spaces;
+      overflow-x: hidden;
+      }
+
+      footer {
+      position: fixed;
+      bottom: 0;
+      }
+
+      h1,
+      h2,
+      h3 {
+      font-family: var(--serif), serif;
+      font-style: normal;
+      font-weight: normal;
+      }
+
+      .footnote-link {
+      vertical-align: super;
+      font-size: 0.8em;
+      cursor: pointer;
+      }
+
+      emph {
+      font-style: italic;
+      }
+
+      /* CONTENT */
+
+      p,
+      figcaption,
+      div.notes,
+      ol,
+      ul {
+      font-family: var(--sans-serif), serif;
+      margin-top: 1em;
+      margin-bottom: 1em;
+      }
+
+      div.notes p,
+      div.notes ul {
+      font-style: italic;
+      font-size: 0.9em;
+      }
+
+      figure {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      }
+
+      figcaption {
+      font-size: 0.8em;
+      }
+
+      pre {
+      background-color: #eee;
+      padding: 5px;
+      border: 1px solid #aaa;
+      }
+
+      quote p {
+      font-family: var(--sans-serif), serif;
+      display: block;
+      font-style: italic;
+      border-left: 2px solid black;
+      padding: 1em;
+      margin-left: 1em;
+      background-color: rgb(255, 250, 200);
+      }
+
+      li {
+      font-family: var(--sans-serif), serif;
+      margin-bottom: 5px;
+      }
+    </style>
+    <style>
+      /* SNAP SCROLL */
+
+      /* main {
+      scroll-snap-type: y mandatory;
+      height:100vh;
+      overflow-y: scroll;
+
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+      }
+
+      main::-webkit-scrollbar {
+      display: none;
+      }
+
+      main h1, main h2, main h3 {
+      scroll-snap-align: center;
+      } */
+
+      main {
+      display: flex;
+      gap: 20px;
+      }
+
+      hr {
+      height: 90vh;
+      }
+
+      h1,
+      h2,
+      h3 {
+      margin-top: 30vh;
+      padding-top: 10vh;
+      }
+
+      main h1,
+      main h2,
+      main h3 {
+      border-bottom: 2px solid var(--tx);
+      padding-bottom: 10px;
+      }
+
+      h1 {
+      font-size: 4em;
+      }
+
+      h2 {
+      font-size: 3em;
+      }
+
+      h3 {
+      font-size: 2em;
+      }
+
+      p {
+      font-size: 1.1em;
+      }
+
+      pre {
+      overflow-x: auto;
+      }
+
+      figure {
+      margin: 0;
+      align-items: start;
+      }
+
+      /* CONTENT */
+
+      .content {
+      width: 100%;
+      }
+
+      .notes {
+      font-size: 0.9em;
+      }
+
+      .invisible {
+      display: none;
+      }
+
+      #board {
+      position: fixed;
+      top: 5vw;
+      right: 5vw;
+      left: 5vw;
+      bottom: 5vw;
+      padding: 20px;
+      opacity: 0.9;
+      border: 1px solid var(--tx);
+      }
+
+      #board textarea {
+      width: 100%;
+      height: 100%;
+      font-size: 2em;
+      opacity: 0.9;
+      background-color: var(--bg);
+      font-family: var(--serif);
+      resize: none;
+      border: none;
+      outline: none;
+      }
+
+      /* TABLE OF CONTENTS */
+
+      .toc {
+      position: fixed;
+      top: 0;
+      bottom: var(--margin);
+      right: var(--margin);
+      max-width: 15vw;
+      margin: 5px;
+      text-align: right;
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      place-content: end;
+
+      font-size: 20pt;
+      }
+
+      @media screen and (max-width: 1000px) {
+      .toc {
+      max-width: 20vw;
+      font-size: 28pt;
+      }
+      }
+
+      .toc h1,
+      .toc h2,
+      .toc h3 {
+      font-family: var(--sans-serif), sans-serif;
+      margin: 0;
+      padding: 0;
+      }
+
+      .toc h1 {
+      font-family: var(--serif);
+      position: fixed;
+      top: var(--margin);
+      right: var(--margin);
+      max-width: 15vw;
+      margin: 5px;
+      padding: 0;
+      }
+
+      @media screen and (max-width: 1000px) {
+      .toc h1 {
+      max-width: 20vw;
+      }
+      }
+
+      .toc h2,
+      .toc h3 {
+      cursor: pointer;
+      }
+
+      .toc h2:hover,
+      .toc h3:hover {
+      text-decoration: underline;
+      }
+
+      .toc h1 {
+      font-size: 1em;
+      }
+
+      .toc h2 {
+      font-size: 0.8em;
+      margin-top: 3px;
+      margin-bottom: 0px;
+      }
+
+      .toc h3 {
+      font-size: 0.6em;
+      }
+
+      .current-heading {
+      font-weight: bold;
+      }
+
+      /* FOOTNOTES */
+
+      .footnotes {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin-bottom: var(--margin);
+      }
+
+      .footnotes ol {
+      width: 60vw;
+      margin: auto;
+      padding-left: 0;
+
+      display: flex;
+      flex-direction: column;
+      background-color: var(--bg);
+      list-style: none;
+
+      font-size: 0.8em;
+      }
+
+      @media screen and (max-width: 1000px) {
+      .footnotes ol {
+      width: 70vw;
+      font-size: 0.9em;
+      text-align: center;
+      }
+      }
+
+      .footnotes li::before {
+      content: attr(data-footnote-id);
+      margin-right: 2px;
+      vertical-align: super;
+      font-size: 0.7em;
+      }
+
+      /* INTERFACE */
+
+      button {
+      background-color: var(--bg);
+      cursor: pointer;
+      }
+
+      .button-holder {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      margin: 5px;
+      }
+
+      .button-holder button {
+      font-size: 0.6em;
+      }
+
+      .button-holder button:hover {
+      background-color: var(--bg-2);
+      }
+
+      @media screen and (max-width: 1000px) {
+      .button-holder button {
+      font-size: 1.2em;
+      }
+      }
+
+      /* COMPLETION ANIMATION */
+
+      @keyframes scaleProgress {
+      0% {
+      transform: scaleY(0);
+      }
+      100% {
+      transform: scaleY(1);
+      }
+      }
+
+      .progress {
+      position: fixed;
+      top: 0;
+      left: 0;
+      transform-origin: top;
+      animation: scaleProgress auto linear;
+      animation-timeline: scroll(root);
+      background-color: black;
+      width: 3px;
+      height: 100vh;
+      }
+    </style>
+    <script></script>
+    <script>
+      'use strict';
+
+      const init = () => {
+      initHeadingsObserver()
+      initFootnotesObserver();
+
+      document.body.addEventListener('keydown', (evt) => {
+      if(evt.key === 'Escape')
+      document.getElementById("board").classList.add("invisible")
+      })
+      }
+
+      const initFootnotesObserver = () => {
+      const options = {
+      root: null,
+      rootMargin: "-10%",
+      threshold: 1.0,
+      };
+
+      const refs = document.querySelectorAll(".footnote-link")
+      const toggleFootnoteVisibility = (entries) => {
+      entries.forEach((entry) => {
+      const id = entry.target.dataset.id
+      const fn = document.getElementById(`footnote-${id}`)
+      if (!fn) {
+      console.warn(`could not find footnote #${id}`)
+      return
+      }
+      if (entry.intersectionRatio === 1) {
+      fn.classList.remove("invisible")
+      } else {
+      fn.classList.add("invisible")
+      }
+      })
+      }
+
+      const observer = new IntersectionObserver(toggleFootnoteVisibility, options);
+      refs.forEach(r => observer.observe(r))
+      }
+
+      const initHeadingsObserver = () => {
+      document.querySelectorAll(".toc h3").forEach(e => e.classList.add("invisible"))
+      document.querySelectorAll(".toc h4").forEach(e => e.classList.add("invisible"))
+      document.querySelectorAll(".toc h5").forEach(e => e.classList.add("invisible"))
+
+      const options = {
+      root: null,
+      rootMargin: "-10%",
+      threshold: 1.0,
+      };
+
+      const h2 = document.querySelectorAll("main h2")
+      const h3 = document.querySelectorAll("main h3")
+      const headings = [...h2, ...h3]
+
+      let current;
+      const toggleToCHighlight = (entries) => {
+      entries.forEach((entry) => {
+      var el = document.querySelector(`.toc #toc-${entry.target.id}`)
+      if (entry.intersectionRatio > 0.9) {
+      if (current === el) return
+
+      // set current style
+      if (current) current.classList.remove("current-heading")
+      el.classList.add("current-heading")
+      current = el
+
+      // toggle sub-heading visibility
+      if (el.tagName == "H2") {
+      document.querySelectorAll(".toc h3").forEach(e => e.classList.add("invisible"))
+      let sibling = el.nextElementSibling
+
+      while (sibling != null && sibling.tagName == "H3") {
+      sibling.classList.remove("invisible")
+      sibling = sibling.nextElementSibling
+      }
+      }
+      }
+      });
+      };
+
+      const observer = new IntersectionObserver(toggleToCHighlight, options);
+      headings.forEach(h => observer.observe(h))
+      }
+
+      const setFullscreen = () => {
+      document.documentElement.requestFullscreen()
+      }
+
+      const toggleNotes = () => {
+      let els = document.querySelectorAll(".notes")
+      if (els) els.forEach(e => e.classList.toggle("invisible"))
+      else console.warn("could not find notes")
+      }
+
+      const toggleBoard = () => {
+      let el = document.getElementById("board")
+      el.classList.toggle("invisible")
+      }
+
+      const goToHeading = (anchor) => {
+      const el = document.getElementById(anchor)
+      if (el) el.scrollIntoView({ behavior: "smooth" })
+      else console.warn("could not find heading with anchor", anchor)
+      }
+    </script>
+  </head>
+  <body onload="init()">
+    <div class="progress"></div>
+    <header></header>
+    <div class="toc">
+      <h1 id="toc-augmenting-artefacts" onclick="goToHeading('augmenting-artefacts')">Augmenting artefacts</h1>
+      <h2 id="toc-introduction" onclick="goToHeading('introduction')">Introduction</h2>
+      <h2 id="toc-artefacts-function-and-meaning" onclick="goToHeading('artefacts-function-and-meaning')">Artefacts, function and meaning</h2>
+      <h2 id="toc-final-projects-wireframes" onclick="goToHeading('final-projects-wireframes')">Final projects wireframes</h2>
+      <h2 id="toc-react-packages" onclick="goToHeading('react-packages')">React packages</h2>
+      <h2 id="toc-conclusion" onclick="goToHeading('conclusion')">Conclusion</h2>
+    </div>
+    <main>
+      <div class="content">
+        <h1 id="augmenting-artefacts">Augmenting artefacts</h1>
+        <p>Welcome!</p>
+        <hr/>
+        <h2 id="introduction">Introduction</h2>
+        <hr/>
+        <p>Housekeeping:</p>
+        <ul>
+          <li>next week is Spring Break!</li>
+        </ul>
+        <hr/>
+        <p>Plan for today:</p>
+        <ul>
+          <li>Artefacts, function and meaning</li>
+          <li>Figma and website references</li>
+          <li>React packages and 3d models</li>
+        </ul>
+        <hr/>
+        <h2 id="artefacts-function-and-meaning">Artefacts, function and meaning</h2>
+        <hr/>
+        <p>Daniel Miller, <em>Artefacts and the Meaning of Things</em>.</p>
+        <hr/>
+        <quote>
+          <p>[...] artefacts are a means by which we give form to, and come to an understanding of, ourselves, others</p>
+        </quote>
+        <hr/>
+        <p>Culture can be represented through objects in general, and in artefacts in specific.</p>
+        <div class="notes invisible">
+          <p>As in session 3, culture can be approached in multiple ways: culture as the coherent element of a group ("youth culture") but also as the defining markers between different groups ("high-brow" vs. "low-brow" cultures).</p>
+          <p>As the object of study of fields like anthropology (study of humans and human behavior, in particular through their meaning-making practices) or sociology (study of the patterns of social interactions), culture is diffused across all components of a social group, and therefore more elusive than the specific representations of, say, religion, politics or the arts. Culture is the web which underpins such other fields of action.</p>
+          <p>Knowing about culture allows us to know more about ourselves; once we've highlighted some findings, or some interesting things about culture, communicating it through digital media, as an information delivery medium, can help us achieve that goal.</p>
+        </div>
+        <hr/>
+        <p>What is an object? How does it differ from an artefact?</p>
+        <hr/>
+        <p>An artefact is something that has been <em>deliberately</em> created by a human, it has <strong>function</strong> and <strong>meaning</strong>.</p>
+        <div class="notes invisible">
+          <p>And it can be made up of things that have not been created by humans (woods, zoos)</p>
+        </div>
+        <hr/>
+        <p>The cultural is often conflated with the <strong>artificial</strong>, as opposed to the natural.</p>
+        <div class="notes invisible">
+          <p>The difference is, no pun intended, artificial and intentional. It can be argued that everything that humans touch become artificial (including dog breeds, forests, mountains), while the denomination of "the natural" is a label applied to certain things which we imagine to be normal, untouched, like a "natural" park. Intentional, means that there was a purpose in its creation.</p>
+          <p>
+            Objects can have a range of sizes, from a toothpick to the sixth continent of plastic (often qualifying as 
+            <a href="http://www.cyborganthropology.com/Hyperobjects" target="_blank">hyperobjects</a>
+            ), a range of ages (from a bathroom sticker to a pyramid), a range of productions (from an amateur craftsman to a factory in Shenzhen), etc.
+          </p>
+          <p>The point of approaching our environment as artificial (i.e. human-made, or human-modified) is that it unlocks a set of questions as to <em>why</em> humans have created, or appropriated this particular object. What makes it important? What does it represent for the group of humans concerned with it? On how many different "levels" does it operate?</p>
+          <p>What was the original intention of the object? What was the realized, actual function of the object?</p>
+        </div>
+        <hr/>
+        <p>Artefacts have a <strong>function</strong>, they can also <strong>mean</strong> something. How? When does an object become significant?</p>
+        <div class="notes invisible">
+          <p>Objects are first and foremost materials: they can be seen, touched, heard, smelled, before they can be understood. Through this materiality, objects embody more invisible, evanescent, sometimes "ideological" relationships and therefore act as testimonies to our culture.</p>
+          <p>Artifacts, along with words and actions, can be seen as the "proof" of culture. As such, they stand opposite to nature, untouched: forests can therefore also be artifacts.</p>
+        </div>
+        <hr/>
+        <p>Museums are places where we focus on the meaning of things, where we give them a new perspective. Artefacts become <em>objects</em> (isolated artifacts).</p>
+        <div class="notes invisible">
+          <ul>
+            <li>particular aspects of a given culture</li>
+            <li>by taking a stance, they also create culture</li>
+          </ul>
+          <p>Museums tend to develop both <strong>for</strong> cultural practices and <strong>as</strong> cultural practices. On the one hand, museums document, present and highlight aspects of different cultures (across time and/or space), and therefore have a responsibility in conveying a "<em>truth</em>" about the collections and the objects they are presenting.</p>
+          <p>On the other hand, however, they also act <strong>as</strong> culture, and in that they are the object of a cultural practice (e.g. going to the museum on sundays). In that sense, the museums themselves become representative of our culture.</p>
+        </div>
+        <hr/>
+        <p><strong>Ordering</strong> objects, we reveal some systems: the way we classify things gives them a particular kind of meaning.</p>
+        <div class="notes invisible">
+          <p>
+            Ordering things gives them meaning in multiple ways:
+            - it applies a <strong>label</strong>, and therefore creates a connection between a word and an object, which is powerful in itself (e.g. labeling a 
+            <a href="https://www.youtube.com/watch?v=to4m1zu7x5g" target="_blank">song from fairuz</a>
+            as "world music")
+            - it also puts an object in a relationship with other objects, creating an implicit connection between them (e.g. think of having to buy shampoo in the kitchen cleaning section of the supermarket)
+          </p>
+          <p>One way to see these orderings of things is through ideology, which is a set of imagined relationships giving an explanation for the reality of our lives.</p>
+        </div>
+        <hr/>
+        <p>Humans can also <strong>be ordered</strong> by objects as a result.</p>
+        <div class="notes invisible">
+          <p>e.g. fashion (from jewelry to phone covers), books, means of transportation</p>
+          <p>This is the part where the objects act themselves as delimiters: they help act as identifiers for the individuals that use them.</p>
+          <p>
+            Indeed, objects can act as myth-carriers (
+            <a href="https://www.newyorker.com/culture/richard-brody/the-uses-of-mythologies" target="_blank">mythologies</a>
+            ), from the scepters and crowns of rulers in medieval europe, to the choice between an Android and an iOS system in a globalized world. The choice (or lack thereof) of choosing one object is something that reflects how one is being classified within a social group.
+          </p>
+          <p>These myths, contrary to structuralism, are a bit more arbitrary: they only have the meaning that we collectively assign, and that meaning can change.</p>
+          <p>Objects used to order:</p>
+          <ul>
+            <li>iphone vs. android</li>
+            <li>high-end brands vs. fast-fashion</li>
+            <li>urban outfitters vs. zara vs. second-hand vs. upcycling</li>
+            <li>how you want to present yourself -> use of the object</li>
+          </ul>
+        </div>
+        <hr/>
+        <p>Three moments in meaning-making:</p>
+        <ul>
+          <li><strong>production</strong> (where and when was it made? by whom?)</li>
+          <li><strong>mediation</strong> (how does it present itself to its audience? what words and images are being used to represent it?)</li>
+          <li><strong>consumption</strong> (how is it actually used? how is that use congruent with the intended use?)</li>
+        </ul>
+        <hr/>
+        <p>What are some of the meanings represented by <em>the iPhone</em>, through <strong>production</strong>, <strong>mediation</strong>, <strong>consumption</strong>?</p>
+        <p>What kinds of <strong>practices</strong> involve this object?</p>
+        <p>What kinds of <strong>values</strong> surround this object?</p>
+        <hr/>
+        <p>Objects and artefacts are active participants in our lives.</p>
+        <p>This idea is explored further in <strong>actor-network theory</strong>.</p>
+        <div class="notes invisible">
+          <p>There doesn't need to be a particular difference between objects and humans, since objects can have personality, and humans can act as objects.</p>
+          <p>
+            This view is further explored by 
+            <a href="https://thesocietypages.org/cyborgology/2011/12/02/a-brief-summary-of-actor-network-theory/" target="_blank">actor-network theory</a>
+            , in which humans and non-humans are being given the same role. Can a bike have a personality? Can a phone have moods? Can we project those on such a device?
+          </p>
+          <p>The corollary of this approach is that we should be able to talk about objects in the similarly complex way that we talk about individuals, including the multiple aspects of their "personality", and the multiple fields in which they act differently.</p>
+        </div>
+        <hr/>
+        <h2 id="final-projects-wireframes">Final projects wireframes</h2>
+        <hr/>
+        <p>What is the overall vibe you are aiming for? What about the function?</p>
+        <p>What are your website references?</p>
+        <p>What does your wireframe look like?</p>
+        <hr/>
+        <h2 id="react-packages">React packages</h2>
+        <hr/>
+        <p>React packages are libraries, code plugins to add functionality.</p>
+        <hr/>
+        <p>Install a package in the Terminal:</p>
+        <pre><code lang="bash">npm install <packagename></code></pre>
+        <p>(<code>npm</code> is the <code>node package manager</code>)</p>
+        <hr/>
+        <p>
+          We are going to display 3D models with 
+          <a href="https://r3f.docs.pmnd.rs/getting-started/introduction" target="_blank">React Three Fiber</a>
+        </p>
+        <hr/>
+        <h2 id="conclusion">Conclusion</h2>
+        <p>Homework for in <strong>two weeks</strong>:</p>
+        <ul>
+          <li>Write your reading response on your Glitch website. Add a 3D object via the React-three-fiber package.</li>
+          <li>Create a new glitch website for your final project.</li>
+        </ul>
+        <div class="notes invisible">
+          <p>"taste classifies, and it classifies the classifier"</p>
+          <ul>
+            <li>luxury items</li>
+            <li>maga hat, watermelon</li>
+            <li>tattoos</li>
+            <li>macbooks</li>
+            <li>transportation</li>
+          </ul>
+          <hr/>
+          <p>ordering can reveal class systems (fabrics)</p>
+          <p>producers of an object are ordering vs. consumers are being ordered (e.g. typewriter)</p>
+          <p>meanings change according to cultural contexts, can also be superimposed.</p>
+          <p><em>boundary object</em></p>
+          <hr/>
+          <p>artefact vs. object</p>
+          <p>are humans objects? physical and structural manifestation, they can both have meaning outside of such physicality (matter)</p>
+          <p>ob-ject (thrown away from), something that is distant, separated from the human. objects are decided by humans.</p>
+          <p>artefact has meaning and intention</p>
+          <p>natural vs. artificial</p>
+        </div>
+        <hr/>
+      </div>
+      <div class="footnotes">
+        <h2 class="invisible">Appendix</h2>
+        <ol class="footnotes"></ol>
+      </div>
+    </main>
+    <div id="board" class="invisible">
+      <textarea></textarea>
+    </div>
+    <footer>
+      <div class="button-holder">
+        <button onclick="toggleBoard()">board</button>
+        <button onclick="toggleNotes()">notes</button>
+        <button onclick="setFullscreen()">screen</button>
+      </div>
+    </footer>
+  </body>
+</html>
